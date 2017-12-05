@@ -261,7 +261,12 @@ footer.footer {
 
 #architecture img{
   width:1000px;
-  margin-top:100px;
+  margin-top:80px;
+}
+
+.archbutton {
+      border: 0;
+    background-color: #fff;
 }
 
 @media (max-width: 728px) {
