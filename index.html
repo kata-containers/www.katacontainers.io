@@ -19,6 +19,15 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet">
+    <script>
+    function on() {
+    document.getElementById("overlay").style.display = "block";
+    }
+
+    function off() {
+        document.getElementById("overlay").style.display = "none";
+    } 
+    </script>
 </head>
 
 <body>
@@ -82,7 +91,7 @@
                 </div>
                 <div class="col-lg-5 second">
                     <div class="mb-5 mt-5">
-                        <img src="img/data.jpg" alt="data">
+                        <a onclick="on()"><img src="img/kata-explained1-thumb@2x.png" alt="data" width="455" class="archsm"></a>
                     </div>
                 </div>
             </div>
@@ -282,6 +291,11 @@
             </div>
         </div>
     </footer>
+    <div id="overlay">
+        <div id="architecture">
+            <a onclick="off()"><img src="img/kata-explained1@2x.png" alt="data" class="data"></a>
+        </div>
+    </div> 
 <script id="e2ma-embed">window.e2ma=window.e2ma||{};e2ma.accountId='1771360';</script><script src="//dk98ddgl0znzm.cloudfront.net/e2ma.js" async="async"></script>
 </body>
 </html>
