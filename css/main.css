@@ -127,6 +127,11 @@ header.hero {
   .links.small .container{
     width: 50vw;
   }
+  @media (max-width: 768px) {
+    .links.small .container{
+      width: 100%;
+    }
+  }
 
 .committee{
   background-color: #2A394D;
