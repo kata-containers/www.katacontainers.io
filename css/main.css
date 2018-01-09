@@ -92,34 +92,62 @@ header.hero {
       header.hero h1 {
         font-size: 3rem; } }
 
-.location{
+.location, .meetings {
   background-color: #F15B3E;
 }
-  .location *{
+  .location *, .meetings *{
     color: #fff;
   }
-  .location .fa{
+  .location a, .meetings a{
+    text-decoration:underline;
+  }
+  .location .fa, .meetings .fa{
     font-size: 1.5rem;
   }
-  .location .btn{
+  .location .btn, .meetings .btn {
     margin: 0 0.25rem;
   }
-  .location .first{
+  .location .first, .meetings .first {
     border-right: solid 1px #f0f0f0;
   }
-  .location .second p{
+  .meetings .first {
+    padding-right:40px;
+  }
+  .location .second p, .meetings .second p{
     font-size: 90%;
     }
-    .location .second p.italic{
+    .location .second p.italic, .meetings .second p.italic{
       font-style: italic;
     }
+  .location , .meetings  *{
+    color: #fff;
+  }
+  .meetings .col-lg-6 {
+    text-align:center;
+  }
+  .meetings .col-lg-6 h5 {
+    text-align:center;
+  }
+  .meetings .col-lg-6 h6 {
+    text-align:center;
+    font-weight:normal;
+  }
   @media (max-width: 1024px) {
-      .location .first {
+      .location .first, .meetings .first {
         border-right: 0;
         padding-bottom: 2em;
         border-bottom: solid 1px #fff; } 
-      .location .second .mt-5 {
+      .location .second .mt-5, .meetings .second .mt-5 {
         margin-top: 0 !important; } }
+.scheduledates li {
+  width:50%;
+  text-align:center;
+  float:left;
+  display:inline;
+}
+.scheduledates li:last-child {
+  width:100%;
+}
 
 .links{
   background-color: #ECEEF1;
