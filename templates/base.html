@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110599884-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-110599884-1');
+        </script>
+        <script src="{% static 'katacontainers/vendor/jquery/jquery.min.js' %}"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Kata Containers is an open source project building extremely lightweight virtual machines that seamlessly plug into the containers ecosystem.">
+        <title>Kata Containers - The speed of containers, the security of VMs</title>
+        <link href="{% static 'katacontainers/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'katacontainers/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'katacontainers/css/main.css' %}" rel="stylesheet">
+        <script>
+        function on() {
+        document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+        }
+        </script>
+    {% endblock%}
+    {% block extrahead %}
+    {% endblock %}
+</head>
+
+<body>
+    {% block content %}
+
+    {% endblock %}
+
+    {% block footer %}
+        <footer class="footer call-to-action text-white ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3 h-100 text-center text-lg-right my-auto">
+                        <ul class="list-inline mb-3 text-center">
+                             <li class="list-inline-item ">
+                                <a class="social" href="https://twitter.com/KataContainers"> <i class="fa fa-twitter fa-2x fa-fw"></i></a>
+                             </li>
+                             <li class="list-inline-item ">
+                                <a class="social" href="https://www.facebook.com/KataContainers"> <i class="fa fa-facebook fa-2x fa-fw"></i></a>
+                             </li>
+                             <li class="list-inline-item ">
+                                <a class="social" href="https://github.com/kata-containers/"> <i class="fa fa-github fa-2x fa-fw"></i></a>
+                             </li>
+                             <li class="list-inline-item ">
+                                 <a class="social" href="https://katacontainers.slack.com/"> <i class="fa fa-slack fa-2x fa-fw"></i></a>
+                             </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 mt-3 mb-5 h-100 text-center text-lg-center mx-auto">
+                        <p class="text-muted small mb-lg-0">© 2017 Kata Containers | Documentation Distributed under CC BY 4.0</p>
+                        <p class="text-muted small mb-4 mb-lg-0">Copyright © 2017 <a href="https://openstack.org/foundation">The OpenStack Foundation</a>®. All rights reserved. </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    {% endblock %}
+    {% block extrafooter %}
+        <div id="overlay" onclick="off()">
+            <div id="architecture">
+                <img src="{% static 'katacontainers/img/kata-explained1@2x.png' %}" alt="data" class="data">
+            </div>
+        </div>
+    {% endblock %}
+</body>
+</html>

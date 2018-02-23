@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load get_videos_row add_active set_justify set_col_size add_horizontal_separator add_vertical_separator parse_youtube_link from custom_tags %}
+
+{% block content %}
+    {% for module in modules %}
+        <section>
+            <div class="container">
+                <div class="row">
+                    {% if module.type == 'BLOCK' %}
+                        {% if module.block.layout == 'ONECOL' %}
+                            {% if module.image and module.image_position == 'LEFT' and not module.image_on_background %}
+                                <div class="col-lg-5 second">
+                                    <div class="mb-5 mt-5">
+                                        <button onclick="on()" class="archbutton">
+                                            <img src="{{ module.image.url }}" alt="data" width="455" class="archsm">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    {% if module.display_title %}
+                                        <h2>{{ module.title }}</h2>
+                                    {% endif %}
+                                    {{ module.content | safe }}
+                                </div>
+                            {% elif module.image and module.image_position == 'RIGHT' and not module.image_on_background %}
+                                <div class="col-lg-7">
+                                    {% if module.display_title %}
+                                        <h2>{{ module.title }}</h2>
+                                    {% endif %}
+                                    {{ module.content | safe }}
+                                </div>
+                                <div class="col-lg-5 second">
+                                    <div class="mb-5 mt-5">
+                                        <button onclick="on()" class="archbutton">
+                                            <img src="{{ module.image.url }}" alt="data" width="455" class="archsm">
+                                        </button>
+                                    </div>
+                                </div>
+                            {% else %}
+                                {% if module.block.content_width == 'WIDE' %}
+                                    <div class="col-sm-12 col-md-12 block {% add_horizontal_separator module.block.list_style %}">
+                                {% elif module.block.content_width == 'SEMIWIDE' %}
+                                    <div class="col-sm-10 col-sm-push-1 block {% add_horizontal_separator module.block.list_style %}">
+                                {% elif module.block.content_width == 'NARROW' %}
+                                    <div class="col-sm-8 col-sm-push-2 block {% add_horizontal_separator module.block.list_style %}">
+                                {% endif %}
+
+                                        {% if module.display_title %}
+                                            <h2>{{ module.title }}</h2>
+                                        {% endif %}
+                                        {{ module.content | safe }}
+                                    </div>
+                                {% if module.list_items.count %}
+                                    <div class="col-sm-10 col-sm-push-1">
+                                            <div class="row">
+                                                <strong> {{ module.block.list_title }} </strong>
+                                                <div class="row">
+                                                    {% for item in module.list_items.all %}
+                                                        <div class="{% set_col_size module.list_items.all.count 'sm' %} {% add_vertical_separator forloop.last module.block.list_style%}">
+                                                            <img class="list-icon" src="{{ item.icon.image.url }}">
+                                                            <h6>{{ item.title }}</h6>
+                                                            <p>{{ item.caption }}</p>
+                                                        </div>
+                                                    {% endfor %}
+                                                </div>
+                                            </div>
+                                    </div>
+                                {% endif %}
+                            {% endif %}
+                        {% elif module.block.layout == 'TWOCOL' %}
+                            <div class="col-sm-4">
+                                <div class="left-side">
+                                    {% if module.block.kicker %}
+                                        <h5 class="to-left">{{ module.block.kicker }}</h5>
+                                    {% endif %}
+                                    <h2 class="to-left">{{ module.title }}</h2>
+                                </div>
+                            </div>
+                            <div class="col-sm-8 center block">
+                                {{ module.content | safe }}
+                                {% if module.list_items.count %}
+                                    <div class="right-bottom-side">
+                                        <strong> {{ module.block.list_title }} </strong>
+                                        <div class="row">
+                                            {% for item in module.list_items.all %}
+                                                <div class="{% set_col_size module.list_items.all.count 'xs' %} {% add_vertical_separator forloop.last module.block.list_style%}">
+                                                    <img class="list-icon" src="{{ item.icon.image.url }}">
+                                                    <p>{{ item.caption }}</p>
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                {% endif %}
+                                {% if module.buttons.count %}
+                                    {% for button in module.buttons.all %}
+                                        <a href="{{ button.button.url }}" class="intro-btn">{{ button.button.caption }}</a>
+                                    {% endfor %}
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            </div>
+        </section>
+
+
+    {% endfor %}
+{% endblock %}
