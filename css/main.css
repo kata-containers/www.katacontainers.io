@@ -306,3 +306,42 @@ footer.footer {
     width:300px;
   }
 }
+
+/* Custom module style */
+
+/* Colorways*/
+
+.black-white {
+  color: black;
+  background-color: white;
+}
+
+.black-light-grey {
+  color: black;
+  background-color: #ECEEF1;
+}
+
+/* Position */
+
+.text-center{
+  text-align: center;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.semiwide{
+  width: 50vw;
+}
+
+.block{
+  width: 100%;
+}
+
+.block h3{
+    margin-bottom: 3rem!important;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+}

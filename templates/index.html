@@ -1,11 +1,21 @@
 {% extends 'base.html' %}
 {% load get_videos_row add_active set_justify set_col_size add_horizontal_separator add_vertical_separator parse_youtube_link from custom_tags %}
-
+{% load static %}
 {% block content %}
     {% for module in modules %}
-        <section>
-            <div class="container">
+        {% if forloop.first %}
+            <header class="hero text-white text-center">
+                <nav class="navbar navbar-light">
+                    <div class="container">
+                        <a class="navbar-brand" href="#"><img src="{% static 'katacontainers/img/logo.svg' %}" alt=""></a>
+                    </div>
+                </nav>
+        {% else %}
+            <section class="{{ module.style.slug }}">
+        {% endif %}
+            <div class="container text-{{ module.block.content_justify | lower}}  {{ module.block.content_width | lower }}">
                 <div class="row">
+{#   ---------- Block module ---------- #}
                     {% if module.type == 'BLOCK' %}
                         {% if module.block.layout == 'ONECOL' %}
                             {% if module.image and module.image_position == 'LEFT' and not module.image_on_background %}
@@ -17,17 +27,21 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-7">
-                                    {% if module.display_title %}
-                                        <h2>{{ module.title }}</h2>
-                                    {% endif %}
-                                    {{ module.content | safe }}
+                                    <div class="mb-5 mt-5 first">
+                                        {% if module.display_title %}
+                                            <h4 class="mb-4 colored">{{ module.title }}</h4>
+                                        {% endif %}
+                                        {{ module.content | safe }}
+                                     </div>
                                 </div>
                             {% elif module.image and module.image_position == 'RIGHT' and not module.image_on_background %}
                                 <div class="col-lg-7">
-                                    {% if module.display_title %}
-                                        <h2>{{ module.title }}</h2>
-                                    {% endif %}
-                                    {{ module.content | safe }}
+                                    <div class="mb-5 mt-5 first">
+                                        {% if module.display_title %}
+                                            <h4 class="mb-4 colored">{{ module.title }}</h4>
+                                        {% endif %}
+                                        {{ module.content | safe }}
+                                     </div>
                                 </div>
                                 <div class="col-lg-5 second">
                                     <div class="mb-5 mt-5">
@@ -37,34 +51,56 @@
                                     </div>
                                 </div>
                             {% else %}
+
                                 {% if module.block.content_width == 'WIDE' %}
                                     <div class="col-sm-12 col-md-12 block {% add_horizontal_separator module.block.list_style %}">
                                 {% elif module.block.content_width == 'SEMIWIDE' %}
-                                    <div class="col-sm-10 col-sm-push-1 block {% add_horizontal_separator module.block.list_style %}">
+                                    <div class="block {% add_horizontal_separator module.block.list_style %}">
                                 {% elif module.block.content_width == 'NARROW' %}
-                                    <div class="col-sm-8 col-sm-push-2 block {% add_horizontal_separator module.block.list_style %}">
+                                    <div class="col-lg-8 mx-auto block {% add_horizontal_separator module.block.list_style %}">
                                 {% endif %}
-
                                         {% if module.display_title %}
-                                            <h2>{{ module.title }}</h2>
+                                            {% if forloop.first %}
+                                                <h2 class="mb-4">{{ module.title }}</h2>
+                                            {% else %}
+                                                <div class="col-lg-12">
+                                                    <h4 class="mb-3 mt-5 colored">{{ module.title }}</h4>
+                                                </div>
+                                            {% endif %}
                                         {% endif %}
-                                        {{ module.content | safe }}
+
+                                       {% if module.content %}<h5 class="mb-5" >{{ module.content | safe }}</h5>{% endif %}
                                     </div>
+
                                 {% if module.list_items.count %}
-                                    <div class="col-sm-10 col-sm-push-1">
-                                            <div class="row">
-                                                <strong> {{ module.block.list_title }} </strong>
-                                                <div class="row">
-                                                    {% for item in module.list_items.all %}
-                                                        <div class="{% set_col_size module.list_items.all.count 'sm' %} {% add_vertical_separator forloop.last module.block.list_style%}">
-                                                            <img class="list-icon" src="{{ item.icon.image.url }}">
+                                        <div class="row text-center small">
+                                            <strong> {{ module.block.list_title }} </strong>
+                                                {% for item in module.list_items.all %}
+                                                    <div class="col-lg-6">
+                                                        <div class="col-6 col-xl-5 offset-xl-1 mb-5 mt-5 left {% add_vertical_separator forloop.last module.block.list_style%}">
+                                                            <img src="{{ item.icon.image.url }}">
+                                                        </div>
+                                                        <div class="col-6 mb-5 mt-5 left">
                                                             <h6>{{ item.title }}</h6>
                                                             <p>{{ item.caption }}</p>
                                                         </div>
+                                                    </div>
+                                                {% endfor %}
+                                        </div>
+                                {% endif %}
+                                {% if module.buttons.count %}
+                                    <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="col-12 text-center">
+                                                    {% for button in module.buttons.all %}
+                                                        <a href="{{ button.button.url }}" class="btn btn-lg btn-primary" target="_blank">{{ button.button.caption }}</a>
                                                     {% endfor %}
                                                 </div>
                                             </div>
+                                        </form>
                                     </div>
+
                                 {% endif %}
                             {% endif %}
                         {% elif module.block.layout == 'TWOCOL' %}
@@ -76,7 +112,7 @@
                                     <h2 class="to-left">{{ module.title }}</h2>
                                 </div>
                             </div>
-                            <div class="col-sm-8 center block">
+                            <div class="col-sm-8 text-center block">
                                 {{ module.content | safe }}
                                 {% if module.list_items.count %}
                                     <div class="right-bottom-side">
@@ -92,17 +128,28 @@
                                     </div>
                                 {% endif %}
                                 {% if module.buttons.count %}
-                                    {% for button in module.buttons.all %}
-                                        <a href="{{ button.button.url }}" class="intro-btn">{{ button.button.caption }}</a>
-                                    {% endfor %}
+                                    <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="col-12 text-center">
+                                                    {% for button in module.buttons.all %}
+                                                        <a href="{{ button.button.url }}" class="btn btn-lg btn-primary" target="_blank">{{ button.button.caption }}</a>
+                                                    {% endfor %}
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
                                 {% endif %}
                             </div>
                         {% endif %}
                     {% endif %}
                 </div>
             </div>
-        </section>
-
-
+        {% if forloop.first %}
+            </header>
+        {% else %}
+            </section>
+        {% endif %}
     {% endfor %}
 {% endblock %}
