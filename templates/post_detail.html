@@ -1,8 +1,14 @@
 {% extends 'index.html' %}
+{% load get_post_back_links from custom_tags %}
 {% block content %}
     {% block navbar %}
         {{ block.super }}
     {% endblock %}
+    <div>
+    {% autoescape off %}
+        Featured in {% get_post_back_links post %}
+    {% endautoescape %}
+    </div>
     <h1>{{ post.title }}</h1>
     <h2>by {{ post.author }}</h2>
     {{ post.content | safe }}
