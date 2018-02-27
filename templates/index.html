@@ -8,7 +8,20 @@
                 <nav class="navbar navbar-light">
                     <div class="container">
                         <a class="navbar-brand" href="#"><img src="{% static 'katacontainers/img/logo.svg' %}" alt=""></a>
+                        {% for page in header_menus %}
+                            {% if page.page.public or request.user.is_staff %}
+                                {% if page.target_type == 'page' %}
+                                    <li class='{% add_active request page.page.slug %}'>
+                                        <a href="{{ page.page.get_absolute_url }}">{{ page.display_name }}</a>
+                                    {% else %}
+                                    <li>
+                                        <a href="{{ page.url }}">{{ page.display_name }}</a>
+                                    {% endif %}
+                                </li>
+                            {% endif %}
+                        {% endfor %}
                     </div>
+
                 </nav>
         {% else %}
             <section class="{{ module.style.slug }}">
