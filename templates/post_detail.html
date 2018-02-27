@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+{% block content %}
+    {% block navbar %}
+        {{ block.super }}
+    {% endblock %}
+    <h1>{{ post.title }}</h1>
+    <h2>by {{ post.author }}</h2>
+    {{ post.content | safe }}
+{% endblock %}
