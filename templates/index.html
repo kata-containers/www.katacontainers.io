@@ -13,7 +13,7 @@
         {% else %}
             <section class="{{ module.style.slug }}">
         {% endif %}
-            <div class="container text-{{ module.block.content_justify | lower}}  {{ module.block.content_width | lower }}">
+            <div class="container {% if module.type == 'BLOCK' %}text-{{ module.block.content_justify | lower}}{% endif %}  {{ module.block.content_width | lower }}">
                 <div class="row">
 {#   ---------- Block module ---------- #}
                     {% if module.type == 'BLOCK' %}
@@ -143,6 +143,23 @@
                                 {% endif %}
                             </div>
                         {% endif %}
+                    {% elif module.type == 'IMAGEGALLERY' %}
+                        <div class="col-lg-12 text-center">
+                            <h3 class="mb-3 mt-5 colored">{{ module.title }}</h3>
+                        </div>
+                        <div class="row pt-5 pb-5 imagegallery">
+                            {% for imageingallery in module.imagegallery.images.all %}
+                                <div class="col-lg-3 col-sm-4 col-6 text-center my-auto pb-5">
+                                    <img src="{{ imageingallery.image.url }}" alt="{{ imageingallery.image.caption }}">
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% elif module.type == 'CUSTOMHTML' %}
+                        <div class="col-xl-9 mx-auto text-center">
+                            <h6 class="mt-5  mb-4 upper colored">{{ module.customhtml.kicker }}</h6>
+                            <h5 class="mb-4">{{ module.title }}</h5>
+                        </div>
+                        {{ module.customhtml.html_block | safe }}
                     {% endif %}
                 </div>
             </div>
@@ -151,5 +168,13 @@
         {% else %}
             </section>
         {% endif %}
+    {% endfor %}
+{% endblock %}
+{% block socialmediamenus %}
+    {{ block.super }}
+    {% for menu in social_menus %}
+        <li class="list-inline-item ">
+            <a class="social" href="{{ menu.url }}"> <i class="fa {{ menu.social_network }} fa-2x fa-fw"></i></a>
+        </li>
     {% endfor %}
 {% endblock %}

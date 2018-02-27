@@ -45,18 +45,8 @@
                 <div class="row">
                     <div class="col-lg-6 offset-lg-3 h-100 text-center text-lg-right my-auto">
                         <ul class="list-inline mb-3 text-center">
-                             <li class="list-inline-item ">
-                                <a class="social" href="https://twitter.com/KataContainers"> <i class="fa fa-twitter fa-2x fa-fw"></i></a>
-                             </li>
-                             <li class="list-inline-item ">
-                                <a class="social" href="https://www.facebook.com/KataContainers"> <i class="fa fa-facebook fa-2x fa-fw"></i></a>
-                             </li>
-                             <li class="list-inline-item ">
-                                <a class="social" href="https://github.com/kata-containers/"> <i class="fa fa-github fa-2x fa-fw"></i></a>
-                             </li>
-                             <li class="list-inline-item ">
-                                 <a class="social" href="https://katacontainers.slack.com/"> <i class="fa fa-slack fa-2x fa-fw"></i></a>
-                             </li>
+                             {% block socialmediamenus %}
+                             {% endblock %}
                         </ul>
                     </div>
                     <div class="col-lg-6 mt-3 mb-5 h-100 text-center text-lg-center mx-auto">
