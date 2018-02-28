@@ -1,15 +1,47 @@
 {% extends 'index.html' %}
-{% load get_post_back_links from custom_tags %}
+{% load get_post_back_links get_recent_posts from custom_tags %}
 {% block content %}
     {% block navbar %}
         {{ block.super }}
     {% endblock %}
-    <div>
-    {% autoescape off %}
-        Featured in {% get_post_back_links post %}
-    {% endautoescape %}
-    </div>
-    <h1>{{ post.title }}</h1>
-    <h2>by {{ post.author }}</h2>
-    {{ post.content | safe }}
+    <main>
+        <div class="container">
+          <article class="single-post">
+            {% autoescape off %}
+                Featured in {% get_post_back_links post %}
+            {% endautoescape %}
+            <header>
+              <h1>{{ post.title }}</h1>
+              <p class="post-author">By: {{ post.author }}</p>
+              <p class="post-date"><time datetime="{{ post.date }}">{{ post.date | date:'F j, Y' }}</time></p>
+            </header>
+            <figure class="post-img">
+              <img src="{{ post.image.url }}" alt="">
+{#              <figcaption>Photo credit: John Photographer</figcaption>#}
+            </figure>
+            {{ post.content | safe }}
+
+            <footer>
+              <p>
+                <a href="" class="post-tag">Tag 1</a>
+                <a href="" class="post-tag">Tag 2</a>
+                <a href="" class="post-tag">Tag 3</a>
+                <a href="" class="post-tag">Tag 4</a>
+                <a href="" class="post-tag">Tag 5</a>
+              </p>
+            </footer>
+          </article>
+          <aside class="single-related">
+            <h2>Recent posts</h2>
+            {% get_recent_posts as recentposts %}
+            {% for recentpost in recentposts %}
+                <article>
+                  <img src="{{ recentpost.image.url }}" alt="">
+                  <h2>{{ recentpost.title }}</h2>
+                  <p class="post-date"><time datetime="{{ recentpost.date }}">{{ recentpost.date | date:'F j, Y' }}</time></p>
+                </article>
+            {% endfor %}
+          </aside>
+        </div>
+    </main>
 {% endblock %}

@@ -198,7 +198,7 @@
                                     <img src="{{ post.image.url }}" alt="">
                                     <header>
                                       <h2>Recent post 1</h2>
-                                      <p class="post-date"><time datetime="{{ post.date }}"></time></p>
+                                      <p class="post-date"><time datetime="{{ post.date }}">{{ post.date | date:'F j, Y' }}</time></p>
                                     </header>
                                     {{ post.content | truncatewords_html:50 | safe}}
                                     <p><a href="{{ post.get_absolute_url }}" class="post-read-more">Read more <span class="sr-only">on Recent {{ post.title }}</span></a></p>
