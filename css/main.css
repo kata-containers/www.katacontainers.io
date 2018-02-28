@@ -63,8 +63,7 @@ a.link{
 }
 
 nav.navbar{
-  background-color: transparent;
-  padding-bottom: 5rem
+  background-color: #2A394E;
 }
   nav.navbar img{
     width: 15rem;
@@ -81,6 +80,9 @@ header.hero {
   -o-background-size: cover;
   background-size: cover;
   padding-bottom: 8rem; }
+  header.hero nav.navbar {
+    background-color: transparent;
+    padding-bottom: 5rem; }
   header.hero h2 {
     font-size: 2rem; 
     font-weight: 400;}
