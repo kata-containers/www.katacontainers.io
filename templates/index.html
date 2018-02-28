@@ -2,28 +2,38 @@
 {% load get_videos_row add_active set_justify set_col_size add_horizontal_separator add_vertical_separator parse_youtube_link from custom_tags %}
 {% load static %}
 {% block content %}
+    {% block navbar %}
+        {% if page.slug != '' %}
+            {{ block.super }}
+        {% endif %}
+    {% endblock %}
     {% for module in modules %}
-        {% if forloop.first %}
+        {% if forloop.first and page.slug == '' %}
             <header class="hero text-white text-center">
-                {% block navbar %}
-                    <nav class="navbar navbar-light">
+                <nav class="navbar navbar-expand-lg navbar-dark">
                         <div class="container">
                             <a class="navbar-brand" href="#"><img src="{% static 'katacontainers/img/logo.svg' %}" alt=""></a>
-                            {% for page in header_menus %}
-                                {% if page.page.public or request.user.is_staff %}
-                                    {% if page.target_type == 'page' %}
-                                        <li class='{% add_active request page.page.slug %}'>
-                                            <a href="{{ page.page.get_absolute_url }}">{{ page.display_name }}</a>
-                                        {% else %}
-                                        <li>
-                                            <a href="{{ page.url }}">{{ page.display_name }}</a>
-                                        {% endif %}
-                                    </li>
-                                {% endif %}
-                            {% endfor %}
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                {% for page in header_menus %}
+                                    {% if page.page.public or request.user.is_staff %}
+                                        {% if page.target_type == 'page' %}
+                                            <li class='{% add_active request page.page.slug %}'>
+                                                <a href="{{ page.page.get_absolute_url }}">{{ page.display_name }}</a>
+                                            {% else %}
+                                            <li>
+                                                <a href="{{ page.url }}">{{ page.display_name }}</a>
+                                            {% endif %}
+                                        </li>
+                                    {% endif %}
+                                {% endfor %}
+                                </ul>
+                            </div>
                         </div>
                     </nav>
-                {% endblock %}
         {% else %}
             <section class="{{ module.style.slug }}">
         {% endif %}
@@ -176,12 +186,23 @@
                         {{ module.customhtml.html_block | safe }}
                     {% elif module.type == 'POSTCATEGORY' %}
                             {% for post in posts %}
-                                <div style="margin: 5px; background-color: blanchedalmond; display: inline-block">
-                                    <h1>{{ post.title }}</h1>
-                                    <h2>by {{ post.author }}</h2>
-                                    <h3>{{ post.date.year }}</h3>
-                                    <a href="{{ post.get_absolute_url }}"> Go to post ></a>
-                                </div>
+{#                                <div style="margin: 5px; background-color: blanchedalmond; display: inline-block">#}
+{#                                    <h1></h1>#}
+{#                                    <h2>by {{ post.author }}</h2>#}
+{#                                    <h3>{{ post.date.year }}</h3>#}
+{#                                    <a href="{{ post.get_absolute_url }}"> Go to post ></a>#}
+{#                                </div>#}
+
+                                <h1>{{ post.title }}</h1>
+                                <article class="post">
+                                    <img src="{{ post.image.url }}" alt="">
+                                    <header>
+                                      <h2>Recent post 1</h2>
+                                      <p class="post-date"><time datetime="{{ post.date }}"></time></p>
+                                    </header>
+                                    {{ post.content | truncatewords_html:50 | safe}}
+                                    <p><a href="{{ post.get_absolute_url }}" class="post-read-more">Read more <span class="sr-only">on Recent {{ post.title }}</span></a></p>
+                                </article>
                             {% endfor %}
 
                             <div class="pagination">
