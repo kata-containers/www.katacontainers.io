@@ -323,6 +323,20 @@ footer.footer {
   background-color: #ECEEF1;
 }
 
+.white-red {
+  color: white;
+  background-color: #F15B3E;
+}
+
+.white-red a{
+  color: white;
+  text-decoration: underline;
+}
+
+.white-red a:hover{
+  color: darkblue;
+}
+
 /* Position */
 
 .text-center{
@@ -354,4 +368,24 @@ footer.footer {
   padding: 0.25em 0;
   width: 100%;
   height: 100%;
+}
+
+.modulecontainer ul li{
+  width:50%;
+  text-align:center;
+  float:left;
+  display:inline;
+}
+.modulecontainer ul li:last-child {
+  width:100%;
+}
+
+.modulecontainer {
+    padding-right: 40px;
+    border-right: solid 1px #f0f0f0;
+}
+
+.modulecontainer.last {
+    padding-right: 0px;
+    border-right: none;
 }

@@ -201,6 +201,15 @@
                                     {% endif %}
                                 </span>
                             </div>
+                    {% elif module.type == 'MODULECONTAINER' %}
+                        {% for moduleinmodule in module.modulecontainer.modulesinmodule.all %}
+                            <div class="{% set_col_size 2 'lg' %} text-center modulecontainer {% if forloop.last %}last{% endif %}">
+                                <div class="mb-5 mt-5">
+                                    <h5 class="mb-3">{{ moduleinmodule.module.title }}<br><em>{{ moduleinmodule.module.customhtml.kicker}}</em></h5>
+                                    {{ moduleinmodule.module.customhtml.html_block | safe }}
+                                </div>
+                            </div>
+                        {% endfor %}
                     {% endif %}
                 </div>
             </div>
