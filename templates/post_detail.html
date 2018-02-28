@@ -33,7 +33,7 @@
           </article>
           <aside class="single-related">
             <h2>Recent posts</h2>
-            {% get_recent_posts as recentposts %}
+            {% get_recent_posts post as recentposts %}
             {% for recentpost in recentposts %}
                 <article>
                   <img src="{{ recentpost.image.url }}" alt="">
