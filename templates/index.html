@@ -108,7 +108,7 @@
                                                         </div>
                                                         <div class="col-6 mb-5 mt-5 left">
                                                             <h6>{{ item.title }}</h6>
-                                                            <p>{{ item.caption }}</p>
+                                                            <p>{{ item.caption | safe}}</p>
                                                         </div>
                                                     </div>
                                                 {% endfor %}
