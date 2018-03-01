@@ -35,10 +35,9 @@
                         </div>
                     </div>
                 </nav>
-
-            {% else %}
-                <section class="{{ module.style.slug }}">
             {% endif %}
+        {% else %}
+            <section class="{{ module.style.slug }}">
         {% endif %}
             <div class="container {% if module.type == 'BLOCK' %}text-{{ module.block.content_justify | lower}}{% endif %}  {{ module.block.content_width | lower }}">
                 <div class="row">
