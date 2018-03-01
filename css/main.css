@@ -323,6 +323,11 @@ footer.footer {
   background-color: #ECEEF1;
 }
 
+.block h4{
+    color: #F15B3E;
+    font-weight: 400;
+}
+
 .white-red {
   color: white;
   background-color: #F15B3E;
