@@ -2,6 +2,7 @@ body {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size:  1.25rem;
   line-height: 1.75;
+  color: #29384E;
   }
 
 h1,
@@ -11,6 +12,7 @@ h3{
   font-weight: 500;
   color:#F15B3E;
   }
+
 h2 a,
 h3 a {
   color:#F15B3E;
@@ -26,6 +28,18 @@ h3.line{
 p {
   margin-bottom: 1rem;
 }
+
+ul, li {
+  padding: 0;
+  }
+ul:not([class]) {
+  list-style: none;
+  }
+ul:not([class]) li:not([class])::before {
+  content: "\2022 ";
+  color: #F15B3E;
+  margin-right: 0.625rem;
+  }
 
 .colored{
   color:#F15B3E;
@@ -100,12 +114,29 @@ nav.navbar{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
 
-.navbar-collapse.show {
-  position: absolute;
-  top: 0;
-  right: 0;
-  min-width: 281px;
-  background-color: #F15B3E;
+@media (max-width: 990px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 281px;
+    background-color: #F15B3E;
+    z-index: 1;
+    text-align: right;
+    padding: .5rem 1rem;
+  }
+  .navbar-nav {
+    font-size: 1.125em;
+    text-align: center;
+  }
+  .navbar-nav .active>.nav-link, 
+  .navbar-nav .nav-link.active {
+    color: #2A394E;
+  }
+  .navbar-close-icon {
+    color: #fff;
+    font-size: 2rem;
+  }
 }
 
 header.hero {
@@ -140,23 +171,10 @@ header.hero {
         font-size: 3rem; } }
 
 /* Pages */
+
 .content {
   padding: 3.1875rem 0;
   }
-  .content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    }
-    .content li {
-      padding-left: 0;
-      text-indent: 0;
-      }
-    .content li::before {
-      content: "� ";
-      color: #F15B3E;
-      margin-right: 0.625rem;
-      }
 
 
 /* Homepage */
@@ -230,9 +248,12 @@ header.hero {
     }
   }
 
-.committee{
+.committee {
   background-color: #2A394D;
   color: #D8D8D8;
+}
+.committee + .committee .container {
+  border-top: 1px solid;
 }
 .committee a {
   color: #D8D8D8;
@@ -341,7 +362,9 @@ footer.footer {
   footer.footer .social{
     color: #ECEEF1;
   }
-
+.footer a {
+  color: #ECEEF1;
+}
   #overlay {
     position: fixed; /* Sit on top of the page content */
     display: none; /* Hidden by default */
@@ -505,8 +528,10 @@ footer.footer {
 
 .post-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  justify-content: space-between;
   grid-gap: 30px;
+  margin-top: 3rem;
 }
 .post-related {
   grid-template-columns: repeat(auto-fit, minmax(294px, 1fr));
@@ -515,11 +540,47 @@ footer.footer {
 .post {
   display: flex;
   flex-flow: column;
+  justify-content: space-between;
   border: 1px solid #A3AFBD;
-  padding: 30px;
+  padding: 15px;
 }
-.post > img {
+.post-list-item {
+  border: none;
+  padding: 0;
+}
+.post-list-item a {
+  display: flex;
+  flex-flow: column;
+}
+.post-list-item a:hover {
+  text-decoration: none;
+}
+.post-list-item  .post-title {
+  margin-top: 1.5rem;
+}
+.post-header {
+    padding: 8px 0;
+}
+.post-title {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.post-author {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom:  0;
+}
+.post-image {
   order: -1;
+}
+.post-date {
+    font-size: .875rem;
+}
+.post-action {
+    margin: .5rem 0 2rem;
+}
+.post-action + * {
+  margin-top: auto;
 }
 .post-tag {
   color: #BAC3CE;
@@ -532,14 +593,49 @@ footer.footer {
   padding: 0 20px;
 }
 
+@media (min-width: 992px) {
+  .post {
+    padding: 30px;
+  }
+  .post-list-item {
+    padding: 0;
+  }
+}
+
+
 .single-post,
 .single-related {
   max-width: 945px;
   margin: 0 auto;
 }
 
+.post-img figcaption {
+    font-style:  italic;
+    font-size: .875rem;
+    margin-top: 1.5rem;
+}
+
+aside blockquote {
+  color: #F15B3E;
+  font-size: 1.5rem;
+  font-style:  italic;
+}
+blockquote {
+  margin: 1rem 2.5rem;
+  font-size: 1rem;
+}
+
+.single-post h2, 
+.single-related h2,
+.single-post h3 {
+  color: #29384E;
+  font-size: 1.5rem;
+}
+
 .single-related {
     margin-bottom: 3.1875rem;
+    border-top: 1px solid #DADADA;
+    margin-top: 1.875rem;
 }
 
 @media (min-width: 768px) {

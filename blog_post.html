@@ -64,21 +64,21 @@
         <header class="text-center">
           <h1>Blog post</h1>
           <p class="post-author">By: John Writer</p>
-          <p class="post-date"><time datetime="2018-02-18">February 18, 2018</time></p>
+          <p class="post-date text-muted"><time datetime="2018-02-18">February 18, 2018</time></p>
         </header>
-        <figure class="post-img">
+        <figure class="post-image text-center">
           <img src="http://placeimg.com/945/553/tech" alt="">
-          <figcaption>Photo credit: John Photographer</figcaption>
+          <figcaption class="text-muted">Photo credit: John Photographer</figcaption>
         </figure>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt ex non ullamcorper tempus. Fusce at quam ornare, cursus nunc vitae, dignissim metus. Sed lacinia turpis magna, vel porttitor magna venenatis nec. Maecenas pretium lorem erat, non rutrum leo mattis eget. Praesent quam lacus, dictum ac elit non, vestibulum rutrum urna. Integer et viverra est, eu malesuada nisl. Nulla luctus gravida augue, at vehicula erat venenatis ut. Aliquam bibendum vel mauris vel molestie.</p>
         <h2>Section heading</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt ex non ullamcorper tempus. Fusce at quam ornare, cursus nunc vitae, dignissim metus. Sed lacinia turpis magna, vel porttitor magna venenatis nec. Maecenas pretium lorem erat, non rutrum leo mattis eget. Praesent quam lacus, dictum ac elit non, vestibulum rutrum urna. Integer et viverra est, eu malesuada nisl. Nulla luctus gravida augue, at vehicula erat venenatis ut. Aliquam <a href="">bibendum vel mauris vel molestie</a>.</p>
         <aside>
-          <blockquote class="post-article-quote">
+          <blockquote>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt ex non ullamcorper tempus.</p>
           </blockquote>
         </aside>
-        <blockquote class="post-external-quote">
+        <blockquote>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt ex non ullamcorper tempus.</p>
         </blockquote>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt ex non ullamcorper tempus. Fusce at quam ornare, cursus nunc vitae, dignissim metus. Sed lacinia turpis magna, vel porttitor magna venenatis nec. Maecenas pretium lorem erat, non rutrum leo mattis eget. Praesent quam lacus, dictum ac elit non, vestibulum rutrum urna. Integer et viverra est, eu malesuada nisl. Nulla luctus gravida augue, at vehicula erat venenatis ut. Aliquam <a href="">bibendum vel mauris vel molestie</a>.</p>
@@ -95,40 +95,52 @@
           </p>
         </footer>
       </article>
-      <aside class="single-related">
-        <h2>Recent posts</h2>
-        <div class="post-list post-related">
-          <article>
-            <img src="http://placeimg.com/294/196/tech" alt="">
-            <h2>Recent post 1</h2>
-            <p class="post-date"><time datetime="2018-02-18">February 18, 2018</time></p>
-          </article>
-          <article>
-            <img src="http://placeimg.com/294/196/tech" alt="">
-            <h2>Recent post 1</h2>
-            <p class="post-date"><time datetime="2018-02-18">February 18, 2018</time></p>
-          </article>
-          <article>
-            <img src="http://placeimg.com/294/196/tech" alt="">
-            <h2>Recent post 1</h2>
-            <p class="post-date"><time datetime="2018-02-18">February 18, 2018</time></p>
-          </article>
-          <article>
-            <img src="http://placeimg.com/294/196/tech" alt="">
-            <h2>Recent post 1</h2>
-            <p class="post-date"><time datetime="2018-02-18">February 18, 2018</time></p>
-          </article>
-          <article>
-            <img src="http://placeimg.com/294/196/tech" alt="">
-            <h2>Recent post 1</h2>
-            <p class="post-date"><time datetime="2018-02-18">February 18, 2018</time></p>
-          </article>
-          <article>
-            <img src="http://placeimg.com/294/196/tech" alt="">
-            <h2>Recent post 1</h2>
-            <p class="post-date"><time datetime="2018-02-18">February 18, 2018</time></p>
-          </article>
-        </div>
+      <aside class="single-related text-center">
+        <h2 id="related_post_title">Recent posts</h2>
+        <ul class="post-list post-related" aria-labelledby="related_post_title">
+          <li class="post post-list-item">
+            <a href="" aria-labelledby="post_1_title">
+              <h3 id="post_1_title" class="post-title">Recent post 1</h3>
+              <p class="post-date text-muted"><time datetime="2018-02-18">February 18, 2018</time></p>
+              <img class="post-image" src="http://placeimg.com/294/196/tech" alt="">
+            </a>
+          </li>
+          <li class="post post-list-item">
+            <a href="" aria-labelledby="post_2_title">
+              <h3 id="post_2_title" class="post-title">Recent post 1</h3>
+              <p class="post-date text-muted"><time datetime="2018-02-18">February 18, 2018</time></p>
+              <img class="post-image" src="http://placeimg.com/294/196/tech" alt="">
+            </a>
+          </li>
+          <li class="post post-list-item">
+            <a href="" aria-labelledby="post_3_title">
+              <h3 id="post_3_title" class="post-title">Recent post 1</h3>
+              <p class="post-date text-muted"><time datetime="2018-02-18">February 18, 2018</time></p>
+              <img class="post-image" src="http://placeimg.com/294/196/tech" alt="">
+            </a>
+          </li>
+          <li class="post post-list-item">
+            <a href="" aria-labelledby="post_4_title">
+              <h3 id="post_4_title" class="post-title">Recent post 1</h3>
+              <p class="post-date text-muted"><time datetime="2018-02-18">February 18, 2018</time></p>
+              <img class="post-image" src="http://placeimg.com/294/196/tech" alt="">
+            </a>
+          </li>
+          <li class="post post-list-item">
+            <a href="" aria-labelledby="post_5_title">
+              <h3 id="post_5_title" class="post-title">Recent post 1</h3>
+              <p class="post-date text-muted"><time datetime="2018-02-18">February 18, 2018</time></p>
+              <img class="post-image" src="http://placeimg.com/294/196/tech" alt="">
+            </a>
+          </li>
+          <li class="post post-list-item">
+            <a href="" aria-labelledby="post_6_title">
+              <h3 id="post_6_title" class="post-title">Recent post 1</h3>
+              <p class="post-date text-muted"><time datetime="2018-02-18">February 18, 2018</time></p>
+              <img class="post-image" src="http://placeimg.com/294/196/tech" alt="">
+            </a>
+          </li>
+        </ul>
       </aside>
     </div>
   </main>
