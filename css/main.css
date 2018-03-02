@@ -413,6 +413,18 @@ footer.footer {
   color: darkblue;
 }
 
+.white-blue{
+  background-color: #2A394D;
+  color: #D8D8D8;
+}
+
+.white-blue a{
+  color: #D8D8D8;
+}
+
+.white-blue a:hover{
+  text-decoration: underline;
+}
 /* Position */
 
 .text-center{
@@ -432,6 +444,7 @@ footer.footer {
 }
 
 .block h3{
+    color: black !important;
     margin-bottom: 3rem!important;
     font-size: 1.25rem;
     font-weight: 500;

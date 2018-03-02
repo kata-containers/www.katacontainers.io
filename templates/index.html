@@ -11,13 +11,16 @@
         {% if forloop.first %}
             {% if page.slug == '' or page.slug == 'faq' %}
             <header class="hero text-white text-center">
-                <nav class="navbar navbar-expand-lg navbar-dark">
+                <nav class="navbar navbar-expand-lg">
                     <div class="container">
                         <a class="navbar-brand" href="/"><img src="{% static 'katacontainers/img/logo.svg' %}" alt=""></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                             <ul class="navbar-nav">
                             {% for page in header_menus %}
                                 {% if page.page.public or request.user.is_staff %}
@@ -95,7 +98,13 @@
                                             {% endif %}
                                         {% endif %}
 
-                                       {% if module.content %}<h5 class="mb-5" >{{ module.content | safe }}</h5>{% endif %}
+                                       {% if module.content %}
+                                           {% if forloop.first %}
+                                               <h5 class="mb-5">{{ module.content | safe }}</h5>
+                                           {% else %}
+                                               <div class="col-lg-12">{{ module.content | safe }}</div>
+                                           {% endif %}
+                                       {% endif %}
                                     </div>
 
                                 {% if module.list_items.count %}
@@ -226,8 +235,8 @@
                             </div>
                     {% elif module.type == 'MODULECONTAINER' %}
                         {% for moduleinmodule in module.modulecontainer.modulesinmodule.all %}
-                            <div class="{% set_col_size 2 'lg' %} text-center modulecontainer {% if forloop.last %}last{% endif %}">
-                                <div class="mb-5 mt-5">
+                            <div class="{% set_col_size 2 'lg' %} text-center">
+                                <div class="mb-5 mt-5 modulecontainer {% if forloop.last %}last{% endif %}">
                                     <h5 class="mb-3">{{ moduleinmodule.module.title }}<br><em>{{ moduleinmodule.module.customhtml.kicker}}</em></h5>
                                     {{ moduleinmodule.module.customhtml.html_block | safe }}
                                 </div>

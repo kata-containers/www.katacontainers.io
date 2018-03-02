@@ -18,6 +18,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="Kata Containers is an open source project building extremely lightweight virtual machines that seamlessly plug into the containers ecosystem.">
         <title>Kata Containers - The speed of containers, the security of VMs</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
         <link href="{% static 'katacontainers/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
         <link href="{% static 'katacontainers/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
         <link href="{% static 'katacontainers/css/main.css' %}" rel="stylesheet">
@@ -41,13 +42,16 @@
 
     {% block content %}
             {% block navbar %}
-                    <nav class="navbar navbar-expand-lg navbar-dark">
+                    <nav class="navbar navbar-expand-lg">
                         <div class="container">
                             <a class="navbar-brand" href="/"><img src="{% static 'katacontainers/img/logo.svg' %}" alt=""></a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
                                 <ul class="navbar-nav">
                                 {% for page in header_menus %}
                                     {% if page.page.public or request.user.is_staff %}
@@ -92,6 +96,8 @@
                 <img src="{% static 'katacontainers/img/kata-explained1@2x.png' %}" alt="data" class="data">
             </div>
         </div>
+        <script src="{% static 'katacontainers/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+
     {% endblock %}
 </body>
 </html>
