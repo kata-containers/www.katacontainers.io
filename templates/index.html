@@ -43,207 +43,218 @@
             <section class="{{ module.style.slug }}">
         {% endif %}
             <div class="container {% if module.type == 'BLOCK' %}text-{{ module.block.content_justify | lower}}{% endif %}  {{ module.block.content_width | lower }}">
-                <div class="row">
-{#   ---------- Block module ---------- #}
-                    {% if module.type == 'BLOCK' %}
-                        {% if module.block.layout == 'ONECOL' %}
-                            {% if module.image and module.image_position == 'LEFT' and not module.image_on_background %}
-                                <div class="col-lg-5 second">
-                                    <div class="mb-5 mt-5">
-                                        <button onclick="on()" class="archbutton">
-                                            <img src="{{ module.image.url }}" alt="data" width="455" class="archsm">
-                                        </button>
+                    <div class="row">
+    {#   ---------- Block module ---------- #}
+                        {% if module.type == 'BLOCK' %}
+                            {% if module.block.layout == 'ONECOL' %}
+                                {% if module.image and module.image_position == 'LEFT' and not module.image_on_background %}
+                                    <div class="col-lg-5 second">
+                                        <div class="mb-5 mt-5">
+                                            <button onclick="on()" class="archbutton">
+                                                <img src="{{ module.image.url }}" alt="data" width="455" class="archsm">
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="mb-5 mt-5 first">
-                                        {% if module.display_title %}
-                                            <h4 class="mb-4 colored">{{ module.title }}</h4>
-                                        {% endif %}
-                                        {{ module.content | safe }}
-                                     </div>
-                                </div>
-                            {% elif module.image and module.image_position == 'RIGHT' and not module.image_on_background %}
-                                <div class="col-lg-7">
-                                    <div class="mb-5 mt-5 first">
-                                        {% if module.display_title %}
-                                            <h4 class="mb-4 colored">{{ module.title }}</h4>
-                                        {% endif %}
-                                        {{ module.content | safe }}
-                                     </div>
-                                </div>
-                                <div class="col-lg-5 second">
-                                    <div class="mb-5 mt-5">
-                                        <button onclick="on()" class="archbutton">
-                                            <img src="{{ module.image.url }}" alt="data" width="455" class="archsm">
-                                        </button>
-                                    </div>
-                                </div>
-                            {% else %}
-
-                                {% if module.block.content_width == 'WIDE' %}
-                                    <div class="col-sm-12 col-md-12 block {% add_horizontal_separator module.block.list_style %}">
-                                {% elif module.block.content_width == 'SEMIWIDE' %}
-                                    <div class="block {% add_horizontal_separator module.block.list_style %}">
-                                {% elif module.block.content_width == 'NARROW' %}
-                                    <div class="col-lg-8 mx-auto block {% add_horizontal_separator module.block.list_style %}">
-                                {% endif %}
-                                        {% if module.display_title %}
-                                            {% if forloop.first %}
-                                                <h2 class="mb-4">{{ module.title }}</h2>
-                                            {% else %}
-                                                <div class="col-lg-12">
-                                                    <h4 class="mb-3 mt-5 colored">{{ module.title }}</h4>
-                                                </div>
+                                    <div class="col-lg-7">
+                                        <div class="mb-5 mt-5 first">
+                                            {% if module.display_title %}
+                                                <h4 class="mb-4 colored">{{ module.title }}</h4>
                                             {% endif %}
-                                        {% endif %}
-
-                                       {% if module.content %}
-                                           {% if forloop.first %}
-                                               <h5 class="mb-5">{{ module.content | safe }}</h5>
-                                           {% else %}
-                                               <div class="col-lg-12">{{ module.content | safe }}</div>
-                                           {% endif %}
-                                       {% endif %}
+                                            {{ module.content | safe }}
+                                         </div>
                                     </div>
+                                {% elif module.image and module.image_position == 'RIGHT' and not module.image_on_background %}
+                                    <div class="col-lg-7">
+                                        <div class="mb-5 mt-5 first">
+                                            {% if module.display_title %}
+                                                <h4 class="mb-4 colored">{{ module.title }}</h4>
+                                            {% endif %}
+                                            {{ module.content | safe }}
+                                         </div>
+                                    </div>
+                                    <div class="col-lg-5 second">
+                                        <div class="mb-5 mt-5">
+                                            <button onclick="on()" class="archbutton">
+                                                <img src="{{ module.image.url }}" alt="data" width="455" class="archsm">
+                                            </button>
+                                        </div>
+                                    </div>
+                                {% else %}
 
-                                {% if module.list_items.count %}
-                                        <div class="row text-center small">
+                                    {% if module.block.content_width == 'WIDE' %}
+                                        <div class="col-sm-12 col-md-12 block {% add_horizontal_separator module.block.list_style %}">
+                                    {% elif module.block.content_width == 'SEMIWIDE' %}
+                                        <div class="block {% add_horizontal_separator module.block.list_style %}">
+                                    {% elif module.block.content_width == 'NARROW' %}
+                                        <div class="col-lg-8 mx-auto block {% add_horizontal_separator module.block.list_style %}">
+                                    {% endif %}
+                                            {% if module.display_title %}
+                                                {% if forloop.first %}
+                                                    {% if module.title_only %}
+                                                        <h1 class="mb-4">{{ module.title }}</h1>
+                                                    {% else %}
+                                                        <h2 class="mb-4">{{ module.title }}</h2>
+                                                    {% endif %}
+                                                {% else %}
+                                                    <div class="col-lg-12">
+                                                        <h4 class="mb-3 mt-5 colored">{{ module.title }}</h4>
+                                                    </div>
+                                                {% endif %}
+                                            {% endif %}
+
+                                           {% if module.content %}
+                                               {% if forloop.first %}
+                                                   <h5 class="mb-5">{{ module.content | safe }}</h5>
+                                               {% else %}
+                                                   <div class="col-lg-12">{{ module.content | safe }}</div>
+                                               {% endif %}
+                                           {% endif %}
+                                        </div>
+
+                                    {% if module.list_items.count %}
+                                            <div class="row text-center small">
+                                                <strong> {{ module.block.list_title }} </strong>
+                                                    {% for item in module.list_items.all %}
+                                                        <div class="col-lg-6">
+                                                            <div class="col-6 col-xl-5 offset-xl-1 mb-5 mt-5 left {% add_vertical_separator forloop.last module.block.list_style%}">
+                                                                <img src="{{ item.icon.image.url }}">
+                                                            </div>
+                                                            <div class="col-6 mb-5 mt-5 left">
+                                                                <h6>{{ item.title }}</h6>
+                                                                <p>{{ item.caption | safe}}</p>
+                                                            </div>
+                                                        </div>
+                                                    {% endfor %}
+                                            </div>
+                                    {% endif %}
+                                    {% if module.buttons.count %}
+                                        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="col-12 text-center">
+                                                        {% for button in module.buttons.all %}
+                                                            <a href="{{ button.button.url }}" class="btn btn-lg btn-primary" target="_blank">{{ button.button.caption }}</a>
+                                                        {% endfor %}
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                    {% endif %}
+                                {% endif %}
+                            {% elif module.block.layout == 'TWOCOL' %}
+                                <div class="col-sm-4">
+                                    <div class="left-side">
+                                        {% if module.block.kicker %}
+                                            <h5 class="to-left">{{ module.block.kicker }}</h5>
+                                        {% endif %}
+                                        <h2 class="to-left">{{ module.title }}</h2>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 text-center block">
+                                    {{ module.content | safe }}
+                                    {% if module.list_items.count %}
+                                        <div class="right-bottom-side">
                                             <strong> {{ module.block.list_title }} </strong>
+                                            <div class="row">
                                                 {% for item in module.list_items.all %}
-                                                    <div class="col-lg-6">
-                                                        <div class="col-6 col-xl-5 offset-xl-1 mb-5 mt-5 left {% add_vertical_separator forloop.last module.block.list_style%}">
-                                                            <img src="{{ item.icon.image.url }}">
-                                                        </div>
-                                                        <div class="col-6 mb-5 mt-5 left">
-                                                            <h6>{{ item.title }}</h6>
-                                                            <p>{{ item.caption | safe}}</p>
-                                                        </div>
+                                                    <div class="{% set_col_size module.list_items.all.count 'xs' %} {% add_vertical_separator forloop.last module.block.list_style%}">
+                                                        <img class="list-icon" src="{{ item.icon.image.url }}">
+                                                        <p>{{ item.caption }}</p>
                                                     </div>
                                                 {% endfor %}
-                                        </div>
-                                {% endif %}
-                                {% if module.buttons.count %}
-                                    <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                                        <form>
-                                            <div class="form-row">
-                                                <div class="col-12 text-center">
-                                                    {% for button in module.buttons.all %}
-                                                        <a href="{{ button.button.url }}" class="btn btn-lg btn-primary" target="_blank">{{ button.button.caption }}</a>
-                                                    {% endfor %}
-                                                </div>
                                             </div>
-                                        </form>
-                                    </div>
+                                        </div>
+                                    {% endif %}
+                                    {% if module.buttons.count %}
+                                        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="col-12 text-center">
+                                                        {% for button in module.buttons.all %}
+                                                            <a href="{{ button.button.url }}" class="btn btn-lg btn-primary" target="_blank">{{ button.button.caption }}</a>
+                                                        {% endfor %}
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
 
-                                {% endif %}
+                                    {% endif %}
+                                </div>
                             {% endif %}
-                        {% elif module.block.layout == 'TWOCOL' %}
-                            <div class="col-sm-4">
-                                <div class="left-side">
-                                    {% if module.block.kicker %}
-                                        <h5 class="to-left">{{ module.block.kicker }}</h5>
-                                    {% endif %}
-                                    <h2 class="to-left">{{ module.title }}</h2>
+                        {% elif module.type == 'IMAGEGALLERY' %}
+                            <div class="col-lg-12 text-center">
+                                <h3 class="mb-3 mt-5 colored">{{ module.title }}</h3>
+                            </div>
+                            <div class="col-lg-12 pt-5 pb-5 imagegallery">
+                                <div class="row">
+                                {% for imageingallery in module.imagegallery.images.all %}
+                                    <div class="{% set_col_size module.imagegallery.images_per_row 'lg' %} col-sm-4 col-6 text-center my-auto pb-5">
+                                        {% if imageingallery.as_circle %}<div class="headshot-wrapper">{% endif %}
+                                            <img class="image {% if imageingallery.as_circle %}image-headshot{% endif %}" src="{{ imageingallery.image.url }}" alt="{{ imageingallery.image.caption }}">
+                                        {% if imageingallery.as_circle %}</div>{% endif %}
+                                        {% if imageingallery.caption %}{{ imageingallery.caption }}{% endif %}
+                                    </div>
+                                {% endfor %}
                                 </div>
                             </div>
-                            <div class="col-sm-8 text-center block">
-                                {{ module.content | safe }}
-                                {% if module.list_items.count %}
-                                    <div class="right-bottom-side">
-                                        <strong> {{ module.block.list_title }} </strong>
-                                        <div class="row">
-                                            {% for item in module.list_items.all %}
-                                                <div class="{% set_col_size module.list_items.all.count 'xs' %} {% add_vertical_separator forloop.last module.block.list_style%}">
-                                                    <img class="list-icon" src="{{ item.icon.image.url }}">
-                                                    <p>{{ item.caption }}</p>
-                                                </div>
-                                            {% endfor %}
-                                        </div>
-                                    </div>
-                                {% endif %}
-                                {% if module.buttons.count %}
-                                    <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                                        <form>
-                                            <div class="form-row">
-                                                <div class="col-12 text-center">
-                                                    {% for button in module.buttons.all %}
-                                                        <a href="{{ button.button.url }}" class="btn btn-lg btn-primary" target="_blank">{{ button.button.caption }}</a>
-                                                    {% endfor %}
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-
-                                {% endif %}
+                        {% elif module.type == 'CUSTOMHTML' %}
+                            <div class="col-xl-9 mx-auto text-center">
+                                <h6 class="mt-5  mb-4 upper colored">{{ module.customhtml.kicker }}</h6>
+                                <h5 class="mb-4">{{ module.title }}</h5>
                             </div>
-                        {% endif %}
-                    {% elif module.type == 'IMAGEGALLERY' %}
-                        <div class="col-lg-12 text-center">
-                            <h3 class="mb-3 mt-5 colored">{{ module.title }}</h3>
-                        </div>
-                        <div class="row pt-5 pb-5 imagegallery">
-                            {% for imageingallery in module.imagegallery.images.all %}
-                                <div class="col-lg-3 col-sm-4 col-6 text-center my-auto pb-5">
-                                    <img src="{{ imageingallery.image.url }}" alt="{{ imageingallery.image.caption }}">
+                            {{ module.customhtml.html_block | safe }}
+                        {% elif module.type == 'POSTCATEGORY' %}
+                            <div class="post-category">
+                                {% if module.display_title %}
+                                    <div class="col-lg-12 text-center">
+                                        <h1 class="mb-4">{{ module.title }}</h1>
+                                    </div>
+                                {% endif %}
+
+                                <div class="post-list">
+                                    {% for post in posts %}
+                                            <article class="post">
+                                                <header>
+                                                  <h2>{{ post.title }}</h2>
+                                                  <p class="post-date"><time datetime="{{ post.date }}">{{ post.date | date:'F j, Y' }}</time></p>
+                                                </header>
+                                                <img src="{{ post.image.url }}" alt="">
+
+                                                {{ post.content | truncatewords_html:50 | safe}}
+                                                <p><a href="{{ post.get_absolute_url }}" class="btn-primary">Read more <span class="sr-only">on Recent {{ post.title }}</span></a></p>
+                                            </article>
+                                    {% endfor %}
                                 </div>
-                            {% endfor %}
-                        </div>
-                    {% elif module.type == 'CUSTOMHTML' %}
-                        <div class="col-xl-9 mx-auto text-center">
-                            <h6 class="mt-5  mb-4 upper colored">{{ module.customhtml.kicker }}</h6>
-                            <h5 class="mb-4">{{ module.title }}</h5>
-                        </div>
-                        {{ module.customhtml.html_block | safe }}
-                    {% elif module.type == 'POSTCATEGORY' %}
-                            {% for post in posts %}
-{#                                <div style="margin: 5px; background-color: blanchedalmond; display: inline-block">#}
-{#                                    <h1></h1>#}
-{#                                    <h2>by {{ post.author }}</h2>#}
-{#                                    <h3>{{ post.date.year }}</h3>#}
-{#                                    <a href="{{ post.get_absolute_url }}"> Go to post ></a>#}
-{#                                </div>#}
+                                <div class="pagination">
+                                    <span class="step-links">
+                                        {% if posts.has_previous %}
+                                            <a href="?page=1{% if request.GET.category %}&category={{ request.GET.category }}{% endif %}">&laquo; first</a>
+                                            <a href="?page={{ posts.previous_page_number }}{% if request.GET.category %}&category={{ request.GET.category }}{% endif %}">previous</a>
+                                        {% endif %}
 
-                                <h1>{{ post.title }}</h1>
-                                <article class="post">
-                                    <img src="{{ post.image.url }}" alt="">
-                                    <header>
-                                      <h2>Recent post 1</h2>
-                                      <p class="post-date"><time datetime="{{ post.date }}">{{ post.date | date:'F j, Y' }}</time></p>
-                                    </header>
-                                    {{ post.content | truncatewords_html:50 | safe}}
-                                    <p><a href="{{ post.get_absolute_url }}" class="post-read-more">Read more <span class="sr-only">on Recent {{ post.title }}</span></a></p>
-                                </article>
-                            {% endfor %}
+                                        <span class="current">
+                                            Page {{ posts.number }} of {{ posts.paginator.num_pages }}.
+                                        </span>
 
-                            <div class="pagination">
-                                <span class="step-links">
-                                    {% if posts.has_previous %}
-                                        <a href="?page=1{% if request.GET.category %}&category={{ request.GET.category }}{% endif %}">&laquo; first</a>
-                                        <a href="?page={{ posts.previous_page_number }}{% if request.GET.category %}&category={{ request.GET.category }}{% endif %}">previous</a>
-                                    {% endif %}
-
-                                    <span class="current">
-                                        Page {{ posts.number }} of {{ posts.paginator.num_pages }}.
+                                        {% if posts.has_next %}
+                                            <a href="?page={{ posts.next_page_number }}{% if request.GET.category %}&category={{ request.GET.category }}{% endif %}">next</a>
+                                            <a href="?page={{ posts.paginator.num_pages }}{% if request.GET.category %}&category={{ request.GET.category }}{% endif %}">last &raquo;</a>
+                                        {% endif %}
                                     </span>
-
-                                    {% if posts.has_next %}
-                                        <a href="?page={{ posts.next_page_number }}{% if request.GET.category %}&category={{ request.GET.category }}{% endif %}">next</a>
-                                        <a href="?page={{ posts.paginator.num_pages }}{% if request.GET.category %}&category={{ request.GET.category }}{% endif %}">last &raquo;</a>
-                                    {% endif %}
-                                </span>
-                            </div>
-                    {% elif module.type == 'MODULECONTAINER' %}
-                        {% for moduleinmodule in module.modulecontainer.modulesinmodule.all %}
-                            <div class="{% set_col_size 2 'lg' %} text-center">
-                                <div class="mb-5 mt-5 modulecontainer {% if forloop.last %}last{% endif %}">
-                                    <h5 class="mb-3">{{ moduleinmodule.module.title }}<br><em>{{ moduleinmodule.module.customhtml.kicker}}</em></h5>
-                                    {{ moduleinmodule.module.customhtml.html_block | safe }}
                                 </div>
                             </div>
-                        {% endfor %}
-                    {% endif %}
-                </div>
+                        {% elif module.type == 'MODULECONTAINER' %}
+                            {% for moduleinmodule in module.modulecontainer.modulesinmodule.all %}
+                                <div class="{% set_col_size 2 'lg' %} text-center">
+                                    <div class="mb-5 mt-5 modulecontainer {% if forloop.last %}last{% endif %}">
+                                        <h5 class="mb-3">{{ moduleinmodule.module.title }}<br><em>{{ moduleinmodule.module.customhtml.kicker}}</em></h5>
+                                        {{ moduleinmodule.module.customhtml.html_block | safe }}
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
             </div>
         {% if forloop.first %}
             </header>

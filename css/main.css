@@ -394,9 +394,13 @@ footer.footer {
   background-color: #ECEEF1;
 }
 
+
 .block h4{
     color: #F15B3E;
-    font-weight: 400;
+    margin-top: 2.4375rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 .white-red {
@@ -441,6 +445,12 @@ footer.footer {
 
 .block{
   width: 100%;
+  padding-bottom: 20px;
+}
+
+.post-category h1{
+  margin-top: 1.120em;
+  font-weight:  500;
 }
 
 .block h3{
@@ -529,5 +539,55 @@ footer.footer {
 }
 
 .single-related {
+    margin-bottom: 3.1875rem;
+}
 
+@media (min-width: 768px) {
+  .col-sm-5ths {
+    max-width: 20%;
+    float: left; } }
+
+@media (min-width: 992px) {
+  .col-md-5ths {
+    max-width: 20%;
+    float: left; } }
+
+@media (min-width: 1200px) {
+  .col-lg-5ths {
+    max-width: 20%;
+    float: left; } }
+
+.headshot-wrapper {
+    border-radius: 100%;
+    width: 133px;
+    height: 133px;
+    overflow: hidden;
+    margin: 0 auto; }
+  .headshot-wrapper .image-headshot {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    padding: 0;
+   }
+
+.pagination{
+  margin: 20px auto 20px auto;
+}
+
+.post-related img{
+  height: 140px;
+  width: 100%;
+}
+
+.post-img img{
+  width: 100%;
+}
+
+.post img{
+  height: 285px;
+  width: 100%;
+}
+
+.post-featured-in{
+  margin-top: 15px ;
 }
