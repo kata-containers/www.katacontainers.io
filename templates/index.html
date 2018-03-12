@@ -248,8 +248,25 @@
                             {% for moduleinmodule in module.modulecontainer.modulesinmodule.all %}
                                 <div class="{% set_col_size 2 'lg' %} text-center">
                                     <div class="mb-5 mt-5 modulecontainer {% if forloop.last %}last{% endif %}">
-                                        <h5 class="mb-3">{{ moduleinmodule.module.title }}<br><em>{{ moduleinmodule.module.customhtml.kicker}}</em></h5>
-                                        {{ moduleinmodule.module.customhtml.html_block | safe }}
+                                        <h5 class="mb-3">{{ moduleinmodule.module.title }}<br><em>{{ moduleinmodule.module.block.kicker}}</em></h5>
+                                        {{ moduleinmodule.module.block.content | safe }}
+                                        {% if moduleinmodule.module.block.lists.count == 2 %}
+                                            <div class="row">
+                                                {% for list in moduleinmodule.module.block.lists.all %}
+                                                    {% if list.style == 'INCOLUMNS' %}
+                                                        <div class="col-lg-6">
+                                                            <h6>{{ list.title }}</h6>
+                                                            <ul class="scheduledates">
+                                                                {% for item in list.items.all %}
+                                                                    <li>{% if item.title %}<h5>{{ item.title }}</h5>{% endif %}{{ item.caption }}</li>
+                                                                {% endfor %}
+                                                            </ul>
+                                                        </div>
+
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
                                     </div>
                                 </div>
                             {% endfor %}
