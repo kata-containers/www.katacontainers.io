@@ -692,9 +692,6 @@ blockquote {
   padding: 0;
 }
 
-.modulecontainer .defaultlist li{
-  width: 100%;
+.modulecontainer ul.defaultlist {
   padding-left: 40px;
-  float: none !important;
-  text-align: left;
 }
