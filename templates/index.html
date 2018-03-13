@@ -84,10 +84,11 @@
                                     {% if module.block.content_width == 'WIDE' %}
                                         <div class="col-sm-12 col-md-12 block {% add_horizontal_separator module.block.list_style %}">
                                     {% elif module.block.content_width == 'SEMIWIDE' %}
-                                        <div class="block">
+                                        <div class="block col-12">
                                     {% elif module.block.content_width == 'NARROW' %}
                                         <div class="col-lg-8 mx-auto block {% add_horizontal_separator module.block.list_style %}">
                                     {% endif %}
+                                        <div class="col-12">
                                             {% if module.display_title %}
                                                 {% if forloop.first %}
                                                     {% if module.title_only %}
@@ -109,9 +110,11 @@
                                                    <div class="col-lg-12">{{ module.content | safe }}</div>
                                                {% endif %}
                                            {% endif %}
+                                            </div>
                                         </div>
 
                                     {% if module.lists.count %}
+                                        <div class="col-12">
                                         {% for list in module.lists.all %}
                                             <div class="row text-center small {% add_horizontal_separator list.style %}">
                                                 {% if list.display_title %}<strong> {{ list.title }} </strong>{% endif %}
@@ -128,6 +131,7 @@
                                                     {% endfor %}
                                             </div>
                                         {% endfor %}
+                                        </div>
                                     {% endif %}
                                     {% if module.buttons.count %}
                                         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
