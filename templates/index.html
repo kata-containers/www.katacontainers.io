@@ -111,10 +111,11 @@
                                            {% endif %}
                                         </div>
 
-                                    {% if module.list_items.count %}
+                                    {% if module.lists.count %}
+                                        {% for list in module.lists.all %}
                                             <div class="row text-center small">
-                                                <strong> {{ module.block.list_title }} </strong>
-                                                    {% for item in module.list_items.all %}
+                                                {% if list.display_title %}<strong> {{ list.title }} </strong>{% endif %}
+                                                    {% for item in list.items.all %}
                                                         <div class="col-lg-6">
                                                             <div class="col-6 col-xl-5 offset-xl-1 mb-5 mt-5 left {% add_vertical_separator forloop.last module.block.list_style%}">
                                                                 <img src="{{ item.icon.image.url }}">
@@ -126,6 +127,7 @@
                                                         </div>
                                                     {% endfor %}
                                             </div>
+                                        {% endfor %}
                                     {% endif %}
                                     {% if module.buttons.count %}
                                         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
@@ -246,7 +248,7 @@
                             </div>
                         {% elif module.type == 'MODULECONTAINER' %}
                             {% for moduleinmodule in module.modulecontainer.modulesinmodule.all %}
-                                <div class="{% set_col_size 2 'lg' %} text-center">
+                                <div class="{% set_col_size 2 'lg' %} text-{{ moduleinmodule.module.block.content_justify | lower }}">
                                     <div class="mb-5 mt-5 modulecontainer {% if forloop.last %}last{% endif %}">
                                         <h5 class="mb-3">{{ moduleinmodule.module.title }}<br><em>{{ moduleinmodule.module.block.kicker}}</em></h5>
                                         {{ moduleinmodule.module.block.content | safe }}
@@ -258,7 +260,11 @@
                                                             <h6>{{ list.title }}</h6>
                                                             <ul class="scheduledates">
                                                                 {% for item in list.items.all %}
-                                                                    <li>{% if item.title %}<h5>{{ item.title }}</h5>{% endif %}{{ item.caption }}</li>
+                                                                    <li>
+                                                                        {% if item.icon %}<img src="{{ item.icon.url }}">{% endif %}
+                                                                        {% if item.title %}<h5>{{ item.title }}</h5>{% endif %}
+                                                                        {{ item.caption | safe }}
+                                                                    </li>
                                                                 {% endfor %}
                                                             </ul>
                                                         </div>
@@ -266,6 +272,18 @@
                                                     {% endif %}
                                                 {% endfor %}
                                             </div>
+                                        {% else %}
+                                            {% for list in moduleinmodule.module.block.lists.all %}
+                                                <ul class="defaultlist">
+                                                    {% for item in list.items.all %}
+                                                        <li>
+                                                            {% if item.icon %}<img src="{{ item.icon.url }}">{% endif %}
+                                                            {% if item.title %}<h5>{{ item.title }}</h5>{% endif %}
+                                                            {{ item.caption | safe }}
+                                                        </li>
+                                                    {% endfor %}
+                                                </ul>
+                                            {% endfor %}
                                         {% endif %}
                                     </div>
                                 </div>
