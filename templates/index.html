@@ -15,11 +15,11 @@
                     <div class="container">
                         <a class="navbar-brand" href="/"><img src="{% static 'katacontainers/img/logo.svg' %}" alt=""></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-close-icon fa fa-close"></span>
                         </button>
                         <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-close-icon fa fa-close"></span>
                         </button>
                             <ul class="navbar-nav">
                             {% for page in header_menus %}
@@ -216,15 +216,15 @@
 
                                 <div class="post-list">
                                     {% for post in posts %}
-                                            <article class="post">
-                                                <header>
-                                                  <h2>{{ post.title }}</h2>
-                                                  <p class="post-date"><time datetime="{{ post.date }}">{{ post.date | date:'F j, Y' }}</time></p>
+                                            <article class="post text-center">
+                                                <header class="post-header">
+                                                  <h2 class="post-title">{{ post.title }}</h2>
+                                                  <p class="post-date text-muted"><time datetime="{{ post.date }}">{{ post.date | date:'F j, Y' }}</time></p>
                                                 </header>
-                                                <img src="{{ post.image.url }}" alt="">
+                                                <img class="post-image" src="{{ post.image.url }}" alt="">
 
                                                 {{ post.content | truncatewords_html:50 | safe}}
-                                                <p><a href="{{ post.get_absolute_url }}" class="btn-primary">Read more <span class="sr-only">on Recent {{ post.title }}</span></a></p>
+                                                <p class="post-action"><a href="{{ post.get_absolute_url }}" class="btn-primary">Read more <span class="sr-only">on Recent {{ post.title }}</span></a></p>
                                             </article>
                                     {% endfor %}
                                 </div>
