@@ -84,7 +84,7 @@
                                     {% if module.block.content_width == 'WIDE' %}
                                         <div class="col-sm-12 col-md-12 block {% add_horizontal_separator module.block.list_style %}">
                                     {% elif module.block.content_width == 'SEMIWIDE' %}
-                                        <div class="block {% add_horizontal_separator module.block.list_style %}">
+                                        <div class="block">
                                     {% elif module.block.content_width == 'NARROW' %}
                                         <div class="col-lg-8 mx-auto block {% add_horizontal_separator module.block.list_style %}">
                                     {% endif %}
@@ -113,7 +113,7 @@
 
                                     {% if module.lists.count %}
                                         {% for list in module.lists.all %}
-                                            <div class="row text-center small">
+                                            <div class="row text-center small {% add_horizontal_separator list.style %}">
                                                 {% if list.display_title %}<strong> {{ list.title }} </strong>{% endif %}
                                                     {% for item in list.items.all %}
                                                         <div class="col-lg-6">
@@ -223,7 +223,7 @@
                                                 </header>
                                                 <img class="post-image" src="{{ post.image.url }}" alt="">
 
-                                                {{ post.content | truncatewords_html:50 | safe}}
+                                                {{ post.excerpt | safe}}
                                                 <p class="post-action"><a href="{{ post.get_absolute_url }}" class="btn-primary">Read more <span class="sr-only">on Recent {{ post.title }}</span></a></p>
                                             </article>
                                     {% endfor %}
