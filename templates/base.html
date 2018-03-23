@@ -39,7 +39,7 @@
     {% endblock %}
 </head>
 
-<body>
+<body class="{% if page.slug == '' %}index{% else %}{{ page.slug }}{% endif %}">
 
 
     {% block content %}
