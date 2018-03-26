@@ -9,7 +9,7 @@
     {% endblock %}
     {% for module in modules %}
         {% if forloop.first %}
-            {% if page.slug == '' or page.slug == 'faq' %}
+            {% if request.site.home_page == page or page.slug == 'faq' %}
             <header class="hero text-white text-center {{ module.title | slugify }}">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container flex-nowrap">

@@ -37,6 +37,11 @@
     {% endblock%}
     {% block extrahead %}
     {% endblock %}
+
+    <script>
+        {{ page.event.custom_js | safe }}
+    </script>
+
 </head>
 
 <body class="{% if page.slug == '' %}index{% else %}{{ page.slug }}{% endif %}">
