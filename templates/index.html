@@ -14,7 +14,7 @@
             <header class="hero text-white text-center {{ module.title | slugify }}">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container flex-nowrap">
-                        <a class="navbar-brand" href="/"><img src="{% static 'katacontainers/img/logo.svg' %}" alt="KataContainers" class="img-fluid"></a>
+                        <a class="navbar-brand" href="/"><img src="{% static theme_name|add:'/img/logo.svg' %}" alt="KataContainers" class="img-fluid"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-close-icon fa fa-close"></span>
                         </button>
