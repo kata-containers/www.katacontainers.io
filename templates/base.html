@@ -13,7 +13,7 @@
             gtag('js', new Date());
             gtag('config', 'UA-110599884-1');
         </script>
-        <script src="{% static 'katacontainers/vendor/jquery/jquery.min.js' %}"></script>
+        <script src="{% static theme_name|add:'/vendor/jquery/jquery.min.js' %}"></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="Kata Containers is an open source project building extremely lightweight virtual machines that seamlessly plug into the containers ecosystem.">
@@ -21,10 +21,10 @@
         <title>Kata Containers - {{ page.title }}{{ post.title }}</title>
         <meta name="description" content="{{ page.excerpt }}{{ post.excerpt }}"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
-        <link href="{% static 'katacontainers/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-        <link href="{% static 'katacontainers/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
-        <link href="{% static 'katacontainers/css/main.css' %}" rel="stylesheet">
-        <link rel="shortcut icon" type="image/x-icon" href="{% static 'katacontainers/favicon.ico' %}"/>
+        <link href="{% static theme_name|add:'/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static theme_name|add:'/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static theme_name|add:'/css/main.css' %}" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="{% static theme_name|add:'/favicon.ico' %}"/>
         <script>
         function on() {
         document.getElementById("overlay").style.display = "block";
@@ -51,7 +51,7 @@
             {% block navbar %}
                     <nav class="navbar navbar-expand-lg">
                         <div class="container flex-nowrap">
-                            <a class="navbar-brand" href="/"><img src="{% static 'katacontainers/img/logo.svg' %}" alt="KataContainers" class="img-fluid"></a>
+                            <a class="navbar-brand" href="/"><img src="{% static theme_name|add:'/img/logo.svg' %}" alt="KataContainers" class="img-fluid"></a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-close-icon fa fa-close"></span>
                             </button>
@@ -100,10 +100,10 @@
     {% block extrafooter %}
         <div id="overlay" onclick="off()">
             <div id="architecture">
-                <img src="{% static 'katacontainers/img/kata-explained1@2x.png' %}" alt="data" class="data">
+                <img src="{% static theme_name|add:'/img/kata-explained1@2x.png' %}" alt="data" class="data">
             </div>
         </div>
-        <script src="{% static 'katacontainers/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+        <script src="{% static theme_name|add:'/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
 
     {% endblock %}
 </body>
