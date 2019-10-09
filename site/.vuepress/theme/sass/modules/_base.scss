@@ -1,0 +1,317 @@
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+.title-main.is-primary-dark {
+  color: $primary-dark;
+}
+
+a {
+  color: $primary-dark;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  font-weight: 545;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  margin-bottom: 14px;
+  font-size: 25px;
+  color: $primary-blue;
+}
+
+.h2_primary_dark {
+  margin-bottom: 14px;
+  font-size: 25px;
+  color: $primary-dark;
+}
+.h2_green {
+  margin-bottom: 14px;
+  font-size: 25px;
+  font-weight: 500;
+  color: $primary;
+}
+
+h2.features {
+  margin-bottom: 30px;
+  padding-top: 30px;
+  font-size: 25px;
+  color: $primary-blue;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: $primary;
+
+  &.is-software {
+    margin-bottom: 4px;
+    font-size: 20px;
+    color: $primary-dark;
+    align-content: center;
+  }
+
+  &.is-community {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: $primary-dark;
+    align-content: center;
+  }
+
+}
+
+h4 {
+  margin-bottom: 9px;
+  font-size: 18px;
+  color: $primary-blue;
+}
+
+h5 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: $gray;
+  text-transform: uppercase;
+}
+
+h6 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: $white;
+}
+
+p {
+  margin-bottom: $body-line-height + em;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child {
+  margin-bottom: 0;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-around-space {
+  margin: 12px;
+}
+
+.img-sponsor-l3 {
+  margin: 12px;
+  width: 250px;
+  margin-bottom: 46px;
+}
+
+.img-sponsor-l2 {
+  width: 120px;
+}
+
+.img-sponsor-l3-last {
+  margin: 12px;
+  width: 250px;
+  margin-bottom: 46px;
+  margin-left: 35px;
+}
+
+.img-sponsor-l4 {
+  margin: 12px;
+  width: 225px;
+  margin-bottom: 46px;
+}
+
+img.feature-icons {
+  vertical-align: middle;
+  max-width: 30px;
+  height: auto;
+  float: left;
+  margin-right: -100%;
+}
+
+@media (max-width: 1023px) {
+  img.feature-icons {
+    vertical-align: middle;
+    max-width: 40px;
+    height: auto;
+    float: none;
+    align-items: center;
+    margin-right: 0;
+    padding-bottom: 10px;
+  }
+
+}
+
+.preview {
+    width: 100%;
+    height: auto;
+    padding-top: 15px;
+    word-wrap: normal;
+}
+
+pre {
+  display: block;
+  word-wrap: normal;
+  border-radius: 10px;
+  background: #282828;
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $white;
+  white-space: pre-wrap;
+}
+
+.code {
+  display: inline;
+  overflow: visible;
+  word-wrap: normal;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background: #ededed;
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  line-height: 1;
+}
+
+@media (max-width: 767px) {
+  .code {
+    font-size: 17px;
+  }
+}
+
+.feature-title {
+  align-content: center;
+}
+
+.no-border-radius {
+  border-radius: 0px;
+}
+
+.no-border-search-submit {
+  border-radius: 0px;
+  top: 20px;
+  left: -15px;
+}
+
+
+.nobullet {
+  list-style-type: none;
+  }
+
+ul {
+  list-style: none; /* Remove default bullets */
+  list-style-type: none;
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: $primary-dark; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */ 
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.item-no-bullet::before {
+  content: "";  
+}
+
+hr {
+  background-color: #d5d5d5;
+  border: none;
+  display: block;
+  height: 2px;
+  margin: 1.5rem 0;
+}
+
+
+.column .swag {
+  border-width: 1px;
+  border-color: #4d4d4d;
+  border-style: solid;
+  text-align: center;
+}
+
+.img-swag {
+  margin-left: 45px;
+}
+
+.columns .swag {
+  margin: 35px;
+  border-width: 1px;
+  border-color: #4d4d4d;
+  border-style: solid;
+}
+
+.columns-sponsors {
+  display: inline-flex;
+}
+.card {
+  box-shadow: none;
+}
+
+.container-center {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title.is-4 {
+  color: $primary-dark;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+
+
+
+.bottom-content {
+	background-color: $primary-blue;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 300;
+  color: $white;
+  left: -450px;
+  top: 80px;
+  width: 200%;
+  position: relative;
+  }
+
+
+  .section-padding-top-0 {
+    padding-top: 0px !important;
+  }
+
+  .a-no-underline {
+    color: $primary-dark;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+
+.animation-content.modal-content > p > a > img {
+  height: auto;
+}
+
+.modal-content, .modal-card {
+    width: 800px;
+}

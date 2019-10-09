@@ -1,0 +1,3 @@
+[build]
+  command = "yarn site:build"
+  publish = "site/.vuepress/dist/"

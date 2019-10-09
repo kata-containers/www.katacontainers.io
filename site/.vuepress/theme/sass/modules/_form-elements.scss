@@ -1,0 +1,168 @@
+/* ------------------------------------------------------------ *\
+	Field Search
+\* ------------------------------------------------------------ */
+
+.field-search {
+	.input {
+		display: block;
+		height: 28px;
+		border-radius: 14px;
+		border: 1px solid $gray;
+		background: $white;
+		box-shadow: none;
+		font-size: 12px;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: $gray;
+	}
+
+	.control.has-icons-left .input {
+		padding-left: 33px;
+	}
+
+	.icon i {
+		font-size: 12px;
+	}
+
+	.control.has-icons-left .icon,
+	.control.has-icons-right .icon {
+		height: 100%;
+		color: $gray;
+	}
+}
+
+/* ------------------------------------------------------------ *\
+	Field Wrapper
+\* ------------------------------------------------------------ */
+
+.field-wrapper {
+	margin-bottom: 28px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	@each $name, $pair in $colors {
+		$color: nth($pair, 1);
+		$color-invert: nth($pair, 2);
+
+		&.is-#{$name} {
+			.field-wrapper-message {
+				color: $color;
+			}
+		}
+	}
+
+	.field-wrapper-label {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 8px;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 1.8;
+		color: $dark-light;
+	}
+
+	@media (max-width: 767px) {
+		.field-wrapper-label {
+			font-size: 16px;
+			line-height: 1.2;
+		}
+	}
+}
+
+/* ------------------------------------------------------------ *\
+	Input
+\* ------------------------------------------------------------ */
+
+.input {
+	height: 58px;
+	padding: 0 19px;
+	border-radius: 4px;
+	border-color: $gray;
+	box-shadow: none;
+	font-size: 20px;
+	line-height: 1.8;
+	color: $black;
+	transition: border-color 0.3s, box-shadow 0.3s;
+
+	&:focus,
+	&.is-focused {
+		border-color: $gray;
+		box-shadow: 0 0 0 0.125em rgba($gray, 0.25);
+	}
+
+	&:hover {
+		border-color: $gray;
+	}
+
+	@each $name, $pair in $colors {
+		$color: nth($pair, 1);
+		$color-invert: nth($pair, 2);
+
+		&.is-#{$name} {
+			color: $color;
+			border-color: $color;
+
+			&::placeholder {
+				color: $color;
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		& {
+			height: 40px;
+			font-size: 16px;
+			line-height: 1.2;
+		}
+	}
+}
+
+/* ------------------------------------------------------------ *\
+	Checkboxes
+\* ------------------------------------------------------------ */
+
+.checkboxes {
+	.checkboxes-title {
+		margin-bottom: 11px;
+		font-weight: 500;
+		color: $gray;
+	}
+
+	.checkbox-wrap {
+		margin-bottom: 4px;
+	}
+
+	@media (max-width: 767px) {
+		.checkboxes-title {
+			font-size: 18px;
+		}
+	}
+}
+
+/* ------------------------------------------------------------ *\
+	Checkbox
+\* ------------------------------------------------------------ */
+
+.checkbox {
+	color: $black;
+
+	&.b-checkbox input[type='checkbox'] + .check {
+		border: 1px solid $gray;
+		border-radius: 0;
+	}
+
+	.control-label {
+		font-size: 20px;
+		line-height: 1.2;
+	}
+
+	@media (max-width: 767px) {
+		.control-label {
+			font-size: 16px;
+		}
+	}
+}

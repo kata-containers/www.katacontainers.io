@@ -1,0 +1,63 @@
+{
+  "sections": [
+    {
+      "title": "About",
+      "nav": [
+        {
+          "text": "Learn",
+          "link": "/learn/"
+        },
+        {
+          "text": "Software",
+          "link": "/software/"
+        },
+        {
+          "text": "Community",
+          "link": "/community/"
+        },
+        {
+          "text": "Supporters",
+          "link": "/supporters/"
+        }
+      ]
+    },
+    {
+      "title": "Connect",
+      "nav": [
+        {
+          "text": "Mailing Lists",
+          "link": "http://lists.katacontainers.io/cgi-bin/mailman/listinfo"
+        },
+        {
+          "text": "Twitter",
+          "link": "https://twitter.com/KataContainers"
+        },
+        {
+          "text": "IRC: #kata-dev",
+          "link": "http://webchat.freenode.net/?channels=kata-dev"
+        },
+        {
+          "text": "IRC: #kata-general",
+          "link": "http://webchat.freenode.net/?channels=kata-general"
+        }
+      ]
+    },
+    {
+      "title": "Resources",
+      "nav": [
+        {
+          "text": "Code",
+          "link": "https://github.com/kata-containers"
+        },
+        {
+          "text": "Releases",
+          "link": "https://github.com/kata-containers/runtime/releases/"
+        },
+        {
+          "text": "Documentation",
+          "link": "/docs/"
+        }
+      ]
+    }
+  ]
+}

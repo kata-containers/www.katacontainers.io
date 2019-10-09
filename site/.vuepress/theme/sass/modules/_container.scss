@@ -1,0 +1,26 @@
+/* ------------------------------------------------------------ *\
+	Container
+\* ------------------------------------------------------------ */
+
+.container {
+	max-width: $container-max-width + $container-gutter * 2;
+	width: auto;
+	padding-right: $container-gutter;
+	padding-left: $container-gutter;
+
+	&-small {
+		max-width: $container-small-max-width + $container-gutter * 2;
+	}
+
+	&-medium {
+		max-width: $container-medium-max-width + $container-gutter * 2;
+	}
+
+	&-thin {
+		max-width: $container-thin-max-width + $container-gutter * 2;
+	}
+
+	&-thin-alt {
+		max-width: $container-thin-alt-max-width + $container-gutter * 2;
+	}
+}

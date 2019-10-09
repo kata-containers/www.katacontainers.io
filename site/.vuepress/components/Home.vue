@@ -1,0 +1,3 @@
+<template>
+  <custom-content />
+</template>

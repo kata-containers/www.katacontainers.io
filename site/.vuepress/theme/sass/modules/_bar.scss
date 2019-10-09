@@ -1,0 +1,66 @@
+/* ------------------------------------------------------------ *\
+	Bar
+\* ------------------------------------------------------------ */
+
+.bar {
+  padding: 7px 0;
+  background: $dark-gray;
+  color: $white;
+
+  .bar-btn {
+    flex: 0 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 4px 14px;
+    border-radius: 4px;
+    border: 1px solid $white;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+    transition: background 0.3s, border-color 0.3s;
+
+    &:hover {
+      background: $primary;
+      border-color: $primary;
+    }
+  }
+
+  .bar-logo {
+    max-width: 32px;
+    flex: 0 0 32px;
+  }
+
+  .bar-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bar-entry {
+    margin: 0 22px;
+  }
+
+  @media (max-width: 768px) {
+    & {
+      padding: 15px 0;
+    }
+
+    .bar-inner {
+      flex-wrap: wrap;
+      justify-content: left;
+      text-align: left;
+    }
+
+    .bar-entry,
+    .bar-logo {
+      flex: 1 1 30%;
+      margin-right: 10px;
+    }
+
+    .bar-entry {
+      margin: 10px 0;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "nav": [
+    {
+      "text": "Learn",
+      "link": "/learn/"
+    },
+    {
+      "text": "Software",
+      "link": "/software/"
+    },
+    {
+      "text": "Docs",
+      "link": "/docs/"
+    },
+    {
+      "text": "Community",
+      "link": "/community/"
+    },
+    {
+      "text": "Supporters",
+      "link": "/supporters/"
+    },
+    {
+      "text": "Blog",
+      "link": "/community/"
+    }
+  ]
+}
