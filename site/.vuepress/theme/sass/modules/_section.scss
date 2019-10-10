@@ -1,0 +1,211 @@
+/* ------------------------------------------------------------ *\
+	Section
+\* ------------------------------------------------------------ */
+
+.section {
+	padding: 78px 0 54px;
+
+	@each $name, $pair in $colors {
+		$color: nth($pair, 1);
+		$color-invert: nth($pair, 2);
+
+		&.is-#{$name} {
+			background-color: $color;
+			border-color: transparent;
+			color: $color-invert;
+		}
+	}
+
+	.section-body {
+		margin-bottom: 75px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.section-title {
+		font-size: 35px;
+		font-weight: 500;
+		color: $black;
+	}
+
+	.section-head {
+		margin-bottom: 49px;
+	}
+
+	@media (max-width: 767px) {
+		& {
+			padding: 45px 0;
+		}
+
+		.section-body {
+			margin-bottom: 50px;
+		}
+	}
+}
+
+/* ------------------------------------------------------------ *\
+	Section Article
+\* ------------------------------------------------------------ */
+
+.section-article {
+	padding: 50px 0;
+}
+
+/* ------------------------------------------------------------ *\
+	Section Watermark
+\* ------------------------------------------------------------ */
+
+.section-watermark {
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: contain;
+}
+
+/* ------------------------------------------------------------ *\
+	Section Modified
+\* ------------------------------------------------------------ */
+
+.section-modified {
+	padding: 69px 0 75px;
+
+	.section-inner {
+		max-width: 1052px;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 768px) {
+		& {
+			padding: 45px 0;
+		}
+	}
+}
+
+/* ------------------------------------------------------------ *\
+	Section Article Simple
+\* ------------------------------------------------------------ */
+
+.section-article-simple {
+	padding: 60px 0 73px;
+
+	@media (max-width: 767px) {
+		padding: 45px 0;
+	}
+}
+
+/* ------------------------------------------------------------ *\
+	Section no padding
+\* ------------------------------------------------------------ */
+
+.section-no-padding {
+	padding: 0;
+}
+
+/* ------------------------------------------------------------ *\
+	Section Article Single
+\* ------------------------------------------------------------ */
+
+.section-article-single {
+	padding: 66px 0 59px;
+
+	@media (max-width: 767px) {
+		padding: 30px 0;
+	}
+}
+
+/* ------------------------------------------------------------ *\
+	Section Solid
+\* ------------------------------------------------------------ */
+
+.section-solid {
+	background: #f1f1f1;
+}
+
+/* ------------------------------------------------------------ *\
+	Section Boxes
+\* ------------------------------------------------------------ */
+
+.section-boxes {
+	padding: 33px 0 23px;
+
+	.section-head {
+		margin-bottom: 27px;
+	}
+
+	.section-title {
+		font-size: 25px;
+		font-weight: 500;
+		color: $primary-dark;
+	}
+
+	.section-body {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -28px -28px;
+	}
+
+	.section-group {
+		display: flex;
+		max-width: 50%;
+		flex: 1 1 50%;
+		padding: 0 28px 28px;
+	}
+
+	@media (max-width: 768px) {
+		.section-group {
+			max-width: 100%;
+			flex: 1 1 100%;
+		}
+	}
+}
+
+/* ------------------------------------------------------------ *\
+	Features Section
+\* ------------------------------------------------------------ */
+
+.features-section {
+    background-color: #F5F6F7;
+    padding: 0px 15px 60px 15px;
+}
+
+/* ------------------------------------------------------------ *\
+	Learn Page
+\* ------------------------------------------------------------ */
+
+.blue-subhead {
+	font-size: 16px;
+	font-color: #141F47;
+
+}
+
+/* ------------------------------------------------------------ *\
+	Software Page
+\* ------------------------------------------------------------ */
+
+.software-icon {
+	float: left;
+	padding-right: 30px;
+	vertical-align: middle;
+}
+
+.box-text{
+	padding-top: 0px;
+}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

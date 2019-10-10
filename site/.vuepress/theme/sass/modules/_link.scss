@@ -1,0 +1,27 @@
+/* ------------------------------------------------------------ *\
+	Link
+\* ------------------------------------------------------------ */
+
+.link {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+
+	@each $name, $pair in $colors {
+		$color: nth($pair, 1);
+
+		&.is-#{$name} {
+			color: #141F47
+		}
+	}
+
+	.ico {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 15px;
+		font-size: 0;
+		line-height: 0;
+	}
+}

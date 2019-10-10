@@ -1,0 +1,18 @@
+/* ------------------------------------------------------------ *\
+	Content
+\* ------------------------------------------------------------ */
+
+.content {
+	max-width: 100%;
+	flex: 1 1 100%;
+
+	@media (max-width: 767px) {
+		&:not(:last-child),
+		& {
+			margin-bottom: 0px;
+		}
+	}
+}
+svg.icon.outbound {
+	display: none;
+}

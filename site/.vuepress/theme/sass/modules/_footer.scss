@@ -1,0 +1,130 @@
+/* ------------------------------------------------------------ *\
+	Footer
+\* ------------------------------------------------------------ */
+
+.footer {
+  padding: 69px 0;
+  font-size: 14px;
+  color: #d5d5d5;
+
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+    $color-invert: nth($pair, 2);
+
+    &.is-#{$name} {
+      background-color: $color;
+      color: $color-invert;
+    }
+  }
+
+  .footer-content {
+    max-width: 450px;
+    flex: 0 0 450px;
+  }
+
+  .footer.is-dark {
+    a {
+      color: $white;
+    }
+  }
+
+  .footer-aside {
+    max-width: 417px;
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .footer-title {
+    margin-bottom: 19px;
+    font-size: 16px;
+    font-weight: 700;
+    color: $white;
+  }
+
+  .footer-list {
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #d5d5d5;
+    margin: 0;
+    a {
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer-brand {
+    padding-right: 5px; 
+  }
+
+  .footer-brand img {
+    width: 100%;
+    min-width: 125px;
+  }
+
+  .footer-entry {
+    margin-bottom: 53px;
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: $white;
+      text-decoration: underline;
+      &:hover,
+      &:focus {
+        color: $primary;
+      }
+    }
+
+    strong {
+      color: inherit;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & {
+      padding: 45px 0;
+    }
+
+    .footer-content,
+    .footer-aside {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .footer-entry {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .columns.is-mobile {
+      flex-wrap: wrap;
+      margin: 0;
+
+      .column {
+        max-width: 100%;
+        flex: 1 1 100%;
+        padding: 0 0 30px;
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    .footer-title {
+      margin-bottom: 7px;
+    }
+
+    .footer-content,
+    .footer-aside {
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+/* ------------------------------------------------------------ *\
+	Button
+\* ------------------------------------------------------------ */
+
+.button {
+  height: auto;
+  padding: 11px 45px;
+  text-transform: uppercase;
+  transition: background 0.3s;
+
+  &.is-rounded {
+    padding: 11px 43px;
+    text-decoration:none;
+  }
+
+  &.is-large {
+    min-width: 224px;
+    padding: 10px 43px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .ico {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    font-size: 0;
+    line-height: 0;
+  }
+
+  &.is-primary {
+    background: $primary;
+    color: white;
+    border: $primary-dark;
+  }
+
+  &.is-primary-dark {
+    background: $primary-dark;
+    color: white;
+    border: $primary-dark;
+  }
+}

@@ -1,0 +1,150 @@
+/* ------------------------------------------------------------ *\
+	Hero
+\* ------------------------------------------------------------ */
+
+.hero {
+	font-size: 20px;
+	line-height: 1.25;
+
+	.hero-title {
+		color: $primary;
+	}
+}
+
+/* ------------------------------------------------------------ *\
+	Hero Intro
+\* ------------------------------------------------------------ */
+
+.hero-intro {
+	.hero-content {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.hero-body {
+		padding: 60px 0 0px;
+		background-color: white;
+	}
+
+	.hero-title {
+		max-width: 50%;
+		padding-right: 24px;
+		font-size: 42px;
+		font-weight: 500;
+	}
+
+	.hero-entry {
+		position: relative;
+		max-width: 460px;
+		padding-left: 36px;
+		color: #4a4a4a;
+		
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 1px;
+			height: 50px;
+			background: #4a4a4a;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.hero-content {
+			display: block;
+		}
+
+		.hero-body {
+			padding: 45px 0;
+		}
+
+		.hero-title {
+			max-width: 100%;
+		}
+
+		.hero-entry {
+			max-width: 100%;
+			padding-left: 0;
+			padding-top: 20px;
+			margin-top: 20px;
+
+			&:before {
+				top: 0;
+				transform: translateY(0%);
+				height: 1px;
+				width: 100px;
+				background: #4a4a4a;
+			}
+		}
+	}
+}
+
+/* ------------------------------------------------------------ *\
+	Hero Main
+\* ------------------------------------------------------------ */
+
+.hero-main {
+	text-align: center;
+
+	.hero-title {
+		font-size: 50px;
+		font-weight: 300;
+		color: $white;
+	}
+
+	.hero-body {
+		padding: 67px 0 65px;
+	}
+
+	.hero-content {
+		max-width: 780px;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 767px) {
+		.hero-title {
+			font-size: 30px;
+		}
+
+		.hero-body {
+			padding: 62px 0;
+		}
+	}
+}
+
+/* ------------------------------------------------------------ *\
+	Hero Image
+\* ------------------------------------------------------------ */
+
+.hero-image {
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	&.is-primary:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+
+	}
+
+	.hero-body {
+		position: relative;
+		z-index: 10;
+	}
+}
+
+.hero-subhead {
+	font-weight: normal;
+	padding-top: 4px;
+	padding-bottom: 35px;
+	font-size: 18px;
+
+}
