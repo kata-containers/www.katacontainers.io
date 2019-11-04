@@ -7,10 +7,10 @@
         </div>
         <!-- /.bar-logo -->
         <div class="bar-entry">
-          <p>Meet the Kata Containers Community at the Open Infrastructure Summit, November 4-6, 2019 in Shanghai, China!</p>
+          <p>Read our latest use case, Application of Kata Containers in Baidu AI Cloud/p>
         </div>
         <!-- /.bar-entry -->
-        <a href="//medium.com/kata-containers/kata-containers-featured-at-open-infrastructure-summit-shanghai-in-november-ad16c78748c1" target="_blank" class="bar-btn">View Sessions</a>
+        <a href="katacontainers.io/baidu" target="_blank" class="bar-btn">Read Now</a>
       </div>
       <!-- /.bar-inner -->
     </div>
