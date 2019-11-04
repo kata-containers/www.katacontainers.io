@@ -10,7 +10,7 @@
           <p>Read our latest use case, Application of Kata Containers in Baidu AI Cloud</p>
         </div>
         <!-- /.bar-entry -->
-        <a href="katacontainers.io/baidu" target="_blank" class="bar-btn">Read Now</a>
+        <a href="https://katacontainers.io/baidu" target="_blank" class="bar-btn">Read Now</a>
       </div>
       <!-- /.bar-inner -->
     </div>
