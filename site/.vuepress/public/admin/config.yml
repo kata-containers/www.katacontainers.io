@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: OpenStackweb/kata-netlify-refresh
+  repo: kata-containers/www.katacontainers.io
   branch: master # Branch to update (optional; defaults to master)
   base_url: https://auth.katacontainers.io
 publish_mode: editorial_workflow
