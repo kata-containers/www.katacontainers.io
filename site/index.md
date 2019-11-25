@@ -1,7 +1,7 @@
 ---
 hero:
   button:
-    title: Get Kata Containers 1.8
+    title: Get Kata Containers 1.9
     url: 'https://github.com/kata-containers/runtime/releases'
   headline: 'The speed of containers, the security of VMs'
 ---
