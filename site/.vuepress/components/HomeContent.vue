@@ -53,7 +53,7 @@
                 <li>
                   <h6>Stay in the loop</h6>
                   <p class="p-simple-item-bullet">Join the mailing list: <a href="http://lists.katacontainers.io">http://lists.katacontainers.io</a> </p>
-                  <p class="p-simple-item-bullet">Slack: <a href="http://bit.ly/KataSlack">bit.ly/KataSlack</a>  
+                  <p class="p-simple-item-bullet">Slack: <a href="http://bit.ly/katacontainersslack">bit.ly/katacontainersslack</a>  
                     IRC: <a href="#kata-dev">#kata-dev</a>
                   </p>
                 </li>
