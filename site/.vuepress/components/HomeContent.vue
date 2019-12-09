@@ -67,7 +67,7 @@
                 <li>
                   <h6>Share your story.</h6>
                   <p>Are you running Kata Containers?</p>
-                  <p class="p-simple-item-bullet">Contact us at <a href="mailto:info@katacontainers.io">info@katacontainers.io</a>
+                  <p class="p-simple-item-bullet">Take the Kata Containers <a href="https://www.surveymonkey.com/r/KataContainers">User Survey!</a>
                   </p>
                 </li>
               </ul>

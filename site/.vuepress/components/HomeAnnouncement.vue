@@ -1,5 +1,5 @@
 <template>
-  <box withActions title="Kata Containers 1.5 Release">
+  <box withActions title="Kata Containers in Production">
     <slot></slot>
 
     <template slot="actions">
