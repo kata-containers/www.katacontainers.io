@@ -1,7 +1,7 @@
 ---
 hero:
   button:
-    title: Get Kata Containers 1.8
+    title: Get Kata Containers 1.9
     url: 'https://github.com/kata-containers/runtime/releases'
   headline: 'The speed of containers, the security of VMs'
 ---
@@ -22,11 +22,9 @@ The Kata Containers community is stewarded by the OpenStack Foundation (OSF), wh
 
 </template>
 
-<home-announcement slot="announcement" button-name="Learn More" link="/learn/">
+<home-announcement slot="announcement" button-name="Take the Survey " link="https://www.surveymonkey.com/r/KataContainers">
 
-In January 2019 the Kata Containers community landed the <a href="https://github.com/kata-containers/runtime/releases/tag/1.5.0">1.5 release</a>, which includes support for the Firecracker hypervisor from AWS, the IBM Z s390x architecture as well as a new method for integrating with the containerd project. 
-
-New hypervisors, new CPU architectures and significant integration improvements!
+Baidu is <a href="https://katacontainers.io/collateral/ApplicationOfKataContainersInBaiduAICloud.pdf">running Kata Containers in production</a> to support Function Computing, Cloud Container Instances, and Edge Computing. Running or evaluating Kata Containers? Share your feedback in our User Survey. 
 
 </home-announcement>
 
