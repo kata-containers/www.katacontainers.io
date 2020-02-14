@@ -41,13 +41,12 @@ collections:
             fields:
               - { label: "Title", name: title, widget: string }
               - { label: "Entry", name: entry, widget: text }
-              - fields:
-                  label: "Link"
-                  name: link
-                  widget: object
-                  fields:
-                    - { label: "URL", name: url, widget: string }
-                    - { label: "Title", name: title, widget: string }
+          - label: "Link"
+            name: link
+            widget: object
+            fields:
+              - { label: "URL", name: url, widget: string }
+              - { label: "Title", name: title, widget: string }
           - label: Body
             name: body
             widget: markdown
