@@ -76,9 +76,9 @@ title: Supporters
   <div class="content-supporter ">
     <img class="img-sponsor-l4" src="/images/logo-suse.svg" alt="title"  /></div>
 
-</div>  <!-- container-supporter -->
+</div>
 
-<div class="container-supporter container-supporter-last">
+<div class="container-supporter">
 
   <div class="content-supporter ">
     <img class="img-sponsor-l3-last" src="/images/logo-netapp.svg" alt="title"  /></div>
@@ -89,7 +89,7 @@ title: Supporters
   <div class="content-supporter ">
     <img class="img-sponsor-l3-last" src="/images/logo-ubuntu.svg" alt="title"  /></div>
 
-</div>  
+</div>  <!-- container-supporter -->
 
 <div class="container-supporter container-supporter-last">
 
