@@ -2,14 +2,12 @@
 description: Advancing Kata Containers and growing the community
 title: Supporters
 ---
-
 <section class="section section-padding-top-0">
 <a href="mailto:info@katacontainers.io" class="button is-primary-dark is-rounded"><span>SUPPORT KATA CONTAINERS</span>
   <span class="ico">
     <img src="../.vuepress/theme/svg/arrow-left.svg" alt="Learn More" />
   </span></a>
 <br/><br/>
-
 
 <div class="container1">
   <h2 class="features">Infrastructure Donors</h2>
@@ -26,7 +24,6 @@ title: Supporters
 
 </div>  <!-- container-supporter -->
 
-
 <div class="container-supporter container-supporter-last">
 
   <div class="content-supporter-lt3 ">
@@ -38,11 +35,9 @@ title: Supporters
 
 </div>  <!-- container-supporter -->
 
-
 <div class="container1">
   <h2 class="features">Companies Supporting Kata Containers</h2>
 </div>
-
 
 <div class="container-supporter">
 
@@ -70,7 +65,6 @@ title: Supporters
 
 </div>  <!-- container-supporter -->
 
-
 <div class="container-supporter">
 
   <div class="content-supporter ">
@@ -95,9 +89,20 @@ title: Supporters
   <div class="content-supporter ">
     <img class="img-sponsor-l3-last" src="/images/logo-ubuntu.svg" alt="title"  /></div>
 
-</div>  <!-- container-supporter -->
+</div>  
 
+<div class="container-supporter container-supporter-last">
 
+  <div class="content-supporter ">
+    <img class="img-sponsor-l3-last" src="/images/logo-att.svg" alt="title"  /></div>
+  <div class="content-supporter ">
+    <img class="img-sponsor-l3-last" src="/images/china-telecom.png" alt="title"  /></div>
+  <div class="content-supporter ">
+    <img class="img-sponsor-l3-last" src="/images/logo-cisco.svg" alt="title"  /></div>
+  <div class="content-supporter ">
+    <img class="img-sponsor-l3-last" src="/images/logo-inspur.svg" alt="title"  /></div>
+
+</div><!-- container-supporter -->
 
 Kata Containers is an open source community stewarded by the OpenStack Foundation (OSF). The Kata Containers community is working to build a secure container runtime with lightweight virtual machines that feel and perform like containers, but provide stronger workload isolation using hardware virtualization technology as a second layer of defense. 
 
@@ -119,7 +124,6 @@ Above are companies that are actively involved in making the Kata Containers pro
 
 </section> 
 
-
 <section class="section bottom-content">
   <div class="search-content">
     <h3 class="search-content-title">Interested in supporting Kata Containers?</h3>
@@ -127,7 +131,4 @@ Above are companies that are actively involved in making the Kata Containers pro
       <span>Contact us at <a href="#">info@katacontainers.io</a></span>
     </div>
   </div>
-</section>  
-
-
-
+</section>
