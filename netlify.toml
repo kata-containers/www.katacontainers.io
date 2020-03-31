@@ -1,3 +1,12 @@
 [build]
-  command = "yarn site:build"
-  publish = "site/.vuepress/dist/"
+  publish = "public"
+  command = "npm run build"
+[build.environment]
+  YARN_VERSION = "1.13.0"
+  YARN_FLAGS = "--no-ignore-optional"
+[[redirects]]
+  from = "/baidu"
+  to = "/collateral/ApplicationOfKataContainersInBaiduAICloud.pdf"
+[[redirects]]
+  from = "/baiducn"
+  to = "/collateral/Kata Containers在百度智能云的应用实践.pdf"

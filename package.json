@@ -1,27 +1,60 @@
 {
-  "devDependencies": {
-    "eslint-config-prettier": "^3.1.0",
-    "eslint-plugin-prettier": "^2.6.2",
-    "vuepress": "^0.14.11"
-  },
-  "scripts": {
-    "site:dev": "vuepress dev site",
-    "site:build": "vuepress build site"
-  },
-  "eslintConfig": {
-    "root": true,
-    "extends": [
-      "plugin:vue/essential",
-      "plugin:prettier/recommended",
-      "eslint:recommended"
-    ]
-  },
+  "name": "katacontainers-website",
+  "description": "www.katacontainers.io",
+  "version": "1.0.0",
+  "author": "OpenStack Foundation",
   "dependencies": {
-    "axios": "^0.18.1",
-    "buefy": "^0.7.0",
-    "eslint": "^5.6.0",
+    "@ncwidgets/file-relation": "^0.5.0",
+    "@ncwidgets/id": "^0.5.1",
+    "axios": "^0.19.2",
+    "bulma": "^0.8.0",
+    "gatsby": "^2.20.2",
+    "gatsby-cli": "^2.11.0",
+    "gatsby-image": "^2.3.0",
+    "gatsby-plugin-google-analytics": "^2.2.0",
+    "gatsby-plugin-google-gtag": "^1.2.1",
+    "gatsby-plugin-manifest": "^2.3.1",
+    "gatsby-plugin-netlify": "^2.2.0",
+    "gatsby-plugin-netlify-cms": "^4.2.0",
+    "gatsby-plugin-offline": "^3.1.0",
+    "gatsby-plugin-purgecss": "^4.0.0",
+    "gatsby-plugin-react-helmet": "^3.2.0",
+    "gatsby-plugin-sass": "^2.2.0",
+    "gatsby-plugin-sharp": "^2.5.1",
+    "gatsby-remark-copy-linked-files": "^2.2.0",
+    "gatsby-remark-images": "^3.2.0",
+    "gatsby-remark-images-medium-zoom": "^1.4.0",
+    "gatsby-remark-relative-images": "^0.2.1",
+    "gatsby-source-filesystem": "^2.2.1",
+    "gatsby-source-medium": "^2.2.0",
+    "gatsby-transformer-remark": "^2.7.0",
+    "gatsby-transformer-sharp": "^2.4.1",
+    "lodash": "^4.17.15",
+    "lodash-webpack-plugin": "^0.11.4",
     "moment": "^2.24.0",
-    "node-sass": "^4.9.3",
-    "sass-loader": "^7.1.0"
+    "netlify-cms-app": "2.9.7",
+    "node-sass": "^4.11.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^5.2.0",
+    "react-medium-image-zoom": "^4.3.0",
+    "uuid": "^3.2.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "clean": "gatsby clean",
+    "start": "npm run develop",
+    "build": "npm run clean && gatsby build",
+    "develop": "npm run clean && gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.15.3"
   }
 }

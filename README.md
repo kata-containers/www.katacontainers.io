@@ -1,85 +1,108 @@
 # Kata Containers website
 
-This is the public repo to mantain the Kata Containers website at katacontainers.io.
+This is the public repo to mantain the Kata Containers website at [katacontainers.io](katacontainers.io).
 
 ## Overview
 
-katacontainers.io is based on Vuepress + Netlify CMS.
+katacontainers.io is built using [starter template](https://github.com/netlify-templates/gatsby-starter-netlify-cms), based on [Gatsby](https://www.gatsbyjs.org/) and [Netlify CMS](https://www.netlifycms.org).
 
-Vuepress is a minimalistic Vue-powered static site generator. Netlify CMS is unique type of CMS that edits site content as static markdown files via git, but using a friendly and familair CMS interface. (CMS users do not have to use or understand git directly.) Bulma is used for CSS, extended with Buefy for lightweight UI components.
+It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
 
-- [Vuepress](https://vuepress.vuejs.org/)
-- [Netlify CMS](https://www.netlifycms.org)
-- [Bulma](https://bulma.io)
-- [Buefy](https://buefy.github.io)
+## Prerequisites
 
-To request changes, [submit an issue](https://github.com/StarlingXWeb/starlingx-website/issues) or [submit a pull request](https://github.com/StarlingXWeb/starlingx-website/pulls).
+- Node (v8.2.0 or higher)
+- [Gatsby CLI](https://www.gatsbyjs.org/tutorial/part-zero/#using-the-gatsby-cli)
+- [Netlify CLI](https://github.com/netlify/cli)
 
-## Install locally (Alternative)
+## Setup
 
-### Prerequesites
-Brew
-Node
+Install yarn on your system: [https://yarnpkg.com/en/docs/install](https://yarnpkg.com/en/docs/install)
 
-### Install vuepress
+## Deploy to Netlify (option A)
+
+Use the button below to build and deploy your own copy of the repository:
+
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/kata-containers/katacontainers.io-netlify&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+
+After clicking that button, you’ll authenticate with GitHub and choose a repository name. Netlify will then automatically create a repository in your GitHub account with a copy of the files from this repository. Next, it will build and deploy the new site on Netlify, bringing you to the site dashboard when the build is complete. Next, you’ll need to set up Netlify’s Identity service to authorize users to log in to the CMS.
+
+### Access Locally
+
+Pulldown a local copy of the Github repository Netlify created for you, with the name you specified in the previous step
 ```
-brew update
-brew install yarn
-yarn install
-```
-### Access locally
-```
-yarn run site:dev
-```
-
----
-
-## Install locally (Original)
-### Prerequesites
-Node
-
-### Install vuepress globally
-```
-$ npm install -g vuepress
+$ git clone https://github.com/[GITHUB_USERNAME]/[REPO_NAME].git
+$ cd [REPO_NAME]
+$ yarn
+$ netlify dev # or ntl dev
 ```
 
-### Install npm packages
-```
-$ npm install
-```
+This uses [Netlify Dev](https://www.netlify.com/products/dev) CLI feature to serve any functions you have in the `lambda` folder.
 
-### Access locally
-```
-$ vuepress dev site
-```
-
-## Install locally Using Brew
-
-### Prerequesites
-
-Brew
-
-### Install vuepress 
+To test the CMS locally, you'll need run a production build of the site:
 
 ```
-$ brew update
-$ brew install yarn
-$ yarn install
+$ npm run build
+$ netlify dev # or ntl dev
 ```
 
-### Access globally
+## Install locally (option B)
 
+```sh
+$ git clone https://github.com/kata-containers/katacontainers.io-netlify
+$ yarn 
 ```
-$ yarn run site:dev
+
+## Available scripts
+
+### `build`
+
+Build the static files into the `public` folder, turns lambda functions into a deployable form. 
+
+#### Usage
+
+```sh
+$ yarn build
 ```
 
-## File guidance
+### `clean`
 
-- Most pages can be found in `/site/` under their corresponding folder name. You can make changes to the `.md` file using markdown or html. The frontmatter must be YAML.
-- Home page content can be found in `/index.md`, with the majority being editable in the frontmatter.
-- Blog posts can be created by adding a markdown file to `/site/blog/`. Don't forget the frontmatter, including the title, author, date and category. For now, authors must match filenames under `/site/authors/`. For example `author: first-last` assumiing the filename is `first-last.md`.
-- HTML for each templates can be found in `/site/.vuepress/components/` as `.vue` files.
-- All CSS and Sass files are in `/site/.vuepress/theme/`
-- Public images should be placed in `/site/.vuepress/public/images/` and can be referenced as `/images/filename`
-- Header and footer navigation are stored in JSON. Header nav can be found at `/site/pages.json` and footer nav is at `/site/footer-nav.json`.
-- We are storing public facing documents such as collateral and slide templates in `/site/.vuepress/public/` in the `collateral` and `templates` folders, respectively.
+Runs `gatsby clean` command.
+
+#### Usage
+
+```sh
+yarn clean
+```
+
+### `netlify dev`
+
+Starts the netlify dev environment, including the gatsby dev environment.
+For more info check the [Netlify Dev Docs](https://github.com/netlify/cli/blob/master/docs/netlify-dev.md)
+
+```sh
+netlify dev
+```
+
+### `develop` or `start`
+
+Runs the `clean` script and starts the gatsby develop server using the command `gatsby develop`. We recomend using this command when you don't need Netlify specific features
+
+#### Usage
+
+```sh
+yarn develop
+```
+
+### `format`
+
+Formats code and docs according to our style guidelines using `prettier`
+
+#### Usage
+
+```sh
+yarn format
+```
+
+## Pull Requests
+
+To request changes, [submit an issue](https://github.com/kata-containers/katacontainers.io-netlify/issues) or [submit a pull request](https://github.com/kata-containers/katacontainers.io-netlify/pulls).

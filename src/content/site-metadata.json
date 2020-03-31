@@ -1,0 +1,11 @@
+{
+  "siteMetadata": {
+    "title": "Kata Containers",
+    "titleTemplate": "%s | Kata Containers",
+    "description": "Kata Containers is an open source container runtime, building lightweight virtual machines that seamlessly plug into the containers ecosystem.",
+    "url": "https://katacontainers.io/",
+    "image": "/img/og-image.jpg",
+    "twitterUsername": "@katacontainers",
+    "themeColor": "#f15b3e"
+  }
+}
