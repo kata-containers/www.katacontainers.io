@@ -1,36 +1,35 @@
 ---
 templateKey: learn-page
 seo:
-  title: Learn
   description: An overview of the Kata Containers project
-  url: https://katacontainers.io/
   image: /img/og-image.jpg
-  twitterUsername: "@katacontainers"
-path: /learn
+  title: Learn
+  twitterUsername: '@katacontainers'
+  url: 'https://katacontainers.io/'
 title: Learn
 subTitle: An overview of the Kata Containers project
-intro: 
-  text: >
-      Kata Containers are as light and fast as containers and integrate with the container management 
-      layers—including popular orchestration tools such as Docker and Kubernetes (k8s)—while also 
-      delivering the security advantages of VMs.
+intro:
   buttons:
-    - text: project overview
-      link: /collateral/kata-containers-1pager.pdf
-    - text: latest software release
-      link: https://github.com/kata-containers/runtime/releases
-  gallery:    
-    - image: /img/katacontainers_architecture_diagram.jpg
-      alt: Architecture diagram
-    - image: /img/katacontainers_traditionalvskata_diagram.jpg
-      alt: Traditional vs Kata diagram
+    - link: /collateral/kata-containers-1pager.pdf
+      text: project overview
+    - link: 'https://github.com/kata-containers/runtime/releases'
+      text: latest software release
+  gallery:
+    - alt: Architecture diagram
+      image: /img/katacontainers_architecture_diagram.jpg
+    - alt: Traditional vs Kata diagram
+      image: /img/katacontainers_traditionalvskata_diagram.jpg
+  text: >
+    Kata Containers are as light and fast as containers and integrate with the
+    container management  layers—including popular orchestration tools such as
+    Docker and Kubernetes (k8s)—while also  delivering the security advantages
+    of VMs.
   videos:
     - title: Kata Containers Project Update
-      url: https://www.youtube.com/embed/FZr1v08Oyic
+      url: 'https://www.youtube.com/embed/FZr1v08Oyic'
     - title: An Intro to Kata Containers
-      url: https://www.youtube.com/embed/4gmLXyMeYWI
+      url: 'https://www.youtube.com/embed/4gmLXyMeYWI'
 ---
-
 ## Demos
 
 * [Kata Containers configured in CRIO + K8s, utilizing both QEMU & Firecracker](https://asciinema.org/a/219790)
@@ -71,7 +70,7 @@ Kata Containers is open source and licensed under the Apache 2.0 license, which 
 
 #### Where is the code?
 
-You can find the code at [github.com/kata-containers](https://github.com/kata-containers). You won't see much yet, as Clean Containers and runV cores are currently merging the code bases, but you can expect Kata Containers code to be ready around the end of Q2 2018. You can find links to the original repositories from Intel and Hyper.sh on the [katacontainers.io](https://katacontainers.io) homepage.
+You can find the code at [github.com/kata-containers](https://github.com/kata-containers). You can find links to the original repositories from Intel and Hyper.sh on the [katacontainers.io](https://katacontainers.io) homepage.
 
 #### Can I contribute to it?
 
