@@ -1,7 +1,7 @@
 ---
 templateKey: learn-page
 seo:
-  description: Learn about the Kata Containers project
+  description: An overview of the Kata Containers project
   image: /img/og-image.jpg
   title: Learn
   twitterUsername: '@katacontainers'
