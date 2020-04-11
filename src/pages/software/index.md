@@ -43,7 +43,7 @@ integration:
       - title: Architecture support
         row:
           - text: X86_64
-          - text: arch64
+          - text: aarch64
           - text: ppc64le
           - text: s390x
       - title: Hardware support
