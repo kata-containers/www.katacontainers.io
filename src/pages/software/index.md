@@ -39,10 +39,10 @@ integration:
         row:
           - text: Firecracker
           - text: QEMU
-          - text: NEMU
+          - text: Cloud Hypervisor
       - title: Architecture support
         row:
-          - text: X86_64
+          - text: x86_64
           - text: aarch64
           - text: ppc64le
           - text: s390x
