@@ -10,3 +10,6 @@
 [[redirects]]
   from = "/baiducn"
   to = "/collateral/Kata Containers在百度智能云的应用实践.pdf"
+[[redirects]]
+  from = "/blog"
+  to = "https://medium.com/kata-containers"
