@@ -39,11 +39,11 @@ integration:
         row:
           - text: Firecracker
           - text: QEMU
-          - text: NEMU
+          - text: Cloud Hypervisor
       - title: Architecture support
         row:
-          - text: X86_64
-          - text: arch64
+          - text: x86_64
+          - text: aarch64
           - text: ppc64le
           - text: s390x
       - title: Hardware support
@@ -65,7 +65,7 @@ determine if your host system is capable of running a Kata Container. [Learn how
     <div class="box is-primary-blue">
       <h4 class="box-title">Distributions</h4> 
       <div class="box-entry">
-        Kata Containers is available on many distributions. View the [distro specific install guides] () for: <br /> 
+        Kata Containers is available on many distributions. View the [distro specific install guides](https://github.com/kata-containers/documentation/tree/master/install) for: <br /> 
         <div class="columns">
           <div class="column">
             <ul>
