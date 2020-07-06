@@ -111,7 +111,7 @@ companies:
       image: /img/awcloud.png
     - alt: G Research
       class: img-sponsor-l4
-      image: /img/g-research-member.svg
+      image: /img/g-research-lg.svg
     - alt: JIT Stack
       class: img-sponsor-l4
       image: /img/jitstack-logo-lg.jpg
@@ -126,7 +126,7 @@ companies:
       image: /img/click2cloud.jpg
     - alt: Ampere
       class: img-sponsor-l4
-      image: /img/ampere_computing_logo.svg
+      image: /img/ampere_computing_lg.svg
   title: Companies Supporting Kata Containers
 support:
   button:
