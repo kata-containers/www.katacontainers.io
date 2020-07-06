@@ -106,6 +106,27 @@ companies:
     - alt: Troila
       class: img-sponsor-l4
       image: /img/troila-new-lg.jpg
+    - alt: AWCloud
+      class: img-sponsor-l4
+      image: /img/awcloud.png
+    - alt: G Research
+      class: img-sponsor-l4
+      image: /img/g-research-member.svg
+    - alt: JIT Stack
+      class: img-sponsor-l4
+      image: /img/jitstack-logo-lg.jpg
+    - alt: Pure Storage
+      class: img-sponsor-l4
+      image: /img/pure-storage-vector-logo.svg
+    - alt: Vexxhost
+      class: img-sponsor-l4
+      image: /img/vexxhost.svg
+    - alt: Click2Cloud
+      class: img-sponsor-l4
+      image: /img/click2cloud.jpg
+    - alt: Ampere
+      class: img-sponsor-l4
+      image: /img/ampere_computing_logo.svg
   title: Companies Supporting Kata Containers
 support:
   button:
