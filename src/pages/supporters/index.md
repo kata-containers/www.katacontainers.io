@@ -130,4 +130,4 @@ support:
     Above are companies that are actively involved in making the Kata Containers
     project successful.
 ---
-.
+
