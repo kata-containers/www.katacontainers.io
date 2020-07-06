@@ -1,116 +1,133 @@
 ---
-templateKey: 'supporters-page'
-path: /supporters
+templateKey: supporters-page
 seo:
-  title: Supporters
   description: Advancing Kata Containers and growing the community
-  url: https://katacontainers.io/
   image: /img/og-image.jpg
-  twitterUsername: "@katacontainers"
+  title: Supporters
+  twitterUsername: '@katacontainers'
+  url: 'https://katacontainers.io/'
 title: Supporters
 subTitle: Advancing Kata Containers and growing the community
 buttons:
-  - text: support kata containers
-    link: mailto:info@katacontainers.io
+  - link: 'mailto:info@katacontainers.io'
+    text: support kata containers
 donors:
-  title: Infrastructure Donors
   list:
-    - image: /img/logo-google-cloud.svg
-      alt: Google Cloud
-      link: https://cloud.google.com/
+    - alt: Google Cloud
       class: img-sponsor-l3
-    - image: /img/logo-microsoft.svg
-      alt: Microsoft
-      link: https://www.microsoft.com/
+      image: /img/logo-google-cloud.svg
+      link: 'https://cloud.google.com/'
+    - alt: Microsoft
       class: img-sponsor-l3
-    - image: /img/logo-vexxhost.svg
-      alt: Vexxhost
-      link: https://vexxhost.com/
+      image: /img/logo-microsoft.svg
+      link: 'https://www.microsoft.com/'
+    - alt: Vexxhost
       class: img-sponsor-l3
-    - image: /img/logo-amazon.svg
-      alt: AWS
-      link: https://aws.amazon.com/
+      image: /img/logo-vexxhost.svg
+      link: 'https://vexxhost.com/'
+    - alt: AWS
       class: img-sponsor-l2
-    - image: /img/logo-packagecloud.png
-      alt: packagecloud
-      link: https://packagecloud.io/
-      class: ''
-    - image: /img/logo-packet.svg
-      alt: packet
-      link: https://www.packet.com/
-      class: ''
+      image: /img/logo-amazon.svg
+      link: 'https://aws.amazon.com/'
+    - alt: packagecloud
+      class: img-sponsor-l2
+      image: /img/logo-packagecloud.png
+      link: 'https://packagecloud.io/'
+    - alt: packet
+      class: img-sponsor-l2
+      image: /img/logo-packet.svg
+      link: 'https://www.packet.com/'
+  title: Infrastructure Donors
 companies:
-  title: Companies Supporting Kata Containers
   list:
-    - image: /img/logo-intel.png
-      alt: Intel
-      class: ''
-    - image: /img/logo-huawei.svg
-      alt: Huawei
-      class: ''
-    - image: /img/logo-dell.svg
-      alt: Dell
-      class: ''
-    - image: /img/logo-redhat.svg
-      alt: Red Hat
-      class: ''
-    - image: /img/logo-tencent.jpg
-      alt: Tencent
-      class: ''
-    - image: /img/logo-99cloud.jpg
-      alt: 99 Cloud
-      class: ''
-    - image: /img/logo-china.svg
-      alt: China Mobile
-      class: ''
-    - image: /img/logo-citynetwork.svg
-      alt: City Network
-      class: ''
-    - image: /img/logo-united.svg
-      alt: United Stack
-      class: 'img-sponsor-l4'
-    - image: /img/logo-zte.svg
-      alt: ZTE
-      class: 'img-sponsor-l4'
-    - image: /img/logo-mirantis.png
-      alt: Mirantis
-      class: 'img-sponsor-l4'
-    - image: /img/logo-suse.svg
-      alt: Suse
-      class: 'img-sponsor-l4'
-    - image: /img/logo-netapp.svg
-      alt: NetApp
-      class: 'img-sponsor-l3-last'
-    - image: /img/logo-easy.svg
-      alt: EasyStack
-      class: 'img-sponsor-l3-last'
-    - image: /img/logo-fiberhome.png
-      alt: FiberHome
-      class: 'img-sponsor-l3-last'
-    - image: /img/logo-ubuntu.svg
-      alt: Ubuntu
-      class: 'img-sponsor-l3-last'
-    - image: /img/logo-att.svg
-      alt: AT&T
-      class: 'img-sponsor-l3-last'
-    - image: /img/china-telecom.png
-      alt: China Telecom
-      class: 'img-sponsor-l3-last'
-    - image: /img/logo-cisco.svg
-      alt: CISCO
-      class: 'img-sponsor-l3-last'
-    - image: /img/logo-inspur.svg
-      alt: Inspur
-      class: 'img-sponsor-l3-last'
+    - alt: Intel
+      class: img-sponsor-l4
+      image: /img/logo-intel.png
+    - alt: Huawei
+      class: img-sponsor-l4
+      image: /img/logo-huawei.svg
+    - alt: Dell
+      class: img-sponsor-l4
+      image: /img/logo-dell.svg
+    - alt: Red Hat
+      class: img-sponsor-l4
+      image: /img/logo-redhat.svg
+    - alt: Tencent
+      class: img-sponsor-l4
+      image: /img/logo-tencent.jpg
+    - alt: 99 Cloud
+      class: img-sponsor-l4
+      image: /img/logo-99cloud.jpg
+    - alt: China Mobile
+      class: img-sponsor-l4
+      image: /img/logo-china.svg
+    - alt: City Network
+      class: img-sponsor-l4
+      image: /img/logo-citynetwork.svg
+    - alt: United Stack
+      class: img-sponsor-l4
+      image: /img/logo-united.svg
+    - alt: ZTE
+      class: img-sponsor-l4
+      image: /img/logo-zte.svg
+    - alt: Mirantis
+      class: img-sponsor-l4
+      image: /img/logo-mirantis.png
+    - alt: Suse
+      class: img-sponsor-l4
+      image: /img/logo-suse.svg
+    - alt: NetApp
+      class: img-sponsor-l3-last
+      image: /img/logo-netapp.svg
+    - alt: EasyStack
+      class: img-sponsor-l3-last
+      image: /img/logo-easy.svg
+    - alt: FiberHome
+      class: img-sponsor-l3-last
+      image: /img/logo-fiberhome.png
+    - alt: Ubuntu
+      class: img-sponsor-l3-last
+      image: /img/logo-ubuntu.svg
+    - alt: AT&T
+      class: img-sponsor-l3-last
+      image: /img/logo-att.svg
+    - alt: China Telecom
+      class: img-sponsor-l3-last
+      image: /img/china-telecom.png
+    - alt: CISCO
+      class: img-sponsor-l3-last
+      image: /img/logo-cisco.svg
+    - alt: Inspur
+      class: img-sponsor-l3-last
+      image: /img/logo-inspur.svg
+    - alt: China Unicom
+      class: img-sponsor-l4
+      image: /img/china-unicom-logo.svg
+    - alt: Troila
+      class: img-sponsor-l4
+      image: /img/troila-new-lg.jpg
+  title: Companies Supporting Kata Containers
 support:
-  text: Kata Containers is an open source community stewarded by the OpenStack Foundation (OSF). The Kata Containers community is working to build a secure container runtime with lightweight virtual machines that feel and perform like containers, but provide stronger workload isolation using hardware virtualization technology as a second layer of defense.     
-  text2: Above are companies that are actively involved in making the Kata Containers project successful.
   button:
+    link: 'mailto:info@katacontainers.io'
     text: SUPPORT KATA CONTAINERS
-    link: mailto:info@katacontainers.io
   list:
     - text: Support the Kata Containers community and enable it to grow and thrive
-    - text: Recognition of your support with Supporter logo placement on katacontainers.io
+    - text: >-
+        Recognition of your support with Supporter logo placement on
+        katacontainers.io
     - text: Notification of Kata Containers project news and updates
-    - text: Marketing support from OpenStack Foundation via press releases and providing quotes when your company promotes Kata Containers  
+    - text: >-
+        Marketing support from OpenStack Foundation via press releases and
+        providing quotes when your company promotes Kata Containers
+  text: >-
+    Kata Containers is an open source community stewarded by the OpenStack
+    Foundation (OSF). The Kata Containers community is working to build a secure
+    container runtime with lightweight virtual machines that feel and perform
+    like containers, but provide stronger workload isolation using hardware
+    virtualization technology as a second layer of defense.
+  text2: >-
+    Above are companies that are actively involved in making the Kata Containers
+    project successful.
 ---
+.
