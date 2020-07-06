@@ -30,11 +30,11 @@ donors:
       image: /img/logo-amazon.svg
       link: 'https://aws.amazon.com/'
     - alt: packagecloud
-      class: img-sponsor-l2
+      class: img-sponsor-l3
       image: /img/logo-packagecloud.png
       link: 'https://packagecloud.io/'
     - alt: packet
-      class: img-sponsor-l2
+      class: img-sponsor-l3
       image: /img/logo-packet.svg
       link: 'https://www.packet.com/'
   title: Infrastructure Donors
