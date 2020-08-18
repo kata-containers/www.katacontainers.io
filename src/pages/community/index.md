@@ -12,9 +12,6 @@ subTitle: Join to contribute code, documentation, and use cases
 blogUrl: https://medium.com/kata-containers/
 ---
 
-
----
-
 Kata Containers is open source, which means it relies on contributors like you! All areas of Kata Containers are open for contribution. Here is some useful information.
 
 ## How to Contribute

@@ -4,7 +4,6 @@ import { withPrefix, graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import BlogPosts from '../components/BlogPosts'
 
 import metadata from '../content/site-metadata.json'
 
@@ -50,7 +49,6 @@ export const CommunityPageTemplate = ({ seo, title, subTitle, blogUrl, content, 
         <div className="container container-thin">
           <div className="section-body">
             <article className="article-simple default-page">
-              <BlogPosts blogUrl={blogUrl}/>
               <PageContent className="content" content={content} />
             </article>
           </div> 
