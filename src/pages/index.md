@@ -4,7 +4,7 @@ seo:
   description: >-
     Kata Containers is an open source container runtime, building lightweight virtual machines that seamlessly plug into the containers ecosystem.
   image: /img/android-chrome-192x192.png
-  title: Kata Containers: Open Source Container Runtime Software
+  title: Kata Containers - Open Source Container Runtime Software
   twitterUsername: '@katacontainers'
   url: 'https://katacontainers.io/'
 header:
