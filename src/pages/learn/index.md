@@ -1,9 +1,9 @@
 ---
 templateKey: learn-page
 seo:
-  description: An overview of the Kata Containers project
-  image: /img/og-image.jpg
-  title: Learn
+  description: Kata Containers perform like containers, but provide the workload isolation and security advantages of VMs. It combines the benefits of containers and VMs.
+  image: /img/android-chrome-192x192.png
+  title: Learn About the Kata Containers Project
   twitterUsername: '@katacontainers'
   url: 'https://katacontainers.io/'
 title: Learn

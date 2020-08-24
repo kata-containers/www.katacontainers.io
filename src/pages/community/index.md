@@ -2,10 +2,10 @@
 templateKey: 'community-page'
 path: /community
 seo:
-  title: Community
-  description: Join to contribute code, documentation, and use cases.
-  url: https://katacontainers.io/
-  image: /img/og-image.jpg
+  title: Community: Contribute Code, Documentation, Use Cases - Kata Containers
+  description: Kata Containers is open source, which means it relies on contributors like you! All areas of the Kata Containers community are open for contribution.
+  url: https://katacontainers.io/community/
+  image: /img/android-chrome-192x192.png
   twitterUsername: "@katacontainers"
 title: Community
 subTitle: Join to contribute code, documentation, and use cases

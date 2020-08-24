@@ -1,10 +1,10 @@
 ---
 templateKey: 'docs-page'
 seo:
-  title: Docs
-  description: Start here
-  url: https://katacontainers.io/
-  image: /img/og-image.jpg
+  title: Technical Documentation - Tech Docs - Kata Containers
+  description: Understand the basics, contribute to and try using Kata Containers.
+  url: https://katacontainers.io/docs/
+  image: /img/android-chrome-192x192.png
   twitterUsername: "@katacontainers"
 title: Docs
 subTitle: Start here

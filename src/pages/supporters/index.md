@@ -1,11 +1,11 @@
 ---
 templateKey: supporters-page
 seo:
-  description: Advancing Kata Containers and growing the community
-  image: /img/og-image.jpg
-  title: Supporters
+  description: The Kata Containers community is supported by a global group of organizations and infrastructure donors.
+  image: /img/android-chrome-192x192.png
+  title: Supporting Companies and Infrastructure Donors - Kata Containers
   twitterUsername: '@katacontainers'
-  url: 'https://katacontainers.io/'
+  url: 'https://katacontainers.io/supporters/'
 title: Supporters
 subTitle: Advancing Kata Containers and growing the community
 buttons:

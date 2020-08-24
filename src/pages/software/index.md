@@ -2,10 +2,10 @@
 templateKey: 'software-page'
 path: /software
 seo:
-  title: Software
-  description: Development activities in Kata Containers
-  url: https://katacontainers.io/
-  image: /img/og-image.jpg
+  title: Container Virtualization - Open Source VM Software - Kata Containers
+  description: Kata Containers is Apache 2 licensed open source software consisting of six components: Agent, Runtime, Proxy, Shim, Kernel and packaging of QEMU 2.11.
+  url: https://katacontainers.io/software/
+  image: /img/android-chrome-192x192.png
   twitterUsername: "@katacontainers"
 title: Software
 subTitle: Development activities in Kata Containers
