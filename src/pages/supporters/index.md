@@ -1,7 +1,9 @@
 ---
 templateKey: supporters-page
 seo:
-  description: The Kata Containers community is supported by a global group of organizations and infrastructure donors.
+  description: >-
+    The Kata Containers community is supported by a global group of
+    organizations and infrastructure donors.
   image: /img/android-chrome-192x192.png
   title: Supporting Companies and Infrastructure Donors - Kata Containers
   twitterUsername: '@katacontainers'
@@ -42,7 +44,7 @@ companies:
   list:
     - alt: Intel
       class: img-sponsor-l4
-      image: /img/logo-intel.png
+      image: /img/intel-lg.png
     - alt: Huawei
       class: img-sponsor-l4
       image: /img/logo-huawei.svg
