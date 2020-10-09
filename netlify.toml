@@ -13,3 +13,5 @@
 [[redirects]]
   from = "/blog"
   to = "https://medium.com/kata-containers"
+  status = 301
+  force = true
