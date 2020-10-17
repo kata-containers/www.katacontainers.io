@@ -84,7 +84,7 @@ Yes! Kata Containers is open source, which means it relies on contributors like 
 
 #### How is Kata Containers governed?
 
-Kata Containers is driven by an Architecture Committee. The Architecture Committee, whose members are elected by contributors, oversees architectural decisions, including standardization, and resolves technical disagreements between project maintainers. Kata Containers is managed by the OpenStack Foundation, which provides event organization, code of conduct management, and other administrative support.
+Kata Containers is driven by an Architecture Committee. The Architecture Committee, whose members are elected by contributors, oversees architectural decisions, including standardization, and resolves technical disagreements between project maintainers. Kata Containers is managed by the Open Infrastructure Foundation, which provides event organization, code of conduct management, and other administrative support.
 
 #### Are there Kata meetups?
 
@@ -92,4 +92,4 @@ We don't have any scheduled yet, but you can expect to see some on the calendar 
 
 #### Is this an OpenStack project?
 
-Kata Containers is managed by the OpenStack Foundation, but is not a part of the OpenStack cloud infrastructure project. From a technical perspective, Kata Containers can be run on OpenStack, but can also be run on other cloud solutions like Azure and Google Cloud Platform. The OpenStack Foundation brings its 8 years of open source project and community management to this new project to provide community support, technical structure, and event management.
+Kata Containers is managed by the Open Infrastructure Foundation, but is not a part of the OpenStack cloud infrastructure project. From a technical perspective, Kata Containers can be run on OpenStack, but can also be run on other cloud solutions like Azure and Google Cloud Platform. The Open Infrastructure Foundation brings its 8 years of open source project and community management to this new project to provide community support, technical structure, and event management.

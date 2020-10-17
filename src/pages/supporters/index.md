@@ -141,7 +141,7 @@ support:
         katacontainers.io
     - text: Notification of Kata Containers project news and updates
     - text: >-
-        Marketing support from OpenStack Foundation via press releases and
+        Marketing support from Open Infrastructure Foundation via press releases and
         providing quotes when your company promotes Kata Containers
   text: >-
     Kata Containers is an open source community stewarded by the OpenStack
