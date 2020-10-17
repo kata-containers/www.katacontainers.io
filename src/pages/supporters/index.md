@@ -144,8 +144,8 @@ support:
         Marketing support from Open Infrastructure Foundation via press releases and
         providing quotes when your company promotes Kata Containers
   text: >-
-    Kata Containers is an open source community stewarded by the OpenStack
-    Foundation (OSF). The Kata Containers community is working to build a secure
+    Kata Containers is an open source community stewarded by the Open Infrastructure
+    Foundation (OIF). The Kata Containers community is working to build a secure
     container runtime with lightweight virtual machines that feel and perform
     like containers, but provide stronger workload isolation using hardware
     virtualization technology as a second layer of defense.
