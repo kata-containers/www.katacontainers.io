@@ -45,7 +45,7 @@ const Footer = class extends React.Component {
                 <div className="footer-aside">
                   <div className="footer-entry">
                     <p>
-                      Kata Containers is an independent open source community collaboratively developing code under the Apache 2 license. The project is supported by the OpenStack Foundation; the community follows the OpenStack Foundation <OutboundLink href="https://www.openstack.org/legal/community-code-of-conduct/">Code of Conduct</OutboundLink>.
+                      Kata Containers is an independent open source community collaboratively developing code under the Apache 2 license. The project is supported by the Open Infrastructure Foundation; the community follows the Open Infrastructure Foundation <OutboundLink href="https://www.openstack.org/legal/community-code-of-conduct/">Code of Conduct</OutboundLink>.
                     </p>
                   </div> 
                   <div className="footer-brand">
