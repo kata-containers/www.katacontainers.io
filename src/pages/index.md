@@ -2,15 +2,16 @@
 templateKey: index-page
 seo:
   description: >-
-    Kata Containers is an open source container runtime, building lightweight virtual machines that seamlessly plug into the containers ecosystem.
+    Kata Containers is an open source container runtime, building lightweight
+    virtual machines that seamlessly plug into the containers ecosystem.
   image: /img/android-chrome-192x192.png
   title: Kata Containers - Open Source Container Runtime Software
   twitterUsername: '@katacontainers'
   url: 'https://katacontainers.io/'
 header:
   buttons:
-    - link: 'https://github.com/kata-containers/runtime/releases'
-      text: Get the Latest Release
+    - link: 'https://github.com/kata-containers/kata-containers/releases/tag/2.0.0'
+      text: Get the Kata 2.0 release
   image: /img/hero-image.jpg
   subTitle: >-
     Kata Containers is an open source container runtime, building lightweight 
@@ -31,7 +32,8 @@ mainpitch:
         supports multiple hypervisors including QEMU, NEMU and Firecracker and
         integrates with the containerd project among others.
     - text: >-
-        The Kata Containers community is stewarded by the Open Infrastructure Foundation, which supports the development and adoption of open
+        The Kata Containers community is stewarded by the Open Infrastructure
+        Foundation, which supports the development and adoption of open
         infrastructure globally. The code is hosted at GitHub under the Apache 2
         license.
   image: /img/kata-explained1@2x.png
