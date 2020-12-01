@@ -1,15 +1,16 @@
 ---
-templateKey: 'community-page'
-path: /community
+templateKey: community-page
 seo:
-  title: Community - Contribute Code, Documentation, Use Cases - Kata Containers
-  description: Kata Containers is open source, which means it relies on contributors like you! All areas of the Kata Containers community are open for contribution.
-  url: https://katacontainers.io/community/
+  description: >-
+    Kata Containers is open source, which means it relies on contributors like
+    you! All areas of the Kata Containers community are open for contribution.
   image: /img/android-chrome-192x192.png
-  twitterUsername: "@katacontainers"
+  title: 'Community - Contribute Code, Documentation, Use Cases - Kata Containers'
+  twitterUsername: '@katacontainers'
+  url: 'https://katacontainers.io/community/'
 title: Community
-subTitle: Join to contribute code, documentation, and use cases
-blogUrl: https://medium.com/kata-containers/
+subTitle: 'Join to contribute code, documentation, and use cases'
+blogUrl: 'https://medium.com/kata-containers/'
 ---
 
 Kata Containers is open source, which means it relies on contributors like you! All areas of Kata Containers are open for contribution. Here is some useful information.
@@ -18,7 +19,7 @@ Kata Containers is open source, which means it relies on contributors like you! 
 
 Installation Guides: [View the docs](https://github.com/kata-containers/documentation/tree/master/install)  
 GitHub Repo: [github.com/kata-containers](https://github.com/kata-containers)  
-Overview Deck: [View the presentation](https://www.katacontainers.io/collateral/Kata-Containers-On-boarding-Deck-for-Website01022018.pdf)  
+Overview Deck: [View the presentation](https://www.katacontainers.io/collateral/Kata Containers Onboarding Deck.pptx)  
 Overview One Pager: [View the PDF](https://katacontainers.io/collateral/kata-containers-1pager.pdf)  
 
 Kata Containers contributor metrics are available at [KataContainers.Biterg.io](https://KataContainers.Biterg.io)
