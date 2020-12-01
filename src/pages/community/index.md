@@ -19,7 +19,7 @@ Kata Containers is open source, which means it relies on contributors like you! 
 
 Installation Guides: [View the docs](https://github.com/kata-containers/documentation/tree/master/install)  
 GitHub Repo: [github.com/kata-containers](https://github.com/kata-containers)  
-Overview Deck: [View the presentation](https://www.katacontainers.io/collateral/Kata Containers Onboarding Deck.pptx)  
+Onboarding Deck: [View the presentation](https://www.katacontainers.io/collateral/Kata Containers Onboarding Deck.pptx)  
 Overview One Pager: [View the PDF](https://katacontainers.io/collateral/kata-containers-1pager.pdf)  
 
 Kata Containers contributor metrics are available at [KataContainers.Biterg.io](https://KataContainers.Biterg.io)
