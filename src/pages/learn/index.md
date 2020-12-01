@@ -1,7 +1,10 @@
 ---
 templateKey: learn-page
 seo:
-  description: Kata Containers perform like containers, but provide the workload isolation and security advantages of VMs. It combines the benefits of containers and VMs.
+  description: >-
+    Kata Containers perform like containers, but provide the workload isolation
+    and security advantages of VMs. It combines the benefits of containers and
+    VMs.
   image: /img/android-chrome-192x192.png
   title: Learn About the Kata Containers Project
   twitterUsername: '@katacontainers'
@@ -12,6 +15,8 @@ intro:
   buttons:
     - link: /collateral/kata-containers-1pager.pdf
       text: project overview
+    - link: /collateral/Kata Containers Onboarding Deck.pptx
+      text: Onboarding Deck
     - link: 'https://github.com/kata-containers/runtime/releases'
       text: latest software release
   gallery:
