@@ -40,7 +40,7 @@ Twitter: [@katacontainers](https://twitter.com/katacontainers)
 ## Meetings
 
 Architecture Committee: The Architecture Committee works on the technical direction of the project.  
-Meetings are on Tuesdays at 8:00am PT. Agendas & call info can be found [here](https://etherpad.openstack.org/p/Kata_Containers_2020_Architecture_Committee_Mtgs).  
+Meetings are on Tuesdays at 7:00am PT. Agendas & call info can be found [here](https://etherpad.opendev.org/p/Kata_Containers_2021_Architecture_Committee_Mtgs).  
 Marketing SIG: The Marketing SIG works on developing community content as well as advocacy and outreach. You can get involved with the Marketing SIG on the Kata [mailing list](http://lists.katacontainers.io/cgi-bin/mailman/listinfo) or by visiting #kata-marketing in the [Kata Slack](https://katacontainers.slack.com/).
 
 ---
