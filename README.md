@@ -1,6 +1,6 @@
 # Kata Containers website
 
-This is the public repo to mantain the Kata Containers website at [katacontainers.io](katacontainers.io).
+This is the public repo to mantain the Kata Containers website at [katacontainers.io](https://www.katacontainers.io).
 
 ## Overview
 
