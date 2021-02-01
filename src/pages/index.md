@@ -10,8 +10,8 @@ seo:
   url: 'https://katacontainers.io/'
 header:
   buttons:
-    - link: 'https://github.com/kata-containers/kata-containers/releases/tag/2.0.0'
-      text: Get the Kata 2.0 release
+    - link: 'https://github.com/kata-containers/kata-containers/releases'
+      text: Get the latest Kata release
   image: /img/hero-image.jpg
   subTitle: >-
     Kata Containers is an open source container runtime, building lightweight 
