@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { withPrefix, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
@@ -20,14 +20,14 @@ export const SoftwarePageTemplate = ({ seo, title, subTitle, intro, architecture
       {seo && 
       <Helmet title={seo.title ? seo.title : metadata.siteMetadata.title} titleTemplate={metadata.siteMetadata.titleTemplate}>        
         {seo.description && <meta name="description" content={seo.description} />}
-        {seo.image && <meta name="image" content={`${withPrefix('/')}${seo.image.publicURL}`} />}        
+        {seo.image && seo.url && <meta name="image" content={`${seo.url}${seo.image.publicURL}`} />}
         {seo.url && <meta property="og:url" content={seo.url} />}
         {seo.title && <meta property="og:title" content={seo.title} />}
         {seo.description && (
           <meta property="og:description" content={seo.description} />
         )}
-        {seo.image && <meta property="og:image" content={`${withPrefix('/')}${seo.image.publicURL}`} />}
-        <meta name="twitter:card" content="summary_large_image" />
+        {seo.image && seo.url && <meta property="og:image" content={`${seo.url}${seo.image.publicURL}`} />}
+        <meta name="twitter:card" content="summary" />
         {seo.twitterUsername && (
           <meta name="twitter:creator" content={seo.twitterUsername} />
         )}        
@@ -35,7 +35,7 @@ export const SoftwarePageTemplate = ({ seo, title, subTitle, intro, architecture
         {seo.description && (
           <meta name="twitter:description" content={seo.description} />
         )}
-        {seo.image && <meta name="twitter:image" content={`${withPrefix('/')}${seo.image.publicURL}`} />}          
+        {seo.image && seo.url && <meta name="twitter:image" content={`${seo.url}${seo.image.publicURL}`} />}
       </Helmet>
       }
       <div className="top-line"></div> 

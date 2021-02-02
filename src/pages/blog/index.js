@@ -24,7 +24,7 @@ export default class BlogIndexPage extends React.Component {
             {blogConfig.subTitle && (
               <meta property="og:description" content={blogConfig.subTitle} />
             )}             
-            <meta name="twitter:card" content="summary_large_image" />            
+            <meta name="twitter:card" content="summary" />            
             {blogConfig.title && <meta name="twitter:title" content={blogConfig.title} />}
             {blogConfig.subTitle && (
               <meta name="twitter:description" content={blogConfig.subTitle} />
