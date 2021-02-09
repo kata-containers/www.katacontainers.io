@@ -29,8 +29,8 @@ mainpitch:
         best parts of Intel Clear Containers with Hyper.sh RunV and scaled to
         include support for major architectures including AMD64, ARM, IBM
         p-series and IBM z-series in addition to x86_64. Kata Containers also
-        supports multiple hypervisors including QEMU, NEMU and Firecracker and
-        integrates with the containerd project among others.
+        supports multiple hypervisors including QEMU, Cloud-Hypervisor and
+        Firecracker and integrates with the containerd project among others.
     - text: >-
         The Kata Containers community is stewarded by the Open Infrastructure
         Foundation, which supports the development and adoption of open
