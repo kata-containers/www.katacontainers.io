@@ -17,7 +17,7 @@ intro:
       text: project overview
     - link: /collateral/kata-containers-onboarding-deck.pptx
       text: Onboarding Deck
-    - link: 'https://github.com/kata-containers/runtime/releases'
+    - link: 'https://github.com/kata-containers/kata-containers/releases'
       text: latest software release
   gallery:
     - alt: Architecture diagram
