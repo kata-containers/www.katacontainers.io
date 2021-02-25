@@ -49,8 +49,11 @@
 	.button.no-border-search-submit {
 
 		height: 42px;
-		border-radius: 0 50px 50px 0;
+		border-radius: 50px;
 		top: 0px;
+		a {
+		  color: $white;
+		}
 	}
   
 	@media (max-width: 767px) {
