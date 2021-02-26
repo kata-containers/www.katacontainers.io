@@ -7,41 +7,41 @@ const Subscribe = class extends React.Component {
     super(props)
     this.state = {
     }
-  }  
+  }
+
+  subscribePopup = () => {    
+    return window.open('https://signup.e2ma.net/signup/1862950/1771360/', 'signup', 'menubar=no, location=no, toolbar=no, scrollbars=yes, width=700, height=500');
+  }
 
   render() {
 
-    if(content.subscribe) {
-      return (      
+    if (content.subscribe) {
+      return (
         <section className="section search-content">
           <div className="search-content">
             <h3 className="search-content-title">
               {content.subscribe.title}
-            </h3> 
+            </h3>
             <div className="search-content-subtitle">
               {content.subscribe.subTitle}
             </div>
-          </div> 
-          <div className="field has-addons-centered">            
-            <form method="post" id="e2ma_signup" onsubmit="return signupFormObj.checkForm(this)" action="https://signup.e2ma.net/signup/1862950/1771360/">
-              <input id="id_prev_member_email" name="prev_member_email" type="hidden" />
-              <input id="id_source" name="source" type="hidden" />
-              <input id="id_group_4036448" name="group_4036448" type="hidden" value="4036448" />
-              <input type="hidden" name="private_set" value="{num_private}" />
-              <input placeholder="Email Address" id="id_email" name="email" type="email" required="required" size="is-large" className="search-container-input" />
-              <button href="#" onclick="document.getElementById('e2ma_signup').submit();" className="button is-primary no-border-search-submit">
-                <span>SUBMIT</span> 
+          </div>
+          <div className="field has-addons-centered">
+            <button className="button is-primary no-border-search-submit">
+              <a 
+                onClick={this.subscribePopup}>
+                <span>Join our list</span>
                 <span className="ico">
                   <img src={leftArrow} alt="Call To Action" />
                 </span>
-              </button>
-            </form>
+              </a>
+            </button>          
           </div>
-        </section>         
-      )    
+        </section>
+      )
     } else {
       return null;
-    }    
+    }
   }
 }
 
