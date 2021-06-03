@@ -9,7 +9,7 @@ import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 
 import leftArrow from '../img/svg/arrow-left.svg'
-import metadata from '../content/site-metadata.json'  
+import metadata from '../content/site-metadata.json'
 
 export const SoftwarePageTemplate = ({ seo, title, subTitle, intro, architecture, integration, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -17,28 +17,28 @@ export const SoftwarePageTemplate = ({ seo, title, subTitle, intro, architecture
   return (
 
     <main className="main">
-      {seo && 
-      <Helmet title={seo.title ? seo.title : metadata.siteMetadata.title} titleTemplate={metadata.siteMetadata.titleTemplate}>        
-        {seo.description && <meta name="description" content={seo.description} />}
-        {seo.image && seo.url && <meta name="image" content={`${seo.url}${seo.image.publicURL}`} />}
-        {seo.url && <meta property="og:url" content={seo.url} />}
-        {seo.title && <meta property="og:title" content={seo.title} />}
-        {seo.description && (
-          <meta property="og:description" content={seo.description} />
-        )}
-        {seo.image && seo.url && <meta property="og:image" content={`${seo.url}${seo.image.publicURL}`} />}
-        <meta name="twitter:card" content="summary" />
-        {seo.twitterUsername && (
-          <meta name="twitter:creator" content={seo.twitterUsername} />
-        )}        
-        {seo.title && <meta name="twitter:title" content={seo.title} />}
-        {seo.description && (
-          <meta name="twitter:description" content={seo.description} />
-        )}
-        {seo.image && seo.url && <meta name="twitter:image" content={`${seo.url}${seo.image.publicURL}`} />}
-      </Helmet>
+      {seo &&
+        <Helmet title={seo.title ? seo.title : metadata.siteMetadata.title} titleTemplate={metadata.siteMetadata.titleTemplate}>
+          {seo.description && <meta name="description" content={seo.description} />}
+          {seo.image && seo.url && <meta name="image" content={`${seo.url}${seo.image.publicURL}`} />}
+          {seo.url && <meta property="og:url" content={seo.url} />}
+          {seo.title && <meta property="og:title" content={seo.title} />}
+          {seo.description && (
+            <meta property="og:description" content={seo.description} />
+          )}
+          {seo.image && seo.url && <meta property="og:image" content={`${seo.url}${seo.image.publicURL}`} />}
+          <meta name="twitter:card" content="summary" />
+          {seo.twitterUsername && (
+            <meta name="twitter:creator" content={seo.twitterUsername} />
+          )}
+          {seo.title && <meta name="twitter:title" content={seo.title} />}
+          {seo.description && (
+            <meta name="twitter:description" content={seo.description} />
+          )}
+          {seo.image && seo.url && <meta name="twitter:image" content={`${seo.url}${seo.image.publicURL}`} />}
+        </Helmet>
       }
-      <div className="top-line"></div> 
+      <div className="top-line"></div>
       <section className="hero-intro is-primary hero">
         <div className="hero-body">
           <div className="container container-thin">
@@ -48,106 +48,109 @@ export const SoftwarePageTemplate = ({ seo, title, subTitle, intro, architecture
             </div>
           </div>
         </div>
-      </section> 
+      </section>
       <section className="section section-article-simple">
         <div className="container container-thin">
           <div className="section-body">
             <article className="article-simple default-page">
-                <p>{intro.text}</p>
-                {intro.buttons.map((button, index) => {
-                  return (
-                    <React.Fragment key={index}>
-                      <a href={button.link} className="button is-primary is-rounded"><span>{button.text}</span>
-                        <span className="ico">
-                          <img src={leftArrow} alt="Learn More" />
-                        </span>
-                      </a>
+              <p>{intro.text}</p>
+              {intro.buttons.map((button, index) => {
+                return (
+                  <React.Fragment key={index}>
+                    <a href={button.link} className="button is-primary is-rounded"><span>{button.text}</span>
+                      <span className="ico">
+                        <img src={leftArrow} alt="Learn More" />
+                      </span>
+                    </a>
                       &nbsp;&nbsp;&nbsp;
-                    </React.Fragment>  
-                  )
-                })}
-                <br />
-                <br />
-                <br />
-                <br />                  
-                <h2 id="architecture">
-                  <a href="#architecture" aria-hidden="true" className="header-anchor">#</a> {architecture.title}
-                </h2>
-                <div>
-                  <a href="#">
-                    <Zoom>                      
-                      <img src={!!architecture.image.childImageSharp ? architecture.image.childImageSharp.fluid.src : architecture.image} 
-                        alt={!!architecture.image.childImageSharp ? architecture.image.childImageSharp.fluid.src : architecture.image} />
-                    </Zoom>
-                  </a>
-                </div>
-                <br />
-                <div className="columns">                  
-                  {architecture.columns.map((col, index) => {                    
-                    return (
+                  </React.Fragment>
+                )
+              })}
+              <br />
+              <br />
+              <br />
+              <br />
+              <h2 id="architecture">
+                <a href="#architecture" aria-hidden="true" className="header-anchor">#</a> {architecture.title}
+              </h2>
+              <div>
+                <a href="#">
+                  <Zoom>
+                    <img src={!!architecture.image.childImageSharp ? architecture.image.childImageSharp.fluid.src : architecture.image}
+                      alt={!!architecture.image.childImageSharp ? architecture.image.childImageSharp.fluid.src : architecture.image} />
+                  </Zoom>
+                </a>
+              </div>
+              <br />
+              <div className="columns">
+                {architecture.columns.map((col, index) => {
+                  return (
+                    col.icon ?
                       <div className="column">
                         <div className="box is-green">
                           <div className="box-text" key={index}>
                             <div className="software-icon">
-                              <figure className="image is-64x64">                              
-                                <img src={!!col.icon.publicURL ? col.icon.publicURL : col.icon} 
-                                    alt={!!col.icon.publicURL ? col.icon.publicURL : col.icon} 
-                                    style={index > 0 ? {height: `56.13px`}: null}/>                                
+                              <figure className="image is-64x64">
+                                <img src={!!col.icon.publicURL ? col.icon.publicURL : col.icon}
+                                  alt={!!col.icon.publicURL ? col.icon.publicURL : col.icon}
+                                  style={index > 0 ? { height: `56.13px` } : null} />
                               </figure>
                             </div>
-                            <h3 className="is-software">{col.title}</h3> 
+                            <h3 className="is-software">{col.title}</h3>
                             <a href={col.link} className="a-primary-blue">{col.linkText} &nbsp;
                               <img src={leftArrow} className="a-primary-blue" />
                             </a>
                           </div>
                         </div>
-                      </div> 
-                    )                        
-                  })}                                          
-                </div>
-                <br />
-                <br />
-                <br />
-                <br />
-                <h2 id="kata-containers-integration-with-kubernetes">
-                  <a href="#kata-containers-integration-with-kubernetes" aria-hidden="true" className="header-anchor">#</a> {integration.title}:
+                      </div>
+                      :
+                      null
+                  )
+                })}
+              </div>
+              <br />
+              <br />
+              <br />
+              <br />
+              <h2 id="kata-containers-integration-with-kubernetes">
+                <a href="#kata-containers-integration-with-kubernetes" aria-hidden="true" className="header-anchor">#</a> {integration.title}:
                 </h2>
-                <div>
-                  <a href="#">
-                    <Zoom>
-                      <img src={!!integration.image.childImageSharp ? integration.image.childImageSharp.fluid.src : integration.image}
-                          alt={!!integration.image.childImageSharp ? integration.image.childImageSharp.fluid.src : integration.image}/>                      
-                    </Zoom>
-                  </a>
+              <div>
+                <a href="#">
+                  <Zoom>
+                    <img src={!!integration.image.childImageSharp ? integration.image.childImageSharp.fluid.src : integration.image}
+                      alt={!!integration.image.childImageSharp ? integration.image.childImageSharp.fluid.src : integration.image} />
+                  </Zoom>
+                </a>
+              </div>
+              <p></p>
+              <hr />
+              <p></p>
+              <p>&nbsp;</p>
+              <div className="container1">
+                <h2 className="features">{integration.table.title}</h2>
+              </div>
+              <div className="container2">
+                <div className="columns">
+                  {integration.table.columns.map((col, index) => {
+                    return (
+                      <div className={`column col${index + 1}`} key={index}>
+                        <h4 className="is-centered">{col.title}:</h4>
+                        {col.row && col.row.map((r, index) => {
+                          return <span key={index}>{r.text}</span>
+                        })}
+                      </div>
+                    )
+                  })}
                 </div>
-                <p></p>
-                <hr />
-                <p></p>
-                <p>&nbsp;</p>
-                <div className="container1">
-                  <h2 className="features">{integration.table.title}</h2>
-                </div>
-                <div className="container2">
-                  <div className="columns">
-                    {integration.table.columns.map((col, index) => {
-                      return (
-                        <div className={`column col${index+1}`} key={index}>
-                        <h4 className="is-centered">{col.title}:</h4> 
-                          {col.row.map((r, index) => {
-                            return <span key={index}>{r.text}</span>   
-                          })}                        
-                        </div>
-                      )        
-                    })}                    
-                  </div>
-                </div>
-                <br />
-                <br />
-                <br />
-                <br />                
+              </div>
+              <br />
+              <br />
+              <br />
+              <br />
               <PageContent className="content" content={content} />
             </article>
-          </div> 
+          </div>
         </div>
       </section>
     </main>
@@ -186,7 +189,7 @@ const SoftwarePage = ({ data }) => {
 
 SoftwarePage.propTypes = {
   data: PropTypes.object.isRequired,
-} 
+}
 
 export default SoftwarePage
 
