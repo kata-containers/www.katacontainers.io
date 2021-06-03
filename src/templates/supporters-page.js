@@ -7,17 +7,17 @@ import Content, { HTMLContent } from '../components/Content'
 
 import SupportBanner from '../components/SupportBanner'
 import leftArrow from '../img/svg/arrow-left.svg'
-import metadata from '../content/site-metadata.json'  
+import metadata from '../content/site-metadata.json'
 
 export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons, donors, companies, support, contentComponent }) => {
   const PageContent = contentComponent || Content
-    
+
   let perChunk = 3 // items per chunk    
   let inputArray = donors.list;
-  let donorsList = inputArray.reduce((resultArray, item, index) => { 
-    const chunkIndex = Math.floor(index/perChunk)
+  let donorsList = inputArray.reduce((resultArray, item, index) => {
+    const chunkIndex = Math.floor(index / perChunk)
 
-    if(!resultArray[chunkIndex]) {
+    if (!resultArray[chunkIndex]) {
       resultArray[chunkIndex] = [] // start a new chunk
     }
 
@@ -28,10 +28,10 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
 
   perChunk = 4;
   inputArray = companies.list;
-  let supportList = inputArray.reduce((resultArray, item, index) => { 
-    const chunkIndex = Math.floor(index/perChunk)
+  let supportList = inputArray.reduce((resultArray, item, index) => {
+    const chunkIndex = Math.floor(index / perChunk)
 
-    if(!resultArray[chunkIndex]) {
+    if (!resultArray[chunkIndex]) {
       resultArray[chunkIndex] = [] // start a new chunk
     }
 
@@ -42,29 +42,29 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
 
   return (
 
-    <main className="main">      
-      {seo && 
-      <Helmet title={seo.title ? seo.title : metadata.siteMetadata.title} titleTemplate={metadata.siteMetadata.titleTemplate}>        
-        {seo.description && <meta name="description" content={seo.description} />}
-        {seo.image && seo.url && <meta name="image" content={`${seo.url}${seo.image.publicURL}`} />}
-        {seo.url && <meta property="og:url" content={seo.url} />}
-        {seo.title && <meta property="og:title" content={seo.title} />}
-        {seo.description && (
-          <meta property="og:description" content={seo.description} />
-        )}
-        {seo.image && seo.url && <meta property="og:image" content={`${seo.url}${seo.image.publicURL}`} />}
-        <meta name="twitter:card" content="summary" />
-        {seo.twitterUsername && (
-          <meta name="twitter:creator" content={seo.twitterUsername} />
-        )}        
-        {seo.title && <meta name="twitter:title" content={seo.title} />}
-        {seo.description && (
-          <meta name="twitter:description" content={seo.description} />
-        )}
-        {seo.image && seo.url && <meta name="twitter:image" content={`${seo.url}${seo.image.publicURL}`} />}
-      </Helmet>
+    <main className="main">
+      {seo &&
+        <Helmet title={seo.title ? seo.title : metadata.siteMetadata.title} titleTemplate={metadata.siteMetadata.titleTemplate}>
+          {seo.description && <meta name="description" content={seo.description} />}
+          {seo.image && seo.url && <meta name="image" content={`${seo.url}${seo.image.publicURL}`} />}
+          {seo.url && <meta property="og:url" content={seo.url} />}
+          {seo.title && <meta property="og:title" content={seo.title} />}
+          {seo.description && (
+            <meta property="og:description" content={seo.description} />
+          )}
+          {seo.image && seo.url && <meta property="og:image" content={`${seo.url}${seo.image.publicURL}`} />}
+          <meta name="twitter:card" content="summary" />
+          {seo.twitterUsername && (
+            <meta name="twitter:creator" content={seo.twitterUsername} />
+          )}
+          {seo.title && <meta name="twitter:title" content={seo.title} />}
+          {seo.description && (
+            <meta name="twitter:description" content={seo.description} />
+          )}
+          {seo.image && seo.url && <meta name="twitter:image" content={`${seo.url}${seo.image.publicURL}`} />}
+        </Helmet>
       }
-      <div className="top-line"></div> 
+      <div className="top-line"></div>
       <section className="hero-intro is-primary hero">
         <div className="hero-body">
           <div className="container container-thin">
@@ -74,7 +74,7 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
             </div>
           </div>
         </div>
-      </section> 
+      </section>
       <section className="section section-article-simple">
         <div className="container container-thin">
           <div className="section-body">
@@ -89,28 +89,30 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
                     </a>
                   )
                 })}
-                <br/><br/>
+                <br /><br />
                 <div className="container1"><h2 className="features">{donors.title}</h2>
                 </div>
                 {
                   donorsList.map((d, index) => {
-                    return(                    
-                      <div className={`container-supporter ${donorsList.length === index+1 ? 'container-supporter-last': ''}`} key={index}>
+                    return (
+                      <div className={`container-supporter ${donorsList.length === index + 1 ? 'container-supporter-last' : ''}`} key={index}>
                         {d.map((i, index) => {
                           return (
                             <div className="content-supporter-lt3" key={index}>
                               <a href={i.link} target="_blank" rel="noopener noreferrer">
-                                {i.image.extension === 'svg' && !i.image.childImageSharp ? 
-                                <img src={!!i.image.publicURL ? i.image.publicURL : i.image} alt={i.alt} 
-                                  className={
-                                    i.class === 'img-sponsor-l3' ? 'img-sponsor-l3' : i.class === 'img-sponsor-l2' ? 'img-sponsor-l2' :
-                                    i.class === 'img-sponsor-l4' ? 'img-sponsor-l4' : i.class === 'img-sponsor-l3-last' ? 'img-sponsor-l3-last' : ''} />
-                                :
-                                <img src={!!i.image.childImageSharp ? i.image.childImageSharp.fluid.src : i.image} alt={i.alt} 
-                                  className={
-                                    i.class === 'img-sponsor-l3' ? 'img-sponsor-l3' : i.class === 'img-sponsor-l2' ? 'img-sponsor-l2' :
-                                    i.class === 'img-sponsor-l4' ? 'img-sponsor-l4' : i.class === 'img-sponsor-l3-last' ? 'img-sponsor-l3-last' : ''} />
-                                }
+                                {i.image ?
+                                  i.image.extension === 'svg' && !i.image.childImageSharp ?
+                                    <img src={!!i.image.publicURL ? i.image.publicURL : i.image} alt={i.alt}
+                                      className={
+                                        i.class === 'img-sponsor-l3' ? 'img-sponsor-l3' : i.class === 'img-sponsor-l2' ? 'img-sponsor-l2' :
+                                          i.class === 'img-sponsor-l4' ? 'img-sponsor-l4' : i.class === 'img-sponsor-l3-last' ? 'img-sponsor-l3-last' : ''} />
+                                    :
+                                    <img src={!!i.image.childImageSharp ? i.image.childImageSharp.fluid.src : i.image} alt={i.alt}
+                                      className={
+                                        i.class === 'img-sponsor-l3' ? 'img-sponsor-l3' : i.class === 'img-sponsor-l2' ? 'img-sponsor-l2' :
+                                          i.class === 'img-sponsor-l4' ? 'img-sponsor-l4' : i.class === 'img-sponsor-l3-last' ? 'img-sponsor-l3-last' : ''} />
+                                  :
+                                  null}
                               </a>
                             </div>
                           )
@@ -126,24 +128,25 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
                 </div>
                 {
                   supportList.map((d, index) => {
-                    return(                    
-                      <div className={`container-supporter ${supportList.length === index+1 ? 'container-supporter-last': ''}`} key={index}>
+                    return (
+                      <div className={`container-supporter ${supportList.length === index + 1 ? 'container-supporter-last' : ''}`} key={index}>
                         {d.map((i, index) => {
                           return (
                             <div className="content-supporter" key={index}>
-                              <a href="" target="_blank" rel="noopener noreferrer">
-                                {i.image.extension === 'svg' && !i.image.childImageSharp ? 
-                                <img src={!!i.image.publicURL ? i.image.publicURL : i.image} alt={i.alt} 
-                                  className={
-                                    i.class === 'img-sponsor-l3' ? 'img-sponsor-l3' : i.class === 'img-sponsor-l2' ? 'img-sponsor-l2' :
-                                    i.class === 'img-sponsor-l4' ? 'img-sponsor-l4' : i.class === 'img-sponsor-l3-last' ? 'img-sponsor-l3-last' : ''} />
+                              {i.image ?
+                                i.image.extension === 'svg' && !i.image.childImageSharp ?
+                                  <img src={!!i.image.publicURL ? i.image.publicURL : i.image} alt={i.alt}
+                                    className={
+                                      i.class === 'img-sponsor-l3' ? 'img-sponsor-l3' : i.class === 'img-sponsor-l2' ? 'img-sponsor-l2' :
+                                        i.class === 'img-sponsor-l4' ? 'img-sponsor-l4' : i.class === 'img-sponsor-l3-last' ? 'img-sponsor-l3-last' : ''} />
+                                  :
+                                  <img src={!!i.image.childImageSharp ? i.image.childImageSharp.fluid.src : i.image} alt={i.alt}
+                                    className={
+                                      i.class === 'img-sponsor-l3' ? 'img-sponsor-l3' : i.class === 'img-sponsor-l2' ? 'img-sponsor-l2' :
+                                        i.class === 'img-sponsor-l4' ? 'img-sponsor-l4' : i.class === 'img-sponsor-l3-last' ? 'img-sponsor-l3-last' : ''} />
                                 :
-                                <img src={!!i.image.childImageSharp ? i.image.childImageSharp.fluid.src : i.image} alt={i.alt} 
-                                  className={
-                                    i.class === 'img-sponsor-l3' ? 'img-sponsor-l3' : i.class === 'img-sponsor-l2' ? 'img-sponsor-l2' :
-                                    i.class === 'img-sponsor-l4' ? 'img-sponsor-l4' : i.class === 'img-sponsor-l3-last' ? 'img-sponsor-l3-last' : ''} />
-                                }
-                              </a>
+                                null
+                              }
                             </div>
                           )
                         })}
@@ -164,13 +167,13 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
                 <ul>
                   {support.list.map((e, index) => {
                     return <li key={index}>{e.text}</li>
-                  })}                  
+                  })}
                 </ul>
-              <PageContent className="content" content={content} />
+                <PageContent className="content" content={content} />
               </section>
               <SupportBanner />
             </article>
-          </div> 
+          </div>
         </div>
       </section>
     </main>
@@ -203,15 +206,15 @@ const SupportersPage = ({ data }) => {
         donors={post.frontmatter.donors}
         companies={post.frontmatter.companies}
         support={post.frontmatter.support}
-        content={post.html}        
-      />      
+        content={post.html}
+      />
     </Layout>
   )
 }
 
 SupportersPage.propTypes = {
   data: PropTypes.object.isRequired,
-} 
+}
 
 export default SupportersPage
 

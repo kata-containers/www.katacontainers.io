@@ -8,7 +8,7 @@ import Content, { HTMLContent } from '../components/Content'
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 
-import metadata from '../content/site-metadata.json'  
+import metadata from '../content/site-metadata.json'
 
 export const LearnPageTemplate = ({ seo, title, subTitle, intro, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -17,27 +17,27 @@ export const LearnPageTemplate = ({ seo, title, subTitle, intro, content, conten
 
     <main className="main">
       {seo &&
-      <Helmet title={seo.title ? seo.title : metadata.siteMetadata.title} titleTemplate={metadata.siteMetadata.titleTemplate}>        
-        {seo.description && <meta name="description" content={seo.description} />}
-        {seo.image && seo.url && <meta name="image" content={`${seo.url}${seo.image.publicURL}`} />}
-        {seo.url && <meta property="og:url" content={seo.url} />}
-        {seo.title && <meta property="og:title" content={seo.title} />}
-        {seo.description && (
-          <meta property="og:description" content={seo.description} />
-        )}
-        {seo.image && seo.url && <meta property="og:image" content={`${seo.url}${seo.image.publicURL}`} />}
-        <meta name="twitter:card" content="summary" />
-        {seo.twitterUsername && (
-          <meta name="twitter:creator" content={seo.twitterUsername} />
-        )}        
-        {seo.title && <meta name="twitter:title" content={seo.title} />}
-        {seo.description && (
-          <meta name="twitter:description" content={seo.description} />
-        )}
-        {seo.image && seo.url && <meta name="twitter:image" content={`${seo.url}${seo.image.publicURL}`} />}
-      </Helmet>
+        <Helmet title={seo.title ? seo.title : metadata.siteMetadata.title} titleTemplate={metadata.siteMetadata.titleTemplate}>
+          {seo.description && <meta name="description" content={seo.description} />}
+          {seo.image && seo.url && <meta name="image" content={`${seo.url}${seo.image.publicURL}`} />}
+          {seo.url && <meta property="og:url" content={seo.url} />}
+          {seo.title && <meta property="og:title" content={seo.title} />}
+          {seo.description && (
+            <meta property="og:description" content={seo.description} />
+          )}
+          {seo.image && seo.url && <meta property="og:image" content={`${seo.url}${seo.image.publicURL}`} />}
+          <meta name="twitter:card" content="summary" />
+          {seo.twitterUsername && (
+            <meta name="twitter:creator" content={seo.twitterUsername} />
+          )}
+          {seo.title && <meta name="twitter:title" content={seo.title} />}
+          {seo.description && (
+            <meta name="twitter:description" content={seo.description} />
+          )}
+          {seo.image && seo.url && <meta name="twitter:image" content={`${seo.url}${seo.image.publicURL}`} />}
+        </Helmet>
       }
-      <div className="top-line"></div> 
+      <div className="top-line"></div>
       <section className="hero-intro is-primary hero">
         <div className="hero-body">
           <div className="container container-thin">
@@ -47,7 +47,7 @@ export const LearnPageTemplate = ({ seo, title, subTitle, intro, content, conten
             </div>
           </div>
         </div>
-      </section> 
+      </section>
       <section className="section section-article-simple">
         <div className="container container-thin">
           <div className="section-body">
@@ -56,12 +56,12 @@ export const LearnPageTemplate = ({ seo, title, subTitle, intro, content, conten
                 <p>{intro.text}</p>
                 <div className="columns">
                   <div className="column">
-                    {intro.buttons.map((button, index) => {                      
+                    {intro.buttons.map((button, index) => {
                       return (
                         <React.Fragment key={index}>
                           <a href={button.link} className="button is-primary is-rounded">{button.text}</a>
                           &nbsp;&nbsp;&nbsp;
-                        </React.Fragment>  
+                        </React.Fragment>
                       )
                     })}
                     <br />
@@ -69,26 +69,29 @@ export const LearnPageTemplate = ({ seo, title, subTitle, intro, content, conten
                   </div>
                 </div>
                 <div className="columns">
-                  {intro.gallery.map((img, index) => {                    
-                    return(
-                      <div className="column" key={index}>
-                        <div>                          
-                          <a href="#">
-                            <Zoom>                              
-                              <img src={!!img.image.childImageSharp ? img.image.childImageSharp.fluid.src : img.image} alt={img.alt} />
-                            </Zoom>
-                          </a>
+                  {intro.gallery.map((img, index) => {
+                    return (
+                      img.image ?
+                        <div className="column" key={index}>
+                          <div>
+                            <a href="#">
+                              <Zoom>
+                                <img src={!!img.image.childImageSharp ? img.image.childImageSharp.fluid.src : img.image} alt={img.alt} />
+                              </Zoom>
+                            </a>
+                          </div>
                         </div>
-                      </div>
+                        :
+                        null
                     )
                   })}
                 </div>
                 <br />
                 {intro.videos.map((video, index) => {
-                  return(
+                  return (
                     <React.Fragment key={index}>
                       <h2 id="kata-containers-project-update">
-                        <a href="#kata-containers-project-update" aria-hidden="true" className="header-anchor">#</a> 
+                        <a href="#kata-containers-project-update" aria-hidden="true" className="header-anchor">#</a>
                         {video.title}
                       </h2>
                       <div className="video-wrapper">
@@ -100,7 +103,7 @@ export const LearnPageTemplate = ({ seo, title, subTitle, intro, content, conten
                 <PageContent content={content} />
               </div>
             </article>
-          </div> 
+          </div>
         </div>
       </section>
     </main>
