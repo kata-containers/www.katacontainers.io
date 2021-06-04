@@ -44,7 +44,7 @@ companies:
   list:
     - alt: Ampere
       class: img-sponsor-l4
-      image: /img/ampere_computing_lg.svg
+      image: /img/ampere-lg.jpg
     - alt: Ant Group
       class: img-sponsor-l4
       image: /img/ant-financial-services-group_owler_20210312_151802_original.png
@@ -59,7 +59,7 @@ companies:
       image: /img/logo-99cloud.jpg
     - alt: CISCO
       class: img-sponsor-l3-last
-      image: /img/logo-cisco.svg
+      image: /img/cisco-lg2.png
     - alt: City Network
       class: img-sponsor-l4
       image: /img/logo-citynetwork.svg
@@ -71,7 +71,7 @@ companies:
       image: /img/china-telecom.png
     - alt: China Unicom
       class: img-sponsor-l4
-      image: /img/china-unicom-logo.svg
+      image: /img/china-unicom.png
     - alt: Click2Cloud
       class: img-sponsor-l4
       image: /img/click2cloud.jpg
@@ -89,7 +89,7 @@ companies:
       image: /img/g-research-lg.svg
     - alt: Huawei
       class: img-sponsor-l4
-      image: /img/logo-huawei.svg
+      image: /img/huawei-new-lg.jpg
     - alt: Inspur
       class: img-sponsor-l3-last
       image: /img/logo-inspur.svg
@@ -101,13 +101,10 @@ companies:
       image: /img/jitstack-logo-lg.jpg
     - alt: Mirantis
       class: img-sponsor-l4
-      image: /img/logo-mirantis.png
+      image: /img/mirantis-lg.jpg
     - alt: NetApp
       class: img-sponsor-l3-last
       image: /img/logo-netapp.svg
-    - alt: Pure Storage
-      class: img-sponsor-l4
-      image: /img/pure-storage-vector-logo.svg
     - alt: Red Hat
       class: img-sponsor-l4
       image: /img/logo-redhat.svg
@@ -131,7 +128,7 @@ companies:
       image: /img/vexxhost.svg
     - alt: ZTE
       class: img-sponsor-l3-last
-      image: /img/logo-zte.svg
+      image: /img/zte-lg.jpg
   title: Companies Supporting Kata Containers
 support:
   button:
