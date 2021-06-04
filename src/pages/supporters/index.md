@@ -42,93 +42,96 @@ donors:
   title: Infrastructure Donors
 companies:
   list:
-    - alt: Intel
+    - alt: Ampere
       class: img-sponsor-l4
-      image: /img/intel-lg.png
-    - alt: Huawei
+      image: /img/ampere_computing_lg.svg
+    - alt: Ant Group
       class: img-sponsor-l4
-      image: /img/logo-huawei.svg
-    - alt: Dell
+      image: /img/ant-financial-services-group_owler_20210312_151802_original.png
+    - alt: AT&T
+      class: img-sponsor-l3-last
+      image: /img/logo-att.svg
+    - alt: AWCloud
       class: img-sponsor-l4
-      image: /img/logo-dell.svg
-    - alt: Red Hat
-      class: img-sponsor-l4
-      image: /img/logo-redhat.svg
-    - alt: Tencent
-      class: img-sponsor-l4
-      image: /img/logo-tencent.jpg
+      image: /img/awcloud.png
     - alt: 99 Cloud
       class: img-sponsor-l4
       image: /img/logo-99cloud.jpg
-    - alt: China Mobile
-      class: img-sponsor-l4
-      image: /img/logo-china.svg
+    - alt: CISCO
+      class: img-sponsor-l3-last
+      image: /img/logo-cisco.svg
     - alt: City Network
       class: img-sponsor-l4
       image: /img/logo-citynetwork.svg
-    - alt: United Stack
+    - alt: China Mobile
       class: img-sponsor-l4
-      image: /img/logo-united.svg
-    - alt: ZTE
-      class: img-sponsor-l4
-      image: /img/logo-zte.svg
-    - alt: Mirantis
-      class: img-sponsor-l4
-      image: /img/logo-mirantis.png
-    - alt: Suse
-      class: img-sponsor-l4
-      image: /img/logo-suse.svg
-    - alt: NetApp
+      image: /img/logo-china.svg
+    - alt: China Telecom
       class: img-sponsor-l3-last
-      image: /img/logo-netapp.svg
+      image: /img/china-telecom.png
+    - alt: China Unicom
+      class: img-sponsor-l4
+      image: /img/china-unicom-logo.svg
+    - alt: Click2Cloud
+      class: img-sponsor-l4
+      image: /img/click2cloud.jpg
+    - alt: Dell
+      class: img-sponsor-l4
+      image: /img/logo-dell.svg
     - alt: EasyStack
       class: img-sponsor-l3-last
       image: /img/logo-easy.svg
     - alt: FiberHome
       class: img-sponsor-l3-last
       image: /img/logo-fiberhome.png
-    - alt: Ubuntu
-      class: img-sponsor-l3-last
-      image: /img/logo-ubuntu.svg
-    - alt: AT&T
-      class: img-sponsor-l3-last
-      image: /img/logo-att.svg
-    - alt: China Telecom
-      class: img-sponsor-l3-last
-      image: /img/china-telecom.png
-    - alt: CISCO
-      class: img-sponsor-l3-last
-      image: /img/logo-cisco.svg
-    - alt: Inspur
-      class: img-sponsor-l3-last
-      image: /img/logo-inspur.svg
-    - alt: China Unicom
-      class: img-sponsor-l4
-      image: /img/china-unicom-logo.svg
-    - alt: Troila
-      class: img-sponsor-l4
-      image: /img/troila-new-lg.jpg
-    - alt: AWCloud
-      class: img-sponsor-l4
-      image: /img/awcloud.png
     - alt: G Research
       class: img-sponsor-l4
       image: /img/g-research-lg.svg
+    - alt: Huawei
+      class: img-sponsor-l4
+      image: /img/logo-huawei.svg
+    - alt: Inspur
+      class: img-sponsor-l3-last
+      image: /img/logo-inspur.svg
+    - alt: Intel
+      class: img-sponsor-l4
+      image: /img/intel-lg.png
     - alt: JIT Stack
       class: img-sponsor-l4
       image: /img/jitstack-logo-lg.jpg
+    - alt: Mirantis
+      class: img-sponsor-l4
+      image: /img/logo-mirantis.png
+    - alt: NetApp
+      class: img-sponsor-l3-last
+      image: /img/logo-netapp.svg
     - alt: Pure Storage
       class: img-sponsor-l4
       image: /img/pure-storage-vector-logo.svg
+    - alt: Red Hat
+      class: img-sponsor-l4
+      image: /img/logo-redhat.svg
+    - alt: Suse
+      class: img-sponsor-l4
+      image: /img/logo-suse.svg
+    - alt: Tencent
+      class: img-sponsor-l4
+      image: /img/logo-tencent.jpg
+    - alt: Troila
+      class: img-sponsor-l4
+      image: /img/troila-new-lg.jpg
+    - alt: Ubuntu
+      class: img-sponsor-l3-last
+      image: /img/logo-ubuntu.svg
+    - alt: United Stack
+      class: img-sponsor-l4
+      image: /img/logo-united.svg
     - alt: Vexxhost
       class: img-sponsor-l4
       image: /img/vexxhost.svg
-    - alt: Click2Cloud
-      class: img-sponsor-l4
-      image: /img/click2cloud.jpg
-    - alt: Ampere
-      class: img-sponsor-l4
-      image: /img/ampere_computing_lg.svg
+    - alt: ZTE
+      class: img-sponsor-l3-last
+      image: /img/logo-zte.svg
   title: Companies Supporting Kata Containers
 support:
   button:
@@ -141,14 +144,14 @@ support:
         katacontainers.io
     - text: Notification of Kata Containers project news and updates
     - text: >-
-        Marketing support from Open Infrastructure Foundation via press releases and
-        providing quotes when your company promotes Kata Containers
+        Marketing support from Open Infrastructure Foundation via press releases
+        and providing quotes when your company promotes Kata Containers
   text: >-
-    Kata Containers is an open source community stewarded by the Open Infrastructure
-    Foundation (OIF). The Kata Containers community is working to build a secure
-    container runtime with lightweight virtual machines that feel and perform
-    like containers, but provide stronger workload isolation using hardware
-    virtualization technology as a second layer of defense.
+    Kata Containers is an open source community stewarded by the Open
+    Infrastructure Foundation (OIF). The Kata Containers community is working to
+    build a secure container runtime with lightweight virtual machines that feel
+    and perform like containers, but provide stronger workload isolation using
+    hardware virtualization technology as a second layer of defense.
   text2: >-
     Above are companies that are actively involved in making the Kata Containers
     project successful.
