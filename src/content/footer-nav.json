@@ -34,11 +34,11 @@
         },
         {
           "text": "IRC: #kata-dev",
-          "link": "http://webchat.freenode.net/?channels=kata-dev"
+          "link": "http://webchat.oftc.net/?channels=kata-dev"
         },
         {
           "text": "IRC: #kata-general",
-          "link": "http://webchat.freenode.net/?channels=kata-general"
+          "link": "http://webchat.oftc.net/?channels=kata-general"
         }
       ]
     },
