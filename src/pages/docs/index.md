@@ -40,4 +40,4 @@ Design and Implementations
 How to Contribute
 
 * [Developer Guide](https://github.com/kata-containers/kata-containers/tree/main/docs/Developer-Guide.md) : Setup the Kata Containers developing environments
-* [How to contribute to Kata Containers](https://github.com/kata-containers/kata-containers/tree/main/docs/CONTRIBUTING.md)
+* [How to contribute to Kata Containers](https://github.com/kata-containers/community/blob/master/CONTRIBUTING.md)
