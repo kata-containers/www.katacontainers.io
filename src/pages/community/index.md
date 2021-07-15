@@ -27,7 +27,7 @@ Kata Containers contributor metrics are available at [KataContainers.Biterg.io](
 
 ## Communications
 
-Slack: [bit.ly/katacontainersslack](http://bit.ly/katacontainersslack)\
+Slack: [bit.ly/kataslack](https://bit.ly/kataslack)\
 OFTC IRC: [\#kata-dev](http://webchat.oftc.net/?channels=kata-dev) and [\#kata-general](http://webchat.oftc.net/?channels=kata-general)\
 Mailing Lists: [lists.katacontainers.io/cgi-bin/mailman/listinfo](http://lists.katacontainers.io/cgi-bin/mailman/listinfo)\
 E-mail: <mailto:info@katacontainers.io>\
