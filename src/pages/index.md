@@ -70,8 +70,8 @@ tables:
           <p className="p-simple-item-bullet">Join the mailing list: <a
           href="http://lists.katacontainers.io">http://lists.katacontainers.io</a></p>
           <p className="p-simple-item-bullet">Slack: <a
-          href="http://bit.ly/katacontainersslack">bit.ly/katacontainersslack</a> 
-          IRC: <a href="#kata-dev">#kata-dev</a></p>      
+          href="http://bit.ly/kataslack">bit.ly/kataslack</a>  IRC: <a
+          href="#kata-dev">#kata-dev</a></p>      
         title: Stay in the loop
       - text: >
           <p>Updates from the community on a weekly basis.</p>  <p
