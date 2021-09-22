@@ -69,4 +69,4 @@ Learn more about [Kata Containers governance, election process and the current A
 
 ## Code of Conduct
 
-Our community follows the Open Infrastructure Foundation [Code of Conduct](https://www.openstack.org/legal/community-code-of-conduct/).
+Our community follows the Open Infrastructure Foundation [Code of Conduct](https://openinfra.dev/legal/code-of-conduct/).
