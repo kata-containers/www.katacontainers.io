@@ -18,9 +18,6 @@ const TopBar = class extends React.Component {
         <div className="bar is-dark-gray">
           <div className="container">
             <div className="bar-inner">
-              <div className="bar-logo">
-                <img src={barLogo} alt="Meet the Kata Community" />
-              </div> 
               <div className="bar-entry">
                 <p>{content.bar.text}</p>
               </div> 
