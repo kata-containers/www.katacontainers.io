@@ -1,58 +1,62 @@
 ---
-templateKey: 'software-page'
-path: /software
+templateKey: software-page
 seo:
-  title: Container Virtualization - Open Source VM Software - Kata Containers
-  description: Kata Containers is Apache 2 licensed open source software consisting of six components - Agent, Runtime, Proxy, Shim, Kernel and packaging of QEMU 2.11.
-  url: https://katacontainers.io/software/
+  description: >-
+    Kata Containers is Apache 2 licensed software consisting of two main
+    components: the Kata agent, and the Kata Containerd shim v2 runtime. It also
+    packages a Linux kernel and versions of QEMU, Cloud Hypervisor and
+    Firecracker hypervisors.
   image: /img/android-chrome-192x192.png
-  twitterUsername: "@katacontainers"
+  title: Container Virtualization - Open Source VM Software - Kata Containers
+  twitterUsername: '@katacontainers'
+  url: 'https://katacontainers.io/software/'
 title: Software
 subTitle: Development activities in Kata Containers
-intro: 
-  text: >
-    Kata Containers is Apache 2 licensed software consisting of six components: Agent, Runtime, 
-    Proxy, Shim, Kernel and packaging of QEMU 2.11. It is designed to be architecture agnostic, 
-    run on multiple hypervisors and plug seamlessly into the containers ecosystem.
+intro:
   buttons:
-    - text: explore on github
-      link: https://github.com/kata-containers
+    - link: 'https://github.com/kata-containers'
+      text: explore on github
+  text: >
+    Kata Containers is Apache 2 licensed software consisting of six components:
+    Agent, Runtime,  Proxy, Shim, Kernel and packaging of QEMU 2.11. It is
+    designed to be architecture agnostic,  run on multiple hypervisors and plug
+    seamlessly into the containers ecosystem.
 architecture:
-  title: Architecture
-  image: /img/kata-explained1@2x.png
   columns:
-    - title: Get Kata Containers
-      link: https://github.com/kata-containers
+    - icon: /img/logo_ico1.svg
+      link: 'https://github.com/kata-containers'
       linkText: Go to Git Repository
-      icon: /img/logo_ico1.svg
-    - title: View the Documentation
-      link: https://github.com/kata-containers/documentation
+      title: Get Kata Containers
+    - icon: /img/document_primary-dark.svg
+      link: 'https://github.com/kata-containers/documentation'
       linkText: Get Started
-      icon: /img/document_primary-dark.svg
+      title: View the Documentation
+  image: /img/kata-explained1@2x.png
+  title: Architecture
 integration:
-  title: Kata Containers Integration with Kubernetes
   image: /img/katacontainers_kubernetes_integration_diagram.jpg
   table:
-    title: Integration Points
     columns:
-      - title: Hypervisor
-        row:
+      - row:
           - text: Firecracker
           - text: QEMU
           - text: Cloud Hypervisor
-      - title: Architecture support
-        row:
+        title: Hypervisor
+      - row:
           - text: x86_64
           - text: aarch64
           - text: ppc64le
           - text: s390x
-      - title: Hardware support
-        row:
+        title: Architecture support
+      - row:
           - text: Nvidia GPU
           - text: FPGA
           - text: QAT
           - text: RDMA
           - text: SRIO-V
+        title: Hardware support
+    title: Integration Points
+  title: Kata Containers Integration with Kubernetes
 ---
 
 ## Requirements
