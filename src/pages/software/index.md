@@ -16,11 +16,11 @@ intro:
   buttons:
     - link: 'https://github.com/kata-containers'
       text: explore on github
-  text: >
-    Kata Containers is Apache 2 licensed software consisting of six components:
-    Agent, Runtime,  Proxy, Shim, Kernel and packaging of QEMU 2.11. It is
-    designed to be architecture agnostic,  run on multiple hypervisors and plug
-    seamlessly into the containers ecosystem.
+  text: >-
+    Kata Containers is Apache 2 licensed software consisting of two main
+    components: the Kata agent, and the Kata Containerd shim v2 runtime. It also
+    packages a Linux kernel and versions of QEMU, Cloud Hypervisor and
+    Firecracker hypervisors.
 architecture:
   columns:
     - icon: /img/logo_ico1.svg
