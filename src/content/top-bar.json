@@ -1,7 +1,7 @@
 {
   "bar": {
-    "text": "Looking for more information on Kata Containers like production use cases and tutorials?",
-    "link": "https://www.youtube.com/playlist?list=PLKqaoAnDyfgq2JcCTcrj9_b0fAD8OS9ex",
-    "button": "WATCH NOW"
+    "text": "Learn more about Ant Group's Kata Containers production use case at the OpenInfra Live Keynotes",
+    "link": "https://openinfra.dev/live/keynotes",
+    "button": "JOIN US "
   }
 }
