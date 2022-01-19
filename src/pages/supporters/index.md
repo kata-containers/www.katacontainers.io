@@ -84,9 +84,9 @@ companies:
     - alt: FiberHome
       class: img-sponsor-l3-last
       image: /img/logo-fiberhome.png
-    - alt: G Research
+    - alt: H3C
       class: img-sponsor-l4
-      image: /img/g-research-lg.svg
+      image: /img/h3c-lg.jpeg
     - alt: Huawei
       class: img-sponsor-l4
       image: /img/huawei-new-lg.jpg
