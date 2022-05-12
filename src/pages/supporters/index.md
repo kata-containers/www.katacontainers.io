@@ -60,9 +60,9 @@ companies:
     - alt: CISCO
       class: img-sponsor-l3-last
       image: /img/cisco-lg2.png
-    - alt: City Network
+    - alt: Cleura
       class: img-sponsor-l4
-      image: /img/logo-citynetwork.svg
+      image: /img/cleura-lg.jpg
     - alt: China Mobile
       class: img-sponsor-l4
       image: /img/logo-china.svg
