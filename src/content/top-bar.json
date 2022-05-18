@@ -1,7 +1,7 @@
 {
   "bar": {
-    "text": "Learn more about Ant Group's Kata Containers production use case at the OpenInfra Live Keynotes",
-    "link": "https://www.youtube.com/playlist?list=PLKqaoAnDyfgo5sOi98QlbMVMhgI_lxFPA",
-    "button": "WATCH NOW"
+    "text": "Meet users running Kata and hear topics on confidential computing, security and more at OpenInfra Summit Berlin, June 7-9",
+    "link": "https://openinfra.dev/summit/",
+    "button": "REGISTER NOW"
   }
 }
