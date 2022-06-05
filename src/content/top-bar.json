@@ -1,7 +1,7 @@
 {
   "bar": {
-    "text": "Meet users running Kata and hear topics on confidential computing, security and more at OpenInfra Summit Berlin, June 7-9",
-    "link": "https://openinfra.dev/summit/",
-    "button": "REGISTER NOW"
+    "text": "Read Kata Containers best practices at Ant Group in its whitepaper.",
+    "link": "/collateral/kata-containers-ant-group_whitepaper.pdf",
+    "button": "READ THE WHITEPAPER"
   }
 }
