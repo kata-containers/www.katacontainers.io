@@ -76,7 +76,7 @@ tables:
       - text: >
           <p>Updates from the community on a weekly basis.</p>  <p
           className="p-simple-item-bullet">
-            <a href="https://etherpad.openstack.org/p/katacontainers-2019-architecture-committee-mtgs">View the Etherpad</a>
+            <a href="https://etherpad.opendev.org/p/Kata_Containers_Architecture_Committee_Mtgs">View the Etherpad</a>
           </p>        
         title: Weekly Architecture Meetings
       - text: >
