@@ -92,7 +92,7 @@ companies:
       image: /img/huawei-new-lg.jpg
     - alt: Inspur
       class: img-sponsor-l3-last
-      image: /img/logo-inspur.svg
+      image: /img/inspur-logo.jpg
     - alt: Intel
       class: img-sponsor-l4
       image: /img/intel-lg.png
