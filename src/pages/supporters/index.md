@@ -72,9 +72,6 @@ companies:
     - alt: China Unicom
       class: img-sponsor-l4
       image: /img/china-unicom.png
-    - alt: Click2Cloud
-      class: img-sponsor-l4
-      image: /img/click2cloud.jpg
     - alt: Dell
       class: img-sponsor-l4
       image: /img/logo-dell.svg
@@ -96,9 +93,6 @@ companies:
     - alt: Intel
       class: img-sponsor-l4
       image: /img/intel-lg.png
-    - alt: JIT Stack
-      class: img-sponsor-l4
-      image: /img/jitstack-logo-lg.jpg
     - alt: Mirantis
       class: img-sponsor-l4
       image: /img/mirantis-lg.jpg
