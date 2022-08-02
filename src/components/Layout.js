@@ -3,11 +3,18 @@ import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import SEO from '../components/SEO'
+import NavigationWidget from 'navigation-widget/dist';
+import 'navigation-widget/dist/index.css';
+import { getEnvVariable, SPONSORED_PROJECT_ID } from '../utils/envVariables'
+import sponsoredProjects from "../content/sponsored-projects.json";
 import '../style/style.scss'
 import { withPrefix } from 'gatsby'
 import TopBar from './TopBar'
 
 const TemplateWrapper = ({ children }) => {
+
+  const currentProject = parseInt(getEnvVariable(SPONSORED_PROJECT_ID));
+
   return (
     <div>
       <Helmet>
@@ -32,7 +39,8 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <SEO />
-      <TopBar />
+      <NavigationWidget projects={sponsoredProjects} currentProject={currentProject} containerClass="container" />
+      {/* <TopBar /> */}
       <Navbar />
       <div>{children}</div>      
       <Footer />
