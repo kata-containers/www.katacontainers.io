@@ -25,6 +25,7 @@ const SSR_getSponsoredProjects = async (baseUrl) => {
         order: 'name',
         per_page: 100,
         page: 1,
+        expand: 'sponsorship_types,sponsorship_types.supporting_companies,sponsorship_types.supporting_companies.company,subprojects,subprojects.sponsorship_types,subprojects.sponsorship_types.supporting_companies,subprojects.sponsorship_types.supporting_companies.company'
       }
     }).then((response) => response.data.data)
     .catch(e => console.log('ERROR: ', e));

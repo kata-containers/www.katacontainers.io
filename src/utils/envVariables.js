@@ -1,9 +1,11 @@
 export const API_BASE_URL = 'API_BASE_URL';
 export const SPONSORED_PROJECT_ID = 'SPONSORED_PROJECT_ID';
+export const SPONSORED_SUPPORTERS_ID = 'SPONSORED_SUPPORTERS_ID';
 
 const processEnv = {
     API_BASE_URL: process.env.GATSBY_SUMMIT_API_BASE_URL,
     SPONSORED_PROJECT_ID: process.env.GATSBY_SPONSORED_PROJECT_ID,
+    SPONSORED_SUPPORTERS_ID: process.env.GATSBY_SPONSORED_SUPPORTERS_ID
 }
 
 export const getEnvVariable = (name) => {
@@ -17,4 +19,5 @@ export const getEnvVariable = (name) => {
 if (typeof window === 'object') {
     window.API_BASE_URL = processEnv[API_BASE_URL];
     window.SPONSORED_PROJECT_ID = processEnv[SPONSORED_PROJECT_ID];
+    window.SPONSORED_SUPPORTERS_ID = processEnv[SPONSORED_SUPPORTERS_ID];
 }

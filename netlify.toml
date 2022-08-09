@@ -9,6 +9,7 @@
 [context.deploy-preview.environment]
   GATSBY_API_BASE_URL = "https://testresource-server.openstack.org"  
   GATSBY_SPONSORED_PROJECT_ID = "3"  
+  GATSBY_SPONSORED_SUPPORTERS_ID = "37"  
 [[redirects]]
   from = "/baidu"
   to = "/collateral/ApplicationOfKataContainersInBaiduAICloud.pdf"

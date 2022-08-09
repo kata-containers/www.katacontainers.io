@@ -9,36 +9,16 @@ import SupportBanner from '../components/SupportBanner'
 import leftArrow from '../img/svg/arrow-left.svg'
 import metadata from '../content/site-metadata.json'
 
-export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons, donors, companies, support, contentComponent }) => {
+import sponsoredProjects from "../content/sponsored-projects.json";
+import { getSubProjectById } from '../utils/sponsoredProjects'
+import { getEnvVariable, SPONSORED_SUPPORTERS_ID } from '../utils/envVariables'
+
+export const SupportersPageTemplate = ({ seo, content, buttons, support, contentComponent }) => {
   const PageContent = contentComponent || Content
 
-  let perChunk = 3 // items per chunk    
-  let inputArray = donors.list;
-  let donorsList = inputArray.reduce((resultArray, item, index) => {
-    const chunkIndex = Math.floor(index / perChunk)
+  const subProject = getSubProjectById(sponsoredProjects, parseInt(getEnvVariable(SPONSORED_SUPPORTERS_ID)));
 
-    if (!resultArray[chunkIndex]) {
-      resultArray[chunkIndex] = [] // start a new chunk
-    }
-
-    resultArray[chunkIndex].push(item)
-
-    return resultArray
-  }, [])
-
-  perChunk = 4;
-  inputArray = companies.list;
-  let supportList = inputArray.reduce((resultArray, item, index) => {
-    const chunkIndex = Math.floor(index / perChunk)
-
-    if (!resultArray[chunkIndex]) {
-      resultArray[chunkIndex] = [] // start a new chunk
-    }
-
-    resultArray[chunkIndex].push(item)
-
-    return resultArray
-  }, [])
+  const supporters = subProject.sponsorship_types;
 
   return (
 
@@ -69,8 +49,8 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
         <div className="hero-body">
           <div className="container container-thin">
             <div className="hero-content">
-              <h3 className="hero-title">{title}</h3>
-              <div className="hero-entry"><p>{subTitle}</p></div>
+              <h3 className="hero-title">{subProject.name}</h3>
+              <div className="hero-entry"><p dangerouslySetInnerHTML={{ __html: subProject.description }}></p></div>
             </div>
           </div>
         </div>
@@ -90,70 +70,29 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
                   )
                 })}
                 <br /><br />
-                <div className="container1"><h2 className="features">{donors.title}</h2>
-                </div>
-                {
-                  donorsList.map((d, index) => {
-                    return (
-                      <div className={`container-supporter ${donorsList.length === index + 1 ? 'container-supporter-last' : ''}`} key={index}>
-                        {d.map((i, index) => {
-                          return (
-                            <div className="content-supporter-lt3" key={index}>
-                              <a href={i.link} target="_blank" rel="noopener noreferrer">
-                                {i.image ?
-                                  i.image.extension === 'svg' && !i.image.childImageSharp ?
-                                    <img src={!!i.image.publicURL ? i.image.publicURL : i.image} alt={i.alt}
-                                      className={
-                                        i.class === 'img-sponsor-l3' ? 'img-sponsor-l3' : i.class === 'img-sponsor-l2' ? 'img-sponsor-l2' :
-                                          i.class === 'img-sponsor-l4' ? 'img-sponsor-l4' : i.class === 'img-sponsor-l3-last' ? 'img-sponsor-l3-last' : ''} />
-                                    :
-                                    <img src={!!i.image.childImageSharp ? i.image.childImageSharp.fluid.src : i.image} alt={i.alt}
-                                      className={
-                                        i.class === 'img-sponsor-l3' ? 'img-sponsor-l3' : i.class === 'img-sponsor-l2' ? 'img-sponsor-l2' :
-                                          i.class === 'img-sponsor-l4' ? 'img-sponsor-l4' : i.class === 'img-sponsor-l3-last' ? 'img-sponsor-l3-last' : ''} />
-                                  :
-                                  null}
-                              </a>
-                            </div>
-                          )
-                        })}
+
+                {supporters.map((s, index) => {
+                  return (
+                    <>
+                      <div className="container1"><h2 className="features">{s.name}</h2>
                       </div>
-                    )
-                  })
-                }
-                <div className="container1">
-                  <h2 className="features">
-                    Companies Supporting Kata Containers
-                  </h2>
-                </div>
-                {
-                  supportList.map((d, index) => {
-                    return (
-                      <div className={`container-supporter ${supportList.length === index + 1 ? 'container-supporter-last' : ''}`} key={index}>
-                        {d.map((i, index) => {
-                          return (
-                            <div className="content-supporter" key={index}>
-                              {i.image ?
-                                i.image.extension === 'svg' && !i.image.childImageSharp ?
-                                  <img src={!!i.image.publicURL ? i.image.publicURL : i.image} alt={i.alt}
-                                    className={
-                                      i.class === 'img-sponsor-l3' ? 'img-sponsor-l3' : i.class === 'img-sponsor-l2' ? 'img-sponsor-l2' :
-                                        i.class === 'img-sponsor-l4' ? 'img-sponsor-l4' : i.class === 'img-sponsor-l3-last' ? 'img-sponsor-l3-last' : ''} />
-                                  :
-                                  <img src={!!i.image.childImageSharp ? i.image.childImageSharp.fluid.src : i.image} alt={i.alt}
-                                    className={
-                                      i.class === 'img-sponsor-l3' ? 'img-sponsor-l3' : i.class === 'img-sponsor-l2' ? 'img-sponsor-l2' :
-                                        i.class === 'img-sponsor-l4' ? 'img-sponsor-l4' : i.class === 'img-sponsor-l3-last' ? 'img-sponsor-l3-last' : ''} />
-                                :
-                                null
-                              }
-                            </div>
-                          )
-                        })}
+                      <div className={`${index === 0 ? 'supporters-grid' : 'supporters-grid-others'}`}>
+                        {
+                          s.supporting_companies.map(({ company }, index) => {
+                            return (
+                              <div className="supporting-company" key={index}>
+                                <a href={company.url} target="_blank" rel="noopener noreferrer">
+                                  <img src={company.big_logo ? company.big_logo : company.logo} alt={company.name} />
+                                </a>
+                              </div>
+                            )
+                          })
+                        }
                       </div>
-                    )
-                  })
-                }
+                    </>
+                  )
+                })}
+
                 <p>{support.text}</p>
                 <p>{support.text2}</p>
                 <a href={support.button.link} className="button is-primary-dark is-rounded">
@@ -182,12 +121,8 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
 
 SupportersPageTemplate.propTypes = {
   seo: PropTypes.object,
-  title: PropTypes.string.isRequired,
-  subTitle: PropTypes.string.isRequired,
   buttons: PropTypes.object,
   donors: PropTypes.object,
-  support: PropTypes.object,
-  companies: PropTypes.object,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
@@ -200,11 +135,7 @@ const SupportersPage = ({ data }) => {
       <SupportersPageTemplate
         contentComponent={HTMLContent}
         seo={post.frontmatter.seo}
-        title={post.frontmatter.title}
-        subTitle={post.frontmatter.subTitle}
         buttons={post.frontmatter.buttons}
-        donors={post.frontmatter.donors}
-        companies={post.frontmatter.companies}
         support={post.frontmatter.support}
         content={post.html}
       />
@@ -237,44 +168,9 @@ export const supportersPageQuery = graphql`
           }
           twitterUsername
         }
-        title
-        subTitle
         buttons {
           text
           link
-        }
-        donors {
-          title
-          list {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }            
-              extension
-              publicURL
-            }
-            alt
-            link
-            class
-          }
-        }
-        companies {
-          title
-          list {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }            
-              extension
-              publicURL
-            }
-            alt
-            class
-          }
         }
         support {
           text

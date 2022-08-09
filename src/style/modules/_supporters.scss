@@ -1,43 +1,74 @@
+.supporters-grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px 20px;
+  margin-bottom: 70px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  .supporting-company {
+    img {
+      width: 245px;
+      height: auto;
+    }
+  }
+}
+
+.supporters-grid-others {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px 20px;
+  margin-bottom: 70px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  .supporting-company {
+    img {
+      width: 175px;
+      height: auto;
+    }
+  }
+}
+
 .container-supporter {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-right: -20px;
-    margin-left: -20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: -20px;
+  margin-left: -20px;
 }
 
 .container-supporter-last {
-    margin-top: 40px;
-    margin-bottom: 50px;
-    justify-content: center;
-    align-items: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-
-.content-supporter{
-    padding: 20px;
-    align-self: center;
-    width: 215px;
+.content-supporter {
+  padding: 20px;
+  align-self: center;
+  width: 215px;
 }
 
 .content-supporter-lt3 {
-    padding: 20px;
-    align-self: center;
-    width: 285px;
+  padding: 20px;
+  align-self: center;
+  width: 285px;
 }
 
 .content-supporter-lt2 {
-    padding: 20px;
-    width: 300px;
-    margin-right: -150px;
-
+  padding: 20px;
+  width: 300px;
+  margin-right: -150px;
 }

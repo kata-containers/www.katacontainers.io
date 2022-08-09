@@ -277,28 +277,9 @@ collections:
               {label: "Image", name: "image", widget: image},            
               {label: "Twitter Username", name: "twitterUsername", widget: string},
             ]}
-          - {label: "Title", name: title, widget: string}
-          - {label: "Sub Title", name: subTitle, widget: string}
           - {label: "Buttons", name: buttons, widget: list, fields: [
               {label: Text, name: text, widget: string},
               {label: Link, name: link, widget: string}
-            ]}
-          - {label: "Donors", name: donors, widget: object, fields: [
-              {label: "Title", name: title, widget: string},
-              {label: "Companies", name: list, widget: list, fields: [
-                {label: "Image", name: image, widget: image},
-                {label: "Alt", name: alt, widget: string},
-                {label: "Link", name: link, widget: string},
-                {label: "CSS Class", name: class, widget: string},
-              ]}
-            ]}
-          - {label: "Supporters", name: companies, widget: object, fields: [
-              {label: "Title", name: title, widget: string},
-              {label: "Companies", name: list, widget: list, fields: [
-                {label: "Image", name: image, widget: image},
-                {label: "Alt", name: alt, widget: string},                
-                {label: "CSS Class", name: class, widget: string},
-              ]}              
             ]}
           - {label: "End Text", name: support, widget: object, fields: [
               {label: "Text", name: text, widget: text},
