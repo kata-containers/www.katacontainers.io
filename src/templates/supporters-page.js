@@ -50,7 +50,7 @@ export const SupportersPageTemplate = ({ seo, content, buttons, support, content
           <div className="container container-thin">
             <div className="hero-content">
               <h3 className="hero-title">{subProject.name}</h3>
-              <div className="hero-entry"><p dangerouslySetInnerHTML={{ __html: subProject.description }}></p></div>
+              <div className="hero-entry"><span dangerouslySetInnerHTML={{ __html: subProject.description }} /></div>
             </div>
           </div>
         </div>
