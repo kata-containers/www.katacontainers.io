@@ -8,29 +8,13 @@ const SupportersPagePreview = ({ entry, getAsset, widgetFor }) => {
   const entryButtons = entry.getIn(['data', 'buttons'])
   const buttons = entryButtons ? entryButtons.toJS() : []
 
-  const entryDonors = entry.getIn(['data', 'donors', 'list'])
-  const donorsList = entryDonors ? entryDonors.toJS() : []
-
-  const entryCompanies = entry.getIn(['data', 'companies', 'list'])
-  const companiesList = entryCompanies ? entryCompanies.toJS() : []
-
   const entrySupport = entry.getIn(['data', 'support', 'list'])
   const supportList = entrySupport ? entrySupport.toJS() : []
 
   if (data) {    
     return(
       <SupportersPageTemplate
-        title={entry.getIn(['data', 'title'])}
-        subTitle={entry.getIn(['data', 'subTitle'])}
         buttons={buttons}
-        donors={{
-          title: entry.getIn(['data', 'donors', 'title']),
-          list: donorsList
-        }}
-        companies={{
-          title: entry.getIn(['data', 'companies', 'title']),
-          list: companiesList
-        }}
         support={{
           text: entry.getIn(['data', 'support', 'text']),
           text2: entry.getIn(['data', 'support', 'text2']),
