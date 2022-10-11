@@ -39,6 +39,10 @@ donors:
       class: img-sponsor-l3
       image: /img/logo-packet.svg
       link: 'https://www.packet.com/'
+    - alt: Alibaba Cloud
+      class: img-sponsor-l3
+      image: /img/alibaba-cloud-logo.png
+      link: https://alibabacloud.com
   title: Infrastructure Donors
 companies:
   list:
