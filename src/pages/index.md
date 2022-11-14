@@ -91,7 +91,7 @@ tables:
       link: 'https://www.openinfra.dev/summit/vancouver-2023'
       text: Submit Your Presentation
     text: >
-      Submit your open source demos and production use cases across categories ranging from private, hybrid and public cloud to containers, hardware enablement, and 5G.
+      The OpenInfra Summit Vancouver is the Kata Containers community’s chance to highlight the open source innovation around container security and workload isolation. Submit your presentation by January 10, 2023!
     title: OpenInfra Summit Vancouver Call for Presentations is now Open!
 ---
 
