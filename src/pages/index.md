@@ -88,14 +88,10 @@ tables:
     title: How to Get Involved.
   rightTable:
     button:
-      link: 'https://www.surveymonkey.com/r/KataContainers'
-      text: Take the Survey
+      link: 'https://www.openinfra.dev/summit/vancouver-2023'
+      text: Learn More
     text: >
-      <p>Baidu is <a
-      href="https://katacontainers.io/collateral/ApplicationOfKataContainersInBaiduAICloud.pdf">running
-      Kata Containers in production</a> to support Function Computing, Cloud
-      Container Instances, and Edge Computing. Running or evaluating Kata
-      Containers? Share your feedback in our User Survey.</p> 
-    title: Kata Containers in Production
+      Submit your open source demos and production use cases across categories ranging from private, hybrid and public cloud to containers, hardware enablement, and 5G.
+    title: OpenInfra Summit Vancouver Call for Presentations is now Open!
 ---
 
