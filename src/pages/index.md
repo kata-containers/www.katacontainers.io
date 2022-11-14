@@ -89,7 +89,7 @@ tables:
   rightTable:
     button:
       link: 'https://www.openinfra.dev/summit/vancouver-2023'
-      text: Learn More
+      text: Submit Your Presentation
     text: >
       Submit your open source demos and production use cases across categories ranging from private, hybrid and public cloud to containers, hardware enablement, and 5G.
     title: OpenInfra Summit Vancouver Call for Presentations is now Open!
