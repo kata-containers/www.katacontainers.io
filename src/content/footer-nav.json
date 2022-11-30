@@ -41,7 +41,7 @@
           "link": "http://webchat.oftc.net/?channels=kata-general"
         },
 	{
-	  "text": "Mastodon"
+	  "text": "Mastodon",
 	  "link": "https://fosstodon.org/@KataContainers"
 	}
       ]
