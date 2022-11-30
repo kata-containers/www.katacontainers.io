@@ -39,7 +39,11 @@
         {
           "text": "IRC: #kata-general",
           "link": "http://webchat.oftc.net/?channels=kata-general"
-        }
+        },
+	{
+	  "text": "Mastodon",
+	  "link": "https://fosstodon.org/@KataContainers"
+	}
       ]
     },
     {
