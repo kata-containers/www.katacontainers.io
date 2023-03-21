@@ -82,13 +82,13 @@ tables:
       - text: >
           <p>Are you running Kata Containers?</p>  <p
           className="p-simple-item-bullet">Take the Kata Containers <a
-          href="https://www.surveymonkey.com/r/KataContainers">User Survey!</a>
+          href="https://openinfrafoundation.formstack.com/forms/kata_containers_user_survey">User Survey!</a>
           </p>       
         title: Share your story
     title: How to Get Involved.
   rightTable:
     button:
-      link: 'https://www.surveymonkey.com/r/KataContainers'
+      link: 'https://openinfrafoundation.formstack.com/forms/kata_containers_user_survey'
       text: Take the Survey
     text: >
       <p>Baidu is <a
