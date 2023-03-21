@@ -88,7 +88,8 @@ tables:
     title: How to Get Involved.
   rightTable:
     button:
-      link: 'https://www.surveymonkey.com/r/KataContainers'
+      link: >-
+        https://openinfrafoundation.formstack.com/forms/kata_containers_user_survey
       text: Take the Survey
     text: >
       <p>Baidu is <a
