@@ -70,13 +70,13 @@ tables:
           <p className="p-simple-item-bullet">Join the mailing list: <a
           href="http://lists.katacontainers.io">http://lists.katacontainers.io</a></p>
           <p className="p-simple-item-bullet">Slack: <a
-          href="https://join.slack.com/t/katacontainers/shared_invite/zt-16w1u6usn-sK871qbMxVN8KsCP5Gr56A">slack.com</a>  IRC: <a
+          href="http://bit.ly/kataslack">bit.ly/kataslack</a>  IRC: <a
           href="#kata-dev">#kata-dev</a></p>      
         title: Stay in the loop
       - text: >
           <p>Updates from the community on a weekly basis.</p>  <p
           className="p-simple-item-bullet">
-            <a href="https://etherpad.opendev.org/p/Kata_Containers_Architecture_Committee_Mtgs">View the Etherpad</a>
+            <a href="https://etherpad.openstack.org/p/katacontainers-2019-architecture-committee-mtgs">View the Etherpad</a>
           </p>        
         title: Weekly Architecture Meetings
       - text: >
