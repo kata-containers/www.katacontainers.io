@@ -15,3 +15,6 @@
   to = "https://medium.com/kata-containers"
   status = 301
   force = true
+[context.deploy-preview.environment]
+  GATSBY_API_BASE_URL = "https://testresource-server.openstack.org"  
+  GATSBY_SPONSORED_PROJECT_ID = "3"  

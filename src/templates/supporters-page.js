@@ -9,6 +9,10 @@ import SupportBanner from '../components/SupportBanner'
 import leftArrow from '../img/svg/arrow-left.svg'
 import metadata from '../content/site-metadata.json'
 
+import sponsoredProjects from "../content/sponsored-projects.json";
+import { getSubProjectById } from '../utils/sponsoredProjects';
+import { getEnvVariable, MEMBERS_SUBPROJECT_ID } from '../utils/envVariables'
+
 export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons, donors, companies, support, contentComponent }) => {
   const PageContent = contentComponent || Content
 
@@ -39,6 +43,8 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
 
     return resultArray
   }, [])
+
+  const subProject = getSubProjectById(sponsoredProjects, parseInt(getEnvVariable(MEMBERS_SUBPROJECT_ID)));
 
   return (
 
@@ -90,70 +96,29 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
                   )
                 })}
                 <br /><br />
-                <div className="container1"><h2 className="features">{donors.title}</h2>
-                </div>
-                {
-                  donorsList.map((d, index) => {
+                <div className="sponsor-meta-container">
+                  {subProject.sponsorship_types.sort((a, b) => a.order - b.order).map((t, tierIndex) => {
                     return (
-                      <div className={`container-supporter ${donorsList.length === index + 1 ? 'container-supporter-last' : ''}`} key={index}>
-                        {d.map((i, index) => {
-                          return (
-                            <div className="content-supporter-lt3" key={index}>
-                              <a href={i.link} target="_blank" rel="noopener noreferrer">
-                                {i.image ?
-                                  i.image.extension === 'svg' && !i.image.childImageSharp ?
-                                    <img src={!!i.image.publicURL ? i.image.publicURL : i.image} alt={i.alt}
-                                      className={
-                                        i.class === 'img-sponsor-l3' ? 'img-sponsor-l3' : i.class === 'img-sponsor-l2' ? 'img-sponsor-l2' :
-                                          i.class === 'img-sponsor-l4' ? 'img-sponsor-l4' : i.class === 'img-sponsor-l3-last' ? 'img-sponsor-l3-last' : ''} />
-                                    :
-                                    <img src={!!i.image.childImageSharp ? i.image.childImageSharp.fluid.src : i.image} alt={i.alt}
-                                      className={
-                                        i.class === 'img-sponsor-l3' ? 'img-sponsor-l3' : i.class === 'img-sponsor-l2' ? 'img-sponsor-l2' :
-                                          i.class === 'img-sponsor-l4' ? 'img-sponsor-l4' : i.class === 'img-sponsor-l3-last' ? 'img-sponsor-l3-last' : ''} />
-                                  :
-                                  null}
-                              </a>
-                            </div>
-                          )
-                        })}
+                      <div className="sponsor-inner-container" key={`company-tier-${tierIndex}`}>
+                      <div className="container1"><h2 className="features">{t.name}</h2></div>
+                      <div className="container container-center container-center-sponsors" key={`company-tier-${tierIndex}`}>
+                          <div className='columns' style={{alignItems: 'center', justifyContent: 'center'}} key={tierIndex}>
+                              {t.supporting_companies.sort((a, b) => a.order - b.order).map(({company}, index) => {
+                                  return (
+                                    <div className={`column columns-sponsors columns-sponsors-${tierIndex}`} key={`company-tier-${tierIndex}-${index}`}>
+                                      <img
+                                          src={company.big_logo ? company.big_logo : company.logo} alt={company.name} />
+                                    </div>
+                                  )
+                              })}
+                          </div>
                       </div>
+                      <p>&nbsp;</p>
+                      </div>
+                      
                     )
-                  })
-                }
-                <div className="container1">
-                  <h2 className="features">
-                    Companies Supporting Kata Containers
-                  </h2>
+                  })}
                 </div>
-                {
-                  supportList.map((d, index) => {
-                    return (
-                      <div className={`container-supporter ${supportList.length === index + 1 ? 'container-supporter-last' : ''}`} key={index}>
-                        {d.map((i, index) => {
-                          return (
-                            <div className="content-supporter" key={index}>
-                              {i.image ?
-                                i.image.extension === 'svg' && !i.image.childImageSharp ?
-                                  <img src={!!i.image.publicURL ? i.image.publicURL : i.image} alt={i.alt}
-                                    className={
-                                      i.class === 'img-sponsor-l3' ? 'img-sponsor-l3' : i.class === 'img-sponsor-l2' ? 'img-sponsor-l2' :
-                                        i.class === 'img-sponsor-l4' ? 'img-sponsor-l4' : i.class === 'img-sponsor-l3-last' ? 'img-sponsor-l3-last' : ''} />
-                                  :
-                                  <img src={!!i.image.childImageSharp ? i.image.childImageSharp.fluid.src : i.image} alt={i.alt}
-                                    className={
-                                      i.class === 'img-sponsor-l3' ? 'img-sponsor-l3' : i.class === 'img-sponsor-l2' ? 'img-sponsor-l2' :
-                                        i.class === 'img-sponsor-l4' ? 'img-sponsor-l4' : i.class === 'img-sponsor-l3-last' ? 'img-sponsor-l3-last' : ''} />
-                                :
-                                null
-                              }
-                            </div>
-                          )
-                        })}
-                      </div>
-                    )
-                  })
-                }
                 <p>{support.text}</p>
                 <p>{support.text2}</p>
                 <a href={support.button.link} className="button is-primary-dark is-rounded">

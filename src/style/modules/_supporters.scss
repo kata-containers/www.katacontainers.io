@@ -41,3 +41,21 @@
     margin-right: -150px;
 
 }
+
+.container-center-sponsors .columns {
+    flex-wrap: wrap;
+}
+
+.container-center-sponsors .columns .columns-sponsors {
+    flex-basis: 25%;
+    max-width: 25%;
+    img {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.sponsor-meta-container > .sponsor-inner-container:first-child .columns-sponsors {
+    flex-basis: 33%;
+    max-width: 33%;
+}
