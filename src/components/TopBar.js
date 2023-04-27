@@ -15,7 +15,7 @@ const TopBar = class extends React.Component {
 
     if(content.bar) {
       return (      
-        <div className="bar is-dark-gray">
+        <div className="bar is-dark-gray top-bar-brand-color">
           <div className="container">
             <div className="bar-inner">
               <div className="bar-entry">
