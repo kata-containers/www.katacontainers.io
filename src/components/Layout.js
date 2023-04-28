@@ -40,7 +40,7 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <SEO />
       <NavigationWidget projects={sponsoredProjects} currentProject={currentProject} containerClass="container" />
-      {/* <TopBar /> */}
+      <TopBar />
       <Navbar />
       <div>{children}</div>      
       <Footer />

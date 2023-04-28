@@ -1,7 +1,7 @@
 {
   "bar": {
-    "text": "Read Kata Containers best practices at Ant Group in its whitepaper.",
-    "link": "/collateral/kata-containers-ant-group_whitepaper.pdf",
-    "button": "READ THE WHITEPAPER"
+    "text": "Meet the experts around confidential computing & hear production use cases with Kata Containers in Vancouver, June 13-15",
+    "link": "https://openinfra.dev/summit/vancouver-2023",
+    "button": "REGISTER NOW"
   }
 }
