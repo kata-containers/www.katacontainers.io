@@ -39,9 +39,9 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <SEO />
-      <NavigationWidget projects={sponsoredProjects} currentProject={currentProject} containerClass="container" />
+      <NavigationWidget projects={sponsoredProjects} currentProject={currentProject} containerClass="container" navbarTitle="An OpenInfra Foundation Project" popupTitle="More OpenInfra Foundation Projects" />
       <TopBar />
-      <Navbar navbarTitle="An OpenInfra Foundation Project" popupTitle="More OpenInfra Foundation Projects" />
+      <Navbar />
       <div>{children}</div>      
       <Footer />
     </div>
