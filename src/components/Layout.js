@@ -41,7 +41,7 @@ const TemplateWrapper = ({ children }) => {
       <SEO />
       <NavigationWidget projects={sponsoredProjects} currentProject={currentProject} containerClass="container" />
       <TopBar />
-      <Navbar />
+      <Navbar navbarTitle="An OpenInfra Foundation Project" popupTitle="More OpenInfra Foundation Projects" />
       <div>{children}</div>      
       <Footer />
     </div>
