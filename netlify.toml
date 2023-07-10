@@ -9,8 +9,8 @@
 [context.deploy-preview.environment]
   GATSBY_API_BASE_URL = "https://openstackid-resources.openstack.org"  
   GATSBY_SPONSORED_PROJECT_ID = "3"  
-  GATSBY_HOME_SUBPROJECT_ID = "13"
-  GATSBY_MEMBERS_SUBPROJECT_ID = "13"
+  GATSBY_HOME_SUBPROJECT_ID = "12"
+  GATSBY_MEMBERS_SUBPROJECT_ID = "12"
 [[redirects]]
   from = "/baidu"
   to = "/collateral/ApplicationOfKataContainersInBaiduAICloud.pdf"
