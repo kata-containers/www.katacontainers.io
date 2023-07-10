@@ -5,6 +5,41 @@ const fs = require('fs')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
+const myEnv = require("dotenv").config({
+  path: `.env`,
+  expand: true
+});
+
+const writeToJson = (filePath, data) => {
+  fs.writeFileSync(filePath, JSON.stringify(data), 'utf8', function (err) {
+    if (err) throw err;
+    console.log(`wrote ${filePath}`);
+  });
+};
+
+const SSR_getSponsoredProjects = async (baseUrl) => {
+  return await axios.get(
+    `${baseUrl}/api/public/v1/sponsored-projects/`,
+    {
+      params: {
+        order: 'name',
+        per_page: 100,
+        page: 1,
+      }
+    }).then((response) => response.data.data)
+    .catch(e => console.log('ERROR: ', e));
+}
+
+exports.onPreBootstrap = async () => {
+  const apiBaseUrl = process.env.GATSBY_API_BASE_URL;  
+
+  // pull sponsored projects
+  const sponsoredProjects = await SSR_getSponsoredProjects(apiBaseUrl);
+  if (sponsoredProjects) {
+    writeToJson('src/content/sponsored-projects.json', sponsoredProjects);
+  };
+}
+
 // explicit Frontmatter declaration to make category, author and date, optionals.
 // those properties only present in blog frontmatter
 

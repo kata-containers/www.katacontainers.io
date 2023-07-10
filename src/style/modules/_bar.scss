@@ -23,7 +23,7 @@
 
     &:hover {
       background: $primary;
-      border-color: $primary;
+      border-color: #fff;
     }
   }
 
@@ -36,10 +36,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 15px;
   }
 
   .bar-entry {
     margin: 0 22px;
+    p {
+      font-size: 16px;
+    }
   }
 
   @media (max-width: 768px) {
@@ -63,4 +67,8 @@
       margin: 10px 0;
     }
   }
+}
+
+.bar.top-bar-brand-color {
+  background-color: #f15b3e;
 }

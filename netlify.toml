@@ -4,6 +4,11 @@
 [build.environment]
   YARN_VERSION = "1.13.0"
   YARN_FLAGS = "--no-ignore-optional"
+# Deploy Preview context: all deploys resulting from a pull/merge request will
+# inherit these settings.
+[context.deploy-preview.environment]
+  GATSBY_API_BASE_URL = "https://testresource-server.openstack.org"  
+  GATSBY_SPONSORED_PROJECT_ID = "3"  
 [[redirects]]
   from = "/baidu"
   to = "/collateral/ApplicationOfKataContainersInBaiduAICloud.pdf"

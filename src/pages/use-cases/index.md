@@ -22,6 +22,8 @@ Ant Group, the leading peer-to-peer payments processor in China, does automatic 
 
 With Kata Containers, teams at Ant Group are still sharing the same host kernel. They have a hypervisor layer, and they run different pods in different guest operating systems (OS). With this guest OS level isolation, Ant Group no longer shares a lot of host kernel threads, allowing their service performance to be much more stable with Kata.
 
+**Read Kata Containers best practices at Ant Group in its [whitepaper](/collateral/kata-containers-ant-group_whitepaper.pdf).**
+
 **Watch how teams at Ant Group deploy large scale Kata Containers in production on [YouTube](https://www.youtube.com/watch?v=-9LtBfwj03Y&t=590s).**
 
 <br />
