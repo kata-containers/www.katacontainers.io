@@ -23,7 +23,7 @@ Understand the basics, contribute to and try using Kata Containers.
 
 [Upgrading](https://github.com/kata-containers/kata-containers/tree/main/docs/Upgrading.md) : How to upgrade from Clear Containers and runV to Kata Containers and how to upgrade an existing Kata Containers system to the latest version.  
 [Limitations](https://github.com/kata-containers/kata-containers/tree/main/docs/Limitations.md) : Differences and limitations compared with the default Docker runtime, runc.  
-[How to](https://github.com/kata-containers/kata-containers/tree/main/docs/how-to/how-to-use-k8s-with-cri-containerd-and-kata.md) : Kata Containers with k8s and cri-containerd.  
+[How to](https://github.com/kata-containers/kata-containers/blob/main/docs/how-to/how-to-use-k8s-with-containerd-and-kata.md) : Kata Containers and containerd with Kubernetes.
 [How to](https://github.com/kata-containers/kata-containers/tree/main/docs/use-cases/zun_kata.md) : OpenStack Zun with Kata Containers.  
 [How to](https://github.com/kata-containers/kata-containers/tree/main/docs/how-to#hypervisors-integration) : Kata Containers with Firecracker.
 
@@ -34,7 +34,7 @@ Understand the basics, contribute to and try using Kata Containers.
 
 Design and Implementations
 
-* [Kata Containers Architecture](https://github.com/kata-containers/kata-containers/tree/main/docs/design/architecture.md) : Architectural overview of Kata Containers
+* [Kata Containers Architecture](https://github.com/kata-containers/kata-containers/tree/main/docs/design/architecture) : Architectural overview of Kata Containers
 * [Kata Containers design](https://github.com/kata-containers/kata-containers/tree/main/docs/design) : More Kata Containers design documents
 
 How to Contribute
