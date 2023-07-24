@@ -12,7 +12,7 @@ title: Users
 subTitle: 'Kata Containers case studies and more'
 blogUrl: 'https://medium.com/kata-containers/'
 ---
-Are you a Kata Containers user? Please take a few moments to fill out the **[Kata Containers User Survey](https://openinfrafoundation.formstack.com/forms/kata_containers_user_survey)** to provide feedback and information around your deployment. All information is confidential to the Open Infrastructure Foundation unless you designate that it can be public.
+Are you a Kata Containers user? Please take a few moments to fill out the **[Kata Containers User Survey](https://www.surveymonkey.com/r/KataContainers)** to provide feedback and information around your deployment. All information is confidential to the Open Infrastructure Foundation unless you designate that it can be public.
 
 <br />
 
