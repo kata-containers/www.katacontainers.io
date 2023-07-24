@@ -86,7 +86,7 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
           <div className="section-body">
             <article className="article-simple default-page">
               <section className="section section-padding-top-0">
-                <p>The Kata Containers project is supported by a growing, global community of operators, developers and organizations. Join us as we build the future of secure container infrastructure.</p>
+                <p>The Kata Containers project is supported by the <a href="">OpenInfra Foundation</a> and a growing, global community of operators, developers and organizations. Join us as we build the future of secure container infrastructure.</p>
                 {buttons.map((b, index) => {
                   return (
                     <a href={b.link} className="button is-primary-dark is-rounded" key={index}><span>{b.text}</span>
@@ -120,7 +120,8 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
                     )
                   })}
                 </div>
-                <p>{support.text} <img src="" /></p>
+                {/* <p>{support.text}</p> */}
+                <p>The Kata Containers project and community are supported by the OpenInfra Foundation.</p> <a href="https://www.openinfra.dev"><img src="https://openinfra.dev/img/OpenInfraFoundation-logo-RGB-horiz-w.svg" /></a>
                 <a href={support.button.link} className="button is-primary-dark is-rounded">
                   <span>{support.button.text}</span>
                   <span className="ico">
