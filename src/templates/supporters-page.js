@@ -121,13 +121,14 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
                   })}
                 </div>
                 {/* <p>{support.text}</p> */}
-                <p>The Kata Containers project and community are supported by the OpenInfra Foundation. <a href="https://www.openinfra.dev"><img src="https://openinfra.dev/img/openinfra-logo.jpeg" /></a></p>
-                <a href={support.button.link} className="button is-primary-dark is-rounded">
+                <p className="foundation-tagline">The Kata Containers project and community are supported by the OpenInfra Foundation.</p>
+                <a href="https://www.openinfra.dev"><img className="foundation-logo" src="https://openinfra.dev/img/openinfra-logo.jpeg" /></a>
+                {/* <a href={support.button.link} className="button is-primary-dark is-rounded">
                   <span>{support.button.text}</span>
                   <span className="ico">
                     <img src={leftArrow} alt="Learn More" />
                   </span>
-                </a>
+                </a> */}
                 <br />
                 <PageContent className="content" content={content} />
               </section>
