@@ -120,7 +120,7 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
                     )
                   })}
                 </div>
-                <p>{support.text}</p>
+                <p>{support.text} <img src="" /></p>
                 <a href={support.button.link} className="button is-primary-dark is-rounded">
                   <span>{support.button.text}</span>
                   <span className="ico">
@@ -128,12 +128,6 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
                   </span>
                 </a>
                 <br />
-                <br />
-                <ul>
-                  {support.list.map((e, index) => {
-                    return <li key={index}>{e.text}</li>
-                  })}
-                </ul>
                 <PageContent className="content" content={content} />
               </section>
               <SupportBanner />
