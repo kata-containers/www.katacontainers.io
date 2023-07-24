@@ -58,15 +58,12 @@
 .sponsor-meta-container > .sponsor-inner-container:first-child .columns-sponsors {
     flex-basis: 33%;
     max-width: 33%;
-}
-
-.column.columns-sponsors.columns-sponsors-0 {
     img {
         max-width: 188px;
     }
 }
 
-.column.columns-sponsors.columns-sponsors-1 {
+.sponsor-meta-container > .sponsor-inner-container:nth-child(2) .columns-sponsors {
     img {
         max-width: 160px;
     }
