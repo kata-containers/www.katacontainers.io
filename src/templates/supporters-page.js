@@ -85,7 +85,7 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
         <div className="container container-thin">
           <div className="section-body">
             <article className="article-simple default-page">
-              <section className="section section-padding-top-0">
+              <section className="section section-padding-top-0 supporters-section">
                 <p>The Kata Containers project is supported by the <a href="">OpenInfra Foundation</a> and a growing, global community of operators, developers and organizations. Join us as we build the future of secure container infrastructure.</p>
                 {buttons.map((b, index) => {
                   return (
