@@ -102,7 +102,7 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
                       <div className="sponsor-inner-container" key={`company-tier-${tierIndex}`}>
                       <div className="container1"><h2 className="features">{t.name}</h2></div>
                       <div className="container container-center container-center-sponsors" key={`company-tier-${tierIndex}`}>
-                          <div className='columns' style={{alignItems: 'center', justifyContent: 'center'}} key={tierIndex}>
+                          <div className={`columns columns-${t.name}`} style={{alignItems: 'center', justifyContent: 'center'}} key={tierIndex}>
                               {t.supporting_companies.sort((a, b) => a.order - b.order).map(({company}, index) => {
                                   return (
                                     <div className={`column columns-sponsors columns-sponsors-${tierIndex}`} key={`company-tier-${tierIndex}-${index}`}>
