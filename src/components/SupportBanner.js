@@ -12,7 +12,7 @@ const SupportBanner = class extends React.Component {
 
     if(content) {
       return (      
-        <section className="section bottom-content">
+        <section className="section bottom-content support-banner-section">
           <div className="search-content">
             <h3 className="search-content-title">
               {content.support.title}
