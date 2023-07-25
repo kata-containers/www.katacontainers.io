@@ -132,11 +132,11 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
                 <br />
                 <PageContent className="content" content={content} />
               </section>
-              <SupportBanner />
             </article>
           </div>
         </div>
       </section>
+      <SupportBanner />
     </main>
   )
 }
