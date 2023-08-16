@@ -7,8 +7,10 @@
 # Deploy Preview context: all deploys resulting from a pull/merge request will
 # inherit these settings.
 [context.deploy-preview.environment]
-  GATSBY_API_BASE_URL = "https://testresource-server.openstack.org"  
+  GATSBY_API_BASE_URL = "https://openstackid-resources.openstack.org"  
   GATSBY_SPONSORED_PROJECT_ID = "3"  
+  GATSBY_HOME_SUBPROJECT_ID = "13"
+  GATSBY_MEMBERS_SUBPROJECT_ID = "13"
 [[redirects]]
   from = "/baidu"
   to = "/collateral/ApplicationOfKataContainersInBaiduAICloud.pdf"

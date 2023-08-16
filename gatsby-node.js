@@ -5,6 +5,9 @@ const fs = require('fs')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
+// explicit Frontmatter declaration to make category, author and date, optionals.
+// those properties only present in blog frontmatter
+
 const myEnv = require("dotenv").config({
   path: `.env`,
   expand: true
@@ -25,6 +28,7 @@ const SSR_getSponsoredProjects = async (baseUrl) => {
         order: 'name',
         per_page: 100,
         page: 1,
+        expand: 'subprojects,subprojects.sponsorship_types,subprojects.sponsorship_types.supporting_companies,subprojects.sponsorship_types.supporting_companies.company'
       }
     }).then((response) => response.data.data)
     .catch(e => console.log('ERROR: ', e));
@@ -40,8 +44,6 @@ exports.onPreBootstrap = async () => {
   };
 }
 
-// explicit Frontmatter declaration to make category, author and date, optionals.
-// those properties only present in blog frontmatter
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   const typeDefs = `
