@@ -148,3 +148,13 @@
 	font-size: 18px;
 
 }
+
+.hero-new-logo {
+	margin-left: 10%;
+	img {
+		max-width: 50px;
+	}
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+}
