@@ -9,3 +9,5 @@ static/admin/*.bundle.*
 yarn-error.log
 src/content/sponsored-projects.json
 .env
+.env.*
+.idea/
