@@ -22,3 +22,8 @@
   to = "https://medium.com/kata-containers"
   status = 301
   force = true
+[[redirects]]
+  from = "https://get.katacontainers.io"
+  to = "https://raw.githubusercontent.com/kata-containers/kata-containers/main/utils/kata-manager.sh"
+  status = 301
+  force = true
