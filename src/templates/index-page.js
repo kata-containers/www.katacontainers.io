@@ -48,13 +48,9 @@ export const IndexPageTemplate = ({
       <div className="container">
         <article className="article level">
           <figure className="article-image level-item level-right">
-            <div>
-              <a href="#">
                 <Zoom>
                   <img src={!!mainpitch.image.childImageSharp ? mainpitch.image.childImageSharp.fluid.src : mainpitch.image} alt="/kata-explained1@2x.png" />
                 </Zoom>
-              </a>
-            </div>
           </figure>
           <div className="article-content">
             <div className="article__entry">
@@ -82,7 +78,7 @@ export const IndexPageTemplate = ({
     <div className="features-section">
       <div className="container">
         <h2 className="features">{features.title}</h2>
-        <table className="table" style={{ width: '100%' }, { backgroundColor: 'white' }}>
+        <table className="table" style={{ width: '100%',backgroundColor: 'white'}}>
           <tbody>
             {features.rows.map((feature, index) => {
               // Plugin doesn't support svg images
