@@ -4,13 +4,10 @@ import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-
-import Zoom from 'react-medium-image-zoom'
-import 'react-medium-image-zoom/dist/styles.css'
+import ZoomImage from "../components/ZoomImage";
 
 import leftArrow from '../img/svg/arrow-left.svg'
 import metadata from '../content/site-metadata.json'
-import ZoomImage from "../components/ZoomImage";
 
 export const SoftwarePageTemplate = ({ seo, title, subTitle, intro, architecture, integration, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -75,8 +72,8 @@ export const SoftwarePageTemplate = ({ seo, title, subTitle, intro, architecture
                 <a href="#architecture" aria-hidden="true" className="header-anchor">#</a> {architecture.title}
               </h2>
               <ZoomImage
-                src={!!architecture.image.childImageSharp ? architecture.image.childImageSharp.fluid.src : architecture.image}
-                alt={!!architecture.image.childImageSharp ? architecture.image.childImageSharp.fluid.src : architecture.image}
+                src={architecture.image?.childImageSharp?.fluid?.src || architecture.image}
+                alt={architecture.image?.childImageSharp?.fluid?.src || architecture.image}
               />
               <br />
               <div className="columns">
@@ -113,8 +110,8 @@ export const SoftwarePageTemplate = ({ seo, title, subTitle, intro, architecture
                 <a href="#kata-containers-integration-with-kubernetes" aria-hidden="true" className="header-anchor">#</a> {integration.title}:
               </h2>
               <ZoomImage
-                src={!!integration.image.childImageSharp ? integration.image.childImageSharp.fluid.src : integration.image}
-                alt={!!integration.image.childImageSharp ? integration.image.childImageSharp.fluid.src : integration.image}
+                src={integration.image?.childImageSharp?.fluid?.src || integration.image}
+                alt={integration.image?.childImageSharp?.fluid?.src || integration.image}
               />
               <p></p>
               <hr />

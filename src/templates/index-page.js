@@ -46,7 +46,7 @@ export const IndexPageTemplate = ({
       <div className="container">
         <article className="article level">
           <ZoomImage
-            src={!!mainpitch.image.childImageSharp ? mainpitch.image.childImageSharp.fluid.src : mainpitch.image}
+            src={mainpitch.image?.childImageSharp?.fluid?.src || mainpitch.image}
             alt="/kata-explained1@2x.png"
           />
           <div className="article-content">
