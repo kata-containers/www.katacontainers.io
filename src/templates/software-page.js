@@ -10,6 +10,7 @@ import 'react-medium-image-zoom/dist/styles.css'
 
 import leftArrow from '../img/svg/arrow-left.svg'
 import metadata from '../content/site-metadata.json'
+import ZoomImage from "../components/ZoomImage";
 
 export const SoftwarePageTemplate = ({ seo, title, subTitle, intro, architecture, integration, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -73,14 +74,10 @@ export const SoftwarePageTemplate = ({ seo, title, subTitle, intro, architecture
               <h2 id="architecture">
                 <a href="#architecture" aria-hidden="true" className="header-anchor">#</a> {architecture.title}
               </h2>
-              <div>
-                <a href="#">
-                  <Zoom>
-                    <img src={!!architecture.image.childImageSharp ? architecture.image.childImageSharp.fluid.src : architecture.image}
-                      alt={!!architecture.image.childImageSharp ? architecture.image.childImageSharp.fluid.src : architecture.image} />
-                  </Zoom>
-                </a>
-              </div>
+              <ZoomImage
+                src={!!architecture.image.childImageSharp ? architecture.image.childImageSharp.fluid.src : architecture.image}
+                alt={!!architecture.image.childImageSharp ? architecture.image.childImageSharp.fluid.src : architecture.image}
+              />
               <br />
               <div className="columns">
                 {architecture.columns.map((col, index) => {
@@ -114,15 +111,11 @@ export const SoftwarePageTemplate = ({ seo, title, subTitle, intro, architecture
               <br />
               <h2 id="kata-containers-integration-with-kubernetes">
                 <a href="#kata-containers-integration-with-kubernetes" aria-hidden="true" className="header-anchor">#</a> {integration.title}:
-                </h2>
-              <div>
-                <a href="#">
-                  <Zoom>
-                    <img src={!!integration.image.childImageSharp ? integration.image.childImageSharp.fluid.src : integration.image}
-                      alt={!!integration.image.childImageSharp ? integration.image.childImageSharp.fluid.src : integration.image} />
-                  </Zoom>
-                </a>
-              </div>
+              </h2>
+              <ZoomImage
+                src={!!integration.image.childImageSharp ? integration.image.childImageSharp.fluid.src : integration.image}
+                alt={!!integration.image.childImageSharp ? integration.image.childImageSharp.fluid.src : integration.image}
+              />
               <p></p>
               <hr />
               <p></p>
