@@ -1412,11 +1412,6 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fastly/performance-observer-polyfill@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@fastly/performance-observer-polyfill/-/performance-observer-polyfill-1.1.1.tgz#2e64762fa2e43f32c01dcb2ac68421aded55bbb8"
-  integrity sha512-hmXJBYhIs77KPyg/IcPM5sDeQSPLrTzD6DqGfSUUtvEUoQxbW6nxHYCYJE8CP+Ay+OUqLZlTpW+w1OEOZWckzQ==
-
 "@gatsbyjs/parcel-namer-relative-to-cwd@^2.12.1":
   version "2.12.1"
   resolved "https://registry.yarnpkg.com/@gatsbyjs/parcel-namer-relative-to-cwd/-/parcel-namer-relative-to-cwd-2.12.1.tgz#79d9e08fb3f8dde3ab943919b7d7f190f5dec79c"
@@ -3973,7 +3968,7 @@ camelcase@5.3.1, camelcase@^5.0.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
-camelcase@^6.2.0:
+camelcase@^6.2.0, camelcase@^6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.3.0.tgz#5685b95eb209ac9c0c177467778c9c84df58ba9a"
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
@@ -6414,6 +6409,26 @@ gatsby-plugin-google-gtag@^5.12.3:
     "@babel/runtime" "^7.20.13"
     minimatch "^3.1.2"
 
+gatsby-plugin-image@^3.12.3:
+  version "3.12.3"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-3.12.3.tgz#7e1484d014afbe0005497934b4215938a69fcf56"
+  integrity sha512-945XpVY/14M9msfOI2fulunEUSJnw0YnwfbRq7omvqAWOH/fCnXWkyYj89NAcmNIOSM/a+KgQyaIDosnVHXdpw==
+  dependencies:
+    "@babel/code-frame" "^7.18.6"
+    "@babel/parser" "^7.20.13"
+    "@babel/runtime" "^7.20.13"
+    "@babel/traverse" "^7.20.13"
+    babel-jsx-utils "^1.1.0"
+    babel-plugin-remove-graphql-queries "^5.12.1"
+    camelcase "^6.3.0"
+    chokidar "^3.5.3"
+    common-tags "^1.8.2"
+    fs-extra "^11.1.1"
+    gatsby-core-utils "^4.12.1"
+    gatsby-plugin-utils "^4.12.3"
+    objectFitPolyfill "^2.3.5"
+    prop-types "^15.8.1"
+
 gatsby-plugin-manifest@^5.12.3:
   version "5.12.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-5.12.3.tgz#2da44659425850564f65fa69d600c6969edaae05"
@@ -6576,14 +6591,6 @@ gatsby-remark-copy-linked-files@^6.12.0:
     path-is-inside "^1.0.2"
     probe-image-size "^7.2.3"
     unist-util-visit "^2.0.3"
-
-gatsby-remark-images-medium-zoom@^1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-images-medium-zoom/-/gatsby-remark-images-medium-zoom-1.7.0.tgz#b9a55ebf29a4a15f9e7da7a8f4d0dfbe47aa5717"
-  integrity sha512-TLaq+ua+nO2CX/B/FnWB0OvJiLdplzbRCXrgCxYoZs3RkN5IfUu9BJYKEFjzx6J3uhwLvBA7XqE5cFOZ2cu4AQ==
-  dependencies:
-    "@fastly/performance-observer-polyfill" "^1.1.1"
-    medium-zoom "^1.0.4"
 
 gatsby-remark-images@^7.12.3:
   version "7.12.3"
@@ -9100,11 +9107,6 @@ media-typer@0.3.0:
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
 
-medium-zoom@^1.0.4:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/medium-zoom/-/medium-zoom-1.0.5.tgz#81413dda20ccdd857141ff420cfab788dd32e20e"
-  integrity sha512-aLGa6WlTuFKWvH88bqTrY5ztJMN+D0hd8UX6BYc4YSoPayppzETjZUcdVcksgaoQEMg4cZSmXPg846fTp2rjRQ==
-
 mem@^8.1.1:
   version "8.1.1"
   resolved "https://registry.yarnpkg.com/mem/-/mem-8.1.1.tgz#cf118b357c65ab7b7e0817bdf00c8062297c0122"
@@ -10106,6 +10108,11 @@ object.values@^1.1.6, object.values@^1.1.7:
     define-properties "^1.2.0"
     es-abstract "^1.22.1"
 
+objectFitPolyfill@^2.3.5:
+  version "2.3.5"
+  resolved "https://registry.yarnpkg.com/objectFitPolyfill/-/objectFitPolyfill-2.3.5.tgz#be8c83064aabfa4e88780f776c2013c48ce1f745"
+  integrity sha512-8Quz071ZmGi0QWEG4xB3Bv5Lpw6K0Uca87FLoLMKMWjB6qIq9IyBegP3b/VLNxv2WYvIMGoeUQ+c6ibUkNa8TA==
+
 ol-mapbox-style@^8.0.5:
   version "8.2.1"
   resolved "https://registry.yarnpkg.com/ol-mapbox-style/-/ol-mapbox-style-8.2.1.tgz#0f0c252b6495853a137d7e4dd3f915fab664b356"
@@ -10453,6 +10460,11 @@ password-prompt@^1.0.4:
   dependencies:
     ansi-escapes "^3.1.0"
     cross-spawn "^6.0.5"
+
+path-browserify@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/path-browserify/-/path-browserify-1.0.1.tgz#d98454a9c3753d5790860f16f68867b9e46be1fd"
+  integrity sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==
 
 path-case@^3.0.4:
   version "3.0.4"

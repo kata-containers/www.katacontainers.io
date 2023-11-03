@@ -34,6 +34,7 @@ module.exports = {
         name: 'images',
       },
     },
+    'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
@@ -124,6 +125,26 @@ module.exports = {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
+        publicPath: 'netlify/admin',
+        manualInit: true,
+        customizeWebpackConfig: (config, { stage, plugins }) => {
+          config.resolve = {
+            ...config.resolve,
+            alias: {
+              ...config.resolve.alias,
+              path: require.resolve("path-browserify")
+            },
+            fallback: {
+              ...config.resolve.fallback,
+              fs: false,
+              path: false,
+            }
+          };
+          if (stage === "build-javascript" || stage === "develop") {
+            config.plugins.push(plugins.provide({ process: "process/browser" }));
+          }
+          config.plugins.push(plugins.provide({ Buffer: ["buffer", "Buffer"] }));
+        }
       },
     },
     {

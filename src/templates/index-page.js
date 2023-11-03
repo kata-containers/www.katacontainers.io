@@ -7,9 +7,7 @@ import Subscribe from '../components/Subscribe'
 import Header from '../components/Header'
 import { Link } from 'gatsby'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
-
-import Zoom from 'react-medium-image-zoom'
-import 'react-medium-image-zoom/dist/styles.css'
+import ZoomImage from "../components/ZoomImage";
 
 import leftArrow from '../img/svg/arrow-left.svg'
 import metadata from '../content/site-metadata.json'
@@ -47,11 +45,10 @@ export const IndexPageTemplate = ({
     <section className="section-article">
       <div className="container">
         <article className="article level">
-          <figure className="article-image level-item level-right">
-                <Zoom>
-                  <img src={!!mainpitch.image.childImageSharp ? mainpitch.image.childImageSharp.fluid.src : mainpitch.image} alt="/kata-explained1@2x.png" />
-                </Zoom>
-          </figure>
+          <ZoomImage
+            src={!!mainpitch.image.childImageSharp ? mainpitch.image.childImageSharp.fluid.src : mainpitch.image}
+            alt="/kata-explained1@2x.png"
+          />
           <div className="article-content">
             <div className="article__entry">
               <h2 id="about-kata-containers">
@@ -78,7 +75,7 @@ export const IndexPageTemplate = ({
     <div className="features-section">
       <div className="container">
         <h2 className="features">{features.title}</h2>
-        <table className="table" style={{ width: '100%',backgroundColor: 'white'}}>
+        <table className="table" style={{width: '100%', backgroundColor: 'white' }}>
           <tbody>
             {features.rows.map((feature, index) => {
               // Plugin doesn't support svg images
