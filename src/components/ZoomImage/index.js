@@ -1,6 +1,6 @@
 import React from 'react'
 import Zoom from 'react-medium-image-zoom'
-import styles from './index.css'
+import './index.css'
 
 const ZoomImage = (props) => {
   return (
