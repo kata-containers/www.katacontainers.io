@@ -32,6 +32,9 @@
     max-width: 417px;
     margin-left: auto;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
   }
 
   .footer-title {
@@ -57,12 +60,13 @@
   }
 
   .footer-brand {
-    padding-right: 5px; 
+    padding: 10px; 
+    background: #ffffff;
+    width: 100px;
   }
 
   .footer-brand img {
     width: 100%;
-    min-width: 125px;
   }
 
   .footer-entry {
@@ -95,6 +99,10 @@
     .footer-aside {
       max-width: 100%;
       text-align: center;
+    }
+
+    .footer-aside {
+      align-items: baseline;
     }
 
     .footer-entry {

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
-import logo from '../img/svg/logo_white.svg'
+import logo from '../img/svg/logo-vertical.svg'
 
 import content from '../content/footer-nav.json'
 
