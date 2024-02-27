@@ -72,7 +72,7 @@ export default class BlogPosts extends React.Component {
 const query = graphql`
   query {
     allMediumPost(
-      sort: { fields: [pubDate], order: DESC }
+      sort: { pubDate: DESC }
       filter: { id: { ne: "dummy" } }
     ) {
       edges {

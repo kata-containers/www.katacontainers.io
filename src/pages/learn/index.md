@@ -13,9 +13,9 @@ title: Learn
 subTitle: An overview of the Kata Containers project
 intro:
   buttons:
-    - link: /collateral/kata-containers-1pager.pdf
+    - link: ../collateral/kata-containers-1pager.pdf
       text: project overview
-    - link: /collateral/kata-containers-onboarding-deck.pptx
+    - link: ../collateral/kata-containers-onboarding-deck.pptx
       text: Onboarding Deck
     - link: 'https://github.com/kata-containers/kata-containers/releases'
       text: latest software release

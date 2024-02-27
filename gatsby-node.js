@@ -3,7 +3,6 @@ const axios = require('axios')
 const path = require('path')
 const fs = require('fs')
 const { createFilePath } = require('gatsby-source-filesystem')
-const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
 // explicit Frontmatter declaration to make category, author and date, optionals.
 // those properties only present in blog frontmatter
@@ -160,7 +159,6 @@ exports.createPages = ({ actions, graphql }) => {
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
-  fmImagesToRelative(node) // convert image paths for gatsby images
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })

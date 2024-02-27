@@ -28,7 +28,7 @@ export const tagPageQuery = graphql`
     }
     allMarkdownRemark(
       limit: 1000
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: {frontmatter: {date: DESC}}
       filter: { frontmatter: { category: {elemMatch: {label: {eq: $category } } }, author: { eq: $author } } }
     ) {
       totalCount

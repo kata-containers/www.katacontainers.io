@@ -1,0 +1,2 @@
+@import "react-medium-image-zoom/dist/styles.css";
+/* Not sure why, but importing this directly in the component does not work */
