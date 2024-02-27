@@ -44,6 +44,7 @@ export const LearnPageTemplate = ({ seo, title, subTitle, intro, content, conten
             <div className="hero-content">
               <h3 className="hero-title">{title}</h3>
               <div className="hero-entry"><p>{subTitle}</p></div>
+              <div className="hero-new-logo"><img src="/img/KataContainers_Logo_Stacked_2Color_RGB.svg" /></div>
             </div>
           </div>
         </div>
