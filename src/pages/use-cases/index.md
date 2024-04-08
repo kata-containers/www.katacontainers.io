@@ -113,3 +113,15 @@ Nubificus Ltd is a software consultancy tackling complex virtualization problems
 Teams at Nubificus build on Kata Containers to enable seamless, burden-free deployment of lightweight container functions on Kubernetes while ensuring strict tenant isolation offered by the virtualization layers. Kata Containers brings them the needed Open Container Initiative (OCI) glue to interface with the upper-layer software stack, in order to showcase the merits of them projects.
 
 **Read more on how Nubificus got started with Kata Containers and how they are using it on [Kata Containers Blog](https://medium.com/kata-containers/kata-containers-nubificus-case-study-39a1b7f63a2c).**
+
+<br />
+
+- - -
+
+<br />
+
+## NVIDIA
+
+NVIDIA has been involved in Kata Containers as sensitive data processing is a use case that is crucial for them, and it requires a transition from traditional to secure, isolated environments. They chose Kata Containers for confidential container enablement because it ensures security while maintaining container flexibility, and supports advanced scenarios like GPUDirect RDMA. A key aspect of NVIDIA's strategy is the lift-and-shift approach, allowing seamless migration of existing AI/ML workloads to these confidential environments, while combining LLMs with GPU-accelerated computing - leveraging Kubernetes for effective orchestration and striking a balance between computational power and data privacy.
+
+**Learn more about [NVIDIA's Kata Containers strategy](https://www.youtube.com/watch?v=a3HzBmPuw5g) to support AI/ML workloads**
