@@ -15,8 +15,9 @@ blogUrl: 'https://medium.com/kata-containers/'
 Are you a Kata Containers user? Please take a few moments to fill out the **[Kata Containers User Survey](https://openinfrafoundation.formstack.com/forms/kata_containers_user_survey)** to provide feedback and information around your deployment. All information is confidential to the Open Infrastructure Foundation unless you designate that it can be public.
 
 <br />
+<a name="AntGroup"></a>
 
-## Ant Group<a name="AntGroup"></a>
+## Ant Group
 
 Ant Group, the leading peer-to-peer payments processor in China, does automatic online payment transactions on China's largest digital payment platform. Kata Containers’ features such as the network isolation with dedicated kernels and performance jitter are critical for Ant Group’s use case.
 
@@ -31,8 +32,9 @@ With Kata Containers, teams at Ant Group are still sharing the same host kernel.
 - - -
 
 <br />
+<a name="Alibaba"></a>
 
-## Alibaba Group<a name="Alibaba"></a>
+## Alibaba Group
 
 Kata Containers is not only valued for its security isolation, but also valued for providing resource isolation and fault isolation. In Alibaba Group and Ant Group, thousands of tasks are scheduled and running on Kata Containers. Some of those tasks are sensitive to resources and response time. 
 
@@ -45,8 +47,9 @@ In fact, in order to avoid interference, putting those tasks in Kata Containers 
 - - -
 
 <br />
+<a name="AMD"></a>
 
-## AMD<a name="AMD"></a>
+## AMD
 
 With confidential computing, customers have to have absolute trust that data is not being exposed. In regulated environments, where governments are putting stricter rules like heath data in place, it has to be ascertained that the hypervisors can get access to the data, but it sees no value in it. Encryption plays a key role so the confidential or container based workloads can be coupled with the technologies that are coming out like AMD Secure Encrypted Virtualization (SEV).
 
@@ -59,8 +62,9 @@ With the 2018 Kata Containers prototype that AMD has had in place with the SEV t
 - - -
 
 <br />
+<a name="Baidu"></a>
 
-## Baidu<a name="Baidu"></a>
+## Baidu
 
 Baidu offers AI Cloud and Edge Computing services at massive scale by leveraging innovative cloud technologies such as Kubernetes, Kata Containers and OpenStack. Teams at Baidu not only utilize the greater isolation offered by Kata Containers, but also integrate Kata Containers within its customers’ OpenStack infrastructures. 
 
@@ -77,8 +81,9 @@ Baidu believes that Kata Containers represents a highly secure and practical con
 - - -
 
 <br />
+<a name="Huawei"></a> 
 
-## Huawei<a name="Huawei"></a> 
+## Huawei
 
 Huawei is running Kata Containers in production in two environments: Cloud Container Instance (CCI), the first serverless Kubernetes on public cloud, and Cloud Container Engine (CCE) turbo, a complete Kubernetes service provided by the Huawei cloud.
 
@@ -91,8 +96,9 @@ With Kata Containers enabled, customers from Huawei are able to use CCE turbo as
 - - -
 
 <br />
+<a name="IBM"></a>
 
-## IBM Cloud<a name="IBM"></a>
+## IBM Cloud
 
 Teams from IBM Cloud have been involved in the Kata Containers community for a while. They became more directly involved with Kata Containers when IBM Cloud product teams were looking to secure their Cloud Shell and CI/CD Pipeline SaaS offerings. These workloads were using Kubernetes and the strong isolation Kata Containers provided was a requirement from their security teams. 
 
@@ -105,8 +111,9 @@ The ease with which Kata Containers could be integrated without altering their c
 - - -
 
 <br />
+<a name="Nubificus"></a>
 
-## Nubificus Ltd<a name="Nubificus"></a>
+## Nubificus Ltd
 
 Nubificus Ltd is a software consultancy tackling complex virtualization problems. It targets ultra-fast application spawning and execution at the edge and in the cloud. Teams at Nubificus are day-to-day users of open-source software. Currently, they actively use and contribute to open source projects like Kata Containers.
 
@@ -119,8 +126,9 @@ Teams at Nubificus build on Kata Containers to enable seamless, burden-free depl
 - - -
 
 <br />
+<a name="NVIDIA"></a>
 
-## NVIDIA<a name="NVIDIA"></a>
+## NVIDIA
 
 NVIDIA has been involved in Kata Containers as sensitive data processing is a use case that is crucial for them, and it requires a transition from traditional to secure, isolated environments. They chose Kata Containers for confidential container enablement because it ensures security while maintaining container flexibility, and supports advanced scenarios like GPUDirect RDMA. A key aspect of NVIDIA's strategy is the lift-and-shift approach, allowing seamless migration of existing AI/ML workloads to these confidential environments, while combining LLMs with GPU-accelerated computing - leveraging Kubernetes for effective orchestration and striking a balance between computational power and data privacy.
 
