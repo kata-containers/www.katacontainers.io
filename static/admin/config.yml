@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: tomrndom/www.katacontainers.io
+  repo: kata-containers/www.katacontainers.io
   branch: main # Branch to update (optional; defaults to master)
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
