@@ -84,12 +84,13 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: string}
           - {label: "Subtitle", name: "subTitle", widget: string}
-          - {label: "Categories", name: "categories", widget: "list", fields: [              
-              {label: "Text", name: "text", widget: "string"}
+          - {label: "Categories", name: "categories", widget: "list", fields: [
+              {label: "Label", name: "text", widget: "string"},
+              {label: "ID", name: "id", widget: ncw-id, prefix: category}
             ]}
           - {label: "Links", name: "connect", widget: list, fields: [
-              {label: "Text", name: "text", widget: string },
-              {label: "Link", name: "link", widget: string },
+              {label: "Text", name: "text", widget: string},
+              {label: "Link", name: "link", widget: string},
             ]}
   - name: "blog"
     label: "Blog"
@@ -101,7 +102,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "author", widget: "relation", collection: "authors", searchFields: ["authorName"], valueField: "authorName" }
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Category", name: "category", widget: ncw-file-relation, collection: configurations, file: blogConfig, target_field: categories, id_field: id, display_fields: text }
+      - {label: "Category", name: "category", widget: ncw-file-relation, collection: configurations, file: blogConfig, target_field: categories, id_field: id, display_fields: text, multiple: true }
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
