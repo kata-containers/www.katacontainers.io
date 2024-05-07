@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: kata-containers/www.katacontainers.io
+  repo: tomrndom/www.katacontainers.io
   branch: main # Branch to update (optional; defaults to master)
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
@@ -87,10 +87,10 @@ collections:
           - {label: "Categories", name: "categories", widget: "list", fields: [              
               {label: "Text", name: "text", widget: "string"}
             ]}
-          # - {label: "Links", name: "connect", widget: list, fields: [
-          #     {label: "Text", name: "text", widget: string },
-          #     {label: "Link", name: "link", widget: string },
-          #   ]}
+          - {label: "Links", name: "connect", widget: list, fields: [
+              {label: "Text", name: "text", widget: string },
+              {label: "Link", name: "link", widget: string },
+            ]}
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
