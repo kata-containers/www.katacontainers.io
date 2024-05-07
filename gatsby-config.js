@@ -122,29 +122,29 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-netlify-cms',
+      resolve: "gatsby-plugin-decap-cms",
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
-        publicPath: 'netlify/admin',
-        manualInit: true,
-        customizeWebpackConfig: (config, { stage, plugins }) => {
+        enableIdentityWidget: true,
+        htmlTitle: `Kata Containers | Content Manager`,
+        includeRobots: false,
+        customizeWebpackConfig: (config) => {
+          /**
+           * Fixes Module not found: Error: Can"t resolve "path" bug.
+           * Webpack 5 doesn"t include browser polyfills for node APIs by default anymore,
+           * so we need to provide them ourselves.
+           * @see https://github.com/postcss/postcss/issues/1509#issuecomment-772097567
+           * @see https://github.com/gatsbyjs/gatsby/issues/31475
+           * @see https://github.com/gatsbyjs/gatsby/issues/31179#issuecomment-844588682
+           */
           config.resolve = {
             ...config.resolve,
-            alias: {
-              ...config.resolve.alias,
-              path: require.resolve("path-browserify")
-            },
             fallback: {
               ...config.resolve.fallback,
-              fs: false,
-              path: false,
-            }
+              path: require.resolve("path-browserify"),
+            },
           };
-          if (stage === "build-javascript" || stage === "develop") {
-            config.plugins.push(plugins.provide({ process: "process/browser" }));
-          }
-          config.plugins.push(plugins.provide({ Buffer: ["buffer", "Buffer"] }));
-        }
+        },
       },
     },
     {
@@ -156,11 +156,6 @@ module.exports = {
     }, // must be after other CSS plugins
     {
       resolve: 'gatsby-plugin-netlify', // make sure to keep it last in the array,
-      options: {
-        enableIdentityWidget: true,
-        htmlTitle: `Kata Containers | Content Manager`,
-        includeRobots: false, 
-      }
     }    
   ],
 }
