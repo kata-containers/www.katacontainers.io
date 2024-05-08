@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Kata Containers with Cloud Hypervisor
 author: James O. D. Hunt
-date: 2022-03-01T01:32:05.627Z
+date: 2024-04-09T01:32:05.627Z
 category: 
   - label: Cloud Hypervisor
     id: category-A7fnZYrE1
@@ -10,7 +10,7 @@ category:
 
 **by James O. D. Hunt, Senior software engineer at Intel R&D Labs. Kata Containers developer.**
 
-## Overview
+# Overview
 
 This article gives a brief overview of Kata Containers including details of how it is configured and how it creates a container.
 
@@ -18,7 +18,7 @@ It then provides some details on the various parts of a Kata Containers system t
 
 Finally, it discusses Cloud Hypervisor and shows how easy it is to switch to using this modern, lean, fast and secure rust-based hypervisor to host your Kata containers.
 
-## Scope
+# Scope
 
 Kata Containers provides two runtimes:
 
@@ -31,7 +31,7 @@ The runtimes are very similar but there are small differences. This post only ap
 > 
 > For further details, see: [kata-containers/kata-containers#8702](https://github.com/kata-containers/kata-containers/issues/8702). 
 
-## Requirements
+# Requirements
 
 This post assumes you are running a recent version of Kata Containers, specifically [version 3.3.0 or newer](https://github.com/kata-containers/kata-containers/releases).
 
@@ -49,7 +49,7 @@ To check the CPU architecture of your system, run one of the following commands:
     $ arch
     $ uname -m
 
-## Permissions
+# Permissions
 
 The permissions of certain Kata binaries are currently overly restrictive. To allow you to call the kata-manager script directly as shown later in this post, run the following commands:
 
@@ -64,17 +64,17 @@ Alternatively, call the kata-manager script using sudo(1) by specifying its full
 >
 > For further details, see: [kata-containers/kata-containers#9373](https://github.com/kata-containers/kata-containers/issues/9373).
 
-## TL;DR
+# TL;DR
 
 If you are already familiar with Kata Containers and just wish to try it out with Cloud Hypervisor, jump to the [Switch to Cloud Hypervisor](https://medium.com/p/c1af575eae05#142a) section.
 
-## What is Kata Containers?
+# What is Kata Containers?
 
 [Kata Containers](https://katacontainers.io/), or just Kata, is an open source project that allows you to run containers using lightweight virtual machines (VMs). It slots seamlessly into your container ecosystem so you don’t need to change the way you work: you just get all the additional benefits of running containers in a hardware isolated environment.
 
 Even if you are already familiar with Kata, you may not realise that it is a pluggable system. A standard installation provides a default configuration that will “just work”. This is very helpful to allow you to evaluate how easy it is to slot Kata into your environment.
 
-## Containers with knobs on
+# Containers with knobs on
 
 If you want to maximise the benefits of Kata and your hardware, you should consider customising your configuration.
 
@@ -82,11 +82,11 @@ Kata offers many configuration “knobs” that you can modify to suit your scen
 
 By default, Kata provides a secure and fast experience, but for particular use-cases, you can enable additional security option, or potentially boost performance significantly.
 
-## Configuration
+# Configuration
 
 Kata is configured using a [TOML](https://toml.io/) format file called `configuration.toml`. TOML is a human and machine readable format, and the default configuration files provided with Kata are well commented to explain what all the many options do.
 
-## Kata supports stateless systems
+# Kata supports stateless systems
 
 The [Kata runtime](https://github.com/kata-containers/kata-containers/tree/main/docs/design/architecture#runtime) component can read file from multiple locations. By default it will read files from the `/etc/kata-containers/` directory but fall back to reading "pristine" configuration files from the installation directory (usually `/opt/kata/`). The beauty of this design is that if you wish to perform a full "reset" and revert back to using the known good pristine configuration files, all you need to do is delete (or move aside) you configuration file in `/etc/kata-containers/`.
 
@@ -96,7 +96,7 @@ The [Kata runtime](https://github.com/kata-containers/kata-containers/tree/main/
 > 
 > `$ kata-runtime --show-default-config-paths`
 
-## Kata supports configuration snippets
+# Kata supports configuration snippets
 
 In addition to supporting different configuration files, Kata also allow you to create “`config.d`" configuration fragments, sometimes called "drop ins" or "snippets".
 Configuration advice
@@ -105,7 +105,7 @@ Note that care is needed to modify the configuration as some options are incompa
 
 Since Kata supports stateless systems, the commended approach to modifying the default packaged (“pristine”) configuration is to create a localcopy of the pristine configuration. That way, if anything goes awry, it’s easy to [reset back to a working environment](https://gist.github.com/jodh-intel/5cdc3e11729852558eee1e1af85ed063#kata-supports-stateless-systems).
 
-## Pluggable architecture
+# Pluggable architecture
 
 Kata uses a pluggable architecture. Although the official releases provide a working system, you can change all aspects of the Kata environment. For example, you can change:
 
@@ -122,7 +122,7 @@ The last bullet is the main subject of this post.
 >
 > For further details, see the [Kata Containers architecture documentation](https://github.com/kata-containers/kata-containers/tree/main/docs/design/architecture).
 
-## Hypervisors
+# Hypervisors
 
 In simple terms, Kata creates a container as follows:
 
@@ -134,7 +134,7 @@ In simple terms, Kata creates a container as follows:
   6. The Kata agent starts and creates a “traditional Linux container” inside the VM (note the multiple layers of isolation!)
   7. The Kata agent runs your chosen workload inside the container which is hosted inside the VM.
 
-## Why would I want to change the hypervisor?
+# Why would I want to change the hypervisor?
 
 The current default hypervisor for Kata is QEMU. This was chosen since:
 
@@ -153,7 +153,7 @@ So, why would you want to try an [alternative hypervisor](https://github.com/kat
   * Maybe you need a particular feature not available in QEMU?
   * Maybe you would prefer to run a simpler hypervisor than QEMU?
 
-## Why Cloud Hypervisor?
+# Why Cloud Hypervisor?
 
 Cloud Hypervisor (CH or CLH), is a modern hypervisor, written in the [rust language](https://www.rust-lang.org/). It was specifically written to be small, fast and secure by default.
 
@@ -163,15 +163,15 @@ Although Cloud Hypervisor does not provide every feature that QEMU does, it prov
 
 Additionally, Cloud Hypervisor has a blossoming community and a fast-paced rate of development. New features are being added all the time. And it’s also good to know that Cloud Hypervisor provides a lot of tests and documentation. Plus, it is fuzz-tested constantly to ensure code quality and security remain at the forefront of the development focus. Finally, it’s a very approachable system: it does provide lots of command-line options, but you can just run it with no options and configure it entirely using the JSON language. Finally, it supports the OpenAPI standard meaning you can easily look up API details in its OpenAPI YAML specification file.
 
-## Do I need to manually install Cloud Hypervisor?
+# Do I need to manually install Cloud Hypervisor?
 
 No. If you install a Kata containers [release](https://github.com/kata-containers/kata-containers/releases), for example using the [“automatic” method](https://github.com/kata-containers/kata-containers/tree/main/docs/install#automatic-installation), your system will contain Kata Containers *and* the main hypervisors and their associated configuration files!
 
-## Hypervisor configuration
+# Hypervisor configuration
 
 Since each [Kata hypervisor](https://github.com/kata-containers/kata-containers/blob/main/docs/hypervisors.md) offers its own set of features, Kata provides a configuration file for each of them.
 
-## Switch to Cloud Hypervisor
+# Switch to Cloud Hypervisor
 
 Sounds great. How do I try out Cloud Hypervisor then?
 
@@ -199,13 +199,13 @@ In fact, you can install and configure your system to use Cloud Hypervisor all i
 
 See the [*kata-manager*](https://github.com/kata-containers/kata-containers/blob/main/utils/README.md) documentation for further details.
 
-## I love it, but how do I switch back to the default hypervisor to compare?
+# I love it, but how do I switch back to the default hypervisor to compare?
 
 To switch back to the default Kata hypervisor (currently QEMU), just run:
 
     $ kata-manager -S default
 
-## How do I reset my system fully?
+# How do I reset my system fully?
 
 Simple. If you didn’t have any custom files in the `/etc/kata-containers/` directory before, just delete the directory:
 
@@ -217,7 +217,7 @@ Alternatively, “move aside” the directory by renaming it. Something like thi
 
 Now, all subsequent Kata Containers will use the pristine configuration files (normally found in `/opt/kata/share/defaults/kata-containers/`) rather than your modified versions.
 
-## Further reading
+# Further reading
 
   * The [main Kata Containers site](https://katacontainers.io/)
   * [Kata Containers on GitHub](https://github.com/kata-containers/kata-containers)
@@ -225,10 +225,10 @@ Now, all subsequent Kata Containers will use the pristine configuration files (n
   * [Cloud Hypervisor on GitHub](https://github.com/cloud-hypervisor/cloud-hypervisor)
   * The [Kata Manager documentation](https://github.com/kata-containers/kata-containers/blob/main/utils/README.md)
 
-## Want to join the Kata Containers community?
+# Want to join the Kata Containers community?
 
 If you are interested in learning more about Kata Containers and getting involved with the project and its vibrant community, see [our community documentation](https://github.com/kata-containers/community).
 
-## Take the Kata Containers survey
+# Take the Kata Containers survey
 
 The Kata Containers community is always keen to receive feedback from its users. Please consider taking [the Kata Containers survey](https://openinfrafoundation.formstack.com/forms/kata_containers_user_survey) as this will help us to help you!
