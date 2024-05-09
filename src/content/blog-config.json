@@ -4,8 +4,12 @@
   "about": "Kata Containers is an open source community building extremely lightweight VMs that perform like containers, but provide the workload isolation and security advantages of adding a virtual machine layer.",
   "categories": [
     {
-      "text": "Cloud Hypervisor",
-      "id": "category-A7fnZYrE1"
+      "id": "category-3owynXntX",
+      "text": "Kata Containers"
+    },
+    {
+      "id": "category--kVa9DycA",
+      "text": "Cloud Hypervisor"
     }
   ],
   "connect": [

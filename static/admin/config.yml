@@ -83,7 +83,8 @@ collections:
         name: "blogConfig"
         fields:
           - {label: "Title", name: "title", widget: string}
-          - {label: "Subtitle", name: "subTitle", widget: string}
+          - {label: "Subtitle", name: "subTitle", widget: string, required: false}
+          - {label: "About", name: "about", widget: text, required: false}
           - {label: "Categories", name: "categories", widget: "list", fields: [
               {label: "Label", name: "text", widget: "string"},
               {label: "ID", name: "id", widget: ncw-id, prefix: category}

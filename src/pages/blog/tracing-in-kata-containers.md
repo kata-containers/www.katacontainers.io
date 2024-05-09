@@ -8,7 +8,7 @@ category:
     id: category-A7fnZYrE1
 ---
 
-Written by [James Hunt](mailto:james.o.hunt@intel.com), [Chelsea Mafrica](mailto: chelsea.e.mafrica@intel.com)
+Written by [James Hunt](mailto:james.o.hunt@intel.com), [Chelsea Mafrica](mailto:chelsea.e.mafrica@intel.com)
 
 # Overview
 
