@@ -34,6 +34,7 @@ module.exports = {
         name: 'images',
       },
     },
+    'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
@@ -121,9 +122,29 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-netlify-cms',
+      resolve: "gatsby-plugin-decap-cms",
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
+        enableIdentityWidget: true,
+        htmlTitle: `Kata Containers | Content Manager`,
+        includeRobots: false,
+        customizeWebpackConfig: (config) => {
+          /**
+           * Fixes Module not found: Error: Can"t resolve "path" bug.
+           * Webpack 5 doesn"t include browser polyfills for node APIs by default anymore,
+           * so we need to provide them ourselves.
+           * @see https://github.com/postcss/postcss/issues/1509#issuecomment-772097567
+           * @see https://github.com/gatsbyjs/gatsby/issues/31475
+           * @see https://github.com/gatsbyjs/gatsby/issues/31179#issuecomment-844588682
+           */
+          config.resolve = {
+            ...config.resolve,
+            fallback: {
+              ...config.resolve.fallback,
+              path: require.resolve("path-browserify"),
+            },
+          };
+        },
       },
     },
     {
@@ -135,11 +156,6 @@ module.exports = {
     }, // must be after other CSS plugins
     {
       resolve: 'gatsby-plugin-netlify', // make sure to keep it last in the array,
-      options: {
-        enableIdentityWidget: true,
-        htmlTitle: `Kata Containers | Content Manager`,
-        includeRobots: false, 
-      }
     }    
   ],
 }
