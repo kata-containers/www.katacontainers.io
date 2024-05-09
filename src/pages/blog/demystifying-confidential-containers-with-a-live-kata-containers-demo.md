@@ -3,9 +3,9 @@ templateKey: blog-post
 title: Demystifying Confidential Containers with a Live Kata Containers Demo
 author: Tao Peng
 date: 2023-07-13T01:32:05.627Z
-category: 
-  - label: Kata Containers 
-    id: category-A7fnZYrE1
+category:
+  - value: category-6-wjkXzEM2
+    label: Features & Updates
 ---
 
 **Contributed by** [**Tao Peng**](https://github.com/bergwolf) **| Staff Engineer, Ant Group**

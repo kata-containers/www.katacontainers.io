@@ -3,9 +3,9 @@ templateKey: blog-post
 title: Kata Containers with Cloud Hypervisor
 author: James O. D. Hunt
 date: 2024-04-09T01:32:05.627Z
-category: 
-  - label: Cloud Hypervisor
-    id: category-A7fnZYrE1
+category:
+  - value: category-6-wjkXzEM2
+    label: Features & Updates
 ---
 
 **by James O. D. Hunt, Senior software engineer at Intel R&D Labs. Kata Containers developer.**

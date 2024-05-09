@@ -3,9 +3,9 @@ templateKey: blog-post
 title: Kata Community Updates | Spring 2023
 author: Kata Containers
 date: 2023-04-03T01:32:05.627Z
-category: 
-  - label: Kata Containers 
-    id: category-A7fnZYrE1
+category:
+  - value: category-6-wjkXzEM2
+    label: Features & Updates
 ---
 
 Greetings fellow Kata Herders! March has been an exciting month for Kata Containers, leading us into an even more exciting summer. In addition to a number of events coming up where Kata will have a presence, our favorite container with a kernel has been making big news — literally. Read more below to find out what’s happening.

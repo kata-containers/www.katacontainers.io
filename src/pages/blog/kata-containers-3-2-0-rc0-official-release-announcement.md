@@ -3,9 +3,9 @@ templateKey: blog-post
 title: Kata Containers 3.2.0-RC0 Official Release Announcement
 author: Kata Containers
 date: 2023-09-05T01:32:05.627Z
-category: 
-  - label: Kata Containers 
-    id: category-A7fnZYrE1
+category:
+  - value: category-edic1zzR0
+    label: News & Announcements
 ---
 
 [Kata Containers](https://github.com/kata-containers/kata-containers) is a secure container runtime that provides strong enterprise-ready isolation based on hardware virtualization technology. It combines the advantages of strong isolation of virtual machines with the rapid deployment of containers and the experience of quick startup. Kata Containers is available in public clouds, private clouds, and container services, and has been widely used in many business scenarios such as [function](https://help.aliyun.com/zh/fc/product-overview/what-is-function-compute) [computing](https://www.alibabacloud.com/product/function-compute).

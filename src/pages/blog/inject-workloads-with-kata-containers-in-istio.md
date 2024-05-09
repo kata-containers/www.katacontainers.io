@@ -3,9 +3,9 @@ templateKey: blog-post
 title: Inject Workloads with Kata Containers in Istio
 author: Kata Containers
 date: 2023-03-13T01:32:05.627Z
-category: 
-  - label: Kata Containers 
-    id: category-A7fnZYrE1
+category:
+  - value: category-6-wjkXzEM2
+    label: Features & Updates
 ---
 
 Written by [Steve(Huailong) Zhang](https://github.com/zhlsunshine)

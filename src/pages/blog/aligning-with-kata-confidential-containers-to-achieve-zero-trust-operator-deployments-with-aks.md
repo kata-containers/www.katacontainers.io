@@ -4,8 +4,8 @@ title: Aligning with Kata Confidential Containers to achieve zero trust operator
 author: Amar Gowda
 date: 2023-04-21T01:32:05.627Z
 category: 
-  - label: Kata Containers 
-    id: category-A7fnZYrE1
+  - label: Features & Updates
+    id: category-6-wjkXzEM2
 ---
 
 Written by [Amar Gowda](https://techcommunity.microsoft.com/t5/user/viewprofilepage/user-id/681343#profile) | Microsoft

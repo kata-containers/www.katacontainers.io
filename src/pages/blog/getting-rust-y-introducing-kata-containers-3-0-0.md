@@ -3,9 +3,9 @@ templateKey: blog-post
 title: Getting Rust-y — Introducing Kata Containers 3.0.0
 author: Kata Containers
 date: 2022-10-12T01:32:05.627Z
-category: 
-  - label: Kata Containers 
-    id: category-A7fnZYrE1
+category:
+  - value: category-6-wjkXzEM2
+    label: Features & Updates
 ---
 
 Greetings everyone, this is your friendly Kata community manager checking in to update you on what’s new with Kata Containers. If you’re here, then you’re probably already at least somewhat familiar with the container with its own kernel that blew our minds back in 2017.

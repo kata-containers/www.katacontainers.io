@@ -3,9 +3,9 @@ templateKey: blog-post
 title: Tracing in Kata Containers
 author: Kata Containers
 date: 2023-03-15T01:32:05.627Z
-category: 
-  - label: Kata Containers 
-    id: category-A7fnZYrE1
+category:
+  - value: category-6-wjkXzEM2
+    label: Features & Updates
 ---
 
 Written by [James Hunt](mailto:james.o.hunt@intel.com), [Chelsea Mafrica](mailto:chelsea.e.mafrica@intel.com)

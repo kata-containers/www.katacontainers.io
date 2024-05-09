@@ -3,9 +3,9 @@ templateKey: blog-post
 title: Community Updates — December 2022
 author: Kata Containers
 date: 2022-12-12T01:32:05.627Z
-category: 
-  - label: Kata Containers 
-    id: category-A7fnZYrE1
+category:
+  - value: category-6-wjkXzEM2
+    label: Features & Updates
 ---
 
 ![](https://miro.medium.com/v2/resize:fit:700/1*Mpu2WwmJ_hr6wnyChYSfdQ.jpeg)

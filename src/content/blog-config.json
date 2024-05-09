@@ -1,18 +1,25 @@
 {
   "title": "Blog",
-  "subTitle": "",
-  "about": "Kata Containers is an open source community building extremely lightweight VMs that perform like containers, but provide the workload isolation and security advantages of adding a virtual machine layer.",
+  "subTitle": "Articles about Kata Containers with news, updates, tutorials, case studies, and more.",
   "categories": [
     {
-      "id": "category-3owynXntX",
-      "text": "Kata Containers"
+      "id": "category-edic1zzR0",
+      "text": "News & Announcements"
     },
     {
-      "id": "category--kVa9DycA",
-      "text": "Cloud Hypervisor"
+      "id": "category-6-wjkXzEM2",
+      "text": "Features & Updates"
+    },
+    {
+      "id": "category-em6-cxZuI",
+      "text": "Annual Report"
     }
   ],
   "connect": [
+    {
+      "text": "Mailing Lists",
+      "link": "https://lists.katacontainers.io/mailman3/lists/"
+    },
     {
       "text": "Email",
       "link": "mailto:info@katacontainers.io"

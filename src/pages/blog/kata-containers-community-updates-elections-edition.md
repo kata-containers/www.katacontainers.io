@@ -3,9 +3,9 @@ templateKey: blog-post
 title: Kata Containers Community Updates | Elections Edition
 author: Kata Containers
 date: 2023-05-31T01:32:05.627Z
-category: 
-  - label: Kata Containers 
-    id: category-A7fnZYrE1
+category:
+  - value: category-6-wjkXzEM2
+    label: Features & Updates
 ---
 
 ![](https://miro.medium.com/v2/resize:fit:502/1*tJlz-9_HpmpFzSDR7Wun8g.png)

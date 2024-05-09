@@ -75,7 +75,7 @@ export default class BlogIndexPage extends React.Component {
                     {blogConfig.connect.length > 0 &&
                       <li className="widget item-no-bullet">
                         <div className="widget-head">
-                          <h6 className="widget-title">Elsewhere</h6>
+                          <h6 className="widget-title">Connect</h6>
                         </div>
                         <div className="widget-body">
                           <ul className="widget-list">
