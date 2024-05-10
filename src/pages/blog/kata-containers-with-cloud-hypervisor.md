@@ -42,7 +42,7 @@ To check the version of Kata Containers you are using or have just installed, ru
 We also assume you are running on one of the following CPU architectures (required for Cloud Hypervisor):
 
   * An x86–64 (Intel or AMD CPU) system
-  * An aarch64 (“ARM 64”) system
+  * An aarch64 ("ARM 64") system
 
 To check the CPU architecture of your system, run one of the following commands:
     
@@ -72,13 +72,13 @@ If you are already familiar with Kata Containers and just wish to try it out wit
 
 [Kata Containers](https://katacontainers.io/), or just Kata, is an open source project that allows you to run containers using lightweight virtual machines (VMs). It slots seamlessly into your container ecosystem so you don’t need to change the way you work: you just get all the additional benefits of running containers in a hardware isolated environment.
 
-Even if you are already familiar with Kata, you may not realise that it is a pluggable system. A standard installation provides a default configuration that will “just work”. This is very helpful to allow you to evaluate how easy it is to slot Kata into your environment.
+Even if you are already familiar with Kata, you may not realise that it is a pluggable system. A standard installation provides a default configuration that will "just work". This is very helpful to allow you to evaluate how easy it is to slot Kata into your environment.
 
 # Containers with knobs on
 
 If you want to maximise the benefits of Kata and your hardware, you should consider customising your configuration.
 
-Kata offers many configuration “knobs” that you can modify to suit your scenario. Using these knobs, you can change most parts of the Kata system.
+Kata offers many configuration "knobs" that you can modify to suit your scenario. Using these knobs, you can change most parts of the Kata system.
 
 By default, Kata provides a secure and fast experience, but for particular use-cases, you can enable additional security option, or potentially boost performance significantly.
 
@@ -98,12 +98,12 @@ The [Kata runtime](https://github.com/kata-containers/kata-containers/tree/main/
 
 # Kata supports configuration snippets
 
-In addition to supporting different configuration files, Kata also allow you to create “`config.d`" configuration fragments, sometimes called "drop ins" or "snippets".
+In addition to supporting different configuration files, Kata also allow you to create "`config.d`" configuration fragments, sometimes called "drop ins" or "snippets".
 Configuration advice
 
 Note that care is needed to modify the configuration as some options are incompatible with each other or can interact with other options. Please read the comments in the configuration file carefully.
 
-Since Kata supports stateless systems, the commended approach to modifying the default packaged (“pristine”) configuration is to create a localcopy of the pristine configuration. That way, if anything goes awry, it’s easy to [reset back to a working environment](https://gist.github.com/jodh-intel/5cdc3e11729852558eee1e1af85ed063#kata-supports-stateless-systems).
+Since Kata supports stateless systems, the commended approach to modifying the default packaged ("pristine") configuration is to create a localcopy of the pristine configuration. That way, if anything goes awry, it’s easy to [reset back to a working environment](https://gist.github.com/jodh-intel/5cdc3e11729852558eee1e1af85ed063#kata-supports-stateless-systems).
 
 # Pluggable architecture
 
@@ -111,7 +111,7 @@ Kata uses a pluggable architecture. Although the official releases provide a wor
 
   * The runtime type.
   * The Kata rootfs image or `initrd` / initramfs used to boot the VM.
-  * The kernel used to boot the minimal VM (called the “guest kernel”).
+  * The kernel used to boot the minimal VM (called the "guest kernel").
   * The configuration file.
   * The configuration file options.
   * The hypervisor used to create the VM to host your container.
@@ -131,7 +131,7 @@ In simple terms, Kata creates a container as follows:
   3. The runtime starts your chosen (configured) hypervisor.
   4. The hypervisor creates and boots a virtual machine (VM) using the Kata rootfs image and the Kata guest kernel.
   5. The Kata agent starts running inside the VM environment.
-  6. The Kata agent starts and creates a “traditional Linux container” inside the VM (note the multiple layers of isolation!)
+  6. The Kata agent starts and creates a "traditional Linux container" inside the VM (note the multiple layers of isolation!)
   7. The Kata agent runs your chosen workload inside the container which is hosted inside the VM.
 
 # Why would I want to change the hypervisor?
@@ -145,7 +145,7 @@ The current default hypervisor for Kata is QEMU. This was chosen since:
 So, why would you want to try an [alternative hypervisor](https://github.com/kata-containers/kata-containers/blob/main/docs/hypervisors.md)? There are many reasons but in general terms you may decide that some of the other hypervisors that work with Kata are more appropriate for your use-case:
 
   * Maybe you would like to try running a rust program?
-  * Maybe you want to run the smallest, most basic hypervisor that fulfills your needs rather than a huge “do everything” system like QEMU.
+  * Maybe you want to run the smallest, most basic hypervisor that fulfills your needs rather than a huge "do everything" system like QEMU.
   * Maybe you don’t need every possible feature?
   * Maybe you only want to create containers on a single architecture?
   * Maybe you want to be able to create containers much faster?
@@ -157,7 +157,7 @@ So, why would you want to try an [alternative hypervisor](https://github.com/kat
 
 Cloud Hypervisor (CH or CLH), is a modern hypervisor, written in the [rust language](https://www.rust-lang.org/). It was specifically written to be small, fast and secure by default.
 
-Cloud Hypervisor, as its name suggests, was *designed* for cloud based scenarios such as for running container workloads. It is highly optimised, blazingly fast and “just works”: you don’t need complex setup steps to use it.
+Cloud Hypervisor, as its name suggests, was *designed* for cloud based scenarios such as for running container workloads. It is highly optimised, blazingly fast and "just works": you don’t need complex setup steps to use it.
 
 Although Cloud Hypervisor does not provide every feature that QEMU does, it provides all the features that most people would need to run their workloads.
 
@@ -165,7 +165,7 @@ Additionally, Cloud Hypervisor has a blossoming community and a fast-paced rate 
 
 # Do I need to manually install Cloud Hypervisor?
 
-No. If you install a Kata containers [release](https://github.com/kata-containers/kata-containers/releases), for example using the [“automatic” method](https://github.com/kata-containers/kata-containers/tree/main/docs/install#automatic-installation), your system will contain Kata Containers *and* the main hypervisors and their associated configuration files!
+No. If you install a Kata containers [release](https://github.com/kata-containers/kata-containers/releases), for example using the ["automatic" method](https://github.com/kata-containers/kata-containers/tree/main/docs/install#automatic-installation), your system will contain Kata Containers *and* the main hypervisors and their associated configuration files!
 
 # Hypervisor configuration
 
@@ -211,7 +211,7 @@ Simple. If you didn’t have any custom files in the `/etc/kata-containers/` dir
 
     $ sudo rm -rf /etc/kata-containers/
 
-Alternatively, “move aside” the directory by renaming it. Something like this:
+Alternatively, "move aside" the directory by renaming it. Something like this:
 
     $ sudo mv /etc/kata-containers/ /etc/kata-containers.DISABLED/
 

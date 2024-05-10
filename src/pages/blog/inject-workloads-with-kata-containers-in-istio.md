@@ -23,7 +23,7 @@ Kata Containers is designed to provide greater isolation between containers whil
 
 However, it’s different from common virtual machines to take a minute or two for starting and wasting a fair amount of hardware resources on establishing container isolation, Kata starts just as fast and consumes resources just as efficiently as other containers. The containers become more secure with the lowest cost：
 
-![](https://miro.medium.com/v2/resize:fit:700/1*q7K7H-fGSzfEYUCKKHuHIA.png)
+![](/img/1_q7K7H-fGSzfEYUCKKHuHIA.webp)
 
 # How to deploy workload injection with Kata Containers in Istio:
 
@@ -106,7 +106,7 @@ _Then install Istio via istioctl command_ `istioctl install -y`
 
 Based on the **Containerd** configuration from before, `runc` is the default container runtime, which can be verified with the command: `$ sudo systemctl status containerd`
 
-![](https://miro.medium.com/v2/resize:fit:700/1*tOj55ay6VP4khFj2RE-v_g.png)
+![](/img/1_tOj55ay6VP4khFj2RE-v_g.webp)
 
 I use [RuntimeClass](https://kubernetes.io/docs/concepts/containers/runtime-class/) to launch the Kata Containers, using the `yaml` file `kata-runtimeclass.yaml` below:
 
@@ -175,11 +175,11 @@ Now it is time to deploy this service using the following command:
 
 Verify the workload as demonstrated below:
 
-![](https://miro.medium.com/v2/resize:fit:700/1*Lt3zxarW27GOvcuJda1wtA.png)
+![](/img/1_Lt3zxarW27GOvcuJda1wtA.webp)
 
 There should be a new Runtime Class Name property, as is shown in the above red rectangle box.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*H1WS3UwDBdUJoAWub2Lmfg.png)
+![](/img/1_H1WS3UwDBdUJoAWub2Lmfg.webp)
 
 Besides the Containerd `containerd-shim-runc-v2`, there are also other processes for Kata Containers shown in the above red rectangle box, such as `containerd-shim-kata-v2`, `virtiofsd` and `qemu-system-x86_64`. This is because I deploy a service which requires Kata Containers to inject in Cluster.
 

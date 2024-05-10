@@ -22,7 +22,7 @@ In a cloud hosted container platform, applications that handle sensitive persona
 
 Confidential virtual machines (VMs) based on AMD’s SEV-SNP hardware backed Trusted Execution Environments (TEEs) provide the underlying core capabilities like integrity for code and data in use, protection of data in memory from Azure operator, and remote cryptographic verification through attestation — all while running existing unmodified applications.
 
-VM based TEEs can run a full Linux kernel and make it easy to achieve running unmodified applications natively, but the trust boundaries can be different compared to [application-level enclaves](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-nodes-aks-overview). To enable isolation like an application enclave and achieve higher level of protection from VM admins, confidential containers on AKS run in dedicated “_child VMs_” per pod. Every child VM comes with its own memory encryption key with AMD SEV-SNP protections and the lifecycle of a child VM is associated with the lifecycle of the confidential Kubernetes pod.
+VM based TEEs can run a full Linux kernel and make it easy to achieve running unmodified applications natively, but the trust boundaries can be different compared to [application-level enclaves](https://learn.microsoft.com/en-us/azure/confidential-computing/confidential-nodes-aks-overview). To enable isolation like an application enclave and achieve higher level of protection from VM admins, confidential containers on AKS run in dedicated "_child VMs_" per pod. Every child VM comes with its own memory encryption key with AMD SEV-SNP protections and the lifecycle of a child VM is associated with the lifecycle of the confidential Kubernetes pod.
 
 By running the Kubernetes pods at this isolation level using nested virtualization, customers can benefit from app isolation from the parent VM and the tenant OS admin (operator of that VM), while still meeting the need of natively running any Linux container.
 
@@ -31,9 +31,8 @@ To foster an ecosystem with broad Kubernetes workload support, the [Kata Confide
 *   Helps protect data from your own operator (your Azure tenant admin, Kubernetes admin).
 *   Help protect data from a cloud provider/operator.
 
-![](https://miro.medium.com/v2/resize:fit:231/0*U_V1d1t1r-DQE_4w)
-
-![](https://miro.medium.com/v2/resize:fit:322/0*ZQiAiEY3-GgfL3Me)
+![](/img/0_U_V1d1t1r-DQE_4w.webp)
+![](/img/0_ZQiAiEY3-GgfL3Me.webp)
 
 With added isolation for your workloads from other pods, host VM OS, and Kubernetes software in a single AKS container host, this deployment architecture is ideal for developers who want to **run existing OCI compliant containers** without negligible impact on existing DevOps practices. Confidential containers run as part of AKS agent nodes making finding an ideal balance between DevOps and Developers.
 
@@ -41,7 +40,7 @@ With added isolation for your workloads from other pods, host VM OS, and Kuberne
 
 The goal of the Kata Confidential Containers (CoCo) project is to standardize confidential computing at the container level and simplify its consumption in Kubernetes. This is to enable Kubernetes users to deploy confidential container workloads using familiar workflows and tools. We are also taking our C[onfidential containers on Azure Container Instances (ACI)](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-confidential-overview) learning to community with [container enforcement policy/full attestation](https://github.com/microsoft/kata-containers/tree/cc-msft) and OCI image snapshotter with DM verity enforcement.
 
-To improve our product goals of transparency and to enable a cross-industry open-source software effort, [Kata CoCo](https://github.com/confidential-containers) and [Cloud- Hypervisor](https://www.cloudhypervisor.org/) Virtual Machine Monitor (VMM) combined with Microsoft hypervisor were chosen as the foundation for AKS support. Confidential containers on AKS leverage the base underling technology stack that enables “[Kata VM Isolated Containers on AKS for Pod Sandboxing](https://techcommunity.microsoft.com/t5/apps-on-azure-blog/preview-support-for-kata-vm-isolated-containers-on-aks-for-pod/ba-p/3751557)” but using specific Azure confidential computing (ACC) VM sizes.
+To improve our product goals of transparency and to enable a cross-industry open-source software effort, [Kata CoCo](https://github.com/confidential-containers) and [Cloud- Hypervisor](https://www.cloudhypervisor.org/) Virtual Machine Monitor (VMM) combined with Microsoft hypervisor were chosen as the foundation for AKS support. Confidential containers on AKS leverage the base underling technology stack that enables "[Kata VM Isolated Containers on AKS for Pod Sandboxing](https://techcommunity.microsoft.com/t5/apps-on-azure-blog/preview-support-for-kata-vm-isolated-containers-on-aks-for-pod/ba-p/3751557)" but using specific Azure confidential computing (ACC) VM sizes.
 
 As confidential computing matures to mainstream, Microsoft will continue to contribute by hardening the security and isolation to shape future releases based on customer and community learnings.
 

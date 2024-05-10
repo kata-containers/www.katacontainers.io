@@ -40,7 +40,7 @@ Save the date! We’re a little more than three weeks away from [KubeCon EU](htt
 If you’re still planning your KubeCon schedule, save room for sessions on Kata Containers & Confidential Computing happening on April 19th. A list of Kata/CoCo sessions has been gathered below for easy addition to your KubeCon schedule:
 
 *   [The Next Episode in Workload Isolation: Confidential Containers](https://sched.co/1HyaJ) | Wednesday, April 19 | 14:30–15:05 CEST
-*   [Experience with “Hard Multi-Tenancy” in Kubernetes using Kata Containers](https://sched.co/1Hydz) | Wednesday, April 19 | 17:25–18:00 CEST
+*   [Experience with "Hard Multi-Tenancy" in Kubernetes using Kata Containers](https://sched.co/1Hydz) | Wednesday, April 19 | 17:25–18:00 CEST
 
 As a note, in-person tickets for KubeCon have already sold out, but virtual passes are still available for purchase on the [official KubeCon website](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/). Whether in person or virtual, we hope to see you there!
 

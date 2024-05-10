@@ -8,7 +8,7 @@ category:
     label: Features & Updates
 ---
 
-![](https://miro.medium.com/v2/resize:fit:700/1*Mpu2WwmJ_hr6wnyChYSfdQ.jpeg)
+![](/img/1_Mpu2WwmJ_hr6wnyChYSfdQ.webp)
 
 November & December have been busy months for Kata Containers. Following highly popular sessions at [KubeCon](https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/) North America 2022 led by rockstar Kata Herders [Eric Ernst](https://sched.co/182I4) & [Feng Wang](https://sched.co/182Jc), the community held elections for 3 open seats on the eve of Kata Containers’ 5th anniversary as a project. Read more for a recap of what’s been going on.
 
@@ -32,7 +32,7 @@ Eric is a senior software engineer at [Apple](https://apple.com), focused on clo
 
 Gerry is a software engineer with [Alibaba Cloud](https://us.alibabacloud.com/), working on Operating System & Cloud infrastructure-related technologies with extensive development experiences about Linux kernel, container image acceleration, Rust-based micro-vms and [Confidential Containers](https://confidentialcomputing.io/).
 
-Gerry has been working on technologies related to Kata Containers since 2019, & is one of the primary advocates for “Rust-ifying” Kata, in addition to contributing to Kata Containers’ agent-rs, runtime-rs, embedded Dragonball VMM & Nydus image acceleration service.
+Gerry has been working on technologies related to Kata Containers since 2019, & is one of the primary advocates for "Rust-ifying" Kata, in addition to contributing to Kata Containers’ agent-rs, runtime-rs, embedded Dragonball VMM & Nydus image acceleration service.
 
 Gerry already has big plans for his tenure as a newly-elected Architecture Committee chair, primarily centered around increased/improved integration of [Dragonball](https://github.com/openanolis/dragonball-sandbox) with Kata Containers & [Confidential Containers](https://confidentialcomputing.io/), & most importantly helping to integrate Kata Containers into [OpenAnolis](https://github.com/openanolis) Linux distribution to enlarge the user base.
 
@@ -42,11 +42,11 @@ If you’d like to know more, please visit the official [Kata Containers website
 
 # Happy 5th Birthday, Kata Containers
 
-![](https://miro.medium.com/v2/resize:fit:700/1*YhRM_S2qoC_YJfZ6J85etA.jpeg)
+![](/img/1_YhRM_S2qoC_YJfZ6J85etA.webp)
 
 December 5th marked the 5th anniversary of Kata Containers, & we’re celebrating all month. The party officially kicked off on December 6th during the Kata Containers [Architecture Committee meeting](https://etherpad.opendev.org/p/Kata_Containers_2022_Architecture_Committee_Mtgs), where a few Kata Herders gathered for a group photo while sharing stories of how Kata Containers came to be part of their lives.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*S0VYztlsJPqLvNw7niLtOg.png)
+![](/img/1_S0VYztlsJPqLvNw7niLtOg.webp)
 
 Get your very own special edition 5th anniversary Zoom background here: [https://imgur.com/a/VEZJKbx](https://imgur.com/a/VEZJKbx)
 

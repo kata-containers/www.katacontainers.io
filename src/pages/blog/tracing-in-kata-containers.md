@@ -76,7 +76,7 @@ A trace span captures the duration of some operation and comprises the following
 *   A name
 *   An optional set of name/value pairs that further describe the span. Kata Containers spans typically also include a source (agent or runtime), package and subsystem.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*zOsjABMqc8x-N_NIcSZVIg.png)
+![](/img/1_zOsjABMqc8x-N_NIcSZVIg.webp)
 
 The image above shows trace output in the Jaeger UI with a trace titled startVM expanded to show attributes including the package name, sandbox ID, the source, and subsystem. Also, visible is the duration and start time.
 
@@ -91,7 +91,7 @@ Key points:
 
 The image below shows a trace opened to view the root span and some of its subsequent spans. The root span duration is the duration of the trace.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*RGMQOeUkDlKbj3NfPAssYA.png)
+![](/img/1_RGMQOeUkDlKbj3NfPAssYA.webp)
 
 ## Tracing methodology
 
@@ -163,17 +163,17 @@ For more information on configuring and running tracing, see the [Kata Container
 
 Any container using Kata Containers will now produce trace output that can be viewed in the browser. In the image below the Jaeger UI is opened in the browser with the service kata selected in the menu on the left, which is the runtime. Since the trace contains both kata (runtime) and kata-agent spans, both can be seen in the results under the rootSpan trace. Trace results can also be filtered by specific operation and the number of results can be changed to show more results.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*X84AHGSFMq8lBuQ0EpG59g.png)
+![](/img/1_X84AHGSFMq8lBuQ0EpG59g.webp)
 
 ## How to analyse a trace
 
 In a previous image the trace data was displayed to show the initial root span in the default view of the trace. The picture below shows a closer view of the startVM span and its child spans with the runtime and agent spans in blue and yellow respectively.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*PXXXNNkhUiH95J5M0EWjzw.png)
+![](/img/1_PXXXNNkhUiH95J5M0EWjzw.webp)
 
 The visualization shows duration for each span and the overlap, if any, of start and end times of children and parent spans. These calls are behaving as expected, but if one takes an unusually long amount of time it will be visible in the output. There are other ways to display data in Jaeger. For example, there is an experimental feature for displaying the trace as a graph with either service or time highlighted, shown below. Jaeger also supports grouping and summarizing output by specific tags.
 
-![](https://miro.medium.com/v2/resize:fit:700/1*8SmQFs36Ym0rVbgaY1v7wA.png)
+![](/img/1_8SmQFs36Ym0rVbgaY1v7wA.webp)
 
 ## Tracing versus logging
 
@@ -215,7 +215,7 @@ The Kata Containers runtime uses both logging and tracing, both of which collect
       
             s.Logger().WithError(err).WithField("device", device).
 
-            Warnf("Coul" not add device to the %s controller”, s.sandboxController)
+            Warnf("Coul" not add device to the %s controller", s.sandboxController)
 
         }
 

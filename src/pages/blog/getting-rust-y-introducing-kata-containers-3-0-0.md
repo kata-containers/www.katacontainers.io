@@ -14,7 +14,7 @@ Original skepticism of a container that’s small, fast, AND has its own kernel 
 
 The Kata Community has been working hard to complete [Kata Containers 3.0](https://github.com/kata-containers/kata-containers/releases), continuing in the pursuit of creating a highly secure container runtime without sacrificing speed or performance. Beginning with Kata Containers v.2, the community has continued on it’s journey to reengineer key components such as kata-agent in [Rust programming language](https://github.com/kata-containers/kata-containers/tree/main/docs/design/architecture_3.0#rationale-for-choosing-rust), deciding to trade off some design elements for higher performance & lowered overall memory consumption.
 
-![](https://miro.medium.com/v2/resize:fit:700/0*fvhq6IXZ1TRDfFC7)
+![](/img/0_fvhq6IXZ1TRDfFC7.webp)
 
 Substantial updates have been made to the Kata codebase, including implementation of new Rust runtime, optional built-in sandbox functionality with Rust-VMM based Dragonball hypervisor, GPU VFIO passthrough support & more. Check out the Kata Containers 3.0.0 [release notes](https://github.com/kata-containers/kata-containers/releases/tag/3.0.0) for a full rundown on what’s new with KC 3.0.0.
 

@@ -8,7 +8,7 @@ category:
     label: Features & Updates
 ---
 
-![](https://miro.medium.com/v2/resize:fit:502/1*tJlz-9_HpmpFzSDR7Wun8g.png)
+![](/img/1_tJlz-9_HpmpFzSDR7Wun8g.webp)
 
 We’re almost at the halfway point of 2023, & it’s already been a great year for Kata Containers filled with many exciting milestones. Spring 2023 officially marked the expansion of the [Architecture Committee](https://etherpad.opendev.org/p/Kata_Containers_2023_Architecture_Committee_Mtgs) from 5 to 7 chairs to better accommodate the rapid growth of the community, during which time 4 new & returning members were (re) elected to the Architecture Committee.
 
