@@ -17,20 +17,20 @@
   ],
   "connect": [
     {
+      "text": "Slack",
+      "link": "https://join.slack.com/t/katacontainers/shared_invite/zt-16w1u6usn-sK871qbMxVN8KsCP5Gr56A"
+    },
+    {
       "text": "Mailing Lists",
       "link": "https://lists.katacontainers.io/mailman3/lists/"
     },
     {
-      "text": "Email",
+      "text": "E-mail",
       "link": "mailto:info@katacontainers.io"
     },
     {
-      "text": "X",
+      "text": "Twitter",
       "link": "https://twitter.com/katacontainers"
-    },
-    {
-      "text": "Facebook",
-      "link": "https://facebook.com/katacontainers"
-    }
+    }    
   ]
 }
