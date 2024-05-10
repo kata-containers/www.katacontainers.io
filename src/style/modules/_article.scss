@@ -265,6 +265,9 @@
       padding-left: 20px;
       border-left: 3px solid $primary;
       margin-bottom: 35px;
+      li {
+        display: inline-flex;
+      }      
     }
     pre {
       margin-bottom: 35px;
