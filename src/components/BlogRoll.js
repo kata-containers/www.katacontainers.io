@@ -83,7 +83,7 @@ export default ({customFilter}) => (
               frontmatter {
                 title
                 templateKey
-                date
+                date (formatString: "DD/MM/YYYY", locale: "en_us")
                 author
                 category {
                   label

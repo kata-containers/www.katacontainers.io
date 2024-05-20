@@ -246,13 +246,41 @@
     color: $primary-dark;
   }
 
+  /* purgecss start ignore */
   .article-single-entry {
     margin-bottom: 47px;
 
     &-alt {
       margin-bottom: 10px;
     }
+    h1 {
+      margin-bottom: 14px;
+      font-size: 25px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    blockquote {
+      margin-left: 20px;
+      padding-left: 20px;
+      border-left: 3px solid $primary;
+      margin-bottom: 35px;
+      li {
+        display: inline-flex;
+      }      
+    }
+    pre {
+      margin-bottom: 35px;
+      margin-left: 20px;
+    }
+    ol {
+      list-style: auto;      
+      list-style-type: decimal;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
   }
+  /* purgecss end ignore */
 
   .article-single-meta {
     font-size: 16px;

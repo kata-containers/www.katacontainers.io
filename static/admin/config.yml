@@ -3,11 +3,13 @@ backend:
   repo: kata-containers/www.katacontainers.io
   branch: main # Branch to update (optional; defaults to master)
   commit_messages:
-    create: 'Create {{collection}} “{{slug}}”'
-    update: 'Update {{collection}} “{{slug}}”'
-    delete: 'Delete {{collection}} “{{slug}}”'
-    uploadMedia: '[skip ci] Upload “{{path}}”'
-    deleteMedia: '[skip ci] Delete “{{path}}”'
+    create: 'Create {{collection}} "{{slug}}"'
+    update: 'Update {{collection}} "{{slug}}"'
+    delete: 'Delete {{collection}} "{{slug}}"'
+    uploadMedia: '[skip ci] Upload "{{path}}"'
+    deleteMedia: '[skip ci] Delete "{{path}}"'
+
+local_backend: true
 
 publish_mode: editorial_workflow
 media_folder: static/img
@@ -83,14 +85,16 @@ collections:
         name: "blogConfig"
         fields:
           - {label: "Title", name: "title", widget: string}
-          - {label: "Subtitle", name: "subTitle", widget: string}
-          - {label: "Categories", name: "categories", widget: "list", fields: [              
-              {label: "Text", name: "text", widget: "string"}
+          - {label: "Subtitle", name: "subTitle", widget: string, required: false}
+          - {label: "About", name: "about", widget: text, required: false}
+          - {label: "Categories", name: "categories", widget: "list", fields: [
+              {label: "Label", name: "text", widget: "string"},
+              {label: "ID", name: "id", widget: ncw-id, prefix: category}
             ]}
-          # - {label: "Links", name: "connect", widget: list, fields: [
-          #     {label: "Text", name: "text", widget: string },
-          #     {label: "Link", name: "link", widget: string },
-          #   ]}
+          - {label: "Links", name: "connect", widget: list, fields: [
+              {label: "Text", name: "text", widget: string},
+              {label: "Link", name: "link", widget: string},
+            ]}
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
@@ -101,7 +105,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "author", widget: "relation", collection: "authors", searchFields: ["authorName"], valueField: "authorName" }
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Category", name: "category", widget: ncw-file-relation, collection: configurations, file: blogConfig, target_field: categories, id_field: id, display_fields: text }
+      - {label: "Category", name: "category", widget: ncw-file-relation, collection: configurations, file: blogConfig, target_field: categories, id_field: id, display_fields: text, multiple: true }
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
