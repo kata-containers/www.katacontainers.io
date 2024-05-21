@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Kata Containers at the April 2024 Project Teams Gathering (PTG)
-author: Kata Containers
+author: Ildiko Vancsa
 date: 2024-05-21T01:32:05.627Z
 category:
   - value: category-6-wjkXzEM2
