@@ -22,7 +22,7 @@ Fupan Li gave a presentation to describe [PVM](https://dl.acm.org/doi/abs/10.114
 
 The PVM community is working with the kernel community to have some required changes accepted. Kata can set up an experimental kernel to start setting up and testing with PVM, but it should not be set as default to avoid maintenance issues and overhead, since both the host and guest kernel needs to be patched.
 
-# Runtime and Hypervisor Updates
+# Runtime Updates
 The Go and Rust-based runtimes are a frequent discussion topic within the Kata community. During the PTG session, attendees used the opportunity to discuss runtime as well as hypervisor updates, plans and next steps.
 
 ## Runtime-rs Update
@@ -44,12 +44,12 @@ Future plans include:
 
 Contributors also raised the question whether or not to switch over to runtime-rs as the default runtime, but no decision was made during the session.
 
-## Hypervisor Updates
+### Runtime-rs Hypervisor Support Updates
 
-### QEMU
+#### QEMU
 Good progress since the last PTG. Runtime-rs support was only a proof-of-concept 6 months ago, but it is more feature rich, with networking support and full capabilities of running containers. The team is planning to improve device support , and looking for feedback about which QEMU feature users need the most to be supported.
 
-### Cloud Hypervisor
+#### Cloud Hypervisor
 It was already mostly feature-complete at the time of the previous PTG, and the team has added new features and enhancements still:
 - Updated for the new Cloud Hypervisor
 - Fixed TAP and IP addresses handling in the VM networking config
@@ -65,7 +65,7 @@ Currently working on:
 
 The team is looking for people to test the Cloud Hypervisor support and give feedback or help fixing issues and further enhance this feature.
 
-### Firecracker
+#### Firecracker
 - No major updates, rebasing over main to resolve any conflicts
 - Might be ready to merge the initial version into main to reduce maintenance burden on the team maintaining this effort
 
