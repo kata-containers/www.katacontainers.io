@@ -32,5 +32,11 @@
       "text": "Twitter",
       "link": "https://twitter.com/katacontainers"
     }    
+  ],
+  "share": [
+    {
+      "text": "How to Contribute a Blog Post",
+      "link": "https://github.com/kata-containers/kata-containers/blob/main/docs/Blog-Post-Submission-Guide.md"
+    }
   ]
 }
