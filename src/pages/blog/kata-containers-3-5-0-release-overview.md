@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Kata Containers 3.5.0 Release Update
-author: Kata Containers
+author: Ildiko Vancsa
 date: 2024-06-19T01:32:05.627Z
 category:
   - value: category-edic1zzR0
