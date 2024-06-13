@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
-title: Kata Containers: Revolutionizing AI Workloads
+title: Kata Containers - Revolutionizing AI Workloads
 author: Ildiko Vancsa
-date: 2024-07-0119T01:32:05.627Z
+date: 2024-07-01T01:32:05.627Z
 category:
   - value: category-edic1zzR0
     label: News & Announcements
