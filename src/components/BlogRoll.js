@@ -70,7 +70,7 @@ export default ({customFilter}) => (
     query={graphql`
       query BlogRollQuery {
         allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
+          sort: {frontmatter: {date: DESC}}
           filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
         ) {
           edges {
@@ -83,7 +83,7 @@ export default ({customFilter}) => (
               frontmatter {
                 title
                 templateKey
-                date
+                date (formatString: "DD/MM/YYYY", locale: "en_us")
                 author
                 category {
                   label

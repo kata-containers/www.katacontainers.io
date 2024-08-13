@@ -15,6 +15,7 @@ blogUrl: 'https://medium.com/kata-containers/'
 Are you a Kata Containers user? Please take a few moments to fill out the **[Kata Containers User Survey](https://openinfrafoundation.formstack.com/forms/kata_containers_user_survey)** to provide feedback and information around your deployment. All information is confidential to the Open Infrastructure Foundation unless you designate that it can be public.
 
 <br />
+<a name="AntGroup"></a>
 
 ## Ant Group
 
@@ -31,6 +32,7 @@ With Kata Containers, teams at Ant Group are still sharing the same host kernel.
 - - -
 
 <br />
+<a name="Alibaba"></a>
 
 ## Alibaba Group
 
@@ -45,6 +47,7 @@ In fact, in order to avoid interference, putting those tasks in Kata Containers 
 - - -
 
 <br />
+<a name="AMD"></a>
 
 ## AMD
 
@@ -59,6 +62,7 @@ With the 2018 Kata Containers prototype that AMD has had in place with the SEV t
 - - -
 
 <br />
+<a name="Baidu"></a>
 
 ## Baidu
 
@@ -77,8 +81,9 @@ Baidu believes that Kata Containers represents a highly secure and practical con
 - - -
 
 <br />
+<a name="Huawei"></a> 
 
-## Huawei 
+## Huawei
 
 Huawei is running Kata Containers in production in two environments: Cloud Container Instance (CCI), the first serverless Kubernetes on public cloud, and Cloud Container Engine (CCE) turbo, a complete Kubernetes service provided by the Huawei cloud.
 
@@ -91,6 +96,7 @@ With Kata Containers enabled, customers from Huawei are able to use CCE turbo as
 - - -
 
 <br />
+<a name="IBM"></a>
 
 ## IBM Cloud
 
@@ -105,6 +111,7 @@ The ease with which Kata Containers could be integrated without altering their c
 - - -
 
 <br />
+<a name="Nubificus"></a>
 
 ## Nubificus Ltd
 
@@ -119,6 +126,7 @@ Teams at Nubificus build on Kata Containers to enable seamless, burden-free depl
 - - -
 
 <br />
+<a name="NVIDIA"></a>
 
 ## NVIDIA
 

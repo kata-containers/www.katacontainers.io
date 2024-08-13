@@ -3,7 +3,6 @@ const axios = require('axios')
 const path = require('path')
 const fs = require('fs')
 const { createFilePath } = require('gatsby-source-filesystem')
-const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
 // explicit Frontmatter declaration to make category, author and date, optionals.
 // those properties only present in blog frontmatter
@@ -42,24 +41,6 @@ exports.onPreBootstrap = async () => {
   if (sponsoredProjects) {
     writeToJson('src/content/sponsored-projects.json', sponsoredProjects);
   };
-}
-
-exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions
-  const typeDefs = `
-    type MarkdownRemark implements Node {
-      frontmatter: Frontmatter
-    }
-    type Frontmatter {
-      category: [Category]
-      author: [String]
-      date: Date
-    }
-    type Category {
-      label: [String!]!
-    }
-  `
-  createTypes(typeDefs)
 }
 
 exports.createPages = ({ actions, graphql }) => {
@@ -160,7 +141,6 @@ exports.createPages = ({ actions, graphql }) => {
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
-  fmImagesToRelative(node) // convert image paths for gatsby images
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
@@ -169,38 +149,5 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value,
     })
-  }
-}
-
-exports.sourceNodes = async ({
-  actions,
-  createNodeId,
-  createContentDigest
-}) => {
-  const { createNode } = actions
-
-  const blogPosts = await axios.get(
-    `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/kata-containers`
-  ).then((response) => {
-    return response.data.items.slice(0, 3);
-  });
-  
-  for (const post of blogPosts) {    
-    const nodeContent = JSON.stringify(post)
-
-    const nodeMeta = {
-      id: createNodeId(`medium-post-${post.guid}`),
-      parent: null,
-      children: [],
-      internal: {
-        type: `MediumPost`,
-        mediaType: `application/json`,
-        content: nodeContent,
-        contentDigest: createContentDigest(post)
-      }
-    }
-
-    const node = Object.assign({}, post, nodeMeta)
-    createNode(node)
   }
 }

@@ -4,9 +4,7 @@ import { graphql } from 'gatsby'
 import { Helmet } from "react-helmet"
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-
-import Zoom from 'react-medium-image-zoom'
-import 'react-medium-image-zoom/dist/styles.css'
+import ZoomImage from "../components/ZoomImage";
 
 import metadata from '../content/site-metadata.json'
 
@@ -73,13 +71,7 @@ export const LearnPageTemplate = ({ seo, title, subTitle, intro, content, conten
                     return (
                       img.image ?
                         <div className="column" key={index}>
-                          <div>
-                            <a href="#">
-                              <Zoom>
-                                <img src={!!img.image.childImageSharp ? img.image.childImageSharp.fluid.src : img.image} alt={img.alt} />
-                              </Zoom>
-                            </a>
-                          </div>
+                          <ZoomImage src={img.image?.childImageSharp?.fluid?.src || img.image} alt={img.alt} />
                         </div>
                         :
                         null

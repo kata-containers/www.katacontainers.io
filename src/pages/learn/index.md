@@ -13,7 +13,7 @@ title: Learn
 subTitle: An overview of the Kata Containers project
 intro:
   buttons:
-    - link: /collateral/kata-containers-1pager.pdf
+    - link: ../collateral/kata-containers-1pager.pdf
       text: project overview
     - link: /collateral/kata-containers-overview-july22.pdf
       text: Onboarding Deck
