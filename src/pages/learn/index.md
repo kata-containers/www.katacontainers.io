@@ -15,7 +15,7 @@ intro:
   buttons:
     - link: ../collateral/kata-containers-1pager.pdf
       text: project overview
-    - link: /collateral/kata-containers-overview-july22.pdf
+    - link: ../collateral/kata-containers-overview-july22.pdf
       text: Onboarding Deck
     - link: 'https://github.com/kata-containers/kata-containers/releases'
       text: latest software release
