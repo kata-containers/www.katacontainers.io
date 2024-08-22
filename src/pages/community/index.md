@@ -38,7 +38,7 @@ Twitter: [@katacontainers](https://twitter.com/katacontainers)
 ## Meetings
 
 **Architecture Committee**\
-The Architecture Committee works on the technical direction of the project. Meetings are on Tuesdays at 1500 UTC. You can [add this meeting](https://zoom.us/meeting/tJUpc-2opjkjGNCIo1YFpKlcoLn909gWv_iH/ics?icsToken=98tyKuCpqj8uGtyXuRuDRowcBo-gLPTxiHpEjY1-tRC0OgZDSQ_1Oc5Ma-ImF-_G) to your calendar and find meeting agendas & call info [here](https://etherpad.opendev.org/p/Kata_Containers_Architecture_Committee_Mtgs). 
+The Architecture Committee works on the technical direction of the project. Meetings are on Thursdays at 1300 UTC. You can [add this meeting](https://zoom.us/meeting/tJUpc-2opjkjGNCIo1YFpKlcoLn909gWv_iH/ics?icsToken=98tyKuCpqj8uGtyXuRuDRowcBo-gLPTxiHpEjY1-tRC0OgZDSQ_1Oc5Ma-ImF-_G) to your calendar and find meeting agendas & call info [here](https://etherpad.opendev.org/p/Kata_Containers_Architecture_Committee_Mtgs). 
 
 \
 **Marketing SIG**\
