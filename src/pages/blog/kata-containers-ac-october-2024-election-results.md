@@ -37,7 +37,7 @@ Fupan is a Senior Engineer at Ant Group, who's running the largest Kata Containe
 
 Greg is a Senior Software Engineer at Red Hat. As part of his role, Greg is working on OpenShift and focuses on enabling Kata Containers in the platform. When he joined the Kata Containers project 3 years ago, his focus was more on the virtualization component and QEMU, but since then he’s extended his scope to the entire stack. Greg started in the project as a software developer, and quickly evolved his responsibilities to perform reviews and become a project maintainer. His recent focus areas include CI and improving review quality and efficiency. Greg is a returning AC member.
 
-Congratulations to the new Architecture Committee members, and thanks to everyone who participated in the election! Governance by community-elected officials is one of the cornerstones of the Four Opens, which are the guiding principles of the Kata Containers and other OpenInfra communities to build and sustain open, collaborative and welcoming environments.
+Congratulations to the new Architecture Committee members, and thanks to everyone who participated in the election! Governance by community-elected officials is one of the cornerstones of the [Four Opens](https://openinfra.dev/four-opens/), which are the guiding principles of the Kata Containers and other OpenInfra communities to build and sustain open, collaborative and welcoming environments.
 
 # About Kata Containers
 
