@@ -14,7 +14,7 @@ Welcome to our latest update on Kata Containers! We’re excited to share our pr
 Over the past month, the Kata Containers community has
 - participated in the [Project Teams Gathering (PTG)](https://openinfra.dev/ptg/) event, where contributors discussed ongoing work on improving the project’s CI/CD infrastructure, plans for the 4.0 release, and more. You can find an [overview of the sessions](https://katacontainers.io/blog/kata-community-ptg-updates-october-2024/) on the project’s blog;
 - concluded the Architecture Committee (AC) election, which happens twice a year to provide a staggered process to elect new leaders while keeping continuity in the leadership. Find out more about the [new AC members](https://katacontainers.io/blog/kata-containers-ac-october-2024-election-results/) on the Kata Containers blog;
-- released [3.10 and 3.10.1](https://github.com/kata-containers/kata-containers/releases) to provide a new, stable minor release for users who would like to keep up to date with the most recent developments within the project.
+- released [3.11](https://github.com/kata-containers/kata-containers/releases) to provide a new, stable minor release for users who would like to keep up to date with the most recent developments within the project.
 
 # What’s Coming Up
 Looking ahead, the Kata Containers community:
