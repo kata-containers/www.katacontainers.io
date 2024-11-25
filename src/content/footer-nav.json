@@ -29,6 +29,10 @@
           "link": "http://lists.katacontainers.io/cgi-bin/mailman/listinfo"
         },
         {
+          "text": "Bluesky",
+          "link": "https://bsky.app/profile/katacontainers.io"
+        },
+        {
           "text": "Twitter",
           "link": "https://twitter.com/KataContainers"
         },
