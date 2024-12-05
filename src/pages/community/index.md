@@ -31,6 +31,7 @@ Slack: [Kata Slack](https://join.slack.com/t/katacontainers/shared_invite/zt-16w
 OFTC IRC: [\#kata-dev](http://webchat.oftc.net/?channels=kata-dev) and [\#kata-general](http://webchat.oftc.net/?channels=kata-general)\
 Mailing Lists: [lists.katacontainers.io/cgi-bin/mailman/listinfo](http://lists.katacontainers.io/cgi-bin/mailman/listinfo)\
 E-mail: <mailto:info@katacontainers.io>\
+Bluesky: [@katacontainers.io](https://bsky.app/profile/katacontainers.io)\
 Twitter: [@katacontainers](https://twitter.com/katacontainers)  
 
 - - -
