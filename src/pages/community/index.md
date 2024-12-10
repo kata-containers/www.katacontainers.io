@@ -16,7 +16,7 @@ Kata Containers is open source, which means it relies on contributors like you! 
 
 ## How to Contribute
 
-Installation Guides: [View the docs](https://github.com/kata-containers/documentation/tree/master/install)\
+Installation Guides: [View the docs](https://github.com/kata-containers/kata-containers/tree/main/docs/install)\
 GitHub Repo: [github.com/kata-containers](https://github.com/kata-containers)\
 Onboarding Deck: [View the presentation](https://www.katacontainers.io/collateral/kata-containers-overview-july22.pdf)\
 Overview One Pager: [View the PDF](https://katacontainers.io/collateral/kata-containers-1pager.pdf)  
