@@ -31,7 +31,7 @@ architecture:
       link: 'https://github.com/kata-containers/documentation'
       linkText: Get Started
       title: View the Documentation
-  image: /img/kata-explained1@2x.png
+  image: /img/katacontainers_architecture_diagram.jpg
   title: Architecture
 integration:
   image: /img/katacontainers_kubernetes_integration_diagram.jpg

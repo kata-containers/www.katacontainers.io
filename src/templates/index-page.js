@@ -47,7 +47,7 @@ export const IndexPageTemplate = ({
         <article className="article level">
           <ZoomImage
             src={mainpitch.image?.childImageSharp?.fluid?.src || mainpitch.image}
-            alt="/kata-explained1@2x.png"
+            alt="/katacontainers_architecture_diagram.jpg"
           />
           <div className="article-content">
             <div className="article__entry">
