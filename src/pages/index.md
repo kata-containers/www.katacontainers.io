@@ -36,7 +36,7 @@ mainpitch:
         Foundation, which supports the development and adoption of open
         infrastructure globally. The code is hosted at GitHub under the Apache 2
         license.
-  image: /img/kata-explained1@2x.png
+  image: /img/katacontainers_architecture_diagram.jpg
   title: About Kata Containers
 features:
   rows:
