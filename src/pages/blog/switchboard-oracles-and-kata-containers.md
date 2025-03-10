@@ -20,7 +20,7 @@ Blockchain oracles must operate with resilience against potential vulnerabilitie
 
 Kata Containers seamlessly blends the isolation advantages of virtual machines with the agility of containers, offering unparalleled security for our oracles:
 
-- **Virtualized Isolation**: Each oracle runs within its own lightweight virtual machine, providing complete kernel isolation. This isolation minimizes the likelihood of cross-container exploits that could jeopardize data integrity.
+- **Virtualized Isolation**: Each oracle runs within its own lightweight virtual machine, relying on complete kernel isolation. This isolation minimizes the likelihood of cross-container exploits that could jeopardize data integrity.
 
 - **Negligible Performance Overhead**: Unlike traditional VMs, Kata maintains a light footprint, ensuring that security improvements do not come at the expense of performance.
 
