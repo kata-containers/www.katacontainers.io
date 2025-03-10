@@ -18,7 +18,7 @@ Blockchain oracles must operate with resilience against potential vulnerabilitie
 
 # The Security Advantages of Kata Containers
 
-Kata Containers seamlessly blend the isolation advantages of virtual machines with the agility of containers, offering unparalleled security for our oracles:
+Kata Containers seamlessly blends the isolation advantages of virtual machines with the agility of containers, offering unparalleled security for our oracles:
 
 - **Virtualized Isolation**: Each oracle runs within its own lightweight virtual machine, providing complete kernel isolation. This isolation minimizes the likelihood of cross-container exploits that could jeopardize data integrity.
 
