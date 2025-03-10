@@ -40,7 +40,7 @@ By deploying Kata Containers, each oracle operates in an isolated VM environment
 
 Transitioning to Kata Containers involved minimal adjustments to our existing Docker and Kubernetes configurations. This seamless integration reinforces security while maintaining operational efficiency and performance.
 
-## Conclusion: A Secure Oracle Solution
+# Conclusion: A Secure Oracle Solution
 
 Switchboard's integration of Kata Containers underscores our commitment to providing secure and reliable oracle services. By leveraging Kata's advanced security features, we ensure the delivery of accurate and protected data feeds, enhancing the confidence of blockchain applications reliant on our oracles.
 
