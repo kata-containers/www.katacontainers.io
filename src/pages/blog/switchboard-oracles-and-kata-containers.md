@@ -34,7 +34,7 @@ By deploying Kata Containers, each oracle operates in an isolated VM environment
 
 - **Containment of Vulnerabilities**: Potential vulnerabilities within one oracle remain confined, preventing malicious activities from affecting the broader system.
 
-- **Enhanced Security Posture**: The added VM layer serves as a robust defense mechanism against shared kernel vulnerabilities typical in conventional containers.
+- **Enhanced Security Posture**: The added VM layer serves as a robust defense mechanism against shared kernel vulnerabilities, typical in conventional containers.
 
 ### Ease of Deployment
 
