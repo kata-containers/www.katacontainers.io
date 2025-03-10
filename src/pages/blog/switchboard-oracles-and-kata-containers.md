@@ -28,7 +28,7 @@ Kata Containers seamlessly blend the isolation advantages of virtual machines wi
 
 ## Practical Implementation within Switchboard's Architecture
 
-### Security in Practice
+## Security in Practice
 
 By deploying Kata Containers, each oracle operates in an isolated VM environment, ensuring:
 
