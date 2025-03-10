@@ -16,7 +16,7 @@ In the rapidly evolving blockchain landscape, oracles play a critical role by br
 
 Blockchain oracles must operate with resilience against potential vulnerabilities that can lead to data breaches or a compromised system. Traditional containerization techniques expose oracles to shared resources, increasing the risk of attacks that can propagate across systems. The need for robust security measures led us to Kata Containers.
 
-## The Security Advantage of Kata Containers
+# The Security Advantages of Kata Containers
 
 Kata Containers seamlessly blend the isolation advantages of virtual machines with the agility of containers, offering unparalleled security for our oracles:
 
