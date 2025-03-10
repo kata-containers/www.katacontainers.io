@@ -24,7 +24,7 @@ Kata Containers seamlessly blends the isolation advantages of virtual machines w
 
 - **Negligible Performance Overhead**: Unlike traditional VMs, Kata maintains a light resource footprint, ensuring that security improvements do not come at the expense of performance.
 
-- **Seamless Integration with Container Ecosystems**: Kata Containers integrate effortlessly with Docker and Kubernetes, allowing us to enhance security without disrupting our existing workflows.
+- **Seamless Integration with Container Ecosystems**: Kata Containers integrates effortlessly with Docker and Kubernetes, allowing us to enhance security without disrupting our existing workflows.
 
 ## Practical Implementation within Switchboard's Architecture
 
