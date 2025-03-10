@@ -8,7 +8,7 @@ category:
     label: Features & Updates
 ---
 
-## Introduction
+# Introduction
 
 In the rapidly evolving blockchain landscape, oracles play a critical role by bridging on-chain smart contracts with off-chain real-world data. At Switchboard, we prioritize the integrity and security of this data pipeline. To fortify our oracle operations, we have integrated Kata Containers, a technological advancement that provides enhanced security and efficient integration with our infrastructure.
 
