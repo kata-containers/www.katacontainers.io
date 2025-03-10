@@ -14,7 +14,7 @@ In the rapidly evolving blockchain landscape, oracles play a critical role by br
 
 # Addressing Security Challenges in Oracle Operations
 
-Blockchain oracles must operate with resilience against potential vulnerabilities that can lead to data breaches or system compromises. Traditional containerization techniques expose oracles to shared resources, increasing the risk of attacks that can propagate across systems. The need for robust security measures led us to Kata Containers.
+Blockchain oracles must operate with resilience against potential vulnerabilities that can lead to data breaches or a compromised system. Traditional containerization techniques expose oracles to shared resources, increasing the risk of attacks that can propagate across systems. The need for robust security measures led us to Kata Containers.
 
 ## The Security Advantage of Kata Containers
 
