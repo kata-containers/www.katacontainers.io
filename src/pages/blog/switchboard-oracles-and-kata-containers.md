@@ -47,3 +47,6 @@ Switchboard's integration of Kata Containers underscores our commitment to provi
 ## Learn More
 
 For detailed instructions on deploying a Switchboard oracle using Kata Containers, explore our documentation: [Switchboard Oracle Documentation](https://docs.switchboard.xyz/switchboard-protocol/running-a-switchboard-oracle).
+
+# About Kata Containers
+If you would like to learn more about the project and get involved check out the [website](https://www.katacontainers.io) for more information or [download the code](https://github.com/kata-containers) and start to experiment with the runtime. If you are already evaluating or using the software please fill out the [user survey](https://openinfrafoundation.formstack.com/forms/kata_containers_user_survey) and help the community improve the project based on your feedback.
