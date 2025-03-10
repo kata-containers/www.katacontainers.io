@@ -36,7 +36,7 @@ By deploying Kata Containers, each oracle operates in an isolated VM environment
 
 - **Enhanced Security Posture**: The added VM layer serves as a robust defense mechanism against shared kernel vulnerabilities, typical in conventional containers.
 
-### Ease of Deployment
+## Ease of Deployment
 
 Transitioning to Kata Containers involved minimal adjustments to our existing Docker and Kubernetes configurations. This seamless integration reinforces security while maintaining operational efficiency and performance.
 
