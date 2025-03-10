@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Case Study: Integrating Kata Containers in Switchboard's Decentralized Oracle Infrastructure
+title: Case Study - Integrating Kata Containers in Switchboard's Decentralized Oracle Infrastructure
 author: Emanuele -Lele- Calo
 date: 2025-03-10T01:32:05.627Z
 category:
