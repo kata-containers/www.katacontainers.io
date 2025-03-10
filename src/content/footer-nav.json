@@ -60,6 +60,10 @@
         {
           "text": "Documentation",
           "link": "/docs/"
+        },
+        {
+          "text": "Security vulnerabilities",
+          "link": "https://github.com/kata-containers/community?tab=readme-ov-file#vulnerability-handling"
         }
       ]
     }
