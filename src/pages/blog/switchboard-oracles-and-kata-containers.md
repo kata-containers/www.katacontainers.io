@@ -26,7 +26,7 @@ Kata Containers seamlessly blends the isolation advantages of virtual machines w
 
 - **Seamless Integration with Container Ecosystems**: Kata Containers integrates effortlessly with Docker and Kubernetes, allowing us to enhance security without disrupting our existing workflows.
 
-## Practical Implementation within Switchboard's Architecture
+# Practical Implementation within Switchboard's Architecture
 
 ## Security in Practice
 
