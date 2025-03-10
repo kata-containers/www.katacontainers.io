@@ -22,7 +22,7 @@ Kata Containers seamlessly blends the isolation advantages of virtual machines w
 
 - **Virtualized Isolation**: Each oracle runs within its own lightweight virtual machine, relying on complete kernel isolation. This isolation minimizes the likelihood of cross-container exploits that could jeopardize data integrity.
 
-- **Negligible Performance Overhead**: Unlike traditional VMs, Kata maintains a light footprint, ensuring that security improvements do not come at the expense of performance.
+- **Negligible Performance Overhead**: Unlike traditional VMs, Kata maintains a light resource footprint, ensuring that security improvements do not come at the expense of performance.
 
 - **Seamless Integration with Container Ecosystems**: Kata Containers integrate effortlessly with Docker and Kubernetes, allowing us to enhance security without disrupting our existing workflows.
 
