@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Kata Containers at the April 2025 Project Teams Gathering (PTG)
+title: Kata Containers at the April 2025 Project Teams Gathering (PTG), Part 2
 author: Ildiko Vancsa
 date: 2025-04-21T01:32:05.627Z
 category:
