@@ -10,7 +10,7 @@ category:
 
 The Kata Containers community participated in the recent online [PTG](https://openinfra.dev/ptg/) event in April, 2025.
 
-The community had sessions booked on 3 days during the event to discuss topics including release planning, process improvements, and more. This article is the first piece of a two-pieces series and shares the highlights of the community’s discussions at the conference.
+The community had sessions booked on 3 days during the event to discuss topics including release planning, process improvements, and more. This article is the first piece of a two-piece series and shares the highlights of the community’s discussions at the conference.
 
 # Kata 4.0 Release Discussion
 Major releases are still planned to be treated somewhat differently from minor versions, as they are rather feature-driven than time-based. The community releases new minor versions on a monthly basis, but major versions are created when larger features or architectural changes get introduced into the codebase, which require more planning.
@@ -33,6 +33,8 @@ As this is a more extensive work item, which relies on upstream development in c
 
 # Testing and Benchmarking
 
+Testing is very important to the Kata community. During this PTG attendees explored the topic area from multiple angles and looked into testing both the quality and performance of the codebase.
+
 ## Kata CI/CD Discussions
 
 Continuously testing the codebase is a priority for the Kata Containers community, which makes CI/CD a recurring topic at the PTGs. This time around the event agenda was packed, which only allowed a small window to discuss this topic.
@@ -45,7 +47,7 @@ The Kata Containers community has nightly tests to check that the entire codebas
 
 ## Performance Testing
 
-When it comes to testing the codebase finding bugs is only one goal, the Kata community also runs tests to check the runtime’s performance. As Kata is targeted to be a lightweight solution that has a comparable performance to traditional container runtimes, it is crucial to understand if any new change introduces performance degradations. However, there are various ways to configure Kata Containers, and the final performance of the software is affected by both the underlying hardware configurations, as well as drivers that are used for things like attaching storage. As the community cannot test everything in their CI system, the PTG session provided a great opportunity to revisit the current status and strategy in this area.
+When it comes to testing the codebase finding bugs is only one goal. The Kata community also runs tests to check the runtime’s performance. As Kata is targeted to be a lightweight solution that has a comparable performance to traditional container runtimes, it is crucial to understand if any new change introduces performance degradations. However, there are various ways to configure Kata Containers, and the final performance of the software is affected by both the underlying hardware configurations, as well as drivers that are used for things like attaching storage. As the community cannot test everything in their CI system, the PTG session provided a great opportunity to revisit the current status and strategy in this area.
 
 Performance testing in CI environments can get challenging and is certainly a limited option. The community set out to keep doing performance tests as part of their test suites, and to also provide the tests and guidance for users to be able to run them locally. That allows for testing Kata in configurations that the donated CI infrastructure that the community is using doesn’t have.
 
