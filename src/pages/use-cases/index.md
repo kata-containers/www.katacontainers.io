@@ -111,6 +111,21 @@ The ease with which Kata Containers could be integrated without altering their c
 - - -
 
 <br />
+<a name="Northflank"></a>
+
+## Northflank Ltd
+
+Northflank’s mission is to enable developers to focus on what they are best at, which is writing, delivering and deploying applications. To do that, Northflank is removing infrastructure complexity by simplifying application deployment in the cloud or on bare-metal. As open source projects, like Kata Containers is key to achieve their goals, they are also actively contributing to the project.
+
+Northflank’s customers often rely on shared infrastructure, where multi-tenancy, security and isolation are critical features to be able to run and manage untrusted images and containers. Through their Platform as a Service (PaaS) offering Northflank teams are able to test Kata in various scenarios in production on a large scale, which enables developers to report and fix bugs and avoid any regressions.
+
+**Read more on how Northflank got started with Kata Containers and how they are using it on [Kata Containers Blog](https://katacontainers.io/blog/kata-containers-northflank-case-study/).**
+
+<br />
+
+- - -
+
+<br />
 <a name="Nubificus"></a>
 
 ## Nubificus Ltd
