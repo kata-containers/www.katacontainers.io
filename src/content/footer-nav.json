@@ -37,12 +37,8 @@
           "link": "https://twitter.com/KataContainers"
         },
         {
-          "text": "IRC: #kata-dev",
-          "link": "http://webchat.oftc.net/?channels=kata-dev"
-        },
-        {
-          "text": "IRC: #kata-general",
-          "link": "http://webchat.oftc.net/?channels=kata-general"
+          "text": "Slack: #general",
+          "link": "https://join.slack.com/t/katacontainers/shared_invite/zt-16w1u6usn-sK871qbMxVN8KsCP5Gr56A"
         }
       ]
     },
