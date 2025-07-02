@@ -1,7 +1,7 @@
 {
   "bar": {
-    "text": "Join the Kata Containers community at the OpenInfra Summit Europe, Oct 17-19! Register before prices double on July 2!",
-    "link": "https://summit2025.openinfra.org/",
-    "button": "JOIN US"
+    "text": "Check out the Kata Containers sessions and mingle with the community at the OpenInfra Summit Europe, Oct 17-19!",
+    "link": "https://katacontainers.io/blog/kata-containers-openinfra-summit-eu-2025-schedule/",
+    "button": "Kata Sessions"
   }
 }
