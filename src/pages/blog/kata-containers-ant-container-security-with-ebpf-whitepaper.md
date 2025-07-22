@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
-title: Inside Ant Group’s Secure Container Platform: Lessons in Isolation, Observability, and Real-time Protection
-author: 
+title: Inside Ant Group’s Secure Container Platform - Lessons in Isolation, Observability, and Real-time Protection
+author: TBD
 date: 2025-07-23T01:32:05.627Z
 category:
   - value: category-em6-cxZuI
