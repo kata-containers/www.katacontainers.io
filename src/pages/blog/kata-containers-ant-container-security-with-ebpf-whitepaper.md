@@ -1,14 +1,14 @@
 ---
 templateKey: blog-post
 title: Inside Ant Group’s Secure Container Platform - Lessons in Isolation, Observability, and Real-time Protection
-author: Li Fupan
+author: Fupan Li
 date: 2025-07-23T01:32:05.627Z
 category:
   - value: category-em6-cxZuI
     label: News & Announcements
 ---
 
-At Ant Group, we have been using Kata Containers since 2019, and we are proud to share a new white paper that dives deep into one of our use cases: building and operating a Cloud Workload Protection Platform (CWPP) using Kata Containers and eBPF. The white paper, [published today](LINK NEEDED), offers technical insights and practical guidance focused on container security at scale.
+At Ant Group, we have been using Kata Containers since 2019, and we are proud to share a new white paper that dives deep into one of our use cases: building and operating a Cloud Workload Protection Platform (CWPP) using Kata Containers and eBPF. The white paper, [published today](https://katacontainers.io/collateral/kata-containers-ant-group-cwpp-ebpf_whitepaper.pdf), offers technical insights and practical guidance focused on container security at scale.
 
 Kata Containers provide strong isolation by running each container in a lightweight virtual machine with its own kernel, mitigating entire classes of vulnerabilities while eBPF enables dynamic, low-overhead policy enforcement at the system level, without relying on brittle kernel modules or intrusive instrumentation. By combining these technologies, we built a scalable, easy-to-maintain CWPP system capable of detecting and stopping sophisticated attacks across containers, including reverse shells, fileless malware, and policy drift. This platform includes fine-grained application-level controls, real-time threat auditing, and resilient architecture that supports secure innovation, such as AI code execution, without sacrificing performance or reliability. It’s been critical to ensuring our environment is secure and reliable.
 
