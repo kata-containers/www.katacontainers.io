@@ -10,7 +10,7 @@ seo:
   url: 'https://katacontainers.io/community/'
 title: Community
 subTitle: 'Join to contribute code, documentation, and use cases'
-blogUrl: 'https://medium.com/kata-containers/'
+blogUrl: 'https://katacontainers.io/blog/'
 ---
 Kata Containers is open source, which means it relies on contributors like you! All areas of Kata Containers are open for contribution. Here is some useful information.
 
@@ -38,7 +38,7 @@ Twitter: [@katacontainers](https://twitter.com/katacontainers)
 ## Meetings
 
 **Architecture Committee**\
-The Architecture Committee works on the technical direction of the project. Meetings are on Thursdays at 1300 UTC. You can [add this meeting](https://zoom.us/meeting/tJUpc-2opjkjGNCIo1YFpKlcoLn909gWv_iH/ics?icsToken=98tyKuCpqj8uGtyXuRuDRowcBo-gLPTxiHpEjY1-tRC0OgZDSQ_1Oc5Ma-ImF-_G) to your calendar and find meeting agendas & call info [here](https://etherpad.opendev.org/p/Kata_Containers_Architecture_Committee_Mtgs). 
+The Architecture Committee works on the technical direction of the project. Meetings are on Thursdays at 1300 UTC. You can check out the [meeting calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/kata-containers), [add this meeting](https://webcal.prod.itx.linuxfoundation.org/lfx/lfHlbC3EUfieggIWlg) to your calendar and find meeting agendas & call info [here](https://etherpad.opendev.org/p/Kata_Containers_Architecture_Committee_Mtgs). 
 
 \
 **Marketing SIG**\
@@ -48,7 +48,7 @@ The Marketing SIG works on developing community content as well as advocacy and 
 
 ## Collaborate
 
-Meet the team and collaborate with us at the [OpenInfra Summit](https://openinfra.dev/summit/) and the [PTG](https://openinfra.dev/ptg).
+Meet the team and collaborate with us at the [OpenInfra Summit](https://openinfra.org/summit/) and the [PTG](https://openinfra.org/ptg).
 
 - - -
 
