@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Case Study: IBM Cloud's Continued Journey with Kata Containers
+title: Case Study - IBM Cloud's Continued Journey with Kata Containers
 author: Ildiko Vancsa, Simon Kaegi
 date: 2025-10-27T01:32:05.627Z
 category:
