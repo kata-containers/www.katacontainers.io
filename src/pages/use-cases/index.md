@@ -100,11 +100,11 @@ With Kata Containers enabled, customers from Huawei are able to use CCE turbo as
 <br />
 <a name="IBM"></a>
 
-## IBM Cloud
+## IBM
 
 IBM has been a long-term user of Kata Containers, they use the runtime to secure their Cloud Shell and CI/CD Pipeline SaaS offerings. As these workloads have been utilizing Kubernetes, Kata fit right into the infrastructure to provide the strong isolation and fulfill strict security requirements. 
 
-Kata fulfills the needs of IBM Cloud teams and provides a simple and flexible solution that’s easy to integrate, operate and maintain. To ensure the longevity of the project, teams became more directly involved in the community to maintain and evolve the runtime upstream.
+Kata fulfills the needs of IBM teams and provides a simple and flexible solution that’s easy to integrate, operate and maintain. To ensure the longevity of the project, teams became more directly involved in the community to maintain and evolve the runtime upstream.
 
 **Read more on how IBM is using Kata Containers and works upstream in the community on [Kata Containers Blog](https://katacontainers.io/blog/kata-containers-ibm-cloud-updates/).**
 
