@@ -100,13 +100,13 @@ With Kata Containers enabled, customers from Huawei are able to use CCE turbo as
 <br />
 <a name="IBM"></a>
 
-## IBM Cloud
+## IBM
 
-Teams from IBM Cloud have been involved in the Kata Containers community for a while. They became more directly involved with Kata Containers when IBM Cloud product teams were looking to secure their Cloud Shell and CI/CD Pipeline SaaS offerings. These workloads were using Kubernetes and the strong isolation Kata Containers provided was a requirement from their security teams. 
+IBM has been a long-term user of Kata Containers, they use the runtime to secure their Cloud Shell and CI/CD Pipeline SaaS offerings. As these workloads have been utilizing Kubernetes, Kata fit right into the infrastructure to provide the strong isolation and fulfill strict security requirements. 
 
-The ease with which Kata Containers could be integrated without altering their code made it the obvious choice. They integrated Kata Containers as a Kubernetes runtime class used for pods where they need stronger guarantees for running arbitrary untrusted workloads.
+Kata fulfills the needs of IBM teams and provides a simple and flexible solution that’s easy to integrate, operate and maintain. To ensure the longevity of the project, teams became more directly involved in the community to maintain and evolve the runtime upstream.
 
-**Read more on how IBM is using Kata Containers on [Kata Containers Blog](https://medium.com/kata-containers/kata-containers-ibm-cloud-case-study-c8189514ec9c).**
+**Read more on how IBM is using Kata Containers and works upstream in the community on [Kata Containers Blog](https://katacontainers.io/blog/kata-containers-ibm-cloud-updates/).**
 
 <br />
 
@@ -136,7 +136,7 @@ Nubificus Ltd is a software consultancy tackling complex virtualization problems
 
 Teams at Nubificus build on Kata Containers to enable seamless, burden-free deployment of lightweight container functions on Kubernetes while ensuring strict tenant isolation offered by the virtualization layers. Kata Containers brings them the needed Open Container Initiative (OCI) glue to interface with the upper-layer software stack, in order to showcase the merits of them projects.
 
-**Read more on how Nubificus got started with Kata Containers and how they are using it on [Kata Containers Blog](https://medium.com/kata-containers/kata-containers-nubificus-case-study-39a1b7f63a2c).**
+**Read more on how Nubificus got started with Kata Containers and how they are using it on [Kata Containers Blog](https://katacontainers.io/blog/kata-containers-nubificus-case-study/).**
 
 <br />
 
