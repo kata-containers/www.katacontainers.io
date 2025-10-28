@@ -1,7 +1,7 @@
 {
   "bar": {
-    "text": "Check out the Kata Containers sessions and mingle with the community at the OpenInfra Summit Europe, Oct 17-19!",
-    "link": "https://katacontainers.io/blog/kata-containers-openinfra-summit-eu-2025-schedule/",
-    "button": "Kata Sessions"
+    "text": "Watch keynote sessions featuring Kata Containers and more from the recent OpenInfra Summit Europe!",
+    "link": "https://www.youtube.com/playlist?list=PLKqaoAnDyfgr91wN_12nwY321504Ctw1s",
+    "button": "Keynote Sessions"
   }
 }
