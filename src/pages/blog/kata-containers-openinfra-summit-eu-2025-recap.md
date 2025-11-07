@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Kata Containers at OpenInfra Summit Europe 2025 - Recap
 author: Ildiko Vancsa
-date: 2025-11-10T01:32:05.627Z
+date: 2025-11-07T01:32:05.627Z
 category:
   - value: category-em6-cxZuI
     label: News & Announcements
