@@ -42,3 +42,7 @@ This integration marks an exciting milestone for both the Agent Sandbox and Kata
 We’re looking forward to collaborating to continue pushing the boundaries of what’s possible in secure, cloud-native compute.
 
 To learn more, check out [Agent Sandbox](https://agent-sandbox.sigs.k8s.io/), explore the code, and join the conversation on the [Kata Slack](https://join.slack.com/t/katacontainers/shared_invite/zt-16w1u6usn-sK871qbMxVN8KsCP5Gr56A).
+
+# About Kata Containers 
+If you would like to learn more about the project and get involved check out the [website](https://katacontainers.io/) for more information or [download the code](https://github.com/kata-containers) and start to experiment with the runtime. If you are already evaluating or using the software please fill out the [user survey](https://openinfrafoundation.formstack.com/forms/kata_containers_user_survey) and help the community improve the project based on your feedback.
+
