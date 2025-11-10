@@ -1,0 +1,44 @@
+---
+templateKey: blog-post
+title: Open Collaboration for Secure AI Workloads: The Kata Containers and Agent Sandbox Integration
+author: Zvonko Kaiser
+date: 2025-11-11
+category:
+  - value: category-em6-cxZuI
+    label: News & Announcements
+---
+
+As the cloud-native ecosystem continues to evolve, new workloads, especially those driven by AI agents, require secure, isolated, and flexible execution environments. This week at KubeCon, Google introduced Agent Sandbox, a new CRD and Operator that aims to standardize the management of stateful, isolated workloads through a declarative API in Kubernetes.
+
+A key part of this launch is the addition of Kata Containers support, bringing VM-backed isolation and strong workload boundaries to the Agent Sandbox ecosystem.
+
+# What’s to Expect from Agent Sandbox
+Agent Sandbox is designed to provide a simple abstraction to handle use cases such as secure code execution and AI Agent Runtimes in a Kubernetes environment. The community can expect easy-to-use APIs for creating and managing secure environments, as well as comprehensive guides to help users get started. 
+
+The initial release, [available on GitHub now](https://github.com/kubernetes-sigs/agent-sandbox), introduces several capabilities that are already usable in production environments, even as development continues:
+- Sandbox: Isolated, secure environments for ephemeral workloads.
+- WarmPools: Maintain pre-warmed pods to minimize startup latency.
+- Shutdown Time:  Automatically clean up sandboxes on configurable schedules.
+- Python SDK: A developer-friendly way to interact with the custom resources (CRDs).
+
+Together, these features offer a robust foundation for running agent workloads efficiently within Kubernetes. They also provide flexibility for developers and organizations experimenting with agent technologies, whether for AI, code execution, or browser automation.
+
+In talking with Joan Kallogjeri, Product Manager at Google, he said, “While valuable to individual developers, these Sandboxes are designed to serve as the foundational infrastructure for enterprises building AI agents. They provide a robust Kubernetes alternative to the bespoke or generic open-source microVM platforms currently in use.”
+
+# Combining the Flexibility of Agent Sandbox with the Security of Kata Containers 
+From its inception, Agent Sandbox has been designed to be backend-agnostic, enabling users to choose the right isolation technology for their specific needs. The team wanted to support multi backend technologies since the beginning, and gVisor and Kata Containers were chosen due to their popularity and the strength of their communities.
+
+Kata’s lightweight virtual machine (VM) approach provides strong workload isolation through hardware virtualization while maintaining the performance and agility expected in cloud-native environments. By supporting Kata Containers, the Agent Sandbox project ensures that users can leverage multiple backends and choose the best solution for their specific needs.
+
+While the Kata Containers integration is functional, the guide and documentation remain limited, offering an excellent opportunity for upstream collaboration.
+
+The Kata Containers community is inviting everyone to explore Agent Sandbox, build integrations, and help extend what’s possible. Whether that’s improving setup documentation, adding new backend features, or experimenting with multi-runtime architectures, contributions and feedback are welcome from across the ecosystem.
+
+The long-term goal is to make it easier for developers to combine the security of Kata Containers with the flexibility of Agent Sandbox, enabling a new generation of workloads that are both fast to launch and secure by design.
+
+# Looking Ahead
+This integration marks an exciting milestone for both the Agent Sandbox and Kata Containers communities. By combining secure isolation with developer-friendly interfaces, we’re opening the door for new kinds of workloads that bridge the gap between containers, VMs, and AI agents.
+
+We’re looking forward to collaborating to continue pushing the boundaries of what’s possible in secure, cloud-native compute.
+
+To learn more, check out [Agent Sandbox](https://agent-sandbox.sigs.k8s.io/), explore the code, and join the conversation on the Kata Containers mailing list.
