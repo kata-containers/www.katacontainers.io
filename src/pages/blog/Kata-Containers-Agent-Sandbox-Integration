@@ -18,7 +18,7 @@ Agent Sandbox is designed to provide a simple abstraction to handle use cases su
 The initial release, [available on GitHub now](https://github.com/kubernetes-sigs/agent-sandbox), introduces several capabilities that are already usable in production environments, even as development continues:
 - Sandbox: Isolated, secure environments for ephemeral workloads.
 - WarmPools: Maintain pre-warmed pods to minimize startup latency.
-- Shutdown Time:  Automatically clean up sandboxes on configurable schedules.
+- Shutdown Time: Automatically clean up sandboxes on configurable schedules.
 - Python SDK: A developer-friendly way to interact with the custom resources (CRDs).
 
 Together, these features offer a robust foundation for running agent workloads efficiently within Kubernetes. They also provide flexibility for developers and organizations experimenting with agent technologies, whether for AI, code execution, or browser automation.
