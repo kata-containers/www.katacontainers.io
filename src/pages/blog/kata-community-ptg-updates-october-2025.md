@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Kata Containers at the October 2025 Project Teams Gathering (PTG)
 author: Ildiko Vancsa
-date: 2025-11-11T01:32:05.627Z
+date: 2025-11-12T01:32:05.627Z
 category:
   - value: category-6-wjkXzEM2
     label: Features & Updates
