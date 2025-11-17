@@ -149,4 +149,4 @@ Teams at Nubificus build on Kata Containers to enable seamless, burden-free depl
 
 NVIDIA has been involved in Kata Containers as sensitive data processing is a use case that is crucial for them, and it requires a transition from traditional to secure, isolated environments. They chose Kata Containers for confidential container enablement because it ensures security while maintaining container flexibility, and supports advanced scenarios like GPUDirect RDMA. A key aspect of NVIDIA's strategy is the lift-and-shift approach, allowing seamless migration of existing AI/ML workloads to these confidential environments, while combining LLMs with GPU-accelerated computing - leveraging Kubernetes for effective orchestration and striking a balance between computational power and data privacy.
 
-**Learn more about [NVIDIA's Kata Containers strategy](https://www.youtube.com/watch?v=a3HzBmPuw5g) to support AI/ML workloads**
+**Read more on the [SuperUser blog](https://superuser.openinfra.org/articles/nvidia-kata-containers-trusted-ai-at-gpu-scale/) to learn how NVIDIA is relying on Kata Containers to deliver trusted AI anywhere.**
