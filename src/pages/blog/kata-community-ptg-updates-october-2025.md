@@ -66,5 +66,7 @@ The community will finalize the deprecation process and project maintainer struc
 
 For further notes of the discussions at the event, and to access session recordings, please refer to the session [etherpad](https://etherpad.opendev.org/p/r.3bf2b38fb20b467af1a2baf6ba6ab325) which also contains the link to the recording of the session.
 
+Check out [Part 2](https://katacontainers.io/blog/kata-community-ptg-updates-october-2025-part-2/) for the recap of the remaining sessions.
+
 # About Kata Containers
 If you would like to learn more about the project and get involved check out the [website](https://www.katacontainers.io) for more information or [download the code](https://github.com/kata-containers) and start to experiment with the runtime. If you are already evaluating or using the software please fill out the [user survey](https://openinfrafoundation.formstack.com/forms/kata_containers_user_survey) and help the community improve the project based on your feedback.
