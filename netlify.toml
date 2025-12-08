@@ -17,3 +17,7 @@
   to = "https://raw.githubusercontent.com/kata-containers/kata-containers/main/utils/kata-manager.sh"
   status = 301
   force = true
+[[headers]]
+  for = "/*"
+  [headers.values]
+  Referrer-Policy = "strict-origin-when-cross-origin"

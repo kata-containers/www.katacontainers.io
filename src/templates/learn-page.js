@@ -87,7 +87,7 @@ export const LearnPageTemplate = ({ seo, title, subTitle, intro, content, conten
                         {video.title}
                       </h2>
                       <div className="video-wrapper">
-                        <iframe width="835 px" height="469.687 px" src={video.url} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                        <iframe width="835 px" height="469.687 px" src={video.url} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" referrerPolicy="strict-origin-when-cross-origin"></iframe>
                       </div>
                     </React.Fragment>
                   )
