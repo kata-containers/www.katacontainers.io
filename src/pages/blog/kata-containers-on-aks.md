@@ -1,39 +1,43 @@
 ---
 templateKey: blog-post
 title: Kata Containers Comes to Azure Kubernetes Services
-author: Zvonko Kaiser
+author: Jack Jiang
 date: 2025-12-10T01:32:05.627Z
 category:
   - value: category-em6-cxZuI
     label: News & Announcements
 ---
 
-Microsoft recently launched Pod Sandboxing on Azure Kubernetes Service (AKS), an offering built on top of the Kata Containers project, to [general availability](https://techcommunity.microsoft.com/blog/linuxandopensourceblog/azure-linux-driving-security-in-the-era-of-ai-innovation/4471034). The stack is primarily built upon open sourced technology; [Cloud Hypervisor](https://github.com/cloud-hypervisor/cloud-hypervisor) works as the VMM, while Kata serves as the container runtime.
+Shared infrastructure, like what Azure Kubernetes Service (AKS) provides, can grow large and complex. Clusters in AKS can scale up and host multi-tenant workloads, which is posing various challenges that call for strong workload isolation.
 
-The feature was conceptualized to give AKS customers a straightforward method to be able to isolate their workloads, a need that becomes especially prelevant in scenarios like multi-tenanted clusters.
+When using traditional containers, users have the option to rely on namespaces for logical isolation, which is often not sufficient, or invest in physical infrastructure for physical isolation, which can get very expensive. Neither of these options is ideal. To address this need without the need to invest in more hardware, Microsoft recently announced [General Availability](https://techcommunity.microsoft.com/blog/linuxandopensourceblog/azure-linux-driving-security-in-the-era-of-ai-innovation/4471034) of the Pod Sandboxing feature that is based on the Kata Containers project. The stack is primarily built upon open sourced technology; [Cloud Hypervisor](https://github.com/cloud-hypervisor/cloud-hypervisor) works as the VMM, while Kata serves as the container runtime.
 
 # Pod Sandboxing
 
-When looking for a stack to build the AKS offering on top of, Kata presented itself a prime candidate that was compatible with Azure and had a great community behind it.
 
-Pod Sandboxing on AKS allows customers to spin up their workloads in lightweight pod VMs; these pod VMs are equipped with a guest kernel, and are isolated from other pod VMs and the machine host. Behind the scenes, the Kata runtime makes the magic happen. The seamless per workload isolation offered by Kata containers allows for easy adoption by our customers, and in turn solves for a number of scenarios that our customers face. 
+Pod Sandboxing on AKS allows cluster operators to spin up their workloads in lightweight pod VMs, which are equipped with a guest kernel, and are isolated from both other pod VMs and the machine host. Behind the scenes, the Kata runtime makes the magic happen. The seamless per workload isolation offered by Kata Containers allows for easy adoption by our customers, while being applicable in various scenarios.
 
-# Solving for our Customers
+Kata Containers was an easy choice, since it was already compatible with Azure and could be enabled by a simple configuration change, and had a great community around it. 
+
+# The Need for Isolation
 
 Kata containers powers a solution that helps with a number of use cases we've heard in conversations with our customers. Some of the scenarios we've obeserved include:
 
-- Hosting many different tenants on an AKS cluster and needing some way to effectively isolate tenants' workloads from one another.
-- Isolate "untrusted" workloads from other workloads on their clusters.
+- Host different tenants on an AKS cluster and effectively isolate their workloads from one another.
+- Isolate "untrusted" workloads while still be able to utilize the cluster resources to run additional workloads.
 - Protect specific workloads from the rest of the cluster.
-- Limit the impact that [noisy neighbors](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/noisy-neighbor/noisy-neighbor) can have on the rest of the cluster.
-- Isolate the blast radius of an app unexpectedly going offline.
+- Set resource limit and reduce the impact that [noisy neighbors](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/noisy-neighbor/noisy-neighbor) can have on the rest of the cluster.
+- Limit the blast radius of an incident, which in this case is the pod VM.
 
-Customers that have adopted Kata use it in a variety of ways that best fit their own use cases, but a common thread we hear throughout our conversations is how easily and seamless the solution is. Care was taken to ensure that customers' workloads could easily be lift-and-shifted with minimal effort and the full extent of benefits from Kata containerization could be realized by the customer.
+Our customers who have adopted Kata use it in a variety of ways that best fit their own use cases, but a common feedback we hear throughout our conversations is how simple and seamless the solution is. To share an example on how easy the integration is, a cluster operator has to add only one line to their pod’s configuration YAML file to deploy it as a Kata pod.
 
-# Looking Ahead
+# What’s next?
 
-The OpenInfra foundation has a great set of projects that they are incubating well; we're extremely happy that we were able to utilize one of them!
 
-Looking ahead, we hope to build on top of the solid foundation that is our Kata containers solution. We have a variety of features on the roadmap, and hope to solve for a more use cases that can benefit our customers.
+Kata Containers already provides us a solid foundation, and we have a variety of features on the roadmap to implement and provide robust and scalable infrastructure for our customers.
 
-If you would like to get started with Pod Sandboxing on AKS, you can get started [here](https://learn.microsoft.com/en-us/azure/aks/concepts-pod-sandboxing). 
+Check out the Pod Sandboxing [documentation](https://learn.microsoft.com/en-us/azure/aks/concepts-pod-sandboxing) to get started with the feature on AKS.
+
+# About Kata Containers
+
+If you would like to learn more about the project and get involved check out the [website](https://www.katacontainers.io) for more information or [download the code](https://github.com/kata-containers) and start to experiment with the runtime. If you are already evaluating or using the software please fill out the [user survey](https://openinfrafoundation.formstack.com/forms/kata_containers_user_survey) and help the community improve the project based on your feedback.
