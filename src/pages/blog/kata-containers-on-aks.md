@@ -17,7 +17,29 @@ When using traditional containers, users have the option to rely on namespaces f
 
 Pod Sandboxing on AKS allows cluster operators to spin up their workloads in lightweight pod VMs, which are equipped with a guest kernel, and are isolated from both other pod VMs and the machine host. Behind the scenes, the Kata runtime makes the magic happen. The seamless per workload isolation offered by Kata Containers allows for easy adoption by our customers, while being applicable in various scenarios.
 
-Kata Containers was an easy choice, since it was already compatible with Azure and could be enabled by a simple configuration change, and had a great community around it. 
+Kata Containers was an easy choice, since it was already compatible with Azure and could be enabled by a simple configuration change, and had a great community around it.
+
+When setting up Pod Sandboxing, users are able to get up and running with minimal changes needed. 
+
+- Users start with setting up an AKS node-pool with Kata enabled
+   
+   ```bash
+   az aks create --resource-group katarg --cluster-name katacluster --workload-runtime KataVmIsolation --node-vm-size <insert a supported SKU of your choice>
+   ```
+   
+- In their deployments, users simply add a one liner to have the workload utilize the Kata container runtime
+
+   ```yaml
+   kind: Pod
+   apiVersion: v1
+   metadata:
+     name: kata-pod
+   spec:
+     runtimeClassName: kata-vm-isolation
+     containers:
+     - name: kata
+       image: mcr.microsoft.com/aks/fundamental/base-ubuntu:v0.0.11
+   ```
 
 # The Need for Isolation
 
