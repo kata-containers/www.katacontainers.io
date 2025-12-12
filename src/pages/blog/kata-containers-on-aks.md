@@ -57,7 +57,7 @@ Our customers who have adopted Kata use it in a variety of ways that best fit th
 
 Kata Containers already provides us a solid foundation, and we have a variety of features on the roadmap to implement and provide robust and scalable infrastructure for our customers.
 
-Check out the Pod Sandboxing [documentation](https://learn.microsoft.com/en-us/azure/aks/concepts-pod-sandboxing) to get started with the feature on AKS.
+Check out the Pod Sandboxing [documentation](https://learn.microsoft.com/en-us/azure/aks/concepts-pod-sandboxing) to get started with the feature on AKS. If you'd like to take Pod Sandboxing for a spin with some scenarios to illustrate the functionality, check out our [AKS Labs](https://azure-samples.github.io/aks-labs/docs/security/pod-sandboxing-on-aks)!
 
 # About Kata Containers
 
