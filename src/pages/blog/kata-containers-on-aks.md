@@ -14,7 +14,6 @@ When using traditional containers, users have the option to rely on namespaces f
 
 # Pod Sandboxing
 
-
 Pod Sandboxing on AKS allows cluster operators to spin up their workloads in lightweight pod VMs, which are equipped with a guest kernel, and are isolated from both other pod VMs and the machine host. Behind the scenes, the Kata runtime makes the magic happen. The seamless per workload isolation offered by Kata Containers allows for easy adoption by our customers, while being applicable in various scenarios.
 
 Kata Containers was an easy choice, since it was already compatible with Azure and could be enabled by a simple configuration change, and had a great community around it.
