@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Kata Containers Comes to Azure Kubernetes Services
 author: Jack Jiang
-date: 2026‑02‑17T22:00:00Z
+date: 2026-02-17T01:32:05.627Z
 category:
   - value: category-em6-cxZuI
     label: News & Announcements
