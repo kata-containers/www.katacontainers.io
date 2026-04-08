@@ -41,13 +41,12 @@ intro:
 
 ## Kata Containers in the News
 
-* [Kata Containers 1.5 release with support for Firecracker](https://aws.amazon.com/blogs/opensource/kata-containers-1-5-firecracker-support/) (AWS Open Source Blog | January 2019)
-* [Kata Containers one year anniversary](https://superuser.openstack.org/articles/kata-one-year-anniversary/) (Superuser | December 2018)
-* [Kata Containers support open container standards](https://superuser.openstack.org/articles/openstack-foundation-joins-open-container-initiative-kata/) (Superuser | March 2018)
-* [The Kata Containers project launches version 1.0 of its lightweight VMs for containers](https://techcrunch.com/2018/05/22/the-kata-containers-project-hits-1-0/) (TechCrunch | May 2018)
-* [Say hello to Kata Containers 1.0](https://superuser.openstack.org/articles/kata-containers-1-0/) (Superuser | May 2018)
-* [Why Kata Containers is good for the industry and customers](https://www.forbes.com/sites/janakirammsv/2017/12/11/why-kata-containers-is-good-for-the-industry-and-customers/#509177e7449e) (Forbes | December 2017)
-* [Kata Containers: secure, lightweight virtual machines for container environments](https://thenewstack.io/kata-containers-secure-lightweight-virtual-machines-container-environments/) (The New Stack | December 2017)
+* [NVIDIA Unveils Zero-Trust Architecture for Secure AI Model Deployment](https://blockchain.news/news/nvidia-zero-trust-architecture-confidential-ai-factories) (Blockchain News | March 2026)
+* [Kata containers: the overlooked Kubernetes workload isolation for secure AI](https://www.thestack.technology/kata-containers-kubernetes-isolation-ai/) (The Stack | February 2026)
+* [Kata Containers: From Kubernetes Pods to Secure VMs](https://dzone.com/articles/kata-containers-from-kubernetes-pods-to-secure-vms) (DZone | February 2025)
+* [Azure Linux: Driving Security in the Era of AI Innovation](https://techcommunity.microsoft.com/blog/linuxandopensourceblog/azure-linux-driving-security-in-the-era-of-ai-innovation/4471034) (Microsoft Linux and Open Source Blog | November 2025)
+* [Kata Containers : Bridging The Gap Between Containers And Virtual Machines](https://kalilinuxtutorials.com/kata-containers/) ( KaliLinuxTutorials | January 2025)
+* [Enhancing Kubernetes workload isolation and security using Kata Containers](https://aws.amazon.com/blogs/containers/enhancing-kubernetes-workload-isolation-and-security-using-kata-containers/) (AWS Containers Blog | May 2024)
 
 - - -
 
