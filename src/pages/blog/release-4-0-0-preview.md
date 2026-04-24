@@ -45,7 +45,7 @@ While the Rust-based runtime will grab the spotlight, the Go runtime will still 
 What you need to know:
 - The Go runtime becomes deprecated when 4.0.0 is officially released
   - The Go runtime may be removed no sooner than the 5.0.0 release of Kata Containers
-    - 5.0.0 is currently forecasted to happen 18months after 4.0.0 is released
+    - 5.0.0 is currently forecast to happen 18months after 4.0.0 is released
   - No new feature development will be accepted in the Go runtime going forward, however, some exceptions apply, see below
   - The community will still accept and encourage bug and security fixes to the Go runtime
     - These fixes will have to be submitted for the Rust runtime as well, where applicable
@@ -57,7 +57,7 @@ If you haven’t yet started looking into runtime-rs, the 4.0.0 release will be 
 
 ## Highlights from the New Rust Runtime
 
-The community has been hard working to reach a close state to feature parity between the two variants of the runtime, where possible. Functionality that had already reached the state of deprecated or unmaintained will not be available in the new runtime, while it already has some features that are not available in the original Go runtime. This section gives a sneak peek into runtime-rs, without a comprehensive overview.
+The community has been working hard to reach a close state to feature parity between the two variants of the runtime, where possible. Functionality that had already reached the state of deprecated or unmaintained will not be available in the new runtime, while it already has some features that are not available in the original Go runtime. This section gives a sneak peek into runtime-rs, without a comprehensive overview.
 
 ### Hypervisor Support
 
@@ -78,9 +78,7 @@ It is important for the community to make the runtimes available on different ha
 - IBM PowerPC
 - RISC-V - experimental in runtime-rs only
 
-GPU support:
-- Go runtime: GPU support tested with QEMU
-- Rust runtime: GPU support tested with QEMU
+GPU support: Both runtimes support GPU passthrough with NVIDIA hardware when using QEMU.
 
 ### Container Orchestration System Compatibility
 
