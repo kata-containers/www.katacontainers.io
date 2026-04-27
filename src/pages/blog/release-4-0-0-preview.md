@@ -45,7 +45,7 @@ While the Rust-based runtime will grab the spotlight, the Go runtime will still 
 What you need to know:
 - The Go runtime becomes deprecated when 4.0.0 is officially released
   - The Go runtime may be removed no sooner than the 5.0.0 release of Kata Containers
-    - 5.0.0 is currently forecast to happen 18months after 4.0.0 is released
+    - 5.0.0 is currently forecast to happen 18 months after 4.0.0 is released
   - No new feature development will be accepted in the Go runtime going forward, however, some exceptions apply, see below
   - The community will still accept and encourage bug and security fixes to the Go runtime
     - These fixes will have to be submitted for the Rust runtime as well, where applicable
