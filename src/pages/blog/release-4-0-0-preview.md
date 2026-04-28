@@ -72,7 +72,7 @@ runtime-rs will initially support the following hypervisors:
 ### Hardware Architectures and Accelerators
 
 It is important for the community to make the runtimes available on different hardware architectures. For runtime-rs these include:
-- Arm
+- ARM64
 - Intel/AMD (x86_64)
 - IBM s390x
 - IBM PowerPC
