@@ -42,7 +42,7 @@ donors:
     - alt: Alibaba Cloud
       class: img-sponsor-l3
       image: /img/alibaba-cloud-logo.png
-      link: https://alibabacloud.com
+      link: 'https://alibabacloud.com'
   title: Infrastructure Donors
 companies:
   list:
@@ -52,18 +52,12 @@ companies:
     - alt: Ant Group
       class: img-sponsor-l4
       image: /img/ant-financial-services-group_owler_20210312_151802_original.png
-    - alt: AT&T
-      class: img-sponsor-l3-last
-      image: /img/logo-att.svg
     - alt: AWCloud
       class: img-sponsor-l4
       image: /img/awcloud.png
     - alt: 99 Cloud
       class: img-sponsor-l4
       image: /img/logo-99cloud.jpg
-    - alt: CISCO
-      class: img-sponsor-l3-last
-      image: /img/cisco-lg2.png
     - alt: Cleura
       class: img-sponsor-l4
       image: /img/cleura-lg.jpg
@@ -82,9 +76,6 @@ companies:
     - alt: EasyStack
       class: img-sponsor-l3-last
       image: /img/logo-easy.svg
-    - alt: FiberHome
-      class: img-sponsor-l3-last
-      image: /img/logo-fiberhome.png
     - alt: H3C
       class: img-sponsor-l4
       image: /img/h3c-lg.jpeg
@@ -106,21 +97,12 @@ companies:
     - alt: Red Hat
       class: img-sponsor-l4
       image: /img/logo-redhat.svg
-    - alt: Suse
-      class: img-sponsor-l4
-      image: /img/logo-suse.svg
     - alt: Tencent
       class: img-sponsor-l4
       image: /img/logo-tencent.jpg
-    - alt: Troila
-      class: img-sponsor-l4
-      image: /img/troila-new-lg.jpg
     - alt: Ubuntu
       class: img-sponsor-l3-last
       image: /img/logo-ubuntu.svg
-    - alt: United Stack
-      class: img-sponsor-l4
-      image: /img/logo-united.svg
     - alt: Vexxhost
       class: img-sponsor-l4
       image: /img/vexxhost.svg
