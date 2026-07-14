@@ -54,6 +54,7 @@
     "gatsby-clean": "gatsby clean",
     "build": "yarn clean && gatsby build",
     "develop": "NODE_ENV=development NODE_OPTIONS=--max-old-space-size=8192 npm run gatsby-clean && node --trace-warnings node_modules/.bin/gatsby develop --S -H 0.0.0.0",
+    "develop:http": "NODE_ENV=development NODE_OPTIONS=--max-old-space-size=8192 npm run gatsby-clean && node --trace-warnings node_modules/.bin/gatsby develop -H 0.0.0.0",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

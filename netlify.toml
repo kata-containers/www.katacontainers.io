@@ -4,6 +4,14 @@
 [build.environment]
   YARN_VERSION = "1.13.0"
   YARN_FLAGS = "--no-ignore-optional"
+# Local `netlify dev`: run Gatsby over plain HTTP (no --S) so Netlify Dev can
+# proxy to it. Netlify serves the proxy on `port` and forwards to `targetPort`.
+[dev]
+  command = "yarn develop:http"
+  framework = "#custom"
+  targetPort = 8000
+  port = 8888
+  publish = "public"
 # Deploy Preview context: all deploys resulting from a pull/merge request will
 # inherit these settings.
 [[redirects]]
