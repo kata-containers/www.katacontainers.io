@@ -11,3 +11,6 @@ src/content/sponsored-projects.json
 .env
 .env.*
 .idea/
+
+# Local Netlify folder
+.netlify
