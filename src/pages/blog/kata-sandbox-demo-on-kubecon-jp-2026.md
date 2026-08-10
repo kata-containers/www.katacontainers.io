@@ -57,3 +57,8 @@ For now, my priority is to polish the demo and ensure full integration of the va
 Anyway — demo done is success. Before we move on to the next step, let's grab a coffee and take a break.
 
 Original Post: [Xu's Personal Blog](https://wangxu.me/open-source/2026/08/10/kata-xolis-kubecon-demo-en/index.html)
+
+## About Kata Containers
+
+If you would like to learn more about the project and get involved check out the [website](https://katacontainers.io) for more information or [download the code](https://github.com/kata-containers) and start to experiment with the runtime. If you are already evaluating or using the software please fill out the [user survey](https://openinfrafoundation.formstack.com/forms/kata_containers_user_survey) and help the community improve the project based on your feedback.
+
