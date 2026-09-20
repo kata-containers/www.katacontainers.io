@@ -42,7 +42,7 @@ When setting up Pod Sandboxing, users are able to get up and running with minima
 
 # The Need for Isolation
 
-Kata containers powers a solution that helps with a number of use cases we've heard in conversations with our customers. Some of the scenarios we've obeserved include:
+Kata containers powers a solution that helps with a number of use cases we've heard in conversations with our customers. Some of the scenarios we've observed include:
 
 - Host different tenants on an AKS cluster and effectively isolate their workloads from one another.
 - Isolate "untrusted" workloads while still be able to utilize the cluster resources to run additional workloads.
