@@ -15,7 +15,7 @@ and when a node can return to service.
 
 Installing and upgrading Kata Containers needs to fit into that lifecycle. With
 kata-deploy's finite installation stages, we can reuse Kata's installation logic
-within those existing workflows. The recently merged NodeWright integration
+within those existing workflows. The recently merged [NodeWright][3] integration
 provides one example of this approach—and we expect more.
 
 **A runtime installation changes the host**
@@ -67,7 +67,7 @@ execution gives them concrete points at which to apply those policies.
 
 **NodeWright puts this into practice**
 
-[NodeWright][3] manages host customizations through a Kubernetes operator. Its
+NodeWright manages host customizations through a Kubernetes operator. Its
 Kata Containers package connects NodeWright's rollout, drain, and package
 lifecycle controls to kata-deploy's finite installer commands. The [initial
 integration][4], merged on October 28, 2026, targets Kata's NVIDIA CPU runtime
@@ -77,6 +77,9 @@ In that integration, host preparation runs Kata's policy, module-loading, and
 prerequisite stages. Runtime changes participate in NodeWright's cordon and
 drain workflow, while kata-deploy performs the installation and any required
 service restart.
+
+The same approach applies when upgrading Kata or changing its configuration:
+NodeWright coordinates the node, and kata-deploy handles the runtime changes.
 
 Completion also includes a functional check: the package creates a temporary pod
 using the Kata RuntimeClass on the affected node, waits for successful guest
