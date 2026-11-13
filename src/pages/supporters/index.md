@@ -15,10 +15,6 @@ buttons:
     text: support kata containers
 donors:
   list:
-    - alt: Google Cloud
-      class: img-sponsor-l3
-      image: /img/logo-google-cloud.svg
-      link: 'https://cloud.google.com/'
     - alt: Microsoft
       class: img-sponsor-l3
       image: /img/logo-microsoft.svg
@@ -27,22 +23,10 @@ donors:
       class: img-sponsor-l3
       image: /img/logo-vexxhost.svg
       link: 'https://vexxhost.com/'
-    - alt: AWS
-      class: img-sponsor-l2
-      image: /img/logo-amazon.svg
-      link: 'https://aws.amazon.com/'
-    - alt: packagecloud
+    - alt: Oregon State University Open Source Lab
       class: img-sponsor-l3
-      image: /img/logo-packagecloud.png
-      link: 'https://packagecloud.io/'
-    - alt: packet
-      class: img-sponsor-l3
-      image: /img/logo-packet.svg
-      link: 'https://www.packet.com/'
-    - alt: Alibaba Cloud
-      class: img-sponsor-l3
-      image: /img/alibaba-cloud-logo.png
-      link: https://alibabacloud.com
+      image: /img/osu-logo.svg
+      link: 'https://osuosl.org'
   title: Infrastructure Donors
 companies:
   list:
