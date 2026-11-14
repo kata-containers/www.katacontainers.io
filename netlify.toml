@@ -25,6 +25,10 @@
   to = "https://raw.githubusercontent.com/kata-containers/kata-containers/main/utils/kata-manager.sh"
   status = 301
   force = true
+[[redirects]]
+  from = "/docs"
+  to = "https://kata-containers.github.io/kata-containers/"
+  status = 301
 [[headers]]
   for = "/*"
   [headers.values]

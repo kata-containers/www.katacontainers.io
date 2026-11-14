@@ -16,7 +16,7 @@ Kata Containers is open source, which means it relies on contributors like you! 
 
 ## How to Contribute
 
-Installation Guides: [View the docs](https://github.com/kata-containers/kata-containers/tree/main/docs/install)\
+Installation Guides: [View the docs](https://kata-containers.github.io/kata-containers/installation/)\
 GitHub Repo: [github.com/kata-containers](https://github.com/kata-containers)\
 Onboarding Deck: [View the presentation](https://www.katacontainers.io/collateral/kata-containers-overview-july22.pdf)\
 Overview One Pager: [View the PDF](https://katacontainers.io/collateral/kata-containers-1pager.pdf)  
@@ -28,7 +28,7 @@ Kata Containers contributor metrics are available at [KataContainers.Biterg.io](
 ## Communications
 
 Slack: [Kata Slack](https://join.slack.com/t/katacontainers/shared_invite/zt-16w1u6usn-sK871qbMxVN8KsCP5Gr56A)\
-Mailing Lists: [lists.katacontainers.io/cgi-bin/mailman/listinfo](http://lists.katacontainers.io/cgi-bin/mailman/listinfo)\
+Mailing Lists: [Kata Containers mailing lists](https://lists.katacontainers.io/mailman3/lists/)\
 E-mail: <mailto:info@katacontainers.io>\
 Bluesky: [@katacontainers.io](https://bsky.app/profile/katacontainers.io)\
 Twitter: [@katacontainers](https://twitter.com/katacontainers)  
@@ -42,7 +42,7 @@ The Architecture Committee works on the technical direction of the project. Meet
 
 \
 **Marketing SIG**\
-The Marketing SIG works on developing community content as well as advocacy and outreach. You can get involved with the Marketing SIG on the Kata [mailing list](http://lists.katacontainers.io/cgi-bin/mailman/listinfo) or by visiting #kata-marketing in the [Kata Slack](https://katacontainers.slack.com/).
+The Marketing SIG works on developing community content as well as advocacy and outreach. You can get involved with the Marketing SIG on the Kata [mailing list](https://lists.katacontainers.io/mailman3/lists/) or by visiting #kata-marketing in the [Kata Slack](https://katacontainers.slack.com/).
 
 - - -
 

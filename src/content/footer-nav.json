@@ -26,7 +26,7 @@
       "nav": [
         {
           "text": "Mailing Lists",
-          "link": "http://lists.katacontainers.io/cgi-bin/mailman/listinfo"
+          "link": "https://lists.katacontainers.io/mailman3/lists/"
         },
         {
           "text": "Bluesky",
@@ -55,7 +55,7 @@
         },
         {
           "text": "Documentation",
-          "link": "/docs/"
+          "link": "https://kata-containers.github.io/kata-containers/"
         },
         {
           "text": "Security vulnerabilities",

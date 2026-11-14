@@ -14,7 +14,7 @@ title: Software
 subTitle: Development activities in Kata Containers
 intro:
   buttons:
-    - link: 'https://github.com/kata-containers'
+    - link: 'https://github.com/kata-containers/kata-containers'
       text: explore on github
   text: >-
     Kata Containers is Apache 2 licensed software consisting of two main
@@ -24,11 +24,11 @@ intro:
 architecture:
   columns:
     - icon: /img/logo_ico1.svg
-      link: 'https://github.com/kata-containers'
+      link: 'https://github.com/kata-containers/kata-containers'
       linkText: Go to Git Repository
       title: Get Kata Containers
     - icon: /img/document_primary-dark.svg
-      link: 'https://github.com/kata-containers/documentation'
+      link: 'https://kata-containers.github.io/kata-containers/installation/'
       linkText: Get Started
       title: View the Documentation
   image: /img/katacontainers_architecture_diagram.jpg
@@ -61,33 +61,17 @@ integration:
 
 ## Requirements
 
-Kata requires nested virtualization or bare metal. The Kata Containers runtime has a built-in command (kata-check) to 
-determine if your host system is capable of running a Kata Container. [Learn how to use kata-check](http://bit.ly/katacheck).
+Kata requires nested virtualization or bare metal. See the [hardware prerequisites](https://kata-containers.github.io/kata-containers/installation/#hardware) for supported platforms and host checks.
 
 <div class="columns">
   <div class="column">
     <div class="box is-primary-blue">
-      <h4 class="box-title">Distributions</h4> 
+      <h4 class="box-title">Installation</h4>
       <div class="box-entry">
-        Kata Containers is available on many distributions. View the <a href="https://github.com/kata-containers/documentation/tree/master/install">distro specific install guides</a> for: <br /> 
-        <div class="columns">
-          <div class="column">
-            <ul>
-              <li>CentOS</li>
-              <li>Debian</li>
-              <li>Fedora</li>
-              <li>OpenSuse</li>
-            </ul>
-          </div> 
-          <div class="column">
-            <ul>
-              <li>RHEL</li>
-              <li>SLES</li>
-              <li>Ubuntu</li>
-            </ul>
-          </div>
-        </div>
-      </div> 
+        For Kubernetes, install Kata Containers with the kata-deploy Helm chart.
+        The <a href="https://kata-containers.github.io/kata-containers/installation/">installation guide</a> also covers prebuilt
+        release tarballs and building from source.
+      </div>
       <div class="box-actions"></div>
     </div>
   </div> 
