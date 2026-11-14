@@ -50,7 +50,7 @@ There was also a nice post from Mikka about using hardware acceleration under k8
 
 **\# What’s coming next week?**
 
-It is the OSF Denver PTG next week — there are a whole bunch of Kata developers there with some focused discussions and effort. You can see details and links off to the agenda items at [https://medium.com/kata-containers/kata-containers-featured-at-open-infrastructure-summit-denver-april-2019-680c7bd3c1c6](/kata-containers/kata-containers-featured-at-open-infrastructure-summit-denver-april-2019-680c7bd3c1c6)
+It is the OSF Denver PTG next week — there are a whole bunch of Kata developers there with some focused discussions and effort. You can see details and links off to the agenda items at [Kata Containers at the Denver summit](/blog/kata-containers-featured-at-open-infrastructure-summit-denver/)
 
 If you are in the area or at the PTG, do come along!
 

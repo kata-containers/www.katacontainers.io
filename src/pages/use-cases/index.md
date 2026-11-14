@@ -132,11 +132,9 @@ Northflank’s customers often rely on shared infrastructure, where multi-tenanc
 
 ## Nubificus Ltd
 
-Nubificus Ltd is a software consultancy tackling complex virtualization problems. It targets ultra-fast application spawning and execution at the edge and in the cloud. Teams at Nubificus are day-to-day users of open-source software. Currently, they actively use and contribute to open source projects like Kata Containers.
+In its September 2021 case study, Nubificus described using Kata Containers to run lightweight container functions on Kubernetes with VM-based tenant isolation.
 
-Teams at Nubificus build on Kata Containers to enable seamless, burden-free deployment of lightweight container functions on Kubernetes while ensuring strict tenant isolation offered by the virtualization layers. Kata Containers brings them the needed Open Container Initiative (OCI) glue to interface with the upper-layer software stack, in order to showcase the merits of them projects.
-
-**Read more on how Nubificus got started with Kata Containers and how they are using it on [Kata Containers Blog](https://katacontainers.io/blog/kata-containers-nubificus-case-study/).**
+**Read the [Nubificus case study](https://katacontainers.io/blog/kata-containers-nubificus-case-study/).**
 
 <br />
 

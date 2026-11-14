@@ -1,120 +1,19 @@
-.container-supporter {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-right: -20px;
-    margin-left: -20px;
-}
-
-.container-supporter-last {
-    margin-top: 40px;
-    margin-bottom: 50px;
-    justify-content: center;
-    align-items: center;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-}
-
-
-.content-supporter{
-    padding: 20px;
-    align-self: center;
-    width: 215px;
-}
-
-.content-supporter-lt3 {
-    padding: 20px;
-    align-self: center;
-    width: 285px;
-}
-
-.content-supporter-lt2 {
-    padding: 20px;
-    width: 300px;
-    margin-right: -150px;
-
-}
-
-.container-center-sponsors .columns {
-    flex-wrap: wrap;
-}
-
-.container-center-sponsors .columns .columns-sponsors {
-    flex-basis: 25%;
-    max-width: 25%;
-    img {
-        margin: 0 auto;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .container-center-sponsors .columns .columns-sponsors {
-        flex-basis: 50%;
-        max-width: 50%;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .container-center-sponsors .columns .columns-sponsors {
-        flex-basis: 100%;
-        max-width: 100%;
-    }
-}  
-
-.sponsor-meta-container > .sponsor-inner-container:first-child .columns-sponsors {
-    flex-basis: 33%;
-    max-width: 33%;
-    img {
-        max-width: 188px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .sponsor-meta-container > .sponsor-inner-container:first-child .columns-sponsors {
-        flex-basis: 50%;
-        max-width: 50%;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .sponsor-meta-container > .sponsor-inner-container:first-child .columns-sponsors {
-        flex-basis: 100%;
-        max-width: 100%;
-    }
-}
-
-.sponsor-meta-container > .sponsor-inner-container:nth-child(2) .columns-sponsors {
-    img {
-        max-width: 160px;
-    }
-}
-
-.sponsor-meta-container > .sponsor-inner-container:nth-child(3) .columns-sponsors {
-    img {
-        max-width: 145px;
-    }
-}
-
-.section-article-simple {
-    .foundation-logo {
-        display: block;
-        margin: 3rem auto 0;
-        max-width: 280px;
-    }
-    .foundation-tagline {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-}
-
 section.section.section-padding-top-0.supporters-section {
     padding-bottom: 0;
+
+    .content table {
+        width: 100%;
+        table-layout: fixed;
+        margin: 1.5rem 0 2rem;
+
+        th, td {
+            padding: 0.5rem 0.75rem 0.5rem 0;
+            vertical-align: top;
+            overflow-wrap: break-word;
+        }
+
+        tr {
+            border-bottom: 1px solid $grey-lighter;
+        }
+    }
 }

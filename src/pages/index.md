@@ -68,7 +68,7 @@ tables:
     rows:
       - text: >
           <p className="p-simple-item-bullet">Join the mailing list: <a
-          href="http://lists.katacontainers.io">http://lists.katacontainers.io</a></p>
+          href="https://lists.katacontainers.io/mailman3/lists/">Kata Containers mailing lists</a></p>
           <p className="p-simple-item-bullet">Slack: <a
           href="https://join.slack.com/t/katacontainers/shared_invite/zt-16w1u6usn-sK871qbMxVN8KsCP5Gr56A">slack.com</a></p>      
         title: Stay in the loop
@@ -81,7 +81,7 @@ tables:
       - text: >
           <p>Are you running Kata Containers?</p>  <p
           className="p-simple-item-bullet">Take the Kata Containers <a
-          href="https://www.surveymonkey.com/r/KataContainers">User Survey!</a>
+          href="https://openinfrafoundation.formstack.com/forms/kata_containers_user_survey">User Survey!</a>
           </p>       
         title: Share your story
     title: How to Get Involved.
