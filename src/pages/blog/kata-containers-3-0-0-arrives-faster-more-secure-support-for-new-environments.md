@@ -42,14 +42,14 @@ Read more about the features of Kata Containers 3.0.0 in the [release notes](htt
 
 "We have integrated Kata Containers into Inspur’s server virtualization system InCloud Sphere and hyper-converged infrastructure system InCloud Rail, and we will continuously promote Kata Containers to our customers and grow together with the community." — Alex Yan, director of Cloud Computing, [Inspur Data CN](https://en.inspur.com/)
 
-"It is my great honor that our team and I have been active contributors and users of Kata Containers since its first day. I think Kata Containers 3.0.0 will be the most exciting release for the new features, such as Rustified components, built-in sandboxing and TDX support. In the release cycle of Kata 3.0.0, we deployed it in our product clusters, which helped the team win the [Superuser Award](/kata-containers/ovhcloud-ant-group-win-superuser-awards-for-large-scale-deployment-of-openstack-innovative-use-of-d5d7275ea9ce) this year. Let’s keep working together for a better next release." — Xu Wang, senior staff engineer, [Ant Group](https://www.antgroup.com/)
+"It is my great honor that our team and I have been active contributors and users of Kata Containers since its first day. I think Kata Containers 3.0.0 will be the most exciting release for the new features, such as Rustified components, built-in sandboxing and TDX support. In the release cycle of Kata 3.0.0, we deployed it in our product clusters, which helped the team win the [Superuser Award](/blog/ovhcloud-ant-group-win-superuser-awards-for-large-scale-deployment-of-openstack/) this year. Let’s keep working together for a better next release." — Xu Wang, senior staff engineer, [Ant Group](https://www.antgroup.com/)
 
 **Resources:**
 
 *   [AMD Case Study](https://www.youtube.com/watch?v=-9LtBfwj03Y&t=1221s)
-*   [Inspur Case Study](/kata-containers/kata-containers-inspur-case-study-757a9e8e21ef)
-*   [Cysec Case Study](/kata-containers/kata-containers-cysec-case-study-40e7a03084f3)
-*   [Exotanium Case Study](/kata-containers/kata-containers-exotanium-case-study-7771ceaa91d5)
+*   [Inspur Case Study](/blog/kata-containers-inspur-case-study/)
+*   [Cysec Case Study](/blog/kata-containers-cysec-case-study/)
+*   [Exotanium Case Study](/blog/kata-containers-exotanium-case-study/)
 *   [Baidu Case Study](https://katacontainers.io/collateral/ApplicationOfKataContainersInBaiduAICloud.pdf)
 *   [Ant Group Case Study](https://katacontainers.io/collateral/kata-containers-ant-group_whitepaper.pdf)
 

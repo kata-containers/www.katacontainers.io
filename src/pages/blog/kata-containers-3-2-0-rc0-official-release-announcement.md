@@ -24,7 +24,7 @@ Starting in 3.2.0, the Kata Containers release version has added support for `aa
 
 # Upgraded support for Nydus to 2.2.0.
 
-To learn more about the new features of Nydus 2.2.0, please refer to: [https://github.com/dragonflyoss/image-service/releases.](https://github.com/dragonflyoss/image-service/releases.)
+To learn more about the new features of Nydus 2.2.0, please refer to: [https://github.com/dragonflyoss/image-service/releases](https://github.com/dragonflyoss/image-service/releases)
 
 # Merged the built-in Dragonball hypervisor of Kata Containers from the Dragon Lizard community into the Kata Containers project.
 
