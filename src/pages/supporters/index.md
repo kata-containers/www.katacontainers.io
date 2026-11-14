@@ -11,124 +11,23 @@ seo:
 title: Supporters
 subTitle: Advancing Kata Containers and growing the community
 buttons:
-  - link: 'mailto:info@katacontainers.io'
-    text: support kata containers
-donors:
-  list:
-    - alt: Microsoft
-      class: img-sponsor-l3
-      image: /img/logo-microsoft.svg
-      link: 'https://www.microsoft.com/'
-    - alt: Vexxhost
-      class: img-sponsor-l3
-      image: /img/logo-vexxhost.svg
-      link: 'https://vexxhost.com/'
-    - alt: Oregon State University Open Source Lab
-      class: img-sponsor-l3
-      image: /img/osu-logo.svg
-      link: 'https://osuosl.org'
-  title: Infrastructure Donors
-companies:
-  list:
-    - alt: Ampere
-      class: img-sponsor-l4
-      image: /img/ampere-lg.jpg
-    - alt: Ant Group
-      class: img-sponsor-l4
-      image: /img/ant-financial-services-group_owler_20210312_151802_original.png
-    - alt: AT&T
-      class: img-sponsor-l3-last
-      image: /img/logo-att.svg
-    - alt: AWCloud
-      class: img-sponsor-l4
-      image: /img/awcloud.png
-    - alt: 99 Cloud
-      class: img-sponsor-l4
-      image: /img/logo-99cloud.jpg
-    - alt: CISCO
-      class: img-sponsor-l3-last
-      image: /img/cisco-lg2.png
-    - alt: Cleura
-      class: img-sponsor-l4
-      image: /img/cleura-lg.jpg
-    - alt: China Mobile
-      class: img-sponsor-l4
-      image: /img/logo-china.svg
-    - alt: China Telecom
-      class: img-sponsor-l3-last
-      image: /img/china-telecom.png
-    - alt: China Unicom
-      class: img-sponsor-l4
-      image: /img/china-unicom.png
-    - alt: Dell
-      class: img-sponsor-l4
-      image: /img/logo-dell.svg
-    - alt: EasyStack
-      class: img-sponsor-l3-last
-      image: /img/logo-easy.svg
-    - alt: FiberHome
-      class: img-sponsor-l3-last
-      image: /img/logo-fiberhome.png
-    - alt: H3C
-      class: img-sponsor-l4
-      image: /img/h3c-lg.jpeg
-    - alt: Huawei
-      class: img-sponsor-l4
-      image: /img/huawei-new-lg.jpg
-    - alt: Inspur
-      class: img-sponsor-l3-last
-      image: /img/inspur-logo.jpg
-    - alt: Intel
-      class: img-sponsor-l4
-      image: /img/intel-lg.png
-    - alt: Mirantis
-      class: img-sponsor-l4
-      image: /img/mirantis-lg.jpg
-    - alt: NetApp
-      class: img-sponsor-l3-last
-      image: /img/logo-netapp.svg
-    - alt: Red Hat
-      class: img-sponsor-l4
-      image: /img/logo-redhat.svg
-    - alt: Suse
-      class: img-sponsor-l4
-      image: /img/logo-suse.svg
-    - alt: Tencent
-      class: img-sponsor-l4
-      image: /img/logo-tencent.jpg
-    - alt: Troila
-      class: img-sponsor-l4
-      image: /img/troila-new-lg.jpg
-    - alt: Ubuntu
-      class: img-sponsor-l3-last
-      image: /img/logo-ubuntu.svg
-    - alt: United Stack
-      class: img-sponsor-l4
-      image: /img/logo-united.svg
-    - alt: Vexxhost
-      class: img-sponsor-l4
-      image: /img/vexxhost.svg
-    - alt: ZTE
-      class: img-sponsor-l3-last
-      image: /img/zte-lg.jpg
-  title: Companies Supporting Kata Containers
-support:
-  button:
-    link: 'mailto:info@katacontainers.io'
-    text: SUPPORT KATA CONTAINERS
-  list:
-    - text: Support the Kata Containers community and enable it to grow and thrive
-    - text: >-
-        Recognition of your support with Supporter logo placement on
-        katacontainers.io
-    - text: Notification of Kata Containers project news and updates
-    - text: >-
-        Marketing support from Open Infrastructure Foundation via press releases
-        and providing quotes when your company promotes Kata Containers
-  text: >-
-    The Kata Containers project and community are supported by the OpenInfra Foundation.
-  text2: >-
-    Above are companies that are actively involved in making the Kata Containers
-    project successful.
+  - link: 'https://openinfra.org/join/'
+    text: support openinfra
 ---
 
+## Kata Containers CI infrastructure donors
+
+These organizations provide runners for Kata Containers CI:
+
+| Organization | CI runners provided |
+| --- | --- |
+| AMD | AMD SEV-SNP runners |
+| IBM | s390x and ppc64le runners |
+| Intel | Intel TDX runner |
+| Microsoft | Azure runners |
+| NVIDIA | GPU runners and two arm64 runners |
+| Oregon State University Open Source Lab (OSUOSL) | One arm64 runner |
+
+## Maintainer support
+
+OpenAI supports Kata Containers maintainers through its [Codex for Open Source](https://openai.com/form/codex-for-oss/) program, which helps maintainers with coding, pull request review, issue triage, and release workflows.

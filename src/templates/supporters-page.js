@@ -9,42 +9,8 @@ import SupportBanner from '../components/SupportBanner'
 import leftArrow from '../img/svg/arrow-left.svg'
 import metadata from '../content/site-metadata.json'
 
-import sponsoredProjects from "../content/sponsored-projects.json";
-import { getSubProjectById } from '../utils/sponsoredProjects';
-import { getEnvVariable, MEMBERS_SUBPROJECT_ID } from '../utils/envVariables'
-
-export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons, donors, companies, support, contentComponent }) => {
+export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons, contentComponent }) => {
   const PageContent = contentComponent || Content
-
-  let perChunk = 3 // items per chunk    
-  let inputArray = donors.list;
-  let donorsList = inputArray.reduce((resultArray, item, index) => {
-    const chunkIndex = Math.floor(index / perChunk)
-
-    if (!resultArray[chunkIndex]) {
-      resultArray[chunkIndex] = [] // start a new chunk
-    }
-
-    resultArray[chunkIndex].push(item)
-
-    return resultArray
-  }, [])
-
-  perChunk = 4;
-  inputArray = companies.list;
-  let supportList = inputArray.reduce((resultArray, item, index) => {
-    const chunkIndex = Math.floor(index / perChunk)
-
-    if (!resultArray[chunkIndex]) {
-      resultArray[chunkIndex] = [] // start a new chunk
-    }
-
-    resultArray[chunkIndex].push(item)
-
-    return resultArray
-  }, [])
-
-  const subProject = getSubProjectById(sponsoredProjects, parseInt(getEnvVariable(MEMBERS_SUBPROJECT_ID)));
 
   return (
 
@@ -86,7 +52,7 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
           <div className="section-body">
             <article className="article-simple default-page">
               <section className="section section-padding-top-0 supporters-section">
-                <p>The Kata Containers project is supported by the <a href="">OpenInfra Foundation</a> and a growing, global community of operators, developers and organizations. Join us as we build the future of secure container infrastructure.</p>
+                <p>The Kata Containers project is supported by the OpenInfra Foundation and a growing, global community of operators, developers and organizations. Join us as we build the future of secure container infrastructure.</p>
                 {buttons.map((b, index) => {
                   return (
                     <a href={b.link} className="button is-primary-dark is-rounded" key={index}><span>{b.text}</span>
@@ -97,39 +63,6 @@ export const SupportersPageTemplate = ({ seo, title, subTitle, content, buttons,
                   )
                 })}
                 <br /><br />
-                <div className="sponsor-meta-container">
-                  {subProject.sponsorship_types.sort((a, b) => a.order - b.order).map((t, tierIndex) => {
-                    return (
-                      <div className="sponsor-inner-container" key={`company-tier-${tierIndex}`}>
-                      <div className="container1"><h2 className="features">{t.name}</h2></div>
-                      <div className="container container-center container-center-sponsors" key={`company-tier-${tierIndex}`}>
-                          <div className='columns' style={{alignItems: 'center', justifyContent: 'center'}} key={tierIndex}>
-                              {t.supporting_companies.sort((a, b) => a.order - b.order).map(({company}, index) => {
-                                  return (
-                                    <div className={`column columns-sponsors columns-sponsors-${tierIndex}`} key={`company-tier-${tierIndex}-${index}`}>
-                                      <img
-                                          src={company.big_logo ? company.big_logo : company.logo} alt={company.name} />
-                                    </div>
-                                  )
-                              })}
-                          </div>
-                      </div>
-                      <p>&nbsp;</p>
-                      </div>
-                      
-                    )
-                  })}
-                </div>
-                {/* <p>{support.text}</p> */}
-                <p className="foundation-tagline">The Kata Containers project and community are supported by the OpenInfra Foundation.</p>
-                <a href="https://www.openinfra.dev"><img className="foundation-logo" src="https://openinfra.dev/img/openinfra-logo.jpeg" /></a>
-                {/* <a href={support.button.link} className="button is-primary-dark is-rounded">
-                  <span>{support.button.text}</span>
-                  <span className="ico">
-                    <img src={leftArrow} alt="Learn More" />
-                  </span>
-                </a> */}
-                <br />
                 <PageContent className="content" content={content} />
               </section>
             </article>
@@ -145,10 +78,7 @@ SupportersPageTemplate.propTypes = {
   seo: PropTypes.object,
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string.isRequired,
-  buttons: PropTypes.object,
-  donors: PropTypes.object,
-  support: PropTypes.object,
-  companies: PropTypes.object,
+  buttons: PropTypes.array,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
@@ -164,9 +94,6 @@ const SupportersPage = ({ data }) => {
         title={post.frontmatter.title}
         subTitle={post.frontmatter.subTitle}
         buttons={post.frontmatter.buttons}
-        donors={post.frontmatter.donors}
-        companies={post.frontmatter.companies}
-        support={post.frontmatter.support}
         content={post.html}
       />
     </Layout>
@@ -203,50 +130,6 @@ export const supportersPageQuery = graphql`
         buttons {
           text
           link
-        }
-        donors {
-          title
-          list {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }            
-              extension
-              publicURL
-            }
-            alt
-            link
-            class
-          }
-        }
-        companies {
-          title
-          list {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }            
-              extension
-              publicURL
-            }
-            alt
-            class
-          }
-        }
-        support {
-          text
-          text2
-          button {
-            text
-            link
-          }
-          list {
-            text
-          }
         }
       }
     }
